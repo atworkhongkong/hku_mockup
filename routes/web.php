@@ -23,3 +23,8 @@ Route::get('/', function () {
 Route::middleware(['auth', /* 'verified' */ ])->group(function () {
     Route::view('home', 'home')->name('home');
 });
+// end setting basic auth
+
+Route::prefix('hss')->group(function() {
+    Route::get('/meal_delivery', [App\Http\Controllers\HSS\MealController::class, 'mealDelivery'])->name('hss.meal_delivery');
+});
