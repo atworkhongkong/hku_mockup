@@ -15,16 +15,16 @@
                     <option value="pm">下午</option>
                 </select>
                 <button type="submit" class="btn btn-primary">搜尋</button>
+                <i class="far fa-info-circle mx-2" title="當選擇了過去的日期，下方的所有欄位皆會變成read-only"></i>
             </form>
         </div>
 
         <div class="content__wrapper">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="care-worker-tab" data-toggle="tab" href="#tab-care-worker" role="tab" aria-controls="tab-care-worker" aria-selected="true">送飯員</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="district-tab" data-toggle="tab" href="#tab-district" role="tab" aria-controls="tab-district" aria-selected="false">顯示區域</a>
+                    <a class="nav-link active" id="care-worker-tab" data-toggle="tab" href="#tab-care-worker" role="tab" aria-controls="tab-care-worker" aria-selected="true">
+                        安排送飯員<i class="far fa-info-circle mx-2" title="剔選送飯員後，則表示送飯員已被安排了送飯工作。若取消勾選，已安排之送飯工作則會被重設。"></i>
+                    </a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -42,22 +42,6 @@
                                 <label class="form-check-label" for="inlineCheckbox{{ $i }}">{{ $care_workers[$i - 1] }}</label>
                             </div>
                         @endfor
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="tab-district" role="tabpanel" aria-labelledby="district-tab">
-                    <div class="border p-3">
-                        @foreach($delivery_routes as $k => $dr)
-                            <div class="form-check form-check-inline">
-                                <input
-                                    class="form-check-input dr-checkbox"
-                                    type="checkbox"
-                                    id="dr-checkbox{{ $k }}"
-                                    value="{{ $dr }}"
-                                    CHECKED
-                                >
-                                <label class="form-check-label" for="dr-checkbox{{ $k }}">{{ $dr }}</label>
-                            </div>
-                        @endforeach
                     </div>
                 </div>
             </div>
@@ -117,8 +101,38 @@
 
 
             <p class="text-right">
-                <a class="btn btn-primary" href="/hss/meal/delivery/print" target="_blank">列印飯紙</a>
+
             </p>
+
+            <div class="d-flex justify-content-between">
+                <div class="m-2">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="router-filter-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            顯示路線
+                        </button>
+                        <div class="dropdown-menu p-3" aria-labelledby="router-filter-button" style="min-width:350px;">
+                            @foreach($delivery_routes as $k => $dr)
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input dr-checkbox"
+                                        type="checkbox"
+                                        id="dr-checkbox{{ $k }}"
+                                        value="{{ $dr }}"
+                                        CHECKED
+                                    >
+                                    <label class="form-check-label" for="dr-checkbox{{ $k }}">{{ $dr }}</label>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <a class="btn btn-primary" href="/hss/meal/delivery/print" target="_blank">列印飯紙</a>
+                </div>
+            </div>
+
+
+
             <div class="row">
                 <div class="col">
                     @for($i = 1 ; $i <= $available_care_worker ; $i++)
