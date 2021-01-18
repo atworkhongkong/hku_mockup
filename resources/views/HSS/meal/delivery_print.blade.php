@@ -90,6 +90,8 @@
                 </tr>
                 </tbody>
             </table>
+
+            <hr class="my-5">
         @endfor
     </div>
 

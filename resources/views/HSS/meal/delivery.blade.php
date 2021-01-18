@@ -19,6 +19,50 @@
         </div>
 
         <div class="content__wrapper">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="care-worker-tab" data-toggle="tab" href="#tab-care-worker" role="tab" aria-controls="tab-care-worker" aria-selected="true">送飯員</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="district-tab" data-toggle="tab" href="#tab-district" role="tab" aria-controls="tab-district" aria-selected="false">顯示區域</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab-care-worker" role="tabpanel" aria-labelledby="care-worker-tab">
+                    <div class="border p-3">
+                        @for($i = 1 ; $i <= count($care_workers) ; $i++)
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="inlineCheckbox{{ $i }}"
+                                    value="option{{ $i }}"
+                                    {{ $i <= $available_care_worker ? "CHECKED": "" }}
+                                >
+                                <label class="form-check-label" for="inlineCheckbox{{ $i }}">{{ $care_workers[$i - 1] }}</label>
+                            </div>
+                        @endfor
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-district" role="tabpanel" aria-labelledby="district-tab">
+                    <div class="border p-3">
+                        @foreach($delivery_routes as $k => $dr)
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input dr-checkbox"
+                                    type="checkbox"
+                                    id="dr-checkbox{{ $k }}"
+                                    value="{{ $dr }}"
+                                    CHECKED
+                                >
+                                <label class="form-check-label" for="dr-checkbox{{ $k }}">{{ $dr }}</label>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+
+            <!--
             <div class="mb-3">
                 <p>
                     <a class="btn btn-primary" data-toggle="collapse" href="#care-worker-list" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -67,7 +111,7 @@
                     </div>
                 </div>
             </div>
-
+            -->
 
             <hr class="my-4">
 
@@ -88,7 +132,7 @@
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <select class="form-select delivery-row-pull-down" aria-label="select example" style="width:150px;">
+                                <select class="custom-select delivery-row-pull-down" aria-label="select example" style="width:150px;">
                                     <option selected>負責區域</option>
                                     @foreach($delivery_routes as $k => $dr)
                                         <option value="{{ $dr }}" {{ ceil($i/3) == $k ? "SELECTED" : "" }}>{{ $dr }}</option>
@@ -116,8 +160,9 @@
                     @endfor
                 </div>
                 <div class="col-1">
-                    <div id="meal-card-container" style="position:-webkit-sticky; position:sticky; top:10px;">
-                        <div style="overflow-y:scroll; height:70vh; width:10rem;" class="border">
+                    <div id="meal-card-container" style="position:-webkit-sticky; position:sticky; top:10px; width:10rem;">
+                        <div class="border p-2 text-center">服務使用者</div>
+                        <div style="overflow-y:scroll; height:70vh; " class="border">
                             <div>
                                 @for ($i = 1 ; $i <= $max_service_users ; $i++)
                                     <div class="card m-2" style="width:6rem; cursor:pointer; user-select:none;">
