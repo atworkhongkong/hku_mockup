@@ -38,14 +38,21 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">HSS</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="/hss/meal/create">新增膳食安排</a></li>
-                            <li><a class="dropdown-item" href="/hss/meal/edit">編輯膳食安排</a></li>
-                            <li><a class="dropdown-item" href="/hss/meal/delivery">編輯飯線</a></li>
+                            <li><a class="dropdown-item" href="/hss/meal">膳食會員</a></li>
+                            <li><a class="dropdown-item" href="/hss/meal/create">新增膳食會員</a></li>
+                            <li><a class="dropdown-item" href="/hss/meal/edit">編輯膳食會員</a></li>
+                            <li><a class="dropdown-item" href="/hss/meal/delivery">飯線</a></li>
+                            <li><a class="dropdown-item" href="/hss/care_worker">照顧員</a></li>
+                            <li><a class="dropdown-item" href="/hss/care_worker/edit">編輯照顧員</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">ECS</a>
-
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="/ecs/user">會員</a></li>
+                            <li><a class="dropdown-item" href="/ecs/user/create">新增會員</a></li>
+                            <li><a class="dropdown-item" href="/ecs/user/edit">編輯會員</a></li>
+                        </ul>
                     </li>
                 </ul>
 

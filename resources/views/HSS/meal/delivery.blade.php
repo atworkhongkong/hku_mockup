@@ -2,28 +2,40 @@
 
 @section('content')
     <div class="container">
-
-        <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-            <form class="form-inline" action="/hss/meal/delivery" method="GET">
-                <label class="sr-only" for="field-date">日期</label>
-                <input type="date" id="field-date" class="form-control mr-2" value="2021-01-21" />
-
-                <label class="sr-only" for="field-month">月份</label>
-                <select id="field-month" class="form-control mr-2" name="month">
-                    <option value="">請選擇時段</option>
-                    <option value="am">上午</option>
-                    <option value="pm">下午</option>
-                </select>
-                <button type="submit" class="btn btn-primary">搜尋</button>
-                <i class="far fa-info-circle mx-2" title="當選擇了過去的日期，下方的所有欄位皆會變成read-only"></i>
-            </form>
-        </div>
-
         <div class="content__wrapper">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/hss/meal">膳食</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">飯線</li>
+                </ol>
+            </nav>
+
+            <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
+                <form class="form-inline" action="/hss/meal/delivery" method="GET">
+                    <label class="sr-only" for="field-date">日期</label>
+                    <input type="date" id="field-date" class="form-control mr-2" value="2021-01-21" />
+
+                    <label class="sr-only" for="field-month">月份</label>
+                    <select id="field-month" class="form-control mr-2" name="month">
+                        <option value="">請選擇時段</option>
+                        <option value="am">上午</option>
+                        <option value="pm">下午</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">搜尋</button>
+                    <i class="far fa-info-circle mx-2" title="當選擇了過去的日期，下方的所有欄位皆會變成read-only"></i>
+                </form>
+            </div>
+
+
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
+                <li class="nav-item">
                     <a class="nav-link active" id="care-worker-tab" data-toggle="tab" href="#tab-care-worker" role="tab" aria-controls="tab-care-worker" aria-selected="true">
-                        安排送飯員<i class="far fa-info-circle mx-2" title="剔選送飯員後，則表示送飯員已被安排了送飯工作。若取消勾選，已安排之送飯工作則會被重設。"></i>
+                        送飯員<i class="far fa-info-circle mx-2" title="剔選送飯員後，則表示送飯員已被安排了送飯工作。若取消勾選，已安排之送飯工作則會被重設。"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="borrow-care-worker-tab" data-toggle="tab" href="#tab-borrow-care-worker" role="tab" aria-controls="tab-borrow-care-worker" aria-selected="false">
+                        借用送飯員
                     </a>
                 </li>
             </ul>
@@ -37,9 +49,25 @@
                                     type="checkbox"
                                     id="inlineCheckbox{{ $i }}"
                                     value="option{{ $i }}"
+                                    {{ $i >= 21 ? "disabled" : "" }}
                                     {{ $i <= $available_care_worker ? "CHECKED": "" }}
                                 >
                                 <label class="form-check-label" for="inlineCheckbox{{ $i }}">{{ $care_workers[$i - 1] }}</label>
+                            </div>
+                        @endfor
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-borrow-care-worker" role="tabpanel" aria-labelledby="borrow-care-worker-tab">
+                    <div class="border p-3">
+                        @for($i = 1 ; $i <= count($borrow_care_workers) ; $i++)
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="inlineBorrowCheckbox{{ $i }}"
+                                    value="option{{ $i }}"
+                                >
+                                <label class="form-check-label" for="inlineBorrowCheckbox{{ $i }}">{{ $borrow_care_workers[$i - 1] }}</label>
                             </div>
                         @endfor
                     </div>
@@ -175,7 +203,7 @@
                 </div>
                 <div class="col-1">
                     <div id="meal-card-container" style="position:-webkit-sticky; position:sticky; top:10px; width:10rem;">
-                        <div class="border p-2 text-center">服務使用者</div>
+                        <div class="border p-2 text-center">服務使用者 150/221人</div>
                         <div style="overflow-y:scroll; height:70vh; " class="border">
                             <div>
                                 @for ($i = 1 ; $i <= $max_service_users ; $i++)

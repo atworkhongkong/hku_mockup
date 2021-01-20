@@ -16,6 +16,11 @@ class MealController extends Controller
         6 => '中西區',
     ];
 
+    public function index()
+    {
+        return view('HSS/meal/index');
+    }
+
     public function create()
     {
         $delivery_routes = self::DELIVERY_ROUTES;
@@ -33,7 +38,11 @@ class MealController extends Controller
         $max_care_worker = 20;
         $care_workers = [
             '淑惠', '美玲', '雅婷', '美惠', '麗華', '淑娟', '淑貞', '怡君', '淑華', '慧妍',
-            '婧琪', '璟雯', '夢婷', '雪怡', '可嵐', '天瑜', '婧琪', '雪馨', '雨婷', '雅芙'
+            '婧琪', '璟雯', '夢婷', '雪怡', '可嵐', '天瑜', '婧琪', '雪馨', '雨婷', '雅芙',
+            '羅蘭', '朱迪'
+        ];
+        $borrow_care_workers = [
+            '月娥', '若驊'
         ];
         $available_care_worker = 18;
         $delivery_routes = self::DELIVERY_ROUTES;
@@ -42,7 +51,7 @@ class MealController extends Controller
             $cw_delivery_counts[$i] = mt_rand(1,7);
         }
         $max_service_users = 100;
-        return view('HSS/meal/delivery', compact('care_workers', 'available_care_worker', 'delivery_routes', 'cw_delivery_counts', 'max_service_users'));
+        return view('HSS/meal/delivery', compact('care_workers', 'borrow_care_workers', 'available_care_worker', 'delivery_routes', 'cw_delivery_counts', 'max_service_users'));
     }
 
     public function printMealDelivery()

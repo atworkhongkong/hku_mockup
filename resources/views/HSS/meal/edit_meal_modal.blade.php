@@ -115,8 +115,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
                 <button type="button" class="btn btn-primary">新增</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
             </div>
         </div>
     </div>

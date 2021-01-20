@@ -3,11 +3,18 @@
 @section('content')
     <div class="container">
         <div class="content__wrapper">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/hss/meal">膳食</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">陳娣</li>
+                </ol>
+            </nav>
+
             <div class="form-container">
                 <form class="row g-3">
                     <div class="col-md-6 mb-3">
                         <label for="inputUserName" class="form-label">使用者姓名</label>
-                        <input type="email" class="form-control" id="inputUserName"  value="陳娣">
+                        <input type="text" class="form-control" id="inputUserName"  value="陳娣">
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="inputDistrict" class="form-label">分區</label>
@@ -24,7 +31,7 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="inputCaseNumber" class="form-label">檔案編號</label>
-                        <input type="email" class="form-control" id="inputCaseNumber" value="104/301">
+                        <input type="text" class="form-control" id="inputCaseNumber" value="104/301">
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="inputServiceTeam" class="form-label">服務隊</label>
@@ -51,16 +58,18 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
+                                    <th scope="col" style="width:10%;">訂餐號碼</th>
                                     <th scope="col" style="width:15%;">開始日期</th>
                                     <th scope="col" style="width:15%;">結束日期</th>
                                     <th scope="col">時段</th>
                                     <th scope="col">備註</th>
                                     <th scope="col">狀態</th>
-                                    <th scope="col" style="width:8%;">&nbsp;</th>
+                                    <th scope="col" style="width:6%;">&nbsp;</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td>700</td>
                                     <td>2020-12-01</td>
                                     <td>2021-01-31</td>
                                     <td>
@@ -88,6 +97,7 @@
                                     </td>
                                 </tr>
                                 <tr class="text-muted" style="background-color:#EFEFEF;">
+                                    <td>528</td>
                                     <td>2020-10-01</td>
                                     <td>2020-10-31</td>
                                     <td>全日餐</td>

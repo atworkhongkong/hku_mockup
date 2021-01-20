@@ -3,6 +3,13 @@
 @section('content')
     <div class="container">
         <div class="content__wrapper">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/hss/meal">膳食</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">新增</li>
+                </ol>
+            </nav>
+
             <div class="form-container">
                 <form class="row g-3">
                     <div class="col-md-6 mb-3">
