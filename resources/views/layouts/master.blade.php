@@ -47,7 +47,8 @@
                             <li class="border-bottom"><a class="dropdown-item" href="/hss/delivery_route/edit/1">編輯送飯路線</a></li>
                             <li><a class="dropdown-item" href="/hss/care_worker">照顧員</a></li>
                             <li><a class="dropdown-item" href="/hss/care_worker/create">新增照顧員</a></li>
-                            <li><a class="dropdown-item" href="/hss/care_worker/edit/1">編輯照顧員</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/hss/care_worker/edit/1">編輯照顧員</a></li>
+                            <li><a class="dropdown-item" href="/hss/duty_roster">編更</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
