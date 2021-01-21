@@ -52,7 +52,9 @@
                                     {{ $i >= 21 ? "disabled" : "" }}
                                     {{ $i <= $available_care_worker ? "CHECKED": "" }}
                                 >
-                                <label class="form-check-label" for="inlineCheckbox{{ $i }}">{{ $care_workers[$i - 1] }}</label>
+                                <label class="form-check-label" for="inlineCheckbox{{ $i }}">
+                                    {{ $care_workers[$i - 1] }}
+                                </label>
                             </div>
                         @endfor
                     </div>
@@ -67,7 +69,9 @@
                                     id="inlineBorrowCheckbox{{ $i }}"
                                     value="option{{ $i }}"
                                 >
-                                <label class="form-check-label" for="inlineBorrowCheckbox{{ $i }}">{{ $borrow_care_workers[$i - 1] }}</label>
+                                <label class="form-check-label" for="inlineBorrowCheckbox{{ $i }}">
+                                    {{ $borrow_care_workers[$i - 1] }}<i class="far fa-info-circle mx-2" title="2021-01-21 至 2021-01-21"></i>
+                                </label>
                             </div>
                         @endfor
                     </div>

@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/hss/meal">膳食</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">新增</li>
+                    <li class="breadcrumb-item active" aria-current="page">新增膳食會員</li>
                 </ol>
             </nav>
 

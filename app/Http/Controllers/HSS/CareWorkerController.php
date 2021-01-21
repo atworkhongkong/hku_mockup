@@ -19,6 +19,11 @@ class CareWorkerController extends Controller
         return view('HSS/care_worker/index', compact('care_workers'));
     }
 
+    public function create()
+    {
+        return view('HSS/care_worker/create');
+    }
+
     public function edit($id)
     {
         $name = self::CARE_WORKERS[$id - 1];

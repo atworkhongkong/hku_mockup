@@ -31,7 +31,11 @@ Route::prefix('hss')->group(function() {
     Route::get('/meal/edit', [App\Http\Controllers\HSS\MealController::class, 'edit'])->name('hss.meal.edit');
     Route::get('/meal/delivery', [App\Http\Controllers\HSS\MealController::class, 'mealDelivery'])->name('hss.meal.delivery');
     Route::get('/meal/delivery/print', [App\Http\Controllers\HSS\MealController::class, 'printMealDelivery'])->name('hss.meal.delivery.print');
+    Route::get('/delivery_route', [App\Http\Controllers\HSS\DeliveryRouteController::class, 'index'])->name('hss.delivery_route.index');
+    Route::get('/delivery_route/create', [App\Http\Controllers\HSS\DeliveryRouteController::class, 'create'])->name('hss.delivery_route.create');
+    Route::get('/delivery_route/edit/{id}', [App\Http\Controllers\HSS\DeliveryRouteController::class, 'edit'])->name('hss.delivery_route.edit');
 
     Route::get('/care_worker', [App\Http\Controllers\HSS\CareWorkerController::class, 'index'])->name('hss.care_worker.index');
+    Route::get('/care_worker/create', [App\Http\Controllers\HSS\CareWorkerController::class, 'create'])->name('hss.care_worker.create');
     Route::get('/care_worker/edit/{id}', [App\Http\Controllers\HSS\CareWorkerController::class, 'edit'])->name('hss.care_worker.edit');
 });

@@ -21,7 +21,7 @@
             <div class="col-12 mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-1">
                     <span>找到 {{ count($care_workers) }} 筆記錄</span>
-                    <a href="/hss/care_worker" class="btn btn-secondary">
+                    <a href="/hss/care_worker/create" class="btn btn-secondary">
                         新增照顧員
                     </a>
                 </div>
