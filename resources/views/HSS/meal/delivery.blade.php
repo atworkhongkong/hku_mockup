@@ -172,7 +172,7 @@
                                             <?php
                                             $arr = $meal_users[$cw['route_id']][$m];
                                             ?>
-                                            <div class="card mr-2 mb-2" style="width:6rem;">
+                                            <div class="card mr-2 mb-2 card-{{ $cw['route_id'] }}" style="width:6rem;">
                                                 <div class="card-body p-2 text-center">
                                                     <div><input type="checkbox" id="row-{{ $cw['route_id'] }}-{{ $m }}"/></div>
                                                     <label class="form-check-label" for="row-{{ $cw['route_id'] }}-{{ $m }}" style="width:100%;">
@@ -235,4 +235,10 @@
             });
         });
     </script>
+
+    <style>
+        .card-1 { background-color: #FFFFBF; }
+        .card-2 { background-color: #DDDAD7; }
+        .card-3 { background-color: #7BC7F7; }
+    </style>
 @endsection
