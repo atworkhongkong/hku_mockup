@@ -17,8 +17,9 @@ class DutyRosterController extends Controller
     public function index()
     {
         $care_workers = self::CARE_WORKERS;
+        $attends = ["全日", "第1節", "第2節"];
 
-        return view('HSS/duty_roster/index', compact('care_workers'));
+        return view('HSS/duty_roster/index', compact('care_workers', 'attends'));
     }
 
     /*

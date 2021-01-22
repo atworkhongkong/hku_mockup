@@ -42,21 +42,21 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="tab-care-worker" role="tabpanel" aria-labelledby="care-worker-tab">
                     <div class="border p-3">
-                        @foreach($care_workers as $i => $cw)
+                        @for($i = 1 ; $i <= count($care_workers) ; $i++)
                             <div class="form-check form-check-inline">
                                 <input
                                     class="form-check-input"
                                     type="checkbox"
                                     id="inlineCheckbox{{ $i }}"
                                     value="option{{ $i }}"
-                                    {{ $i >= 20 ? "disabled" : "" }}
-                                    {{ $cw['route_id'] != 0 ? "CHECKED": "" }}
+                                    {{ $i >= 21 ? "disabled" : "" }}
+                                    {{ $i <= $available_care_worker ? "CHECKED": "" }}
                                 >
                                 <label class="form-check-label" for="inlineCheckbox{{ $i }}">
-                                    {{ $cw['name'] }}
+                                    {{ $care_workers[$i - 1] }}
                                 </label>
                             </div>
-                        @endforeach
+                        @endfor
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab-borrow-care-worker" role="tabpanel" aria-labelledby="borrow-care-worker-tab">
@@ -78,7 +78,59 @@
                 </div>
             </div>
 
+            <!--
+            <div class="mb-3">
+                <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#care-worker-list" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        送飯員
+                    </a>
+                </p>
+                <div class="collapse" id="care-worker-list">
+                    <div class="border p-3">
+                        @for($i = 1 ; $i <= count($care_workers) ; $i++)
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="inlineCheckbox{{ $i }}"
+                                    value="option{{ $i }}"
+                                    {{ $i <= $available_care_worker ? "CHECKED": "" }}
+                                >
+                                <label class="form-check-label" for="inlineCheckbox{{ $i }}">{{ $care_workers[$i - 1] }}</label>
+                            </div>
+                        @endfor
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#delivery-route-check-boxes" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        顯示區域
+                    </a>
+                </p>
+                <div class="collapse" id="delivery-route-check-boxes">
+                    <div class="border p-3">
+                        @foreach($delivery_routes as $k => $dr)
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input dr-checkbox"
+                                    type="checkbox"
+                                    id="dr-checkbox{{ $k }}"
+                                    value="{{ $dr }}"
+                                    CHECKED
+                                >
+                                <label class="form-check-label" for="dr-checkbox{{ $k }}">{{ $dr }}</label>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            -->
+
             <hr class="my-4">
+
 
             <p class="text-right">
 
@@ -91,10 +143,6 @@
                             顯示路線
                         </button>
                         <div class="dropdown-menu p-3" aria-labelledby="router-filter-button" style="min-width:350px;">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="check-all-routes" CHECKED>全選</button>
-                                <label class="form-check-label" for="check-all-routes"></label>
-                            </div>
                             @foreach($delivery_routes as $k => $dr)
                                 <div class="form-check">
                                     <input
@@ -104,14 +152,13 @@
                                         value="{{ $dr }}"
                                         CHECKED
                                     >
-                                    <label class="form-check-label" for="dr-checkbox{{ $k }}">{{ $dr }} ({{ count($meal_users[$k]) }})</label>
+                                    <label class="form-check-label" for="dr-checkbox{{ $k }}">{{ $dr }}</label>
                                 </div>
                             @endforeach
                         </div>
                     </div>
                 </div>
                 <div class="m-2">
-                    <a class="btn btn-primary" href="/hss/meal/delivery?step=3">自動排列</a>
                     <a class="btn btn-primary" href="/hss/meal/delivery/print" target="_blank">列印飯紙</a>
                 </div>
             </div>
@@ -120,92 +167,66 @@
 
             <div class="row">
                 <div class="col">
-                    <?php
-                    $last_route_id = 0;
-                    ?>
-                    @foreach($care_workers as $i => $cw)
-                        <?php
-                        if ($cw['route_id'] != $last_route_id) {
-                            $row = 1;
-                            $last_route_id = $cw['route_id'];
-                        } else {
-                            $row += 1;
-                        }
-                        ?>
-                        @if ($cw['route_id'] != 0)
-                            <div class="row pb-4 mb-4 border-bottom delivery-row">
-                                <div class="col-auto">
-                                    <div class="text-center">
-                                        <div class="mb-1 p-1 border">
-                                            <img src="{{ asset('images/care_worker.jpg') }}" style="width:80px; height:80px;" />
-                                        </div>
-                                        <div class="badge badge-info py-1 px-3">{{ $cw['name'] }}</div>
+                    @for($i = 1 ; $i <= $available_care_worker ; $i++)
+                        <div class="row pb-4 mb-4 border-bottom delivery-row">
+                            <div class="col-auto">
+                                <div class="text-center">
+                                    <div class="mb-1 p-1 border">
+                                        <img src="{{ asset('images/care_worker.jpg') }}" style="width:80px; height:80px;" />
                                     </div>
-                                </div>
-                                <div class="col-auto">
-                                    <select class="custom-select delivery-row-pull-down" aria-label="select example" style="width:150px;">
-                                        <option selected>負責區域</option>
-                                        @foreach($delivery_routes as $k => $dr)
-                                            @if($step == 1)
-                                                <option value="{{ $dr }}">{{ $dr }}</option>
-                                            @else
-                                                <option value="{{ $dr }}" {{ $k == $cw['route_id'] ? "SELECTED" : "" }}>{{ $dr }}</option>
-                                            @endif
-                                        @endforeach
-                                    </select>
-                                </div>
-                                <div class="col d-flex flex-wrap">
-                                    @if ($step <= 2)
-
-                                    @else
-                                        <?php
-                                            $total_meal_in_this_route = count($meal_users[$cw['route_id']]);
-                                            $total_cw_in_this_route = $route_care_worker_count[$cw['route_id']];
-                                            $average = ceil($total_meal_in_this_route / $total_cw_in_this_route);
-                                            $from = ($row - 1) * $average;
-                                            $to = $from + $average - 1;
-                                            if ($to > $total_meal_in_this_route) {
-                                                $to = $total_meal_in_this_route - 1;
-                                            }
-                                        ?>
-                                        @for($m = $from ; $m <= $to ; $m++)
-                                            <?php
-                                            $arr = $meal_users[$cw['route_id']][$m];
-                                            ?>
-                                            <div class="card mr-2 mb-2" style="width:6rem;">
-                                                <div class="card-body p-2 text-center">
-                                                    <div><input type="checkbox" id="row-{{ $cw['route_id'] }}-{{ $m }}"/></div>
-                                                    <label class="form-check-label" for="row-{{ $cw['route_id'] }}-{{ $m }}" style="width:100%;">
-                                                        <div style="background-color: #EEEEEE;">{{$arr['block'] }}</div>
-                                                        <div>{{ $arr['floor'] }}樓{{ $arr['room'] }}</div>
-                                                        <div><span>{{ $arr['number'] }}</span></div>
-                                                        <div>{{ $arr['name'] }}</div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        @endfor
-                                    @endif
+                                    <div class="badge badge-info py-1 px-3">{{ $care_workers[$i - 1] }}</div>
                                 </div>
                             </div>
-                        @endif
-                    @endforeach
+                            <div class="col-auto">
+                                <select class="custom-select delivery-row-pull-down" aria-label="select example" style="width:150px;">
+                                    <option selected>負責區域</option>
+                                    @foreach($delivery_routes as $k => $dr)
+                                        <option value="{{ $dr }}" {{ ceil($i/3) == $k ? "SELECTED" : "" }}>{{ $dr }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col d-flex flex-wrap">
+                                @for($j = 1 ; $j <= $cw_delivery_counts[$i] ; $j++)
+                                    <?php
+                                        $temp_arr = ['海怡', '石排灣', '漁光村', '利東', '華富', '中西區'];
+                                        $k = ceil($i/3);
+                                        $temp_name = $temp_arr[$k - 1];
+                                    ?>
+                                    <div class="card mr-2 mb-2" style="width:6rem; cursor:pointer;">
+                                        <div class="card-body p-2 text-center">
+                                            <div style="background-color: #EEEEEE;">{{ $temp_name }}</div>
+                                            <div>6座628</div>
+                                            <div><span>xxx</span> | <span>310</span></div>
+                                            <div>楊心怡</div>
+                                        </div>
+                                    </div>
+                                @endfor
+                            </div>
+                        </div>
+                    @endfor
                 </div>
                 <div class="col-1">
                     <div id="meal-card-container" style="position:-webkit-sticky; position:sticky; top:10px; width:10rem;">
-                        <div class="border p-2 text-center">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#move-to-modal">移至...</button>
-                        </div>
-                        <div class="border p-2 text-center">待定</div>
+                        <div class="border p-2 text-center">服務使用者 150/221人</div>
                         <div style="overflow-y:scroll; height:70vh; " class="border">
                             <div>
-
+                                @for ($i = 1 ; $i <= $max_service_users ; $i++)
+                                    <div class="card m-2" style="width:6rem; cursor:pointer; user-select:none;">
+                                        <div class="card-body p-2 text-center">
+                                            <div style="background-color: #EEEEEE;">海怡</div>
+                                            <div>6座628</div>
+                                            <div><span>xxx</span> | <span>310</span></div>
+                                            <div>楊心怡</div>
+                                        </div>
+                                    </div>
+                                @endfor
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        @include('HSS.meal.move_to_modal')
+
     </div>
 
     <script>
@@ -222,16 +243,6 @@
                         }
                     }
                 })
-            });
-
-            $("#check-all-routes").click(function() {
-                let is_shown = $(this).is(":checked");
-                $(".dr-checkbox").prop('checked', is_shown);
-                if (is_shown) {
-                    $(".delivery-row-pull-down").parent().closest('div.delivery-row').show();
-                } else {
-                    $(".delivery-row-pull-down").parent().closest('div.delivery-row').hide();
-                }
             });
         });
     </script>

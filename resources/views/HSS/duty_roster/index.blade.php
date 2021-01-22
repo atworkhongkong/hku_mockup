@@ -66,12 +66,12 @@
                                 <td>
                                     <a href="/hss/care_worker/edit/{{ $i }}" target="_blank">{{ $care_workers[$i] }}</a>
                                 </td>
-                                <td class="cell"><div class="alert alert-primary">全日</div></td>
-                                <td class="cell"><div class="alert alert-primary">全日</div></td>
-                                <td class="cell"><div class="alert alert-primary">全日</div></td>
-                                <td class="cell"><div class="alert alert-primary">全日</div></td>
-                                <td class="cell"><div class="alert alert-primary">全日</div></td>
-                                <td class="cell"><div class="alert alert-primary">全日</div></td>
+                                <td class="cell"><div class="alert alert-primary">{{ Arr::random($attends) }}</div></td>
+                                <td class="cell"><div class="alert alert-primary">{{ Arr::random($attends) }}</div></td>
+                                <td class="cell"><div class="alert alert-primary">{{ Arr::random($attends) }}</div></td>
+                                <td class="cell"><div class="alert alert-primary">{{ Arr::random($attends) }}</div></td>
+                                <td class="cell"><div class="alert alert-primary">{{ Arr::random($attends) }}</div></td>
+                                <td class="cell"><div class="alert alert-primary">第一節</div></td>
                                 <td class="cell">+</td>
                             </tr>
                         @endfor
