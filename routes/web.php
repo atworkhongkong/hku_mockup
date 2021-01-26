@@ -41,3 +41,12 @@ Route::prefix('hss')->group(function() {
 
     Route::get('/duty_roster', [App\Http\Controllers\HSS\DutyRosterController::class, 'index'])->name('hss.duty_roster.index');
 });
+
+Route::prefix('ecs')->group(function() {
+    Route::get('/season', [App\Http\Controllers\ECS\SeasonController::class, 'index'])->name('ecs.season.index');
+    Route::get('/season/create', [App\Http\Controllers\ECS\SeasonController::class, 'create'])->name('ecs.season.create');
+    Route::get('/season/edit', [App\Http\Controllers\ECS\SeasonController::class, 'edit'])->name('ecs.season.edit');
+    Route::get('/programme', [App\Http\Controllers\ECS\ProgrammeController::class, 'index'])->name('ecs.programme.index');
+    Route::get('/programme/create', [App\Http\Controllers\ECS\ProgrammeController::class, 'create'])->name('ecs.programme.create');
+    Route::get('/programme/edit', [App\Http\Controllers\ECS\ProgrammeController::class, 'edit'])->name('ecs.programme.edit');
+});

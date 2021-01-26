@@ -54,9 +54,12 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">ECS</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="/ecs/user">會員</a></li>
-                            <li><a class="dropdown-item" href="/ecs/user/create">新增會員</a></li>
-                            <li><a class="dropdown-item" href="/ecs/user/edit">編輯會員</a></li>
+                            <li><a class="dropdown-item" href="/ecs/season">季度</a></li>
+                            <li><a class="dropdown-item" href="/ecs/season/create">新增季度</a></li>
+                            <li><a class="dropdown-item" href="/ecs/season/edit">編輯季度</a></li>
+                            <li><a class="dropdown-item" href="/ecs/programme">課程</a></li>
+                            <li><a class="dropdown-item" href="/ecs/programme/create">新增課程</a></li>
+                            <li><a class="dropdown-item" href="/ecs/programme/edit">編輯課程</a></li>
                         </ul>
                     </li>
                 </ul>
