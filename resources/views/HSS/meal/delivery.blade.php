@@ -164,7 +164,7 @@
                                             $average = ceil($total_meal_in_this_route / $total_cw_in_this_route);
                                             $from = ($row - 1) * $average;
                                             $to = $from + $average - 1;
-                                            if ($to > $total_meal_in_this_route) {
+                                            if ($to >= $total_meal_in_this_route) {
                                                 $to = $total_meal_in_this_route - 1;
                                             }
                                         ?>
@@ -240,5 +240,8 @@
         .card-1 { background-color: #FFFFBF; }
         .card-2 { background-color: #DDDAD7; }
         .card-3 { background-color: #7BC7F7; }
+        .card-4 { background-color: #A7ED4D; }
+        .card-5 { background-color: #FFA500;}
+        .card-6 { background-color: #FFFFFF;}
     </style>
 @endsection

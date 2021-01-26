@@ -126,13 +126,23 @@ class MealController extends Controller
                 ['estate' => '石排灣', 'block' => '碧輝樓', 'floor' => '4', 'room' => '9', 'number' => 'xxx|xxx', 'name' => '許之任'],
             ],
             3 => [
-
+                ['estate' => '漁光村', 'block' => '海鷗樓', 'floor' => '12', 'room' => '5', 'number' => 'xxx|xxx', 'name' => '陳木勝'],
+                ['estate' => '漁光村', 'block' => '靜海樓', 'floor' => '4', 'room' => '3', 'number' => 'xxx|xxx', 'name' => '李大全'],
+                ['estate' => '漁光村', 'block' => '海港樓', 'floor' => '10', 'room' => '1', 'number' => 'xxx|xxx', 'name' => '任正'],
             ],
             4 => [
-
+                ['estate' => '利東村', 'block' => '東昌樓', 'floor' => '12', 'room' => '5', 'number' => 'xxx|xxx', 'name' => '林正全'],
+                ['estate' => '利東村', 'block' => '東興樓', 'floor' => '4', 'room' => '3', 'number' => 'xxx|xxx', 'name' => '張毓峰'],
+                ['estate' => '利東村', 'block' => '東興樓', 'floor' => '5', 'room' => '1', 'number' => 'xxx|xxx', 'name' => '李祐桂'],
+                ['estate' => '利東村', 'block' => '東平樓', 'floor' => '6', 'room' => '4', 'number' => 'xxx|xxx', 'name' => '林嘉慈'],
+                ['estate' => '利東村', 'block' => '東安樓', 'floor' => '3', 'room' => '2', 'number' => 'xxx|xxx', 'name' => '汪佳穎'],
             ],
             5 => [
-
+                ['estate' => '華富邨', 'block' => '華安樓', 'floor' => '12', 'room' => '5', 'number' => 'xxx|xxx', 'name' => '潘肇昆'],
+                ['estate' => '華富邨', 'block' => '華樂樓', 'floor' => '4', 'room' => '3', 'number' => 'xxx|xxx', 'name' => '袁筱婷'],
+                ['estate' => '華貴邨', 'block' => '華孝樓', 'floor' => '5', 'room' => '1', 'number' => 'xxx|xxx', 'name' => '張翔昆'],
+                ['estate' => '華貴邨', 'block' => '華賢樓', 'floor' => '6', 'room' => '4', 'number' => 'xxx|xxx', 'name' => '陳信貴'],
+                ['estate' => '華貴邨', 'block' => '華愛樓', 'floor' => '3', 'room' => '2', 'number' => 'xxx|xxx', 'name' => '裘貞夫'],
             ],
             6 => [
 
