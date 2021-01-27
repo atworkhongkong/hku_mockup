@@ -43,10 +43,10 @@ Route::prefix('hss')->group(function() {
 });
 
 Route::prefix('ecs')->group(function() {
-    Route::get('/season', [App\Http\Controllers\ECS\SeasonController::class, 'index'])->name('ecs.season.index');
-    Route::get('/season/create', [App\Http\Controllers\ECS\SeasonController::class, 'create'])->name('ecs.season.create');
-    Route::get('/season/edit', [App\Http\Controllers\ECS\SeasonController::class, 'edit'])->name('ecs.season.edit');
     Route::get('/programme', [App\Http\Controllers\ECS\ProgrammeController::class, 'index'])->name('ecs.programme.index');
     Route::get('/programme/create', [App\Http\Controllers\ECS\ProgrammeController::class, 'create'])->name('ecs.programme.create');
     Route::get('/programme/edit', [App\Http\Controllers\ECS\ProgrammeController::class, 'edit'])->name('ecs.programme.edit');
+    Route::get('/programme_register', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'index'])->name('ecs.programme_register.index');
+    Route::get('/programme_register/create', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'create'])->name('ecs.programme_register.create');
+    Route::get('/programme_register/create_multiple', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'createMultiple'])->name('ecs.programme_register.create_multiple');
 });

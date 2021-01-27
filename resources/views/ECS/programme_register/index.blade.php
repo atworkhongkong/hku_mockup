@@ -5,43 +5,21 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page">活動</li>
+                    <li class="breadcrumb-item active" aria-current="page">活動報名</li>
                 </ol>
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form" action="/hss/programme" method="GET">
-                    <div class="row mb-2">
-                        <div class="col-auto pr-1">
-                            <label class="sr-only" for="field-area">搜尋範圍</label>
-                            <select id="field-area" class="form-control mr-2" name="team">
-                                <option value="">活動編號</option>
-                                <option value="">中文名稱</option>
-                                <option value="">地點</option>
-                                <option value="">報名名額</option>
-                                <option value="">負責職員</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="sr-only" for="field-key-word" >關錄字</label>
-                            <input type="text" id="field-name" class="form-control" placeholder="關鍵字" />
-                        </div>
-                    </div>
+                <form class="form-inline" action="/hss/programme" method="GET">
+                    <label class="sr-only" for="field-area">搜尋範圍</label>
+                    <select id="field-area" class="form-control mr-2" name="team">
+                        <option value="">活動編號</option>
+                        <option value="">中文名稱</option>
+                    </select>
 
+                    <label class="sr-only" for="field-key-word" >關錄字</label>
+                    <input type="text" id="field-name" class="form-control mr-2" placeholder="關鍵字" />
 
-                    <div class="row mb-2 g-0">
-                        <div class="col-auto">
-                            <label class="sr-only" for="field-start-date">開始日期</label>
-                            <input type="date" id="field-start-date" class="form-control" />
-                        </div>
-                        <div class="col-auto px-0 pt-2">
-                            至
-                        </div>
-                        <div class="col-auto">
-                            <label class="sr-only" for="field-end-date">結束日期</label>
-                            <input type="date" id="field-end-date" class="form-control" />
-                        </div>
-                    </div>
                     <button type="submit" class="btn btn-primary">搜尋</button>
                 </form>
             </div>
@@ -49,9 +27,10 @@
             <div class="col-12 mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-1">
                     <span>找到2筆記錄</span>
-                    <a href="/ecs/programme/create" class="btn btn-secondary">
-                        新增活動
-                    </a>
+                    <div>
+                        <a href="/ecs/programme_register/create" class="btn btn-secondary">單人報名</a>
+                        <a href="/ecs/programme_register/create_multiple" class="btn btn-secondary">多人報名</a>
+                    </div>
                 </div>
                 <table class="table table-bordered">
                     <thead>
@@ -63,7 +42,7 @@
                             <th scope="col">結束日期</th>
                             <th scope="col">負責同事</th>
                             <th scope="col">狀態</th>
-                            <th scope="col" style="width:8%;">&nbsp;</th>
+                            <th scope="col" style="width:10%;">&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -76,7 +55,7 @@
                             <td>同事A</td>
                             <td>有效</td>
                             <td>
-                                <a class="btn btn-primary" href="/ecs/programme/edit">編輯</a>
+                                <a class="btn btn-primary" href="/ecs/programme_register/1">更多...</a>
                             </td>
                         </tr>
                         <tr>
@@ -88,7 +67,7 @@
                             <td>同事B</td>
                             <td>待批核</td>
                             <td>
-                                <a class="btn btn-primary" href="/ecs/programme/edit">編輯</a>
+                                <a class="btn btn-primary" href="/ecs/programme_register/1">更多...</a>
                             </td>
                         </tr>
                     </tbody>

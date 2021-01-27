@@ -17,6 +17,11 @@ class ProgrammeRegisterController extends Controller
         return view('ECS.programme_register.create');
     }
 
+    public function createMultiple(Request $request)
+    {
+        return view('ECS.programme_register.create_multiple');
+    }
+
     public function edit(Request $request)
     {
         return view('ECS.programme_register.edit');
