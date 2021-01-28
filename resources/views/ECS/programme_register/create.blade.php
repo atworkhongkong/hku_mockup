@@ -103,8 +103,8 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>JM30130</td>
-                                    <td>親子活動</td>
+                                    <td><input type="text" class="form-control" value="JM30130" readonly></td>
+                                    <td><input type="text" class="form-control" value="親子活動" readonly></td>
                                     <td>
                                         <select class="custom-select" aria-label="Default select example">
                                             <option value="1">長者會員 - $100.0</option>
@@ -114,12 +114,15 @@
                                     <td>
                                         <input class="form-control" type="text" value="" placeholder="0">
                                     </td>
-                                    <td>12</td>
-                                    <td><i class="far fa-trash"></i></td>
+                                    <td>18</td>
+                                    <td>
+                                        <a href="/ecs/programme/edit" target="_blank"><i class="far fa-info-circle"></i></a>
+                                        <i class="far fa-trash"></i>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>JM30129</td>
-                                    <td>粵曲欣賞</td>
+                                    <td><input type="text" class="form-control" value="JM30129" readonly></td>
+                                    <td><input type="text" class="form-control" value="粵曲欣賞" readonly></td>
                                     <td>
                                         <select class="custom-select" aria-label="Default select example">
                                             <option value="1">長者會員 - $100.0</option>
@@ -129,8 +132,11 @@
                                     <td>
                                         <input class="form-control" type="text" value="" placeholder="0">
                                     </td>
-                                    <td>5</td>
-                                    <td><i class="far fa-trash"></i></td>
+                                    <td>17</td>
+                                    <td>
+                                        <a href="/ecs/programme/edit" target="_blank"><i class="far fa-info-circle"></i></a>
+                                        <i class="far fa-trash"></i>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>

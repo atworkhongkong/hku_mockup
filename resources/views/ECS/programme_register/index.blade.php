@@ -5,70 +5,61 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page">活動報名</li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="/ecs/programme">活動</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/edit/2">親子天地</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">報名人數</li>
                 </ol>
             </nav>
 
-            <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form-inline" action="/hss/programme" method="GET">
-                    <label class="sr-only" for="field-area">搜尋範圍</label>
-                    <select id="field-area" class="form-control mr-2" name="team">
-                        <option value="">活動編號</option>
-                        <option value="">中文名稱</option>
-                    </select>
-
-                    <label class="sr-only" for="field-key-word" >關錄字</label>
-                    <input type="text" id="field-name" class="form-control mr-2" placeholder="關鍵字" />
-
-                    <button type="submit" class="btn btn-primary">搜尋</button>
-                </form>
+            <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
+                <a href="/ecs/programme_register/2" class="btn btn-primary">報名人數</a>
+                <a href="/ecs/programme_attendance/2" class="btn btn-outline-primary">出席記錄</a>
+                <a href="/ecs/programme_waiting_list/2" class="btn btn-outline-primary">後補名單</a>
             </div>
 
             <div class="col-12 mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-1">
-                    <span>找到2筆記錄</span>
-                    <div>
-                        <a href="/ecs/programme_register/create" class="btn btn-secondary">單人報名</a>
-                        <a href="/ecs/programme_register/create_multiple" class="btn btn-secondary">多人報名</a>
-                    </div>
+                    <span>活動名額︰20, 有效報名人數︰2, 取消人數︰1</span>
                 </div>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col" style="width:15%;">活動編號</th>
-                            <th scope="col" style="width:15%;">名稱</th>
-                            <th scope="col">名額</th>
-                            <th scope="col">開始日期</th>
-                            <th scope="col">結束日期</th>
-                            <th scope="col">負責同事</th>
+                            <th scope="col" style="width:15%;">日期</th>
+                            <th scope="col">姓名</th>
+                            <th scope="col">手提電話</th>
+                            <th scope="col">金額</th>
+                            <th scope="col">收據編號</th>
+                            <th scope="col">報名日期</th>
                             <th scope="col">狀態</th>
-                            <th scope="col" style="width:10%;">&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>JM30130</td>
-                            <td>親子天地</td>
-                            <td>12/20</td>
-                            <td>2021-03-01</td>
-                            <td>2021-03-01</td>
-                            <td>同事A</td>
+                            <td>03EL300102</td>
+                            <td>陳永仁</td>
+                            <td>98989898</td>
+                            <td>$100.0</td>
+                            <td><a href="javascript:void(0);">A0000012</a></td>
+                            <td>2021-01-05</td>
                             <td>有效</td>
-                            <td>
-                                <a class="btn btn-primary" href="/ecs/programme_register/1">更多...</a>
-                            </td>
                         </tr>
                         <tr>
-                            <td>JM30129</td>
-                            <td>粵曲欣賞</td>
-                            <td>5/30</td>
-                            <td>2021-03-02</td>
-                            <td>2021-03-02</td>
-                            <td>同事B</td>
-                            <td>待批核</td>
-                            <td>
-                                <a class="btn btn-primary" href="/ecs/programme_register/1">更多...</a>
-                            </td>
+                            <td>03ELS300805</td>
+                            <td>劉健明</td>
+                            <td>96969696</td>
+                            <td>$80.0</td>
+                            <td><a href="javascript:void(0);">A0000011</a></td>
+                            <td>2021-01-04</td>
+                            <td>有效</td>
+                        </tr>
+                        <tr>
+                            <td>03ELS300805</td>
+                            <td>葉問</td>
+                            <td>95959595</td>
+                            <td>$100.0</td>
+                            <td><a href="javascript:void(0);">A0000010</a></td>
+                            <td>2021-01-04</td>
+                            <td>已取消</td>
                         </tr>
                     </tbody>
                 </table>

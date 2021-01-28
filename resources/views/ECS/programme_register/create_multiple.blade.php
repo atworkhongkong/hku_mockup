@@ -107,11 +107,12 @@
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <span>個人資料</span>
                             <span>
-                                <input type="text" class="form-control" list="programme-list" placeholder="搜尋會員" />
+                                <input type="text" class="form-control" list="programme-list" placeholder="搜尋會員" style="display:inline-block; width:70%;"/>
                                 <datalist id="programme-list">
                                       <option value="03EL301002 張三">
                                       <option value="03ELS301003 陳細妹">
                                 </datalist>
+                                或 <a class="btn btn-primary" href="javascript:void(0);">新增</a>
                             </span>
                         </div>
                         <div class="p-3">

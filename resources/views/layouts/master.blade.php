@@ -57,7 +57,6 @@
                             <li><a class="dropdown-item" href="/ecs/programme">活動</a></li>
                             <li><a class="dropdown-item" href="/ecs/programme/create">新增活動</a></li>
                             <li><a class="dropdown-item" href="/ecs/programme/edit">編輯活動</a></li>
-                            <li><a class="dropdown-item" href="/ecs/programme_register">活動報名</a></li>
                             <li><a class="dropdown-item" href="/ecs/programme_register/create">新增活動報名</a></li>
                         </ul>
                     </li>

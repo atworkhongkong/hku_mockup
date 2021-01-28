@@ -49,9 +49,11 @@
             <div class="col-12 mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-1">
                     <span>找到2筆記錄</span>
-                    <a href="/ecs/programme/create" class="btn btn-secondary">
-                        新增活動
-                    </a>
+                    <div>
+                        <a href="/ecs/programme_register/create" class="btn btn-secondary">單人報名</a>
+                        <a href="/ecs/programme_register/create_multiple" class="btn btn-secondary">多人報名</a>
+                        <a href="/ecs/programme/create" class="btn btn-secondary">新增活動</a>
+                    </div>
                 </div>
                 <table class="table table-bordered">
                     <thead>
@@ -63,32 +65,34 @@
                             <th scope="col">結束日期</th>
                             <th scope="col">負責同事</th>
                             <th scope="col">狀態</th>
-                            <th scope="col" style="width:8%;">&nbsp;</th>
+                            <th scope="col" style="width:15%;">&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>JM30130</td>
                             <td>親子天地</td>
-                            <td>12/20</td>
+                            <td>20</td>
                             <td>2021-03-01</td>
                             <td>2021-03-01</td>
                             <td>同事A</td>
                             <td>有效</td>
                             <td>
-                                <a class="btn btn-primary" href="/ecs/programme/edit">編輯</a>
+                                <a class="btn btn-primary" href="/ecs/programme/edit/2">編輯</a>
+                                <a class="btn btn-primary" href="/ecs/programme_register/2">更多...</a>
                             </td>
                         </tr>
                         <tr>
                             <td>JM30129</td>
                             <td>粵曲欣賞</td>
-                            <td>5/30</td>
+                            <td>30</td>
                             <td>2021-03-02</td>
                             <td>2021-03-02</td>
                             <td>同事B</td>
                             <td>待批核</td>
                             <td>
-                                <a class="btn btn-primary" href="/ecs/programme/edit">編輯</a>
+                                <a class="btn btn-primary" href="/ecs/programme/edit/1">編輯</a>
+                                <a class="btn btn-primary" href="/ecs/programme_register/1">更多...</a>
                             </td>
                         </tr>
                     </tbody>
