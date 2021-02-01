@@ -111,8 +111,12 @@
                         <input type="text" class="form-control" id="input-target">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="input-target-desc" class="form-label">對象描述</label>
-                        <input type="text" class="form-control" id="input-target-desc">
+                        <label for="input-register-type" class="form-label">報名形式</label>
+                        <select class="custom-select" aria-label="select example">
+                            <option value="" selected></option>
+                            <option value="first-in">先到先得</option>
+                            <option value="draw">抽籤</option>
+                        </select>
                     </div>
 
                     <div class="col-12 mb-3">
@@ -125,7 +129,6 @@
                                     <th scope="col">驕陽會員</th>
                                     <th scope="col">護老者</th>
                                     <th scope="col">義工</th>
-                                    <th scope="col">非會員</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -135,7 +138,6 @@
                                     <td><input class="form-control" type="text" placeholder="" aria-label="input-price-3"></td>
                                     <td><input class="form-control" type="text" placeholder="" aria-label="input-price-4"></td>
                                     <td><input class="form-control" type="text" placeholder="" aria-label="input-price-5"></td>
-                                    <td><input class="form-control" type="text" placeholder="" aria-label="input-price-6"></td>
                                 </tr>
                             </tbody>
                         </table>

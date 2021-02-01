@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme/edit/2">親子天地</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/edit/2">JM30130 - 親子天地</a></li>
                     <li class="breadcrumb-item active">後補名單</li>
                 </ol>
             </nav>
@@ -22,6 +22,7 @@
                     <span>找到2筆記錄</span>
                     <div>
                         <a href="/ecs/programme_waiting_list/2/create" class="btn btn-secondary">新增後補名單</a>
+                        <a href="/ecs/programme_waiting_list/2/draw" class="btn btn-secondary">抽籤</a>
                     </div>
                 </div>
                 <table class="table table-bordered">
@@ -29,7 +30,8 @@
                         <tr>
                             <th scope="col" style="width:15%;">會員編號</th>
                             <th scope="col" style="width:15%;">姓名</th>
-                            <th scope="col">手提電話</th>
+                            <th scope="col">姓別</th>
+                            <th scope="col">聯絡電話</th>
                             <th scope="col">申請日期</th>
                             <th scope="col" style="width:5%;">&nbsp;</th>
                         </tr>
@@ -38,6 +40,7 @@
                         <tr>
                             <td>03EL300102</td>
                             <td>陳永仁</td>
+                            <td>男</td>
                             <td>98989898</td>
                             <td>2021-01-05</td>
                             <td>
@@ -49,6 +52,7 @@
                         <tr>
                             <td>&nbsp;</td>
                             <td>劉健明</td>
+                            <td>男</td>
                             <td>96969696</td>
                             <td>2021-01-04</td>
                             <td>

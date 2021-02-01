@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">親子天地</li>
+                    <li class="breadcrumb-item active" aria-current="page">JM30130 - 親子天地</li>
                 </ol>
             </nav>
 
@@ -111,8 +111,12 @@
                         <input type="text" class="form-control" id="input-target" value="60歲以上長者">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="input-target-desc" class="form-label">對象描述</label>
-                        <input type="text" class="form-control" id="input-target-desc">
+                        <label for="input-register-type" class="form-label">報名形式</label>
+                        <select class="custom-select" aria-label="select example">
+                            <option value=""></option>
+                            <option value="first-in" selected>先到先得</option>
+                            <option value="draw">抽籤</option>
+                        </select>
                     </div>
 
                     <div class="col-12 mb-3">
@@ -154,6 +158,21 @@
                             <option value="2">暫停</option>
                             <option value="3">取消</option>
                         </select>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label for="input-approval" class="form-label">活動批核</label>
+                        <select class="custom-select" aria-label="select example" id="input-approval" disabled>
+                            <option></option>
+                            <option value="A">通過</option>
+                            <option value="R">未能通過</option>
+                            <option value="AD" SELECTED>已批核</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label for="input-approval-remark" class="form-label">活動批核備註</label>
+                        <textarea class="form-control" id="input-approval-remark" rows="3" readonly>28/12/2020: 錯誤輸入活動名稱</textarea>
                     </div>
 
                     <div class="col-12">

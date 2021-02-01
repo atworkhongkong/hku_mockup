@@ -58,8 +58,16 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_attendance/{attendance_id}/edit', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'edit'])->where('attendance_id', '[0-9]+')->name('ecs.programme_attendance.edit');
     Route::get('/programme_attendance/{id}', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'index'])->where('id', '[0-9]+')->name('ecs.programme_attendance.index');
 
-    Route::get('/programme_waiting_list/{id}/create', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'create'])->where('id', '[0-9]+')->name('ecs.programme_waiting_list.create');
+    Route::get('/programme_waiting_list/{programme_id}/create', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'create'])->where('programme_id', '[0-9]+')->name('ecs.programme_waiting_list.create');
+    Route::get('/programme_waiting_list/{programme_id}/draw', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'draw'])->where('programme_id', '[0-9]+')->name('ecs.programme_waiting_list.draw');
     Route::get('/programme_waiting_list/{waiting_id}/edit', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'edit'])->where('waiting_id', '[0-9]+')->name('ecs.programme_waiting_list.edit');
     Route::get('/programme_waiting_list/{id}', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'index'])->where('id', '[0-9]+')->name('ecs.programme_waiting_list.index');
 
+    Route::post('/invoice', [App\Http\Controllers\ECS\InvoiceController::class, 'search'])->name('ecs.invoice.search');
+    Route::get('/invoice/{invoice_id}', [App\Http\Controllers\ECS\InvoiceController::class, 'show'])->name('ecs.invoice.show');
+
+    // meal
+    Route::get('/meal', [App\Http\Controllers\ECS\MealController::class, 'index'])->name('ecs.meal.index');
+    Route::get('/meal/create', [App\Http\Controllers\ECS\MealController::class, 'create'])->name('ecs.meal.create');
+    Route::get('/meal/{id}/edit', [App\Http\Controllers\ECS\MealController::class, 'edit'])->where('id', '[0-9]+')->name('ecs.meal.edit');
 });

@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme/edit/2">親子天地</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/edit/2">JM30130 - 親子天地</a></li>
                     <li class="breadcrumb-item"><a href="/ecs/programme_attendance/2">出席記錄</a></li>
                     <li class="breadcrumb-item active" aria-current="page">編輯</li>
                 </ol>

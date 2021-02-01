@@ -10,7 +10,7 @@
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form" action="/hss/programme" method="GET">
+                <form class="form" action="/ecs/programme" method="GET">
                     <div class="row mb-2">
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-area">搜尋範圍</label>
@@ -46,17 +46,18 @@
                 </form>
             </div>
 
-            <div class="col-12 mb-3">
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <span>找到2筆記錄</span>
-                    <div>
-                        <a href="/ecs/programme_register/create" class="btn btn-secondary">單人報名</a>
-                        <a href="/ecs/programme_register/create_multiple" class="btn btn-secondary">多人報名</a>
-                        <a href="/ecs/programme/create" class="btn btn-secondary">新增活動</a>
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <span>找到2筆記錄</span>
+                        <div>
+                            <a href="/ecs/programme_register/create" class="btn btn-secondary">單人報名</a>
+                            <a href="/ecs/programme_register/create_multiple" class="btn btn-secondary">多人報名</a>
+                            <a href="/ecs/programme/create" class="btn btn-secondary">新增活動</a>
+                        </div>
                     </div>
-                </div>
-                <table class="table table-bordered">
-                    <thead>
+                    <table class="table table-bordered">
+                        <thead>
                         <tr>
                             <th scope="col" style="width:15%;">活動編號</th>
                             <th scope="col" style="width:15%;">名稱</th>
@@ -65,10 +66,11 @@
                             <th scope="col">結束日期</th>
                             <th scope="col">負責同事</th>
                             <th scope="col">狀態</th>
+                            <th scope="col">批核狀態</th>
                             <th scope="col" style="width:15%;">&nbsp;</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>JM30130</td>
                             <td>親子天地</td>
@@ -76,7 +78,8 @@
                             <td>2021-03-01</td>
                             <td>2021-03-01</td>
                             <td>同事A</td>
-                            <td>有效</td>
+                            <td>正常</td>
+                            <td>已批核</td>
                             <td>
                                 <a class="btn btn-primary" href="/ecs/programme/edit/2">編輯</a>
                                 <a class="btn btn-primary" href="/ecs/programme_register/2">更多...</a>
@@ -89,14 +92,16 @@
                             <td>2021-03-02</td>
                             <td>2021-03-02</td>
                             <td>同事B</td>
-                            <td>待批核</td>
+                            <td>暫停</td>
+                            <td>已批核</td>
                             <td>
                                 <a class="btn btn-primary" href="/ecs/programme/edit/1">編輯</a>
                                 <a class="btn btn-primary" href="/ecs/programme_register/1">更多...</a>
                             </td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
