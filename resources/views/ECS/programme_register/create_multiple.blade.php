@@ -5,7 +5,7 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/ecs/programme_register">活動報名</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
                     <li class="breadcrumb-item active" aria-current="page">多人報名</li>
                 </ol>
             </nav>

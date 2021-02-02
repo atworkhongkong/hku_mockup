@@ -5,7 +5,7 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/ecs/programme_register">活動報名</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
                     <li class="breadcrumb-item active" aria-current="page">單人報名</li>
                 </ol>
             </nav>
@@ -116,7 +116,7 @@
                                     </td>
                                     <td>18</td>
                                     <td>
-                                        <a href="/ecs/programme/edit" target="_blank"><i class="far fa-info-circle"></i></a>
+                                        <a href="/ecs/programme/2/edit" target="_blank"><i class="far fa-info-circle"></i></a>
                                         <i class="far fa-trash"></i>
                                     </td>
                                 </tr>
@@ -134,7 +134,7 @@
                                     </td>
                                     <td>17</td>
                                     <td>
-                                        <a href="/ecs/programme/edit" target="_blank"><i class="far fa-info-circle"></i></a>
+                                        <a href="/ecs/programme/1/edit" target="_blank"><i class="far fa-info-circle"></i></a>
                                         <i class="far fa-trash"></i>
                                     </td>
                                 </tr>
