@@ -28,7 +28,6 @@
                         </div>
                     </div>
 
-
                     <div class="row mb-2 g-0">
                         <div class="col-auto">
                             <label class="sr-only" for="field-start-date">開始日期</label>
@@ -81,7 +80,7 @@
                             <td>正常</td>
                             <td>已批核</td>
                             <td>
-                                <a class="btn btn-primary" href="/ecs/programme/edit/2">編輯</a>
+                                <a class="btn btn-primary" href="/ecs/programme/2/edit">編輯</a>
                                 <a class="btn btn-primary" href="/ecs/programme_register/2">更多...</a>
                             </td>
                         </tr>
@@ -95,7 +94,7 @@
                             <td>暫停</td>
                             <td>已批核</td>
                             <td>
-                                <a class="btn btn-primary" href="/ecs/programme/edit/1">編輯</a>
+                                <a class="btn btn-primary" href="/ecs/programme/1/edit">編輯</a>
                                 <a class="btn btn-primary" href="/ecs/programme_register/1">更多...</a>
                             </td>
                         </tr>

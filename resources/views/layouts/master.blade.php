@@ -56,11 +56,12 @@
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
                             <li><a class="dropdown-item" href="/ecs/programme">活動</a></li>
                             <li><a class="dropdown-item" href="/ecs/programme/create">新增活動</a></li>
-                            <li><a class="dropdown-item" href="/ecs/programme/edit">編輯活動</a></li>
+                            <li><a class="dropdown-item" href="/ecs/programme/2/edit">編輯活動</a></li>
                             <li><a class="dropdown-item" href="/ecs/programme_register/create">單人報名</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/programme_register/create_multiple">多人報名</a></li>
                             <li><a class="dropdown-item" href="/ecs/meal">每週飯餸</a></li>
                             <li><a class="dropdown-item" href="/ecs/order_meal">膳食預訂</a></li>
+                            <li><a class="dropdown-item" href="/ecs/order_meal/report">每週膳食預訂紀錄</a></li>
                         </ul>
                     </li>
                 </ul>

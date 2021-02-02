@@ -29,8 +29,8 @@
                                         <th scope="col" class="text-center">2月9日 (二)</th>
                                         <th scope="col" class="text-center">2月10日 (三)</th>
                                         <th scope="col" class="text-center">2月11日 (四)</th>
-                                        <th scope="col" class="text-center">2月12日 (五)</th>
-                                        <th scope="col" class="text-center">2月13日 (六)</th>
+                                        <th scope="col" class="text-center holiday">2月12日 (五)</th>
+                                        <th scope="col" class="text-center holiday">2月13日 (六)</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -45,80 +45,80 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">午</th>
-                                        <td>
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            配 <input type="text" class="form-control d-inline-block mb-4" value="">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配" value="">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            配 <input type="text" class="form-control d-inline-block" value="">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配" value="">
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            配 <input type="text" class="form-control d-inline-block mb-4">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            配 <input type="text" class="form-control d-inline-block">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            配 <input type="text" class="form-control d-inline-block mb-4">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            配 <input type="text" class="form-control d-inline-block">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            配 <input type="text" class="form-control d-inline-block mb-4">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            配 <input type="text" class="form-control d-inline-block">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
-                                        <td class="holiday">
+                                        <td class="text-center holiday">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            配 <input type="text" class="form-control d-inline-block mb-4">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            配 <input type="text" class="form-control d-inline-block">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
-                                        <td class="holiday">
+                                        <td class="text-center holiday">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            配 <input type="text" class="form-control d-inline-block mb-4">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            配 <input type="text" class="form-control d-inline-block">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">晚</th>
-                                        <td>
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            配 <input type="text" class="form-control d-inline-block mb-4" value="">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            配 <input type="text" class="form-control d-inline-block" value="">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1.">
-                                            配 <input type="text" class="form-control d-inline-block mb-4" value="">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2.">
-                                            配 <input type="text" class="form-control d-inline-block" value="">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1.">
-                                            配 <input type="text" class="form-control d-inline-block mb-4" value="">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2.">
-                                            配 <input type="text" class="form-control d-inline-block" value="">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1.">
-                                            配 <input type="text" class="form-control d-inline-block mb-4" value="">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2.">
-                                            配 <input type="text" class="form-control d-inline-block" value="">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
-                                        <td class="holiday">
+                                        <td class="text-center holiday">
                                             <input type="text" class="form-control mb-1" placeholder="1.">
-                                            配 <input type="text" class="form-control d-inline-block mb-4" value="">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2.">
-                                            配 <input type="text" class="form-control d-inline-block" value="">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
-                                        <td class="holiday">
+                                        <td class="text-center holiday">
                                             <input type="text" class="form-control mb-1" placeholder="1.">
-                                            配 <input type="text" class="form-control d-inline-block mb-4" value="">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
                                             <input type="text" class="form-control mb-1" placeholder="2.">
-                                            配 <input type="text" class="form-control d-inline-block" value="">
+                                            <input type="text" class="form-control d-inline-block" placeholder="配">
                                         </td>
                                     </tr>
                                 </tbody>

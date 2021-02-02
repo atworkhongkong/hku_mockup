@@ -45,7 +45,7 @@ Route::prefix('hss')->group(function() {
 Route::prefix('ecs')->group(function() {
     Route::get('/programme', [App\Http\Controllers\ECS\ProgrammeController::class, 'index'])->name('ecs.programme.index');
     Route::get('/programme/create', [App\Http\Controllers\ECS\ProgrammeController::class, 'create'])->name('ecs.programme.create');
-    Route::get('/programme/edit/{id}', [App\Http\Controllers\ECS\ProgrammeController::class, 'edit'])->name('ecs.programme.edit');
+    Route::get('/programme/{id}/edit', [App\Http\Controllers\ECS\ProgrammeController::class, 'edit'])->name('ecs.programme.edit');
 
     //Route::get('/programme/register', [App\Http\Controllers\ECS\ProgrammeController::class, 'register'])->name('ecs.programme.register');
     //Route::get('/programme/waiting_list', [App\Http\Controllers\ECS\ProgrammeController::class, 'waitingList'])->name('ecs.programme.waiting_list');
@@ -70,4 +70,10 @@ Route::prefix('ecs')->group(function() {
     Route::get('/meal', [App\Http\Controllers\ECS\MealController::class, 'index'])->name('ecs.meal.index');
     Route::get('/meal/create', [App\Http\Controllers\ECS\MealController::class, 'create'])->name('ecs.meal.create');
     Route::get('/meal/{id}/edit', [App\Http\Controllers\ECS\MealController::class, 'edit'])->where('id', '[0-9]+')->name('ecs.meal.edit');
+
+    Route::get('/order_meal', [App\Http\Controllers\ECS\OrderMealController::class, 'index'])->name('ecs.order_meal.index');
+    Route::get('/order_meal/create', [App\Http\Controllers\ECS\OrderMealController::class, 'create'])->name('ecs.order_meal.create');
+    Route::get('/order_meal/{order_id}/edit', [App\Http\Controllers\ECS\OrderMealController::class, 'edit'])->name('ecs.order_meal.edit');
+    Route::get('/order_meal/report', [App\Http\Controllers\ECS\OrderMealController::class, 'report'])->name('ecs.order_meal.report');
+
 });
