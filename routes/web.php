@@ -80,4 +80,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/volunteer/create', [App\Http\Controllers\ECS\VolunteerController::class, 'create'])->name('ecs.volunteer.create');
     Route::get('/volunteer/{id}/edit', [App\Http\Controllers\ECS\VolunteerController::class, 'edit'])->name('ecs.volunteer.edit');
 
+    Route::get('/volunteer_service', [App\Http\Controllers\ECS\VolunteerServiceController::class, 'index'])->name('ecs.volunteer_service.index');
+    Route::get('/volunteer_service/create', [App\Http\Controllers\ECS\VolunteerServiceController::class, 'create'])->name('ecs.volunteer_service.create');
+    Route::get('/volunteer_service/{id}/edit', [App\Http\Controllers\ECS\VolunteerServiceController::class, 'edit'])->name('ecs.volunteer_service.edit');
+    Route::get('/volunteer_service/report', [App\Http\Controllers\ECS\VolunteerServiceController::class, 'report'])->name('ecs.volunteer_service.report');
 });

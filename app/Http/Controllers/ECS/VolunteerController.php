@@ -27,10 +27,10 @@ class VolunteerController extends Controller
         return view('ECS.volunteer.create', compact('centers'));
     }
 
-    public function edit()
+    public function edit($id)
     {
         $centers = self::CENTERS;
         $volunteers = self::VOLUNTEERS;
-        return view('ECS.volunteer.edit', compact('centers', 'volunteers'));
+        return view('ECS.volunteer.edit', compact( 'id', 'centers', 'volunteers'));
     }
 }

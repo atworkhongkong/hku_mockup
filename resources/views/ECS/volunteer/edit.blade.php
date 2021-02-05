@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/volunteer">義工</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">新增義工</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $volunteers[$id - 1] }}</li>
                 </ol>
             </nav>
 
@@ -14,11 +14,11 @@
                 <form class="row g-3">
                     <div class="col-md-6 mb-3">
                         <label for="input-chi-name" class="form-label">中文姓名</label>
-                        <input type="text" class="form-control" id="input-chi-name">
+                        <input type="text" class="form-control" id="input-chi-name" value="{{ $volunteers[$id - 1] }}">
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="input-eng-name" class="form-label">英文姓名</label>
-                        <input type="text" class="form-control" id="input-eng-name">
+                        <input type="text" class="form-control" id="input-eng-name" value="xxx xxx xxx">
                     </div>
 
                     <div class="col-md-6 mb-3">
@@ -30,12 +30,12 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="input-hkid" class="form-label">身份證號碼</label>
-                        <input type="text" class="form-control" id="input-hkid">
+                        <input type="text" class="form-control" id="input-hkid" value="Exxxxxx(x)">
                     </div>
 
                     <div class="col-12 mb-3">
                         <label for="input-address" class="form-label">住址</label>
-                        <input type="text" class="form-control" id="input-address">
+                        <input type="text" class="form-control" id="input-address" value="xxxxxxxx xxxxxxx">
                     </div>
 
                     <div class="col-md-6 mb-3">
@@ -44,7 +44,7 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="input-email" class="form-label">電郵地址</label>
-                        <input type="text" class="form-control" id="input-email">
+                        <input type="text" class="form-control" id="input-email" value="xxx@example.com">
                     </div>
 
                     <div class="col-md-6 mb-3">
@@ -65,7 +65,7 @@
                     </div>
 
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">提 交</button>
+                        <button type="submit" class="btn btn-primary">更 新</button>
                     </div>
                 </form>
             </div>
