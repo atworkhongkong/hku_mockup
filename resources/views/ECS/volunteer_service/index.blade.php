@@ -10,9 +10,27 @@
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form-inline" action="/ecs/volunteer_service" method="GET">
-                    <label class="sr-only" for="field-chi-name" >中文姓名</label>
-                    <input type="text" class="form-control mr-2" id="field-chi-name" value="黃柏宇" placeholder="義工中文姓名">
+                <form class="form" action="/ecs/volunteer_service" method="GET">
+                    <div class="row mb-2">
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">中心</label>
+                            <input type="text" class="form-control mr-2" id="field-chi-name" value="黃柏宇" placeholder="義工中文姓名">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 g-0">
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-start-date">開始日期</label>
+                            <input type="date" id="field-start-date" class="form-control" value="2021-01-01" />
+                        </div>
+                        <div class="col-auto px-0 pt-2">
+                            至
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-end-date">結束日期</label>
+                            <input type="date" id="field-end-date" class="form-control" value="2021-01-31" />
+                        </div>
+                    </div>
 
                     <button type="submit" class="btn btn-primary">搜尋</button>
                 </form>
