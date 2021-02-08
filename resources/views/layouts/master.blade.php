@@ -64,7 +64,8 @@
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/order_meal/report">每週膳食預訂紀錄</a></li>
                             <li><a class="dropdown-item" href="/ecs/volunteer">義工</a></li>
                             <li><a class="dropdown-item" href="/ecs/volunteer_service">義工時數</a></li>
-                            <li><a class="dropdown-item" href="/ecs/volunteer_service/report">義工時數總結</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/volunteer_service/report">義工時數總結</a></li>
+                            <li><a class="dropdown-item" href="/ecs/tutor">導師</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -102,14 +102,25 @@
                         <input type="text" class="form-control" id="input-total-lesson" value="1">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="input-staff" class="form-label">負責同事</label>
-                        <input type="text" class="form-control" id="input-staff" value="同事A">
-                    </div>
-
-                    <div class="col-md-6 mb-3">
                         <label for="input-target" class="form-label">活動對象</label>
                         <input type="text" class="form-control" id="input-target" value="60歲以上長者">
                     </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="input-staff" class="form-label">負責同事</label>
+                        <input type="text" class="form-control" id="input-staff" value="同事A">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="input-tutor" class="form-label">負責導師</label>
+                        <select class="custom-select" aria-label="select example">
+                            <option value="" selected></option>
+                            @foreach($tutors as $k => $t)
+                                <option value="{{ $k + 1 }}" {{ $k == 2 ? "SELECTED" : "" }}>#{{ $k + 1 }} {{ $t }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+
                     <div class="col-md-6 mb-3">
                         <label for="input-register-type" class="form-label">報名形式</label>
                         <select class="custom-select" aria-label="select example">

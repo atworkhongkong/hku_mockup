@@ -67,7 +67,7 @@
                                 <th scope="col" style="width:10%;">訂飯編號</th>
                                 <th scope="col">日期</th>
                                 <th scope="col">餐數</th>
-                                <th scope="col" style="width:5%;">&nbsp;</th>
+                                <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -75,13 +75,13 @@
                                     <td>1082</td>
                                     <td>2021-02-08 至 2021-02-13</td>
                                     <td>3</td>
-                                    <td><a href="/ecs/order_meal/1082/edit"><i class="far fa-edit"></i></a></td>
+                                    <td><a href="/ecs/order_meal/1082/edit" class="btn btn-primary">編輯</a></td>
                                 </tr>
                                 <tr>
                                     <td>1081</td>
                                     <td>2021-02-08 至 2021-02-13</td>
                                     <td>9</td>
-                                    <td><a href="/ecs/order_meal/1081/edit"><i class="far fa-edit"></i></a></td>
+                                    <td><a href="/ecs/order_meal/1082/edit" class="btn btn-primary">編輯</a></td>
                                 </tr>
                             </tbody>
                         </table>

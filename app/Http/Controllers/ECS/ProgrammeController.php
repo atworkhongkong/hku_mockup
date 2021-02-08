@@ -12,6 +12,9 @@ class ProgrammeController extends Controller
         2 => '3/2021 - 5/2021',
         3 => '6/2021 - 9/2021',
     ];
+    const TUTORS = [
+        '黃岱丞', '郭佳其', '陳盈喬', '陳依婷', '張品合', '吳文傑', '林清沛', '楊榮璇', '許若音', '張玉婷'
+    ];
 
     public function index()
     {
@@ -20,11 +23,13 @@ class ProgrammeController extends Controller
 
     public function create(Request $request)
     {
-        return view('ECS.programme.create');
+        $tutors = self::TUTORS;
+        return view('ECS.programme.create', compact("tutors"));
     }
 
     public function edit(Request $request)
     {
-        return view('ECS.programme.edit');
+        $tutors = self::TUTORS;
+        return view('ECS.programme.edit', compact("tutors"));
     }
 }

@@ -50,7 +50,7 @@ Route::prefix('ecs')->group(function() {
     //Route::get('/programme/register', [App\Http\Controllers\ECS\ProgrammeController::class, 'register'])->name('ecs.programme.register');
     //Route::get('/programme/waiting_list', [App\Http\Controllers\ECS\ProgrammeController::class, 'waitingList'])->name('ecs.programme.waiting_list');
 
-    Route::get('/programme_register/{id}', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'index'])->where('id', '[0-9]+')->name('ecs.programme_register.index');
+    Route::get('/programme_register/{id}', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'show'])->where('id', '[0-9]+')->name('ecs.programme_register.show');
     Route::get('/programme_register/create', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'create'])->name('ecs.programme_register.create');
     Route::get('/programme_register/create_multiple', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'createMultiple'])->name('ecs.programme_register.create_multiple');
 
@@ -84,4 +84,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/volunteer_service/create', [App\Http\Controllers\ECS\VolunteerServiceController::class, 'create'])->name('ecs.volunteer_service.create');
     Route::get('/volunteer_service/{id}/edit', [App\Http\Controllers\ECS\VolunteerServiceController::class, 'edit'])->name('ecs.volunteer_service.edit');
     Route::get('/volunteer_service/report', [App\Http\Controllers\ECS\VolunteerServiceController::class, 'report'])->name('ecs.volunteer_service.report');
+
+    Route::get('/tutor', [App\Http\Controllers\ECS\TutorController::class, 'index'])->name('ecs.tutor.index');
+    Route::get('/tutor/create', [App\Http\Controllers\ECS\TutorController::class, 'create'])->name('ecs.tutor.create');
+    Route::get('/tutor/{id}/edit', [App\Http\Controllers\ECS\TutorController::class, 'edit'])->name('ecs.tutor.edit');
 });

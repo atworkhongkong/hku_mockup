@@ -16,9 +16,9 @@ class ProgrammeRegisterController extends Controller
         6 => '非會員'
     ];
 
-    public function index()
+    public function show()
     {
-        return view('ECS.programme_register.index');
+        return view('ECS.programme_register.show');
     }
 
     public function create(Request $request)
@@ -31,8 +31,8 @@ class ProgrammeRegisterController extends Controller
         return view('ECS.programme_register.create_multiple');
     }
 
-    public function edit(Request $request)
-    {
-        return view('ECS.programme_register.edit');
-    }
+//    public function edit(Request $request)
+//    {
+//        return view('ECS.programme_register.edit');
+//    }
 }
