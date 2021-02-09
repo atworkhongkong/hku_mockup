@@ -15,7 +15,7 @@
                 <a href="/ecs/programme_register/2" class="btn btn-primary">報名人數</a>
                 <a href="/ecs/programme_attendance/2" class="btn btn-outline-primary">出席記錄</a>
                 <a href="/ecs/programme_waiting_list/2" class="btn btn-outline-primary">後補名單</a>
-                <a href="/ecs/programme_tutor_fee/2" class="btn btn-outline-primary">導師費用</a>
+                <a href="/ecs/programme_tutor_salary/2" class="btn btn-outline-primary">導師費用</a>
             </div>
 
             <div class="row">
@@ -33,7 +33,7 @@
                             <th scope="col">狀態</th>
                             <th scope="col">收據編號</th>
                             <th scope="col">金額</th>
-                            <th scope="col">&nbsp;</th>
+                            <th scope="col" style="width:8%;">&nbsp;</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -45,7 +45,7 @@
                                 <td>有效</td>
                                 <td><a href="/ecs/invoice/A0000012" target="_blank">A0000012</a></td>
                                 <td>$100.0</td>
-                                <td style="width:12%;"><a href="javascript:void(0);" class="btn btn-danger">取消報讀</a></td>
+                                <td><a href="javascript:void(0);" class="btn btn-danger">取消</a></td>
                             </tr>
                             <tr>
                                 <td>03ELS300805</td>
@@ -55,7 +55,7 @@
                                 <td>有效</td>
                                 <td><a href="/ecs/invoice/A0000011" target="_blank">A0000011</a></td>
                                 <td>$80.0</td>
-                                <td><a href="javascript:void(0);" class="btn btn-danger">取消報讀</a></td>
+                                <td><a href="javascript:void(0);" class="btn btn-danger">取消</a></td>
                             </tr>
                             <tr>
                                 <td>03ELS300805</td>
@@ -65,7 +65,7 @@
                                 <td>已取消</td>
                                 <td><a href="/ecs/invoice/A0000010" target="_blank">A0000010</a></td>
                                 <td>($100.0)</td>
-                                <td><a href="javascript:void(0);" class="btn btn-danger">取消報讀</a></td>
+                                <td>&nbsp;</td>
                             </tr>
                             <tr>
                                 <td colspan="6" class="text-right">總收入︰</td>

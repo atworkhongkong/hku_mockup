@@ -15,7 +15,7 @@
                 <a href="/ecs/programme_register/2" class="btn btn-outline-primary">報名人數</a>
                 <a href="/ecs/programme_attendance/2" class="btn btn-primary">出席記錄</a>
                 <a href="/ecs/programme_waiting_list/2" class="btn btn-outline-primary">後補名單</a>
-                <a href="/ecs/programme_tutor_fee/2" class="btn btn-outline-primary">導師費用</a>
+                <a href="/ecs/programme_tutor_salary/2" class="btn btn-outline-primary">導師費用</a>
             </div>
 
             <div class="col-12 mb-3">

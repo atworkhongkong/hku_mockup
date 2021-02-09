@@ -63,6 +63,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_waiting_list/{waiting_id}/edit', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'edit'])->where('waiting_id', '[0-9]+')->name('ecs.programme_waiting_list.edit');
     Route::get('/programme_waiting_list/{id}', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'index'])->where('id', '[0-9]+')->name('ecs.programme_waiting_list.index');
 
+    Route::get('/programme_tutor_salary/{programme_id}', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'edit'])->where('programme_id', '[0-9]+')->name('ecs.programme_tutor_salary.edit');
+
     Route::post('/invoice', [App\Http\Controllers\ECS\InvoiceController::class, 'search'])->name('ecs.invoice.search');
     Route::get('/invoice/{invoice_id}', [App\Http\Controllers\ECS\InvoiceController::class, 'show'])->name('ecs.invoice.show');
 
@@ -94,4 +96,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/report/invoice', [App\Http\Controllers\ECS\ReportController::class, 'invoice'])->name('ecs.report.invoice');
     Route::get('/report/daily_income', [App\Http\Controllers\ECS\ReportController::class, 'dailyIncome'])->name('ecs.report.daily_income');
 
+    Route::get('/meal_ingredient', [App\Http\Controllers\ECS\MealIngredientController::class, 'index'])->name('ecs.meal_ingredient.index');
+    Route::get('/meal_ingredient/create', [App\Http\Controllers\ECS\MealIngredientController::class, 'create'])->name('ecs.meal_ingredient.create');
+    Route::get('/meal_ingredient/{ingredient_id}/edit', [App\Http\Controllers\ECS\MealIngredientController::class, 'edit'])->name('ecs.meal_ingredient.edit');
+    Route::get('/meal_ingredient/{ingredient_id}/log', [App\Http\Controllers\ECS\MealIngredientController::class, 'log'])->name('ecs.meal_ingredient.log');
 });

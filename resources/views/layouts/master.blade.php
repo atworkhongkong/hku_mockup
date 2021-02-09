@@ -61,7 +61,8 @@
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/programme_register/create_multiple">多人報名</a></li>
                             <li><a class="dropdown-item" href="/ecs/meal">每週飯餸</a></li>
                             <li><a class="dropdown-item" href="/ecs/order_meal">膳食預訂</a></li>
-                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/order_meal/report">每週膳食預訂紀錄</a></li>
+                            <li><a class="dropdown-item" href="/ecs/order_meal/report">每週膳食預訂紀錄</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/meal_ingredient">膳食庫存</a></li>
                             <li><a class="dropdown-item" href="/ecs/volunteer">義工</a></li>
                             <li><a class="dropdown-item" href="/ecs/volunteer_service">義工時數</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/volunteer_service/report">義工時數總結</a></li>
