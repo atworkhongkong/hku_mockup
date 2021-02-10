@@ -11,19 +11,32 @@
             </nav>
 
             <div class="form-container">
-                <form class="row g-3">
-                    <div class="col-12 mb-3">
-                        <label for="input-name" class="form-label">儀器</label>
-                        <input type="text" class="form-control" id="input-name">
+                <form>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-name" class="form-label">儀器</label>
+                            <input type="text" class="form-control" id="input-name">
+                        </div>
                     </div>
 
-                    <div class="col-12 mb-3">
-                        <label for="input-amount" class="form-label">新增數量</label>
-                        <input type="text" class="form-control" id="input-amount">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-amount" class="form-label">數量</label>
+                            <input type="text" class="form-control" id="input-amount">
+                        </div>
                     </div>
 
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">提 交</button>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-rental-fee" class="form-label">租借收費</label>
+                            <input type="text" class="form-control" id="input-rental-fee">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">提 交</button>
+                        </div>
                     </div>
                 </form>
             </div>
