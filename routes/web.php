@@ -106,4 +106,9 @@ Route::prefix('ecs')->group(function() {
     Route::get('/meal_ingredient/create', [App\Http\Controllers\ECS\MealIngredientController::class, 'create'])->name('ecs.meal_ingredient.create');
     Route::get('/meal_ingredient/{ingredient_id}/edit', [App\Http\Controllers\ECS\MealIngredientController::class, 'edit'])->name('ecs.meal_ingredient.edit');
     Route::get('/meal_ingredient/{ingredient_id}/log', [App\Http\Controllers\ECS\MealIngredientController::class, 'log'])->name('ecs.meal_ingredient.log');
+
+    Route::get('/equipment', [App\Http\Controllers\ECS\EquipmentController::class, 'index'])->name('ecs.equipment.index');
+    Route::get('/equipment/create', [App\Http\Controllers\ECS\EquipmentController::class, 'create'])->name('ecs.equipment.create');
+    Route::get('/equipment/{equipment_id}/edit', [App\Http\Controllers\ECS\EquipmentController::class, 'edit'])->name('ecs.equipment.edit');
+    Route::get('/equipment/{equipment_id}/log', [App\Http\Controllers\ECS\EquipmentController::class, 'log'])->name('ecs.equipment.log');
 });
