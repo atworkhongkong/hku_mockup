@@ -4,6 +4,7 @@ namespace App\Http\Controllers\ECS;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 
 class VolunteerServiceController extends Controller
 {
@@ -52,6 +53,7 @@ class VolunteerServiceController extends Controller
             1 => ['volunteer' => '王妹', 'service_center' => '賽馬會黃志強長者地區中心', 'service' => '親子暖暖笠', 'hour' => 8, 'date' => '2021-01-21'],
             0 => ['volunteer' => '黃柏宇', 'service_center' => '賽馬會黃志強長者地區中心', 'service' => '親子暖暖笠', 'hour' => 6, 'date' => '2021-01-21'],
         ];
-        return view('ECS.volunteer_service.report', compact('centers', 'services'));
+        $full_url = URL::full();
+        return view('ECS.volunteer_service.report', compact('centers', 'services', 'full_url'));
     }
 }

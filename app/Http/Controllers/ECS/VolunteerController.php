@@ -4,6 +4,7 @@ namespace App\Http\Controllers\ECS;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 
 class VolunteerController extends Controller
 {
@@ -32,5 +33,22 @@ class VolunteerController extends Controller
         $centers = self::CENTERS;
         $volunteers = self::VOLUNTEERS;
         return view('ECS.volunteer.edit', compact( 'id', 'centers', 'volunteers'));
+    }
+
+    public function report(Request $request)
+    {
+        $type = $request->get('type');
+        $centers = self::CENTERS;
+        $full_url = URL::full();
+
+        $counts = [];
+        foreach($centers as $c) {
+            if ($type == 'new') {
+                $counts[$c] = mt_rand(2, 10);
+            } else {
+                $counts[$c] = mt_rand(50, 80);
+            }
+        }
+        return view('ECS.volunteer.report', compact( 'type', 'centers', 'full_url', 'counts'));
     }
 }

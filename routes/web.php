@@ -81,6 +81,12 @@ Route::prefix('ecs')->group(function() {
     Route::get('/volunteer', [App\Http\Controllers\ECS\VolunteerController::class, 'index'])->name('ecs.volunteer.index');
     Route::get('/volunteer/create', [App\Http\Controllers\ECS\VolunteerController::class, 'create'])->name('ecs.volunteer.create');
     Route::get('/volunteer/{id}/edit', [App\Http\Controllers\ECS\VolunteerController::class, 'edit'])->name('ecs.volunteer.edit');
+    Route::get('/volunteer/report', [App\Http\Controllers\ECS\VolunteerController::class, 'report'])->name('ecs.volunteer.report');
+
+    Route::get('/carer', [App\Http\Controllers\ECS\CarerController::class, 'index'])->name('ecs.carer.index');
+    Route::get('/carer/create', [App\Http\Controllers\ECS\CarerController::class, 'create'])->name('ecs.carer.create');
+    Route::get('/carer/{id}/edit', [App\Http\Controllers\ECS\CarerController::class, 'edit'])->name('ecs.carer.edit');
+    Route::get('/carer/report', [App\Http\Controllers\ECS\CarerController::class, 'report'])->name('ecs.carer.report');
 
     Route::get('/volunteer_service', [App\Http\Controllers\ECS\VolunteerServiceController::class, 'index'])->name('ecs.volunteer_service.index');
     Route::get('/volunteer_service/create', [App\Http\Controllers\ECS\VolunteerServiceController::class, 'create'])->name('ecs.volunteer_service.create');

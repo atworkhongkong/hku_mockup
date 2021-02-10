@@ -12,15 +12,15 @@
 
             <div class="form-container">
                 <form>
-                    <div class="row">
-                        <div class="col-4 mb-3">
+                    <div class="row mb-3">
+                        <div class="col-4">
                             <label for="input-week" class="form-label">週份</label>
                             <input type="week" class="form-control" id="input-week" value="2021-W06"">
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 mb-3">
+                    <div class="row mb-3">
+                        <div class="col-12">
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -126,9 +126,22 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">提 交</button>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label for="field-status">狀態</label>
+                            <select class="form-control" id="field-status">
+                                <option value="A">有效</option>
+                                <option value="I" SELECTED>無效</option>
+                            </select>
+                        </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">提 交</button>
+                        </div>
+                    </div>
+
                 </form>
             </div>
         </div>

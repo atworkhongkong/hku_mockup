@@ -13,7 +13,8 @@
                 <form class="form-inline" action="/ecs/order_meal" method="GET">
                     <label class="sr-only" for="field-area">搜尋範圍</label>
                     <select id="field-area" class="form-control mr-2" name="team">
-                        <option value="">長者會員</option>
+                        <option value="">所有會員</option>
+                        <option value="" SELECTED>長者會員</option>
                         <option value="">長者會員(綜援)</option>
                         <option value="">驕陽會員</option>
                         <option value="">中心職員</option>
