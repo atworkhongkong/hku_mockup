@@ -44,4 +44,16 @@ class EquipmentRentalController extends Controller
         $rental = self::RENTALS[$rental_id];
         return view('ECS.equipment_rental.edit', compact('equipments', 'rental'));
     }
+
+    public function report()
+    {
+        $equipments = self::EQUIPMENTS;
+        $equipment_rental_counts = [
+            1 => 10,
+            2 => 8,
+            3 => 5,
+            4 => 9
+        ];
+        return view('ECS.equipment_rental.report', compact('equipments', 'equipment_rental_counts'));
+    }
 }

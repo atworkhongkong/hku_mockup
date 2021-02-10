@@ -52,7 +52,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">ECS</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">ECS1</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
                             <li><a class="dropdown-item" href="/ecs/programme">活動</a></li>
                             <li><a class="dropdown-item" href="/ecs/programme/create">新增活動</a></li>
@@ -70,7 +70,13 @@
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/carer/report">護老者統計報告</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/tutor">導師</a></li>
                             <li><a class="dropdown-item" href="/ecs/equipment">儀器</a></li>
-                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/equipment_rental">租借儀器</a></li>
+                            <li><a class="dropdown-item" href="/ecs/equipment_rental">租借儀器</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/equipment_rental/report">租借儀器統計報告</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">ECS2</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
                             <li><a class="dropdown-item" href="/ecs/report/activity_income">活動收費總結表</a></li>
                             <li><a class="dropdown-item" href="/ecs/report/daily_income">每日收入</a></li>
                             <li><a class="dropdown-item" href="/ecs/report/invoice">單據</a></li>

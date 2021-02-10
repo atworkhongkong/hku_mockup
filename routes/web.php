@@ -115,4 +115,5 @@ Route::prefix('ecs')->group(function() {
     Route::get('/equipment_rental', [App\Http\Controllers\ECS\EquipmentRentalController::class, 'index'])->name('ecs.equipment_rental.index');
     Route::get('/equipment_rental/create', [App\Http\Controllers\ECS\EquipmentRentalController::class, 'create'])->name('ecs.equipment_rental.create');
     Route::get('/equipment_rental/{rental_id}/edit', [App\Http\Controllers\ECS\EquipmentRentalController::class, 'edit'])->name('ecs.equipment_rental.edit');
+    Route::get('/equipment_rental/report', [App\Http\Controllers\ECS\EquipmentRentalController::class, 'report'])->name('ecs.equipment_rental.report');
 });
