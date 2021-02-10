@@ -33,7 +33,14 @@
 
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <label for="input-count" class="form-label">件數</label>
+                            <label for="input-available" class="form-label">現存件數</label>
+                            <input type="text" class="form-control" id="input-available" value="5" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-count" class="form-label">租借件數</label>
                             <select class="form-control" id="input-count">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
