@@ -61,6 +61,7 @@
                             <th scope="col" style="width:15%;">活動編號</th>
                             <th scope="col" style="width:15%;">名稱</th>
                             <th scope="col">名額</th>
+                            <th scope="col">報讀人數</th>
                             <th scope="col">開始日期</th>
                             <th scope="col">結束日期</th>
                             <th scope="col">負責同事</th>
@@ -74,6 +75,7 @@
                             <td>JM30130</td>
                             <td>親子天地</td>
                             <td>20</td>
+                            <td>2</td>
                             <td>2021-03-01</td>
                             <td>2021-03-01</td>
                             <td>同事A</td>
@@ -88,6 +90,7 @@
                             <td>JM30129</td>
                             <td>粵曲欣賞</td>
                             <td>30</td>
+                            <td>1</td>
                             <td>2021-03-02</td>
                             <td>2021-03-02</td>
                             <td>同事B</td>

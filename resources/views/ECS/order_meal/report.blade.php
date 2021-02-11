@@ -5,7 +5,7 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page">每週膳食預訂紀錄</li>
+                    <li class="breadcrumb-item active" aria-current="page">每週膳食統計報告</li>
                 </ol>
             </nav>
 

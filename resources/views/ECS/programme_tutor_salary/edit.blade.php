@@ -6,10 +6,17 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme/edit/2">JM30130 - 親子天地</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/2/edit">JM30130 - 親子天地</a></li>
                     <li class="breadcrumb-item active" aria-current="page">導師費用</li>
                 </ol>
             </nav>
+
+            <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
+                <a href="/ecs/programme_register/2" class="btn btn-outline-primary">報名人數</a>
+                <a href="/ecs/programme_attendance/2" class="btn btn-outline-primary">出席記錄</a>
+                <a href="/ecs/programme_waiting_list/2" class="btn btn-outline-primary">後補名單</a>
+                <a href="/ecs/programme_tutor_salary/2" class="btn btn-primary">導師費用</a>
+            </div>
 
             <div class="form-container">
                 <form class="row g-3">

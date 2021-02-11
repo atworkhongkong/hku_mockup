@@ -45,7 +45,7 @@
                                 <td>有效</td>
                                 <td><a href="/ecs/invoice/A0000012" target="_blank">A0000012</a></td>
                                 <td>$100.0</td>
-                                <td><a href="javascript:void(0);" class="btn btn-danger">取消</a></td>
+                                <td><a href="javascript:void(0);" class="btn btn-danger" data-toggle="modal" data-target="#cancel-modal">取消</a></td>
                             </tr>
                             <tr>
                                 <td>03ELS300805</td>
@@ -55,7 +55,7 @@
                                 <td>有效</td>
                                 <td><a href="/ecs/invoice/A0000011" target="_blank">A0000011</a></td>
                                 <td>$80.0</td>
-                                <td><a href="javascript:void(0);" class="btn btn-danger">取消</a></td>
+                                <td><a href="javascript:void(0);" class="btn btn-danger" data-toggle="modal" data-target="#cancel-modal">取消</a></td>
                             </tr>
                             <tr>
                                 <td>03ELS300805</td>
@@ -73,6 +73,53 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+
+            <!-- modal -->
+            <div class="modal fade" id="cancel-modal" tabindex="-1" role="dialog" aria-labelledby="cancelModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">取消報名</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form target="_blank" action="/ecs/programme_register/cancel" method="GET" id="submit-form">
+                                <input type="hidden" name="code" value="sae235S32vde23">
+                                <div class="form-group">
+                                    <label for="field-member-code" class="col-form-label">會員編號</label>
+                                    <input type="text" class="form-control" id="field-member-code" value="03EL300102" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="field-name" class="col-form-label">會員姓名</label>
+                                    <input type="text" class="form-control" id="field-name" value="陳永仁" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="field-confirm" class="col-form-label">輸入03EL300102以確認</label>
+                                    <input type="text" class="form-control" id="field-confirm">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" CHECKED disabled>
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        取消報名
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" CHECKED disabled>
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        退回已收取之款項
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取 消</button>
+                            <button type="button" class="btn btn-primary" onclick="document.getElementById('submit-form').submit();">確 認</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

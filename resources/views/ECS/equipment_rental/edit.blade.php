@@ -88,6 +88,13 @@
 
                     <div class="row">
                         <div class="col-12 mb-3">
+                            <label for="input-re-rent" class="form-label">已續借次數</label>
+                            <input type="text" class="form-control" id="input-re-rent" value="0" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
                             <label for="input-charge" class="form-label">欠款</label>
                             <input type="text" class="form-control" id="input-charge" value="0" readonly>
                         </div>
@@ -96,6 +103,7 @@
                     <div class="row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">歸還及列印收據</button>
+                            <button type="submit" class="btn btn-primary">續 借</button>
                         </div>
                     </div>
                 </form>
