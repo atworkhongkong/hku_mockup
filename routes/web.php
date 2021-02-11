@@ -54,6 +54,7 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_register/create', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'create'])->name('ecs.programme_register.create');
     Route::get('/programme_register/create_multiple', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'createMultiple'])->name('ecs.programme_register.create_multiple');
     Route::get('/programme_register/cancel', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'cancel'])->name('ecs.programme_register.cancel');
+    Route::get('/programme_register/report', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'report'])->name('ecs.programme_register.report');
 
     Route::get('/programme_attendance/{id}/create', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'create'])->where('id', '[0-9]+')->name('ecs.programme_attendance.create');
     Route::get('/programme_attendance/{attendance_id}/edit', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'edit'])->where('attendance_id', '[0-9]+')->name('ecs.programme_attendance.edit');

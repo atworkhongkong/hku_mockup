@@ -58,7 +58,9 @@
                             <li><a class="dropdown-item" href="/ecs/programme/create">新增活動</a></li>
                             <li><a class="dropdown-item" href="/ecs/programme/2/edit">編輯活動</a></li>
                             <li><a class="dropdown-item" href="/ecs/programme_register/create">單人報名</a></li>
-                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/programme_register/create_multiple">多人報名</a></li>
+                            <li><a class="dropdown-item" href="/ecs/programme_register/create_multiple">多人報名</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/programme_register/report">活動報名統計報告</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/invoice/A0000012">收據</a></li>
                             <li><a class="dropdown-item" href="/ecs/meal">每週飯餸</a></li>
                             <li><a class="dropdown-item" href="/ecs/order_meal">膳食預訂</a></li>
                             <li><a class="dropdown-item" href="/ecs/order_meal/report">每週膳食統計報告</a></li>
@@ -71,7 +73,7 @@
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/tutor">導師</a></li>
                             <li><a class="dropdown-item" href="/ecs/equipment">儀器</a></li>
                             <li><a class="dropdown-item" href="/ecs/equipment_rental">租借儀器</a></li>
-                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/equipment_rental/report">租借儀器統計報告</a></li>
+                            <li><a class="dropdown-item" href="/ecs/equipment_rental/report">租借儀器統計報告</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">

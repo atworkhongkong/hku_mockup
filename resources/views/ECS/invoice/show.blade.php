@@ -107,7 +107,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-fee" class="form-label">收費金額</label>
-                            <input type="text" class="form-control" id="input-staff" value="職員A" readonly>
+                            <input type="text" class="form-control" id="input-fee" value="100" readonly>
                         </div>
                     </div>
 
