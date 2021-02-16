@@ -118,4 +118,13 @@ Route::prefix('ecs')->group(function() {
     Route::get('/equipment_rental/create', [App\Http\Controllers\ECS\EquipmentRentalController::class, 'create'])->name('ecs.equipment_rental.create');
     Route::get('/equipment_rental/{rental_id}/edit', [App\Http\Controllers\ECS\EquipmentRentalController::class, 'edit'])->name('ecs.equipment_rental.edit');
     Route::get('/equipment_rental/report', [App\Http\Controllers\ECS\EquipmentRentalController::class, 'report'])->name('ecs.equipment_rental.report');
+
+    Route::get('/room', [App\Http\Controllers\ECS\RoomController::class, 'index'])->name('ecs.room.index');
+    Route::get('/room/create', [App\Http\Controllers\ECS\RoomController::class, 'create'])->name('ecs.room.create');
+    Route::get('/room/{room_id}/edit', [App\Http\Controllers\ECS\RoomController::class, 'edit'])->name('ecs.room.edit');
+
+    Route::get('/room_booking', [App\Http\Controllers\ECS\RoomBookingController::class, 'index'])->name('ecs.room_booking.index');
+    Route::get('/room_booking/calendar', [App\Http\Controllers\ECS\RoomBookingController::class, 'calendar'])->name('ecs.room_booking.calendar');
+    Route::get('/room_booking/create', [App\Http\Controllers\ECS\RoomBookingController::class, 'create'])->name('ecs.room_booking.create');
+    Route::get('/room_booking/{booking_id}/edit', [App\Http\Controllers\ECS\RoomBookingController::class, 'edit'])->name('ecs.room_booking.edit');
 });

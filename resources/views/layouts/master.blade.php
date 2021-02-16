@@ -69,7 +69,9 @@
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/tutor">導師</a></li>
                             <li><a class="dropdown-item" href="/ecs/equipment">儀器</a></li>
                             <li><a class="dropdown-item" href="/ecs/equipment_rental">租借儀器</a></li>
-                            <li><a class="dropdown-item" href="/ecs/equipment_rental/report">租借儀器統計報告</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/equipment_rental/report">租借儀器統計報告</a></li>
+                            <li><a class="dropdown-item" href="/ecs/room">房間</a></li>
+                            <li><a class="dropdown-item" href="/ecs/room_booking">預約房間</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
