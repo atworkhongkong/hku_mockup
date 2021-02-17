@@ -13,11 +13,11 @@ class VolunteerServiceController extends Controller
     ];
 
     const SERVICES = [
-        4 => ['volunteer' => '黃柏宇', 'service_center' => '賽馬會黃志強長者地區中心', 'service' => '老人外展', 'hour' => 4, 'date' => '2021-01-31'],
-        3 => ['volunteer' => '黃柏宇', 'service_center' => '尚融坊林基業中心', 'service' => '親子美味任務', 'hour' => 3, 'date' => '2021-01-31'],
-        2 => ['volunteer' => '黃柏宇', 'service_center' => '尚融坊林基業中心', 'service' => '愛健康', 'hour' => 4, 'date' => '2021-01-29'],
-        1 => ['volunteer' => '黃柏宇', 'service_center' => '華貴長者日間護理中心', 'service' => '心靈加油站', 'hour' => 4, 'date' => '2021-01-28'],
-        0 => ['volunteer' => '黃柏宇', 'service_center' => '華貴長者日間護理中心', 'service' => '親子暖暖笠', 'hour' => 6, 'date' => '2021-01-21'],
+        5 => ['volunteer' => '黃柏宇', 'service_center' => '賽馬會黃志強長者地區中心', 'service' => '老人外展', 'hour' => 4, 'date' => '2021-01-31'],
+        4 => ['volunteer' => '何展良', 'service_center' => '尚融坊林基業中心', 'service' => '親子美味任務', 'hour' => 3, 'date' => '2021-01-31'],
+        3 => ['volunteer' => '李浩文', 'service_center' => '尚融坊林基業中心', 'service' => '愛健康', 'hour' => 4, 'date' => '2021-01-29'],
+        2 => ['volunteer' => '呂大樂', 'service_center' => '華貴長者日間護理中心', 'service' => '心靈加油站', 'hour' => 4, 'date' => '2021-01-28'],
+        1 => ['volunteer' => '張浩添', 'service_center' => '華貴長者日間護理中心', 'service' => '親子暖暖笠', 'hour' => 6, 'date' => '2021-01-21'],
     ];
 
     public function index()
@@ -36,7 +36,7 @@ class VolunteerServiceController extends Controller
     public function edit($id)
     {
         $centers = self::CENTERS;
-        $service = self::SERVICES[$id - 1];
+        $service = self::SERVICES[$id];
         return view('ECS.volunteer_service.edit', compact('id', 'centers', 'service'));
     }
 

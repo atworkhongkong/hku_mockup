@@ -59,13 +59,13 @@
                         <tbody>
                             @foreach($services as $k => $s)
                                 <tr>
-                                    <td>{{ $k + 1 }}</td>
+                                    <td>{{ $k }}</td>
                                     <td>{{ $s['volunteer'] }}</td>
                                     <td>{{ $s['service'] }}</td>
                                     <td>{{ $s['service_center'] }}</td>
                                     <td>{{ $s['hour'] }}</td>
                                     <td>{{ $s['date'] }}</td>
-                                    <td><a class="btn btn-primary" href="/ecs/volunteer_service/{{ $k + 1 }}/edit">編輯</a></td>
+                                    <td><a class="btn btn-primary" href="/ecs/volunteer_service/{{ $k }}/edit">編輯</a></td>
                                 </tr>
                             @endforeach
                         </tbody>

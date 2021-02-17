@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/volunteer">義工時數</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ $id }}</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $service['volunteer'] }}</li>
                 </ol>
             </nav>
 
@@ -18,11 +18,11 @@
                     <div class="row g-3">
                         <div class="col-md-6 mb-3">
                             <label for="input-chi-name" class="form-label">中文姓名</label>
-                            <input type="text" class="form-control" id="input-chi-name" value="黃柏宇" readonly>
+                            <input type="text" class="form-control" id="input-chi-name" value="{{ $service['volunteer'] }}" readonly>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-eng-name" class="form-label">英文姓名</label>
-                            <input type="text" class="form-control" id="input-eng-name" value="Wong Pak Yu" readonly>
+                            <input type="text" class="form-control" id="input-eng-name" value="xxxx xxx xxx" readonly>
                         </div>
 
                         <div class="col-md-6 mb-3">
@@ -70,6 +70,10 @@
                         <input type="date" class="form-control" id="input-date" value="{{ $service['date'] }}">
                     </div>
 
+                    <div class="col-12 mb-3">
+                        <label for="input-remark" class="form-label">備註</label>
+                        <input type="text" class="form-control" id="input-remark">
+                    </div>
 
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">更 新</button>

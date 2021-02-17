@@ -15,7 +15,7 @@
                     <label class="sr-only" for="field-volunteer-code" >義工編號</label>
                     <input type="text" id="field-volunteer-code" class="form-control mr-2" placeholder="會員編號" value="5"/>
 
-                    <button type="submit" class="btn btn-primary">搜尋會員</button>
+                    <button type="submit" class="btn btn-primary">搜尋義工</button>
                 </form>
             </div>
 
@@ -77,6 +77,11 @@
                     <div class="col-md-6 mb-3">
                         <label for="input-date" class="form-label">服務日期</label>
                         <input type="date" class="form-control" id="input-date">
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label for="input-remark" class="form-label">備註</label>
+                        <input type="text" class="form-control" id="input-remark">
                     </div>
 
                     <div class="col-12">
