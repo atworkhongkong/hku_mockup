@@ -26,13 +26,15 @@
                     </div>
 
                     <div class="row mb-2 g-0">
-                        <div class="col-auto">
-                            <label class="sr-only" for="field-start-date">開始日期</label>
-                            <input type="date" id="field-start-date" class="form-control" />
-                        </div>
-                        <div class="col-auto px-0 pt-2">
-                            至
-                        </div>
+                        @if ($type != 'accumulate')
+                            <div class="col-auto">
+                                <label class="sr-only" for="field-start-date">開始日期</label>
+                                <input type="date" id="field-start-date" class="form-control" />
+                            </div>
+                            <div class="col-auto px-0 pt-2">
+                                至
+                            </div>
+                        @endif
                         <div class="col-auto">
                             <label class="sr-only" for="field-end-date">結束日期</label>
                             <input type="date" id="field-end-date" class="form-control" value="2021-01-31" />

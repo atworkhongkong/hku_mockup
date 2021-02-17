@@ -48,17 +48,21 @@
                                 <th scope="col">義工姓名</th>
                                 <th scope="col">類別</th>
                                 <th scope="col">所屬中心</th>
+                                <th scope="col">開啟日期</th>
+                                <th scope="col">狀態</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($carers as $k => $v)
                                 <tr>
-                                    <td>{{ $k + 1  }}</td>
-                                    <td>{{ $v }}</td>
-                                    <td>護老者</td>
-                                    <td>{{ Arr::random($centers) }}</td>
-                                    <td><a class="btn btn-primary" href="/ecs/carer/{{ $k + 1 }}/edit">編輯</a></td>
+                                    <td>{{ $k }}</td>
+                                    <td>{{ $v['name'] }}</td>
+                                    <td>{{ $v['type'] }}</td>
+                                    <td>{{ $centers[$v['center']] }}</td>
+                                    <td>{{ $v['create_date'] }}</td>
+                                    <td>{{ $statuses[$v['status']] }}</td>
+                                    <td><a class="btn btn-primary" href="/ecs/carer/{{ $k }}/edit">編輯</a></td>
                                 </tr>
                             @endforeach
                         </tbody>

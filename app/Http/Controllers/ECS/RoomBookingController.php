@@ -16,9 +16,9 @@ class RoomBookingController extends Controller
     ];
 
     const BOOKINGS = [
-            3 => ['room_id' => 1, 'purpose' => 'HKU meeting', 'start_time' => '2021-02-19 09:00', 'end_time' => '2021-02-19 17:30'] ,
-            2 => ['room_id' => 1, 'purpose' => 'ECS meeting', 'start_time' => '2021-02-18 15:00', 'end_time' => '2021-02-18 17:00'] ,
-            1 => ['room_id' => 1, 'purpose' => 'Robot meeting', 'start_time' => '2021-02-17 14:00', 'end_time' => '2021-02-17 16:00'] ,
+            3 => ['room_id' => 1, 'purpose' => 'HKU meeting', 'contact_person' => '同事A', 'start_time' => '2021-02-19 09:00', 'end_time' => '2021-02-19 17:30'] ,
+            2 => ['room_id' => 1, 'purpose' => 'ECS meeting', 'contact_person' => '同事B', 'start_time' => '2021-02-18 15:00', 'end_time' => '2021-02-18 17:00'] ,
+            1 => ['room_id' => 1, 'purpose' => 'Robot meeting', 'contact_person' => '同事C', 'start_time' => '2021-02-17 14:00', 'end_time' => '2021-02-17 16:00'] ,
         ];
 
     public function __construct()

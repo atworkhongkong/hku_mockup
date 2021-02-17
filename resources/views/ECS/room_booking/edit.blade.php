@@ -26,7 +26,7 @@
 
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <label for="input-purpose" class="form-label">使用目的</label>
+                            <label for="input-purpose" class="form-label">會議內容</label>
                             <input type="text" class="form-control" id="input-purpose" value="{{ $booking['purpose'] }}">
                         </div>
                     </div>
@@ -39,6 +39,17 @@
                         <div class="col-md-6 mb-3">
                             <label for="input-end-time" class="form-label">結束時間</label>
                             <input type="datetime-local" class="form-control" id="input-end-time" value="{{ $booking['end_time'] }}">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-team" class="form-label">使用單位</label>
+                            <input type="text" class="form-control" id="input-team" value="ECS">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-contact-person" class="form-label">聯絡人</label>
+                            <input type="text" class="form-control" id="input-contact-person" value="{{ $booking['contact_person'] }}">
                         </div>
                     </div>
 
