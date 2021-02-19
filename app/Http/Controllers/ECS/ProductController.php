@@ -5,7 +5,7 @@ namespace App\Http\Controllers\ECS;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class EquipmentController extends Controller
+class ProductController extends Controller
 {
     const CENTERS = [
         1 => '賽馬會黃志強長者地區中心',
@@ -14,11 +14,12 @@ class EquipmentController extends Controller
         4 => '林應和長者鄰舍中心',
     ];
 
-    const EQUIPMENTS = [
-        1 => ['name' => '輪椅', 'count' => 5],
-        2 => ['name' => '助行架', 'count' => 10],
-        3 => ['name' => '四腳叉', 'count' => 15],
-        4 => ['name' => '枴杖', 'count' => 3],
+    const PRODUCTS = [
+        1 => ['name' => '奶粉 (大)', 'count' => 50],
+        2 => ['name' => '奶粉 (細)', 'count' => 80],
+        3 => ['name' => '尿片 (大)', 'count' => 120],
+        4 => ['name' => '尿片 (中)', 'count' => 100],
+        5 => ['name' => '尿片 (細)', 'count' => 100],
     ];
 
     public function index()

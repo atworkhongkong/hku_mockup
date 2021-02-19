@@ -71,20 +71,22 @@
                                 <th scope="col">身份</th>
                                 <th scope="col">識別編號</th>
                                 <th scope="col">租借日期</th>
-                                <th scope="col">預計歸還日期</th>
+                                <th scope="col">應還日期</th>
+                                <th scope="col">遲還日數</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($rentals as $k => $v)
-                                <tr>
+                                <tr class="{{ $v['due_date'] < date('Y-m-d') ? 'grey' : '' }}">
                                     <td>{{ $k }}</td>
                                     <td>{{ $equipments[$v['equipment_id']]['name'] }}</td>
                                     <td>{{ $v['name'] }}</td>
                                     <td>{{ $v['identity'] }}</td>
                                     <td>{{ $v['code'] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
-                                    <td>{{ date('Y-m-d', strtotime("+30 day", strtotime($v['create_date']))) }}</td>
+                                    <td>{{ $v['due_date'] }}</td>
+                                    <td>{{ $v['late_day'] }}</td>
                                     <td>
                                         <a class="btn btn-primary" href="/ecs/equipment_rental/{{ $k }}/edit">檢視</a>
                                     </td>

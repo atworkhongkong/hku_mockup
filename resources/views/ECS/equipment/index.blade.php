@@ -5,7 +5,7 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">儀嚣</li>
+                    <li class="breadcrumb-item active">儀器</li>
                 </ol>
             </nav>
 

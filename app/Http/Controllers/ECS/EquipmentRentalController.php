@@ -22,9 +22,10 @@ class EquipmentRentalController extends Controller
     ];
 
     const RENTALS = [
-        3 => ['identity' => '長者會員', 'code' => '03EL30012', 'name' => '陳明康', 'phone' => '9898xxxx', 'equipment_id' => 1, 'count' => 1, 'create_date' => '2021-02-26'],
-        2 => ['identity' => '長者會員', 'code' => '03EL30005', 'name' => '娻大妹', 'phone' => '9132xxxx', 'equipment_id' => 2, 'count' => 1, 'create_date' => '2021-02-25'],
-        1 => ['identity' => '長者會員', 'code' => '03EL30018', 'name' => '趙霞', 'phone' => '9085xxxx', 'equipment_id' => 1, 'count' => 1, 'create_date' => '2021-02-21']
+        4 => ['identity' => '長者會員', 'code' => '03EL30012', 'name' => '陳明康', 'phone' => '9898xxxx', 'equipment_id' => 1, 'create_date' => '2021-02-26', 'due_date' => '2021-03-27', 'late_day' => 0],
+        3 => ['identity' => '長者會員', 'code' => '03EL30005', 'name' => '娻大妹', 'phone' => '9132xxxx', 'equipment_id' => 2, 'create_date' => '2021-02-25', 'due_date' => '2021-03-25', 'late_day' => 0],
+        2 => ['identity' => '長者會員', 'code' => '03EL30018', 'name' => '趙霞', 'phone' => '9085xxxx', 'equipment_id' => 1, 'create_date' => '2021-02-21', 'due_date' => '2021-03-21', 'late_day' => 0],
+        1 => ['identity' => '護老者', 'code' => 'J0012', 'name' => '黃敏', 'phone' => '6085xxxx', 'equipment_id' => 3, 'create_date' => '2021-01-01', 'due_date' => '2021-02-01', 'late_day' => 15]
     ];
 
     const RENTAL_TIME = [

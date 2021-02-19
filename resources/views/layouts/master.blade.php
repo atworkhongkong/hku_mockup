@@ -67,6 +67,8 @@
                             <li><a class="dropdown-item" href="/ecs/carer">謢老者</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/carer/report">護老者統計報告</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/tutor">導師</a></li>
+                            <li><a class="dropdown-item" href="/ecs/product">貨品</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/purchase">購物</a></li>
                             <li><a class="dropdown-item" href="/ecs/equipment">儀器</a></li>
                             <li><a class="dropdown-item" href="/ecs/equipment_rental">租借儀器</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/equipment_rental/report">租借儀器統計報告</a></li>
