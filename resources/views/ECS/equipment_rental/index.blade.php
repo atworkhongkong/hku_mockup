@@ -27,7 +27,7 @@
                                 <th scope="col">會員編號</th>
                                 <th scope="col">租借日期</th>
                                 <th scope="col">預計歸還日期</th>
-                                <th scope="col" style="width:8%;">&nbsp;</th>
+                                <th scope="col" style="width:15%;">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,12 +36,13 @@
                                     <td>{{ $k }}</td>
                                     <td>{{ $equipments[$v['equipment_id']]['name'] }}</td>
                                     <td>{{ $v['count'] }}</td>
-                                    <td>{{ $v['member_name'] }}</td>
-                                    <td>{{ $v['member_code'] }}</td>
+                                    <td>{{ $v['name'] }}</td>
+                                    <td>{{ $v['code'] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
                                     <td>{{ date('Y-m-d', strtotime("+14 day", strtotime($v['create_date']))) }}</td>
                                     <td>
                                         <a class="btn btn-primary" href="/ecs/equipment_rental/{{ $k }}/edit">檢視</a>
+                                        <a class="btn btn-primary" href="/ecs/equipment_rental/{{ $k }}/re_rent">續借</a>
                                     </td>
                                 </tr>
                             @endforeach

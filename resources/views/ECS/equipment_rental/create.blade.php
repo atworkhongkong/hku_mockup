@@ -13,21 +13,44 @@
             <div class="form-container">
                 <form>
                     <div class="row">
-                        <div class="col-12 mb-3">
-                            <label for="input-member-code" class="form-label">會員編號</label>
-                            <input type="text" class="form-control" id="input-member-code">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-person" class="form-label">護老者/長者會員/職員</label>
+                            <select class="form-control" id="input-person">
+                                <option value="">護老者</option>
+                                <option value="">長者會員</option>
+                                <option value="">職員</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-code" class="form-label">識別編號</label>
+                            <input type="text" class="form-control" id="input-code">
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-12 mb-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-name" class="form-label">姓名</label>
+                            <input type="text" class="form-control" id="input-name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-phone" class="form-label">聯絡電話</label>
+                            <input type="text" class="form-control" id="input-phone">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label for="input-equipment" class="form-label">儀器</label>
                             <select class="form-control" id="input-equipment">
                                 <option value=""></option>
                                 @foreach($equipments as $k => $e)
-                                    <option value="{{ $k }}">{{ $e['name'] }}</option>
+                                    <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $e['name'] }}</option>
                                 @endforeach
                             </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-reference-number" class="form-label">參考編號 (如適用)</label>
+                            <input type="text" class="form-control" id="input-reference-number" value="56018205">
                         </div>
                     </div>
 
@@ -35,26 +58,6 @@
                         <div class="col-12 mb-3">
                             <label for="input-available" class="form-label">現存件數</label>
                             <input type="text" class="form-control" id="input-available" value="5" readonly>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <label for="input-count" class="form-label">租借件數</label>
-                            <select class="form-control" id="input-count">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <label for="input-reference-number" class="form-label">參考編號</label>
-                            <input type="text" class="form-control" id="input-reference-number" value="56018205">
                         </div>
                     </div>
 
@@ -70,9 +73,13 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 mb-3">
-                            <label for="input-fee" class="form-label">費用</label>
-                            <input type="text" class="form-control" id="input-fee" value="$10" readonly>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-start-date" class="form-label">租借日期</label>
+                            <input type="text" class="form-control" id="input-start-date" value="2021-02-01" readonly>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-end-date" class="form-label">歸還日期</label>
+                            <input type="text" class="form-control" id="input-end-date" value="2021-03-01" readonly>
                         </div>
                     </div>
 
