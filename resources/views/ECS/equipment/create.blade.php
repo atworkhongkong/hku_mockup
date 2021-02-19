@@ -14,13 +14,22 @@
                 <form>
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <label for="input-name" class="form-label">儀器</label>
-                            <input type="text" class="form-control" id="input-name">
+                            <label for="input-center" class="form-label">中心</label>
+                            <select id="input-center" class="form-control mr-2">
+                                <option value=""></option>
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k + 1 }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-12 mb-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-name" class="form-label">儀器</label>
+                            <input type="text" class="form-control" id="input-name">
+                        </div>
+                        <div class="col-md-6 mb-3">
                             <label for="input-amount" class="form-label">數量</label>
                             <input type="text" class="form-control" id="input-amount">
                         </div>

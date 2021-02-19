@@ -9,6 +9,31 @@
                 </ol>
             </nav>
 
+            <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
+                <form class="form-inline" action="/ecs/carer" method="GET" onsubmit="return false;">
+                    <label class="sr-only" for="field-center">中心</label>
+                    <select id="field-center" class="form-control mr-2" name="center">
+                        @foreach($centers as $k => $c)
+                            <option value="{{ $k + 1 }}" {{ $k  == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
+                        @endforeach
+                    </select>
+
+                    <label class="sr-only" for="field-type">類別</label>
+                    <select id="field-type" class="form-control mr-2" name="center">
+                        <option value=""></option>
+                        <option value="code">識別編號</option>
+                        <option value="oc">護老者</option>
+                        <option value="nc">有需要護老者</option>
+                        <option value="pc">被護老者</option>
+                    </select>
+
+                    <label class="sr-only" for="field-key-word">關鍵字</label>
+                    <input type="text" class="form-control mr-2" id="field-key-word" placeholder="關鍵字">
+
+                    <button type="submit" class="btn btn-primary mx-1">搜尋</button>
+                </form>
+            </div>
+
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
@@ -34,7 +59,7 @@
                                     <td>{{ $e['count'] }}</td>
                                     <td>
                                         <a class="btn btn-primary" href="/ecs/equipment/{{ $k }}/edit">編輯</a>
-                                        <a class="btn btn-primary" href="/ecs/equipment/{{ $k }}/log">記錄</a>
+                                        <a class="btn btn-primary" href="/ecs/equipment/{{ $k }}/log">紀錄</a>
                                     </td>
                                 </tr>
                             @endforeach

@@ -9,6 +9,51 @@
                 </ol>
             </nav>
 
+            <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
+                <form class="form" action="/ecs/volunteer" method="GET">
+                    <div class="row mb-2">
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">中心</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k + 1 }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">儀器</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                <option value=""></option>
+                                @foreach($equipments as $k => $e)
+                                    <option value="{{ $k }}">{{ $e['name'] }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-name">租借者</label>
+                            <input type="text" class="form-control mr-2" id="field-name" placeholder="租借者">
+                        </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">狀態</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                <option value="">未歸還</option>
+                                <option value="">已歸還</option>
+                                <option value="">應還未還</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-auto pr-1">
+                            <button type="submit" class="btn btn-primary">搜尋</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
@@ -22,12 +67,12 @@
                             <tr>
                                 <th scope="col" style="width:8%;">#</th>
                                 <th scope="col">儀器</th>
-                                <th scope="col">件數</th>
                                 <th scope="col">租借者</th>
-                                <th scope="col">會員編號</th>
+                                <th scope="col">身份</th>
+                                <th scope="col">識別編號</th>
                                 <th scope="col">租借日期</th>
                                 <th scope="col">預計歸還日期</th>
-                                <th scope="col" style="width:15%;">&nbsp;</th>
+                                <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -35,14 +80,13 @@
                                 <tr>
                                     <td>{{ $k }}</td>
                                     <td>{{ $equipments[$v['equipment_id']]['name'] }}</td>
-                                    <td>{{ $v['count'] }}</td>
                                     <td>{{ $v['name'] }}</td>
+                                    <td>{{ $v['identity'] }}</td>
                                     <td>{{ $v['code'] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
-                                    <td>{{ date('Y-m-d', strtotime("+14 day", strtotime($v['create_date']))) }}</td>
+                                    <td>{{ date('Y-m-d', strtotime("+30 day", strtotime($v['create_date']))) }}</td>
                                     <td>
                                         <a class="btn btn-primary" href="/ecs/equipment_rental/{{ $k }}/edit">檢視</a>
-                                        <a class="btn btn-primary" href="/ecs/equipment_rental/{{ $k }}/re_rent">續借</a>
                                     </td>
                                 </tr>
                             @endforeach

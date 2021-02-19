@@ -15,21 +15,21 @@
                     <div class="row">
                         <div class="col-12 mb-3">
                             <label for="input-name" class="form-label">房間</label>
-                            <input type="text" class="form-control" id="input-name">
+                            <input type="text" class="form-control" id="input-name" name="name">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 mb-3">
                             <label for="input-location" class="form-label">位置</label>
-                            <input type="text" class="form-control" id="input-location">
+                            <input type="text" class="form-control" id="input-location" name="location">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 mb-3">
                             <label for="input-capacity" class="form-label">容納人數</label>
-                            <input type="text" class="form-control" id="input-capacity">
+                            <input type="text" class="form-control" id="input-capacity" name="capacity">
                         </div>
                     </div>
 
