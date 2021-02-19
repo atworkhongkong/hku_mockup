@@ -5,6 +5,5 @@
     <a href="/ecs/carer/report?type=transfer" class="btn {{ $type == 'transfer' ? 'btn-primary' : 'btn-outline-primary' }}">轉移人數</a>
     <a href="/ecs/carer/report?type=reactivate" class="btn {{ $type == 'reactivate' ? 'btn-primary' : 'btn-outline-primary' }}">重啟人數</a>
     <a href="/ecs/carer/report?type=close" class="btn {{ $type == 'close' ? 'btn-primary' : 'btn-outline-primary' }}">結案人數</a>
-    <a href="/ecs/carer/report?type=turnover" class="btn {{ $type == 'turnover' ? 'btn-primary' : 'btn-outline-primary' }}">流轉人數</a>
     <a href="/ecs/carer/report?type=active" class="btn {{ $type == 'active' ? 'btn-primary' : 'btn-outline-primary' }}">活躍人數</a>
 </div>

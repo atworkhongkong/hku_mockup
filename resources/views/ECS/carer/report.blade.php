@@ -13,7 +13,6 @@
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form" action="/ecs/carer/report" method="GET">
-                    <!--
                     <div class="row mb-2">
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">中心</label>
@@ -25,7 +24,6 @@
                             </select>
                         </div>
                     </div>
-                    -->
 
                     <div class="row mb-2 g-0">
                         @if ($type != 'accumulate')
@@ -49,103 +47,62 @@
 
             <div class="row">
                 <div class="col-12 mb-3">
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到1筆記錄</span>
-                    </div>
-
-                    @if ($type == 'new')
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">人數</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>8</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    @if ($type == '')
+                        <?php $count = 0; ?>
+                            <div class="alert alert-primary" role="alert">
+                                服務數據的資料是從何得知?
+                            </div>
+                    @elseif ($type == 'new')
+                        <?php $count = 2; ?>
                     @elseif ($type == 'accumulate')
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">人數</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>52</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <?php $count = count($carers); ?>
                     @elseif ($type == 'transfer')
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">人數</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>2</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <?php $count = 0; ?>
                     @elseif ($type == 'reactivate')
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">人數</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>5</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <?php $count = 0; ?>
                     @elseif ($type == 'close')
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">人數</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    @elseif ($type == 'turnover')
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">人數</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>3</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <?php $count = count($carers); ?>
                     @elseif ($type == 'active')
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">人數</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>28</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <?php $count = 3; ?>
                     @endif
 
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <span>找到 {{ $count }}筆記錄</span>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col" style="width:10%;">識別編號</th>
+                                <th scope="col">護老者</th>
+                                <th scope="col">類別</th>
+                                <th scope="col">開啟日期</th>
+                                <th scope="col">狀態</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @for ($i = 1 ; $i <= $count ; $i++)
+                                @if ($type == 'close')
+                                    @if ($carers[$i]['status'] == 'I')
+                                        <tr>
+                                            <td><a href="/ecs/carer/{{ $i }}/edit" target="_blank">{{ $carers[$i]['code'] }}</a></td>
+                                            <td>{{ $carers[$i]['name'] }}</td>
+                                            <td>{{ $carers[$i]['type'] }}</td>
+                                            <td>{{ $carers[$i]['create_date'] }}</td>
+                                            <td>{{ $statuses[$carers[$i]['status']] }}</td>
+                                        </tr>
+                                    @endif
+                                @else
+                                    <tr>
+                                        <td><a href="/ecs/carer/{{ $i }}/edit" target="_blank">{{ $carers[$i]['code'] }}</a></td>
+                                        <td>{{ $carers[$i]['name'] }}</td>
+                                        <td>{{ $carers[$i]['type'] }}</td>
+                                        <td>{{ $carers[$i]['create_date'] }}</td>
+                                        <td>{{ $statuses[$carers[$i]['status']] }}</td>
+                                    </tr>
+                                @endif
+                            @endfor
+                            </tbody>
+                        </table>
                 </div>
             </div>
         </div>

@@ -10,73 +10,64 @@
                 </ol>
             </nav>
 
-            <div class="form-container">
-                <form class="row g-3">
-                    <div class="col-md-6 mb-3">
-                        <label for="input-chi-name" class="form-label">中文姓名</label>
-                        <input type="text" class="form-control" id="input-chi-name">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="input-eng-name" class="form-label">英文姓名</label>
-                        <input type="text" class="form-control" id="input-eng-name">
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                        <label for="input-gender">性別</label>
-                        <select class="form-control" id="input-gender">
-                            <option value="M">男</option>
-                            <option value="F">女</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="input-hkid" class="form-label">身份證號碼</label>
-                        <input type="text" class="form-control" id="input-hkid">
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                        <label for="input-address" class="form-label">住址</label>
-                        <input type="text" class="form-control" id="input-address">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="input-type" class="form-label">類別</label>
-                        <select class="form-control" id="input-type">
-                            <option></option>
-                            <option value="oc">護老者</option>
-                            <option value="nc">有需要護老者</option>
-                        </select>
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                        <label for="input-phone" class="form-label">聯絡電話</label>
-                        <input type="text" class="form-control" id="input-phone">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="input-email" class="form-label">電郵地址</label>
-                        <input type="text" class="form-control" id="input-email">
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                        <label for="input-center" class="form-label">所屬中心</label>
-                        <select class="custom-select" aria-label="select example">
-                            <option value=""></option>
-                            @foreach($centers as $k => $c)
-                                <option value="{{ $k + 1 }}">{{ $c }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="input-center" class="form-label">狀態</label>
-                        <select class="custom-select" aria-label="select example">
-                            <option value="A">有效</option>
-                            <option value="A">暫停</option>
-                        </select>
-                    </div>
-
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">提 交</button>
-                    </div>
-                </form>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-tab-1" data-toggle="tab" href="#nav-page-1" role="tab" aria-controls="nav-page-1" aria-selected="true">
+                        個人資料
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-2" data-toggle="tab" href="#nav-page-2" role="tab" aria-controls="nav-page-2" aria-selected="false">
+                        照顧情況
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-3" data-toggle="tab" href="#nav-page-3" role="tab" aria-controls="nav-page-3" aria-selected="false">
+                        照顧範疇
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-4" data-toggle="tab" href="#nav-page-4" role="tab" aria-controls="nav-page-4" aria-selected="false">
+                        參加的服務
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-5" data-toggle="tab" href="#nav-page-5" role="tab" aria-controls="nav-page-5" aria-selected="false">
+                        被照顧者資料
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-6" data-toggle="tab" href="#nav-page-6" role="tab" aria-controls="nav-page-6" aria-selected="false">
+                        接收短訊
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-7" role="tab" aria-controls="nav-page-7" aria-selected="false">
+                        同意書
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-8" data-toggle="tab" href="#nav-page-8" role="tab" aria-controls="nav-page-8" aria-selected="false">
+                        職員填寫
+                    </a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active p-3 border border-top-0" id="nav-page-1" role="tabpanel" aria-labelledby="nav-tab-1">
+                    @include('ecs.carer.create_form_1')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-2" role="tabpanel" aria-labelledby="nav-tab-2">
+                    @include('ecs.carer.create_form_2')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-3" role="tabpanel" aria-labelledby="nav-tab-3">
+                    @include('ecs.carer.create_form_3')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-4" role="tabpanel" aria-labelledby="nav-tab-4">
+                    @include('ecs.carer.create_form_4')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-5" role="tabpanel" aria-labelledby="nav-tab-5">
+                    @include('ecs.carer.create_form_5')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-6" role="tabpanel" aria-labelledby="nav-tab-6">
+                    @include('ecs.carer.create_form_6')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-7">
+                    @include('ecs.carer.create_form_7')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
+                    @include('ecs.carer.create_form_8')
+                </div>
             </div>
+
+
+
+
         </div>
     </div>
 @endsection

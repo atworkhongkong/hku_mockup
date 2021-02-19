@@ -25,14 +25,14 @@
                     <div class="row mb-2 g-0">
                         <div class="col-auto">
                             <label class="sr-only" for="field-start-date">開始日期</label>
-                            <input type="date" id="field-start-date" class="form-control" />
+                            <input type="date" id="field-start-date" class="form-control" value="2021-02-15" />
                         </div>
                         <div class="col-auto px-0 pt-2">
                             至
                         </div>
                         <div class="col-auto">
                             <label class="sr-only" for="field-end-date">結束日期</label>
-                            <input type="date" id="field-end-date" class="form-control" />
+                            <input type="date" id="field-end-date" class="form-control"  value="2021-02-19"/>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">搜尋</button>
