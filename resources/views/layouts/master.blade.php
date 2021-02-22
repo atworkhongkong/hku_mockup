@@ -62,6 +62,7 @@
                             <li><a class="dropdown-item" href="/ecs/order_meal/report">每週膳食統計報告</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/meal_ingredient">膳食庫存</a></li>
                             <li><a class="dropdown-item" href="/ecs/volunteer">義工</a></li>
+                            <li><a class="dropdown-item" href="/ecs/volunteer_team">義工小組</a></li>
                             <li><a class="dropdown-item" href="/ecs/volunteer_service">義工時數</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/volunteer_service/report">義工統計報告</a></li>
                             <li><a class="dropdown-item" href="/ecs/carer">謢老者</a></li>
