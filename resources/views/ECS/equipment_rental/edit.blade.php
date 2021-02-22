@@ -35,18 +35,18 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-code" class="form-label">識別編號</label>
-                            <input type="text" class="form-control" id="input-code" value="{{ $rental['code'] }}">
+                            <input type="text" class="form-control" id="input-code" value="{{ $rental['code'] }}" readonly>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-name" class="form-label">姓名</label>
-                            <input type="text" class="form-control" id="input-name" value="{{ $rental['name'] }}">
+                            <input type="text" class="form-control" id="input-name" value="{{ $rental['name'] }}" readonly>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-phone" class="form-label">聯絡電話</label>
-                            <input type="text" class="form-control" id="input-phone" value="{{ $rental['phone'] }}">
+                            <input type="text" class="form-control" id="input-phone" value="{{ $rental['phone'] }}" readonly>
                         </div>
                     </div>
 
@@ -63,13 +63,6 @@
                         <div class="col-md-6 mb-3">
                             <label for="input-reference-number" class="form-label">參考編號 (如適用)</label>
                             <input type="text" class="form-control" id="input-reference-number" value="56018205" readonly>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <label for="input-available" class="form-label">現存件數</label>
-                            <input type="text" class="form-control" id="input-available" value="5" readonly>
                         </div>
                     </div>
 

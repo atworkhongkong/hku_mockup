@@ -44,6 +44,6 @@ class EquipmentController extends Controller
     public function log($equipment_id)
     {
         $equipment = self::EQUIPMENTS[$equipment_id];
-        return view('ECS.equipment.log', compact('equipment'));
+        return view('ECS.equipment.log', compact('equipment', 'equipment_id'));
     }
 }

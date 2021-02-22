@@ -5,13 +5,13 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/ecs/equipment">儀器</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ $equipment['name'] }}</li>
+                    <li class="breadcrumb-item"><a href="/ecs/product">貨品</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $product['name'] }}</li>
                 </ol>
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form-inline" action="/ecs/equipment/{{ $equipment_id }}/log" method="GET">
+                <form class="form-inline" action="/ecs/product/{{ $product_id }}/log" method="GET">
                     <div class="col-auto">
                         <label class="sr-only" for="field-start-date">開始日期</label>
                         <input type="date" id="field-start-date" class="form-control" />

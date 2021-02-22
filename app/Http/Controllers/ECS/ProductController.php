@@ -15,36 +15,36 @@ class ProductController extends Controller
     ];
 
     const PRODUCTS = [
-        1 => ['name' => '奶粉 (大)', 'count' => 50],
-        2 => ['name' => '奶粉 (細)', 'count' => 80],
-        3 => ['name' => '尿片 (大)', 'count' => 120],
-        4 => ['name' => '尿片 (中)', 'count' => 100],
-        5 => ['name' => '尿片 (細)', 'count' => 100],
+        1 => ['name' => '奶粉 (大)', 'count' => 50, 'price' => 200],
+        2 => ['name' => '奶粉 (細)', 'count' => 80, 'price' => 100],
+        3 => ['name' => '尿片 (大)', 'count' => 120, 'price' => 160],
+        4 => ['name' => '尿片 (中)', 'count' => 100, 'price' => 110],
+        5 => ['name' => '尿片 (細)', 'count' => 100, 'price' => 90],
     ];
 
     public function index()
     {
         $centers = self::CENTERS;
-        $equipments = self::EQUIPMENTS;
-        return view('ECS.equipment.index', compact('centers', 'equipments'));
+        $products = self::PRODUCTS;
+        return view('ECS.product.index', compact('centers', 'products'));
     }
 
     public function create()
     {
         $centers = self::CENTERS;
-        return view('ECS.equipment.create', compact('centers'));
+        return view('ECS.product.create', compact('centers'));
     }
 
-    public function edit($equipment_id)
+    public function edit($product_id)
     {
         $centers = self::CENTERS;
-        $equipment = self::EQUIPMENTS[$equipment_id];
-        return view('ECS.equipment.edit', compact('centers', 'equipment'));
+        $product = self::PRODUCTS[$product_id];
+        return view('ECS.product.edit', compact('centers', 'product'));
     }
 
-    public function log($equipment_id)
+    public function log($product_id)
     {
-        $equipment = self::EQUIPMENTS[$equipment_id];
-        return view('ECS.equipment.log', compact('equipment'));
+        $product = self::PRODUCTS[$product_id];
+        return view('ECS.product.log', compact('product', 'product_id'));
     }
 }
