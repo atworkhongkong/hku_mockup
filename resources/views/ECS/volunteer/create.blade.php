@@ -13,7 +13,16 @@
             <div class="form-container">
                 <form>
                     <div class="row">
-                        <div class="col-12 mb-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-center" class="form-label">所屬中心</label>
+                            <select class="custom-select" aria-label="select example">
+                                <option value=""></option>
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k + 1 }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
                             <label for="input-chi-name" class="form-label">義工編號</label>
                             <input type="text" class="form-control" id="input-chi-name" placeholder="VO10012">
                         </div>
@@ -57,18 +66,70 @@
                             <input type="text" class="form-control" id="input-phone">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="input-email" class="form-label">電郵地址</label>
-                            <input type="text" class="form-control" id="input-email">
+                            <label for="input-mobile" class="form-label">手提電話</label>
+                            <input type="text" class="form-control" id="input-mobile">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="input-center" class="form-label">所屬中心</label>
+                            <label for="input-career" class="form-label">職業</label>
                             <select class="custom-select" aria-label="select example">
                                 <option value=""></option>
-                                @foreach($centers as $k => $c)
+                                @foreach($careers as $k => $c)
                                     <option value="{{ $k + 1 }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-education" class="form-label">教育程度</label>
+                            <select class="custom-select" aria-label="select example">
+                                <option value=""></option>
+                                @foreach($educations as $k => $c)
+                                    <option value="{{ $k + 1 }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-education" class="form-label">參與義務時間</label>
+                            <div>
+                                @foreach($times as $k => $t)
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="time-checkbox-{{ $k }}" value="">
+                                        <label class="form-check-label" for="time-checkbox-{{ $k }}">{{ $t }}</label>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-education" class="form-label">服務對象</label>
+                            <div>
+                                @foreach($targets as $k => $t)
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="education-checkbox-{{ $k }}" value="">
+                                        <label class="form-check-label" for="education-checkbox-{{ $k }}">{{ $t }}</label>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-activeness" class="form-label">級別</label>
+                            <select class="custom-select" aria-label="select example">
+                                @foreach($grades as $k => $g)
+                                    <option value="">{{ $g }}</option>
                                 @endforeach
                             </select>
                         </div>
