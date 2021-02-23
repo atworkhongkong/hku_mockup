@@ -17,9 +17,8 @@
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">中心</label>
                             <select id="field-center" class="form-control mr-2" name="center">
-                                <option value=""></option>
                                 @foreach($centers as $k => $c)
-                                    <option value="{{ $k + 1 }}">{{ $c }}</option>
+                                    <option value="{{ $k }}" {{ $k == 1 ? "SELECTED" : "" }}>{{ $c }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -29,7 +28,7 @@
                         @if ($type != 'accumulate')
                             <div class="col-auto">
                                 <label class="sr-only" for="field-start-date">開始日期</label>
-                                <input type="date" id="field-start-date" class="form-control" />
+                                <input type="date" id="field-start-date" class="form-control" value="2021-01-01" />
                             </div>
                             <div class="col-auto px-0 pt-2">
                                 至
@@ -44,10 +43,18 @@
                 </form>
             </div>
 
+            <div class="alert alert-primary" role="alert">
+                @if ($type == 'new')
+                    某個中心在某個特定時間內的新增義工人數 (包括退出後再恢復成為義工)
+                @else
+                    某個中心在某個特定時間前的累積義工人數 (所有已登記，無論是活躍還是非活躍都包含在內)
+                @endif
+            </div>
+
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到5筆記錄</span>
+                        <span>找到1筆記錄</span>
                     </div>
                     <table class="table table-bordered">
                         <thead>
@@ -59,7 +66,7 @@
                         <tbody>
                             @foreach($counts as $k => $c)
                                 <tr>
-                                    <td>{{ $k }}</td>
+                                    <td>{{ $centers[$k] }}</td>
                                     <td>{{ $c }}</td>
                                 </tr>
                             @endforeach

@@ -10,27 +10,48 @@
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form-inline" action="/ecs/volunteer" method="GET">
-                    <label class="sr-only" for="field-center">中心</label>
-                    <select id="field-center" class="form-control mr-2" name="center">
-                        <option value=""></option>
-                        @foreach($centers as $k => $c)
-                            <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
-                        @endforeach
-                    </select>
+                <form class="form" action="/ecs/volunteer" method="GET">
+                    <div class="row mb-2">
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">中心</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-chi-name" >中文姓名</label>
+                            <input type="text" class="form-control mr-2" id="field-chi-name" placeholder="義工中文姓名">
+                        </div>
+                    </div>
 
-                    <label class="sr-only" for="field-chi-name" >中文姓名</label>
-                    <input type="text" class="form-control mr-2" id="field-chi-name" placeholder="義工中文姓名">
+                    <div class="row mb-2">
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">義工小組</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                <option></option>
+                                @foreach($teams[$edit_center_id] as $k => $t)
+                                    <option value="{{ $k }}" {{ $k == 1 ? "SELECTED" : "" }}>{{ $t }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-activeness">活躍程度</label>
+                            <select id="field-activeness" class="form-control mr-2" name="center">
+                                <option value=""></option>
+                                @foreach($activeness as $k => $a)
+                                    <option value="{{ $k }}">{{ $a }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
 
-                    <label class="sr-only" for="field-activeness">活躍程度</label>
-                    <select id="field-activeness" class="form-control mr-2" name="center">
-                        <option value=""></option>
-                        @foreach($activeness as $k => $a)
-                            <option value="{{ $k }}">{{ $a }}</option>
-                        @endforeach
-                    </select>
-
-                    <button type="submit" class="btn btn-primary">搜尋</button>
+                    <div class="row mb-2">
+                        <div class="col-auto pr-1">
+                            <button type="submit" class="btn btn-primary">搜尋</button>
+                        </div>
+                    </div>
                 </form>
             </div>
 

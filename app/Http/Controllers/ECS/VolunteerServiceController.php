@@ -26,11 +26,16 @@ class VolunteerServiceController extends Controller
         2 => ['volunteer' => '呂大樂', 'team_id' => 3, 'service_center_id' => 2, 'service' => '心靈加油站', 'hour' => 4, 'date' => '2021-01-28'],
         1 => ['volunteer' => '張浩添', 'team_id' => 2, 'service_center_id' => 1, 'service' => '親子暖暖笠', 'hour' => 6, 'date' => '2021-01-21'],
     ];
+    const ACTIVENESS = [
+        'A' => '活躍義工',
+        'I' => '非活躍義工'
+    ];
 
     public function __construct()
     {
         View::share('centers', self::CENTERS);
         View::share('teams', self::TEAMS);
+        View::share('activeness', self::ACTIVENESS);
     }
 
     public function index()
@@ -53,14 +58,10 @@ class VolunteerServiceController extends Controller
     public function report()
     {
         $services = [
-            7 => ['volunteer' => '黃柏宇', 'service' => '老人外展', 'hour' => 4, 'date' => '2021-01-31'],
-            6 => ['volunteer' => '王妹', 'service' => '老人外展', 'hour' => 3, 'date' => '2021-01-31'],
-            5 => ['volunteer' => '王妹', 'service' => '親子美味任務', 'hour' => 3, 'date' => '2021-01-30'],
-            4 => ['volunteer' => '趙霞', 'service' => '親子美味任務', 'hour' => 5, 'date' => '2021-01-30'],
-            3 => ['volunteer' => '雷根', 'service' => '愛健康', 'hour' => 4, 'date' => '2021-01-28'],
-            2 => ['volunteer' => '黃柏宇', 'service' => '愛健康', 'hour' => 4, 'date' => '2021-01-28'],
-            1 => ['volunteer' => '王妹', 'service' => '親子暖暖笠', 'hour' => 8, 'date' => '2021-01-21'],
-            0 => ['volunteer' => '黃柏宇', 'service' => '親子暖暖笠', 'hour' => 6, 'date' => '2021-01-21'],
+            1 => ['volunteer_id' => 1, 'volunteer' => '黃柏宇', 'activeness' => 'A', 'hour' => 54],
+            2 => ['volunteer_id' => 2, 'volunteer' => '詹晏靖', 'activeness' => 'A', 'hour' => 68],
+            3 => ['volunteer_id' => 3, 'volunteer' => '楊智盈', 'activeness' => 'A', 'hour' => 47],
+            4 => ['volunteer_id' => 4, 'volunteer' => '廖怡秀', 'activeness' => 'A', 'hour' => 75]
         ];
         $full_url = URL::full();
         return view('ECS.volunteer_service.report', compact('services', 'full_url'));

@@ -17,9 +17,16 @@
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">中心</label>
                             <select id="field-center" class="form-control mr-2" name="center">
-                                <option value=""></option>
                                 @foreach($centers as $k => $c)
-                                    <option value="{{ $k + 1 }}" {{ $k == 0 ? "SELECTED" : "" }}>{{ $c }}</option>
+                                    <option value="{{ $k }}" {{ $k == 1 ? "SELECTED" : "" }}>{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">義工小組</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($teams as $k => $t)
+                                    <option value="{{ $k }}" {{ $k == 1 ? "SELECTED" : "" }}>{{ $t }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -42,6 +49,10 @@
                 </form>
             </div>
 
+            <div class="alert alert-primary" role="alert">
+                某個中心義工小組的時數總結
+            </div>
+
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
@@ -51,24 +62,20 @@
                         <thead>
                             <tr>
                                 <th scope="col">義工姓名</th>
-                                <th scope="col">活動名稱</th>
-                                <th scope="col">日期</th>
+                                <th scope="col">活躍程度</th>
                                 <th scope="col">時數</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($services as $s)
                                 <tr>
-                                    <td><a href="/ecs/volunteer_service?q={{ $s['volunteer'] }}" target="_blank">{{ $s['volunteer'] }}</a></td>
-                                    <td>{{ $s['service'] }}</td>
-                                    <td>{{ $s['date'] }}</td>
+                                    <td><a href="/ecs/volunteer/{{ $s['volunteer_id'] }}/edit" target="_blank">{{ $s['volunteer'] }}</a></td>
+                                    <td>{{ $activeness[$s['activeness']] }}</td>
                                     <td>{{ $s['hour'] }}</td>
                                 </tr>
                             @endforeach
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td class="text-right">總時數︰</td>
+                                <td class="text-right" colspan="2">總時數︰</td>
                                 <td>37</td>
                             </tr>
                         </tbody>

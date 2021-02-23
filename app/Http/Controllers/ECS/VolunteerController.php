@@ -107,7 +107,8 @@ class VolunteerController extends Controller
     public function index()
     {
         $volunteers = self::VOLUNTEERS;
-        return view('ECS.volunteer.index', compact('volunteers'));
+        $edit_center_id = 1;
+        return view('ECS.volunteer.index', compact('volunteers', 'edit_center_id'));
     }
 
     public function create()
@@ -127,7 +128,13 @@ class VolunteerController extends Controller
         $type = $request->get('type');
         $full_url = URL::full();
 
-        $counts = [];
+        if ($type == 'new') {
+            $counts = [1 => 8];
+        } else {
+            $counts = [1 => 62];
+        }
+
+        /*
         foreach(self::CENTERS as $c) {
             if ($type == 'new') {
                 $counts[$c] = mt_rand(2, 10);
@@ -135,6 +142,7 @@ class VolunteerController extends Controller
                 $counts[$c] = mt_rand(50, 80);
             }
         }
+        */
         return view('ECS.volunteer.report', compact( 'type', 'full_url', 'counts'));
     }
 }
