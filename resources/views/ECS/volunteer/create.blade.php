@@ -121,7 +121,13 @@
                     </div>
 
                     <div class="row">
-
+                        <div class="col-12 mb-3">
+                            <label for="input-activeness" class="form-label">STE</label>
+                            <select class="custom-select" aria-label="select example">
+                                <option value="">STE</option>
+                                <option value="">非STE</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="row">
