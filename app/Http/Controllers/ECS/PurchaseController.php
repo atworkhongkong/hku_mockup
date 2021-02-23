@@ -38,12 +38,9 @@ class PurchaseController extends Controller
 
     public function __construct()
     {
-        $centers = self::CENTERS;
-        $products = self::PRODUCTS;
-        $identities = self::IDENTITIES;
-        View::share('centers', $centers);
-        View::share('products', $products);
-        View::share('identities', $identities);
+        View::share('centers', self::CENTERS);
+        View::share('products', self::PRODUCTS);
+        View::share('identities', self::IDENTITIES);
     }
 
     public function index()
@@ -54,7 +51,7 @@ class PurchaseController extends Controller
 
     public function create()
     {
-        return view('ECS.purchase.create', compact('centers'));
+        return view('ECS.purchase.create');
     }
 
     public function edit($purchase_id)

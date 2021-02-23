@@ -54,22 +54,26 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到1筆記錄</span>
+                        <span>找到{{ $count }}筆記錄</span>
                     </div>
                     <table class="table table-bordered">
                         <thead>
-                            <tr>
-                                <th scope="col">中心</th>
-                                <th scope="col">人數</th>
-                            </tr>
+                        <tr>
+                            <th scope="col">義工編號</th>
+                            <th scope="col">義工姓名</th>
+                            <th scope="col">級別</th>
+                            <th scope="col">首次登記日期</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            @foreach($counts as $k => $c)
+                            @for($i = 1 ; $i <= $count ; $i++)
                                 <tr>
-                                    <td>{{ $centers[$k] }}</td>
-                                    <td>{{ $c }}</td>
+                                    <td><a href="/ecs/volunteer/{{ $i }}/edit" target="_blank">{{ $volunteers[$i]['code'] }}</a></td>
+                                    <td>{{ $volunteers[$i]['name'] }}</td>
+                                    <td>{{ $grades[$volunteers[$i]['grade']] }}</td>
+                                    <td>{{ $volunteers[$i]['register_date'] }}</td>
                                 </tr>
-                            @endforeach
+                            @endfor
                         </tbody>
                     </table>
                 </div>

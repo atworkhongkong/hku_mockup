@@ -56,7 +56,7 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到2筆記錄</span>
+                        <span>找到{{ count($purchases) }}筆記錄</span>
                         <div>
                             <a href="/ecs/purchase/create" class="btn btn-secondary">購物</a>
                         </div>

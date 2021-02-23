@@ -129,9 +129,9 @@ class VolunteerController extends Controller
         $full_url = URL::full();
 
         if ($type == 'new') {
-            $counts = [1 => 8];
+            $count = 2;
         } else {
-            $counts = [1 => 62];
+            $count = 4;
         }
 
         /*
@@ -143,6 +143,7 @@ class VolunteerController extends Controller
             }
         }
         */
-        return view('ECS.volunteer.report', compact( 'type', 'full_url', 'counts'));
+        $volunteers = self::VOLUNTEERS;
+        return view('ECS.volunteer.report', compact( 'type', 'full_url', 'count', 'volunteers'));
     }
 }

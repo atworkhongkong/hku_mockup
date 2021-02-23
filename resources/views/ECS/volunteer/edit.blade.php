@@ -24,7 +24,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-chi-name" class="form-label">義工編號</label>
-                            <input type="text" class="form-control" id="input-chi-name" placeholder="VO10012">
+                            <input type="text" class="form-control" id="input-chi-name" value="{{ $volunteer['code'] }}">
                         </div>
                     </div>
 

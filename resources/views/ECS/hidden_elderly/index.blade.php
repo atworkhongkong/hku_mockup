@@ -22,7 +22,7 @@
                         </div>
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-chi-name" >中文姓名</label>
-                            <input type="text" class="form-control mr-2" id="field-chi-name" placeholder="隱蔽長者中文姓名">
+                            <input type="text" class="form-control mr-2" id="field-chi-name" placeholder="隱蔽長者姓名/稱呼">
                         </div>
                         <div class="col-auto pr-1">
                             <button type="submit" class="btn btn-primary">搜尋</button>
