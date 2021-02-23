@@ -108,7 +108,7 @@
                                 <th scope="col">類別</th>
                                 <th scope="col">被護老者</th>
                                 <th scope="col">所屬中心</th>
-                                <th scope="col">開啟日期</th>
+                                <th scope="col">登記日期</th>
                                 <th scope="col">狀態</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>

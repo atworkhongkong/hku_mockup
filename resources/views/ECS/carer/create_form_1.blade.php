@@ -165,6 +165,12 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="input-create-date" class="form-label">登記日期</label>
+                <input type="text" class="form-control" id="input-create=date" @isset($carer_id) value="{{ $carer['create_date'] }}" @endisset>
+            </div>
+        </div>
 
 
         <div class="row">
