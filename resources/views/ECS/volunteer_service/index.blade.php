@@ -14,6 +14,24 @@
                     <div class="row mb-2">
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">中心</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                <option value=""></option>
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-team">義工小組</label>
+                            <select id="field-team" class="form-control mr-2">
+                                <option value=""></option>
+                                @foreach($teams as $k => $c)
+                                    <option value="{{ $k }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">中心</label>
                             <input type="text" class="form-control mr-2" id="field-chi-name" value="黃柏宇" placeholder="義工中文姓名">
                         </div>
                     </div>
@@ -49,6 +67,7 @@
                             <tr>
                                 <th scope="col" style="width:8%;">#</th>
                                 <th scope="col">義工姓名</th>
+                                <th scope="col">義工小組</th>
                                 <th scope="col">活動名稱</th>
                                 <th scope="col">服務單位</th>
                                 <th scope="col">時數</th>
@@ -61,8 +80,9 @@
                                 <tr>
                                     <td>{{ $k }}</td>
                                     <td>{{ $s['volunteer'] }}</td>
+                                    <td><a href="/ecs/volunteer_team/{{ $s['team_id'] }}/edit" target="_blank">{{ $teams[$s['team_id']] }}</a></td>
                                     <td>{{ $s['service'] }}</td>
-                                    <td>{{ $s['service_center'] }}</td>
+                                    <td>{{ $centers[$s['service_center_id']] }}</td>
                                     <td>{{ $s['hour'] }}</td>
                                     <td>{{ $s['date'] }}</td>
                                     <td><a class="btn btn-primary" href="/ecs/volunteer_service/{{ $k }}/edit">編輯</a></td>

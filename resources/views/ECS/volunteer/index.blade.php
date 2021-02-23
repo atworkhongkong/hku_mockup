@@ -11,7 +11,7 @@
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form-inline" action="/ecs/volunteer" method="GET">
-                    <label class="sr-only" for="field-center">搜尋範圍</label>
+                    <label class="sr-only" for="field-center">中心</label>
                     <select id="field-center" class="form-control mr-2" name="center">
                         <option value=""></option>
                         @foreach($centers as $k => $c)
