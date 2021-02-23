@@ -37,8 +37,8 @@
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="input-in-charge" class="form-label">負責人</label>
-                            <input type="text" class="form-control" id="input-in-charge" value="{{ $team['in_charge'] }}">
+                            <label for="input-in-charge" class="form-label">聯絡人</label>
+                            <input type="text" class="form-control" id="input-in-charge" value="{{ $team['contact_person'] }}">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-status" class="form-label">狀態</label>

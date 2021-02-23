@@ -51,7 +51,7 @@
                                     <td>{{ $k  }}</td>
                                     <td>{{ $v['chi_name'] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
-                                    <td>{{ $v['in_charge'] }}</td>
+                                    <td>{{ $v['contact_person'] }}</td>
                                     <td>{{ $statuses[$v['status']] }}</td>
                                     <td><a class="btn btn-primary" href="/ecs/volunteer_team/{{ $k }}/edit">編輯</a></td>
                                 </tr>
