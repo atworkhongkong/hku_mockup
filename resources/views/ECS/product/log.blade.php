@@ -39,6 +39,7 @@
                                 <th scope="col">原有數量</th>
                                 <th scope="col">新增/減少</th>
                                 <th scope="col">數量</th>
+                                <th scope="col">更新職員</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -47,18 +48,21 @@
                                 <td>2</td>
                                 <td>3</td>
                                 <td>5</td>
+                                <td>同事B</td>
                             </tr>
                             <tr>
                                 <td>2021-01-27</td>
                                 <td>3</td>
                                 <td>(1)</td>
                                 <td>2</td>
+                                <td>同事B</td>
                             </tr>
                             <tr>
                                 <td>2021-01-25</td>
                                 <td>0</td>
                                 <td>3</td>
                                 <td>3</td>
+                                <td>同事B</td>
                             </tr>
                         </tbody>
                     </table>

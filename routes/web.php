@@ -99,6 +99,11 @@ Route::prefix('ecs')->group(function() {
     Route::get('/carer/{id}/edit', [App\Http\Controllers\ECS\CarerController::class, 'edit'])->name('ecs.carer.edit');
     Route::get('/carer/report', [App\Http\Controllers\ECS\CarerController::class, 'report'])->name('ecs.carer.report');
 
+    Route::get('/carer_service', [App\Http\Controllers\ECS\CarerServiceController::class, 'index'])->name('ecs.carer_service.index');
+    Route::get('/carer_service/create', [App\Http\Controllers\ECS\CarerServiceController::class, 'create'])->name('ecs.carer_service.create');
+    Route::get('/carer_service/{id}/edit', [App\Http\Controllers\ECS\CarerServiceController::class, 'edit'])->name('ecs.carer_service.edit');
+    Route::get('/carer_service/report', [App\Http\Controllers\ECS\CarerServiceController::class, 'report'])->name('ecs.carer_service.report');
+
     Route::get('/hidden_elderly', [App\Http\Controllers\ECS\HiddenElderlyController::class, 'index'])->name('ecs.hidden_elderly.index');
     Route::get('/hidden_elderly/create', [App\Http\Controllers\ECS\HiddenElderlyController::class, 'create'])->name('ecs.hidden_elderly.create');
     Route::get('/hidden_elderly/{id}/edit', [App\Http\Controllers\ECS\HiddenElderlyController::class, 'edit'])->name('ecs.hidden_elderly.edit');

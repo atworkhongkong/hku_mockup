@@ -72,7 +72,7 @@
                                 <th scope="col">識別編號</th>
                                 <th scope="col">租借日期</th>
                                 <th scope="col">應還日期</th>
-                                <th scope="col">遲還日數</th>
+                                <th scope="col">逾期日數</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                         </thead>

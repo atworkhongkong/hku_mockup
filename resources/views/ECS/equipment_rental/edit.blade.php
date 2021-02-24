@@ -80,11 +80,11 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-start-date" class="form-label">租借日期</label>
-                            <input type="text" class="form-control" id="input-start-date" value="2021-02-01" readonly>
+                            <input type="text" class="form-control" id="input-start-date" value="{{ $rental['create_date'] }}" readonly>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-end-date" class="form-label">歸還日期</label>
-                            <input type="text" class="form-control" id="input-end-date" value="2021-03-01" readonly>
+                            <input type="text" class="form-control" id="input-end-date" value="{{ $rental['due_date'] }}" readonly>
                         </div>
                     </div>
 
@@ -95,7 +95,14 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-due" class="form-label">逾期日數</label>
-                            <input type="text" class="form-control" id="input-due" value="0" readonly>
+                            <input type="text" class="form-control" id="input-due" value="{{ $rental['late_day'] }}" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-due" class="form-label">逾期費用</label>
+                            <input type="text" class="form-control" id="input-due" value="{{ $rental['late_fee'] }}" readonly>
                         </div>
                     </div>
 

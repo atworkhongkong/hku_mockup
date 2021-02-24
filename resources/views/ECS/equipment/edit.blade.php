@@ -25,13 +25,20 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 mb-3">
                             <label for="input-name" class="form-label">儀器</label>
                             <input type="text" class="form-control" id="input-name" value="{{ $equipment['name'] }}">
                         </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="input-count" class="form-label">數量</label>
-                            <input type="text" class="form-control" id="input-count" value="{{ $equipment['count'] }}">
+                            <label for="input-name" class="form-label">數量</label>
+                            <input type="text" class="form-control" id="input-name" value="{{ $equipment['count'] }}">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-count" class="form-label">可供租借數量</label>
+                            <input type="text" class="form-control" id="input-count" value="{{ $equipment['available_count'] }}">
                         </div>
                     </div>
 

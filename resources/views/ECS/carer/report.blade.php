@@ -17,7 +17,6 @@
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">中心</label>
                             <select id="field-center" class="form-control mr-2" name="center">
-                                <option value=""></option>
                                 @foreach($centers as $k => $c)
                                     <option value="{{ $k + 1 }}">{{ $c }}</option>
                                 @endforeach

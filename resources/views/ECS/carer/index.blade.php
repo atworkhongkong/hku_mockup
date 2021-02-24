@@ -13,9 +13,8 @@
                 <form class="form-inline" action="/ecs/carer" method="GET" onsubmit="return false;">
                     <label class="sr-only" for="field-center">中心</label>
                     <select id="field-center" class="form-control mr-2" name="center">
-                        <option value=""></option>
                         @foreach($centers as $k => $c)
-                            <option value="{{ $k + 1 }}">{{ $c }}</option>
+                            <option value="{{ $k }}">{{ $c }}</option>
                         @endforeach
                     </select>
 
@@ -107,7 +106,6 @@
                                 <th scope="col">護老者</th>
                                 <th scope="col">類別</th>
                                 <th scope="col">被護老者</th>
-                                <th scope="col">所屬中心</th>
                                 <th scope="col">登記日期</th>
                                 <th scope="col">狀態</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
@@ -120,7 +118,6 @@
                                     <td>{{ $v['name'] }}</td>
                                     <td>{{ $v['type'] }}</td>
                                     <td>{{ $v['target'] }}</td>
-                                    <td>{{ $centers[$v['center']] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
                                     <td>{{ $statuses[$v['status']] }}</td>
                                     <td><a class="btn btn-primary" href="/ecs/carer/{{ $k }}/edit">編輯</a></td>

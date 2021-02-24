@@ -15,10 +15,10 @@ class EquipmentController extends Controller
     ];
 
     const EQUIPMENTS = [
-        1 => ['name' => '輪椅', 'count' => 5],
-        2 => ['name' => '助行架', 'count' => 10],
-        3 => ['name' => '四腳叉', 'count' => 15],
-        4 => ['name' => '枴杖', 'count' => 3],
+        1 => ['name' => '輪椅', 'count' => 5, 'available_count' => 4],
+        2 => ['name' => '助行架', 'count' => 10, 'available_count' => 10],
+        3 => ['name' => '四腳叉', 'count' => 15, 'available_count' => 10],
+        4 => ['name' => '枴杖', 'count' => 3, 'available_count' => 3],
     ];
 
     public function index()

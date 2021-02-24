@@ -39,6 +39,7 @@
                                 <th scope="col" style="width:8%;">#</th>
                                 <th scope="col">儀器</th>
                                 <th scope="col">數量</th>
+                                <th scope="col">可供租借數量</th>
                                 <th scope="col" style="width:14%;">&nbsp;</th>
                             </tr>
                         </thead>
@@ -48,6 +49,7 @@
                                     <td>{{ $k }}</td>
                                     <td>{{ $e['name'] }}</td>
                                     <td>{{ $e['count'] }}</td>
+                                    <td>{{ $e['available_count'] }}</td>
                                     <td>
                                         <a class="btn btn-primary" href="/ecs/equipment/{{ $k }}/edit">編輯</a>
                                         <a class="btn btn-primary" href="/ecs/equipment/{{ $k }}/log">紀錄</a>

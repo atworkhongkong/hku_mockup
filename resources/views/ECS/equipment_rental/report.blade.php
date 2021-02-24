@@ -24,6 +24,17 @@
                             <input type="date" id="field-end-date" class="form-control" value="2021-01-31" />
                         </div>
                     </div>
+
+                    <div class="row mb-2 g-0">
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-center">儀器</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($equipments as $k => $e)
+                                    <option value="{{ $k }}">{{ $e['name'] }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
                     <button type="submit" class="btn btn-primary">搜尋</button>
                 </form>
             </div>
@@ -31,20 +42,26 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到{{ count($equipment_rental_counts) }}筆記錄</span>
+                        <span>找到{{ count($rental_report) }}筆記錄</span>
                     </div>
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th scope="col">儀器</th>
-                                <th scope="col">租借次數</th>
+                                <th scope="col">#</th>
+                                <th scope="col">租借者</th>
+                                <th scope="col">身份</th>
+                                <th scope="col">識別編號</th>
+                                <th scope="col">租借日期</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($equipment_rental_counts as $k => $c)
+                            @foreach($rental_report as $k => $v)
                                 <tr>
-                                    <td>{{ $equipments[$k]['name'] }}</td>
-                                    <td>{{ $c }}</td>
+                                    <td><a href="/ecs/equipment_rental/{{ $k }}/edit" target="_blank">{{ $k }}</a></td>
+                                    <td>{{ $v['name'] }}</td>
+                                    <td>{{ $v['identity'] }}</td>
+                                    <td>{{ $v['code'] }}</td>
+                                    <td>{{ $v['create_date'] }}</td>
                                 </tr>
                             @endforeach
                         </tbody>

@@ -15,12 +15,12 @@ class CarerController extends Controller
     ];
 
     const CARERS = [
-        1 => ['code' => 'J00001', 'name' => '黃柏宇', 'target' => '李雅辛', 'type' => '護老者', 'status' => 'A', 'center' => 2, 'create_date' => '2020-12-08'],
-        2 => ['code' => 'J00002', 'name' => '詹晏靖', 'target' => '傅勝偉', 'type' => '護老者', 'status' => 'A', 'center' => 2, 'create_date' => '2020-06-15'],
-        3 => ['code' => 'J00003', 'name' => '楊智盈', 'target' => '李孟宸', 'type' => '護老者', 'status' => 'A', 'center' => 4, 'create_date' => '2020-01-12'],
+        1 => ['code' => 'J00001', 'name' => '黃柏宇', 'target' => '李雅辛', 'type' => '護老者', 'status' => 'A', 'center' => 1, 'create_date' => '2020-12-08'],
+        2 => ['code' => 'J00002', 'name' => '詹晏靖', 'target' => '傅勝偉', 'type' => '護老者', 'status' => 'A', 'center' => 1, 'create_date' => '2020-06-15'],
+        3 => ['code' => 'J00003', 'name' => '楊智盈', 'target' => '李孟宸', 'type' => '護老者', 'status' => 'A', 'center' => 1, 'create_date' => '2020-01-12'],
         4 => ['code' => 'J00004', 'name' => '廖怡秀', 'target' => '黃耿亨、莫惠婷', 'type' => '護老者', 'status' => 'A', 'center' => 1, 'create_date' => '2019-11-01'],
         5 => ['code' => 'J00005', 'name' => '王瑜育', 'target' => '傅勝偉', 'type' => '有需要護老者', 'status' => 'I', 'center' => 1, 'create_date' => '2019-08-18'],
-        6 => ['code' => 'J00006', 'name' => '蕭育紹', 'target' => '何南珠', 'type' => '有需要護老者', 'status' => 'A', 'center' => 3, 'create_date' => '2019-05-27']
+        6 => ['code' => 'J00006', 'name' => '蕭育紹', 'target' => '何南珠', 'type' => '有需要護老者', 'status' => 'A', 'center' => 1, 'create_date' => '2019-05-27']
     ];
 
     const STATUSES = [
