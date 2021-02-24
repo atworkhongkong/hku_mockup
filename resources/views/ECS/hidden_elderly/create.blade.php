@@ -48,7 +48,7 @@
                             <input type="text" class="form-control" id="input-dob-year">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="input-age" class="form-label">年齡</label>
+                            <label for="input-age" class="form-label">年齡 <small>(自動計算/自行輸入)</small></label>
                             <input type="text" class="form-control" id="input-age">
                         </div>
                     </div>

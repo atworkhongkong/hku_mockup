@@ -39,7 +39,7 @@ class VolunteerController extends Controller
             'activeness' => [1 => 'A', 2 => 'A', 3 => 'I', 4 => 'I', 5 => 'I'],
             'team' => [1 => [1, 2], 2 => [], 3 => [1], 4 => [], 5 => []],
             'register_date' => '2019-12-30',
-            'recover_date' => '2019-12-30',
+            'recover_date' => '',
             'code' => 'VO100075',
             'grade' => 2],
         3 => [
@@ -48,7 +48,7 @@ class VolunteerController extends Controller
             'activeness' => [1 => 'A', 2 => 'A', 3 => 'I', 4 => 'I', 5 => 'I'],
             'team' => [1 => [1], 2 => [], 3 => [], 4 => [], 5 => []],
             'register_date' => '2018-08-26',
-            'recover_date' => '2018-08-26',
+            'recover_date' => '',
             'code' => 'VO100063',
             'grade' => 1],
         4 => [
@@ -57,7 +57,7 @@ class VolunteerController extends Controller
             'activeness' => [1 => 'I', 2 => 'I', 3 => 'A', 4 => 'A', 5 => 'A'],
             'team' => [1 => [2], 2 => [], 3 => [], 4 => [], 5 => []],
             'register_date' => '2018-08-01',
-            'recover_date' => '2018-08-01',
+            'recover_date' => '',
             'code' => 'VO100050',
             'grade' => 1],
         5 => [
@@ -66,7 +66,7 @@ class VolunteerController extends Controller
             'activeness' => [1 => 'A', 2 => 'I', 3 => 'I', 4 => 'A', 5 => 'I'],
             'team' => [1 => [2, 3], 2 => [], 3 => [], 4 => [], 5 => []],
             'register_date' => '2018-06-18',
-            'recover_date' => '2018-06-18',
+            'recover_date' => '',
             'code' => 'VO100048',
             'grade' => 1
         ],

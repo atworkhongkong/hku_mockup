@@ -5,7 +5,7 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">穩蔽長者統計報告</li>
+                    <li class="breadcrumb-item active">隱蔽長者統計報告</li>
                 </ol>
             </nav>
 
@@ -44,6 +44,18 @@
                 </form>
             </div>
 
+            <div class="alert alert-primary" role="alert">
+                @if ($type == 'new')
+                    顯示選擇日期內的新增個案
+                @elseif ($type == 'accumulate')
+                    顯示選擇日期內的由day1到選擇日期的累積個案
+                @elseif ($type == 'reactivate')
+                    顯示選擇日期內的重啟個案(如有)
+                @elseif ($type == 'close')
+                    顯示選擇日期內的結束個案(如有)
+                @endif
+            </div>
+
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
@@ -64,8 +76,8 @@
                         <tbody>
                         @for ($i = 1 ; $i <= $case_counts[$type] ; $i++)
                             <tr>
-                                <td><a href="/ecs/hidden_elderly/{{ $i }}/edit" target="_blank">{{ $i }}</a></td>
-                                <td>{{ $hidden_elderly[$i]['name'] }}</td>
+                                <td>{{ $i }}</td>
+                                <td><a href="/ecs/hidden_elderly/{{ $i }}/edit" target="_blank">{{ $hidden_elderly[$i]['name'] }}</a></td>
                                 <td>{{ $hidden_elderly[$i]['district'] }}</td>
                                 <td>{{ $hidden_elderly[$i]['dob_year'] }}</td>
                                 <td>{{ $hidden_elderly[$i]['age'] }}</td>

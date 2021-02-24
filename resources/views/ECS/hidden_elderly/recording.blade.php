@@ -4,9 +4,10 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">建立日期</th>
+                <th scope="col">跟進日期</th>
                 <th scope="col">內容</th>
                 <th scope="col">建立者</th>
+                <th scope="col">建立日期</th>
                 <th scope="col" style="width:10%;">&nbsp;</th>
             </tr>
         </thead>
@@ -15,12 +16,14 @@
                 <td>2021-01-31</td>
                 <td>身體康復良好，與家人關係...</td>
                 <td>社工A</td>
+                <td>2021-02-02</td>
                 <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#recording-modal">編輯</button></td>
             </tr>
             <tr>
                 <td>2021-01-01</td>
                 <td>沒有受傷或輕微受傷，無須接受治療；受傷部位...</td>
                 <td>社工A</td>
+                <td>2021-01-08</td>
                 <td><a class="btn btn-primary" data-toggle="modal" data-target="#recording-modal" href="javascript:void(0);">編輯</a></td>
             </tr>
         </tbody>
