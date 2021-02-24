@@ -22,6 +22,24 @@
                                 @endforeach
                             </select>
                         </div>
+                        @if ($type == 'accumulate')
+                            <div class="col-auto pr-1">
+                                <label class="sr-only" for="field-ste">STE</label>
+                                <select id="field-ste" class="form-control mr-2">
+                                    <option value=""></option>
+                                    <option value="ste">STE</option>
+                                    <option value="non_ste">Non-STE</option>
+                                </select>
+                            </div>
+                            <div class="col-auto pr-1">
+                                <label class="sr-only" for="field-age">age</label>
+                                <select id="field-age" class="form-control mr-2">
+                                    <option value=""></option>
+                                    <option value="below_60">60歲以下</option>
+                                    <option value="over_60">60歲或以上</option>
+                                </select>
+                            </div>
+                        @endif
                     </div>
 
                     <div class="row mb-2 g-0">
@@ -46,7 +64,7 @@
             <div class="alert alert-primary" role="alert">
                 @if ($type == 'new')
                     某個中心在某個特定時間內的新增義工人數 (包括退出後再恢復成為義工)
-                @else
+                @elseif ($type == 'accumulate')
                     某個中心在某個特定時間前的累積義工人數 (所有已登記，無論是活躍還是非活躍都包含在內)
                 @endif
             </div>
