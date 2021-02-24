@@ -145,4 +145,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/room_booking/calendar', [App\Http\Controllers\ECS\RoomBookingController::class, 'calendar'])->name('ecs.room_booking.calendar');
     Route::get('/room_booking/create', [App\Http\Controllers\ECS\RoomBookingController::class, 'create'])->name('ecs.room_booking.create');
     Route::get('/room_booking/{booking_id}/edit', [App\Http\Controllers\ECS\RoomBookingController::class, 'edit'])->name('ecs.room_booking.edit');
+
+    Route::get('/holiday', [App\Http\Controllers\ECS\HolidayController::class, 'index'])->name('ecs.holiday.index');
+    Route::get('/holiday/create', [App\Http\Controllers\ECS\HolidayController::class, 'create'])->name('ecs.holiday.create');
+    Route::get('/holiday/{id}/edit', [App\Http\Controllers\ECS\HolidayController::class, 'edit'])->name('ecs.holiday.edit');
 });

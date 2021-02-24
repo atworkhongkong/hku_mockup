@@ -75,6 +75,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">ECS2</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/tutor">導師</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/holiday">假期</a></li>
                             <li><a class="dropdown-item" href="/ecs/product">貨品</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/purchase">購物</a></li>
                             <li><a class="dropdown-item" href="/ecs/equipment">儀器</a></li>
