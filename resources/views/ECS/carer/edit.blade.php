@@ -46,34 +46,34 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active p-3 border border-top-0" id="nav-page-1" role="tabpanel" aria-labelledby="nav-tab-1">
-                    @include('ecs.carer.create_form_1')
+                    @include('ECS.carer.create_form_1')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-2" role="tabpanel" aria-labelledby="nav-tab-2">
-                    @include('ecs.carer.create_form_2')
+                    @include('ECS.carer.create_form_2')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-3" role="tabpanel" aria-labelledby="nav-tab-3">
-                    @include('ecs.carer.create_form_3')
+                    @include('ECS.carer.create_form_3')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-4" role="tabpanel" aria-labelledby="nav-tab-4">
-                    @include('ecs.carer.create_form_4')
+                    @include('ECS.carer.create_form_4')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-5" role="tabpanel" aria-labelledby="nav-tab-5">
-                    @include('ecs.carer.create_form_5')
+                    @include('ECS.carer.create_form_5')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-6" role="tabpanel" aria-labelledby="nav-tab-6">
-                    @include('ecs.carer.create_form_6')
+                    @include('ECS.carer.create_form_6')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-7">
-                    @include('ecs.carer.create_form_7')
+                    @include('ECS.carer.create_form_7')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
-                    @include('ecs.carer.create_form_8')
+                    @include('ECS.carer.create_form_8')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-9" role="tabpanel" aria-labelledby="nav-tab-9">
-                    @include('ecs.carer.print_card')
+                    @include('ECS.carer.print_card')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-10" role="tabpanel" aria-labelledby="nav-tab-10">
-                    @include('ecs.carer.recording')
+                    @include('ECS.carer.recording')
                 </div>
             </div>
 
