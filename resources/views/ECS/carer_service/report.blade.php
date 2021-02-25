@@ -70,7 +70,7 @@
                             <tbody>
                                 @foreach($services as $k => $v)
                                     <tr>
-                                        <td>{{ $k }}</td>
+                                        <td><a href="/ecs/carer_service/{{ $k }}/edit" target="_blank">{{ $k }}</a></td>
                                         <td>{{ $service_types[$v['service_type_id']] }}</td>
                                         <td>{{ $v['service_date'] }}</td>
                                         <td>{{ $v['desc'] }}</td>
