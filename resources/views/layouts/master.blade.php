@@ -84,6 +84,8 @@
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/equipment_rental/report">租借儀器統計報告</a></li>
                             <li><a class="dropdown-item" href="/ecs/room">房間</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/room_booking">預約房間</a></li>
+                            <li><a class="dropdown-item" href="/ecs/dcss">智友醫社同行計劃</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/dcss/report">智友醫社同行計劃統計</a></li>
                             <li><a class="dropdown-item" href="/ecs/report/activity_income">活動收費總結表</a></li>
                             <li><a class="dropdown-item" href="/ecs/report/daily_income">每日收入</a></li>
                             <li><a class="dropdown-item" href="/ecs/report/invoice">單據</a></li>

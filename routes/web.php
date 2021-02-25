@@ -154,4 +154,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/holiday', [App\Http\Controllers\ECS\HolidayController::class, 'index'])->name('ecs.holiday.index');
     Route::get('/holiday/create', [App\Http\Controllers\ECS\HolidayController::class, 'create'])->name('ecs.holiday.create');
     Route::get('/holiday/{id}/edit', [App\Http\Controllers\ECS\HolidayController::class, 'edit'])->name('ecs.holiday.edit');
+
+    Route::get('/dcss', [App\Http\Controllers\ECS\DCSSController::class, 'index'])->name('ecs.dcss.index');
+    Route::get('/dcss/create', [App\Http\Controllers\ECS\DCSSController::class, 'create'])->name('ecs.dcss.create');
+    Route::get('/dcss/{id}/edit', [App\Http\Controllers\ECS\DCSSController::class, 'edit'])->name('ecs.dcss.edit');
 });
