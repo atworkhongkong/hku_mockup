@@ -17,17 +17,27 @@
         <div class="row">
             <div class="col-12 mb-3">
                 <label for="input-scope" class="form-label">服務(面談)時數及範疇</label>
-                <input type="text" class="form-control" id="input-scope" @isset($case_id) value="{{ $case['scope'] }}" @endisset>
+                <input type="text" class="form-control" id="input-scope">
             </div>
         </div>
 
         @isset($case_id)
-        <div class="row">
-            <div class="col-12 mb-3">
-                <label for="input-create-date" class="form-label">建立日期</label>
-                <input type="text" class="form-control" id="input-create-date" readonly value="{{ $case['create_date'] }}">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="input-create-date" class="form-label">建立日期</label>
+                    <input type="text" class="form-control" id="input-create-date" readonly value="2020-xx-xx">
+                </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="input-status" class="form-label">狀態</label>
+                    <select class="form-control" id="input-status">
+                        @foreach($statuses as $s)
+                            <option value="">{{ $s }}</option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
         @endisset
 
         <div class="row">

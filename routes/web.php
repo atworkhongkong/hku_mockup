@@ -157,5 +157,12 @@ Route::prefix('ecs')->group(function() {
 
     Route::get('/dcss', [App\Http\Controllers\ECS\DCSSController::class, 'index'])->name('ecs.dcss.index');
     Route::get('/dcss/create', [App\Http\Controllers\ECS\DCSSController::class, 'create'])->name('ecs.dcss.create');
-    Route::get('/dcss/{id}/edit', [App\Http\Controllers\ECS\DCSSController::class, 'edit'])->name('ecs.dcss.edit');
+    Route::get('/dcss/{case_id}/edit', [App\Http\Controllers\ECS\DCSSController::class, 'edit'])->name('ecs.dcss.edit');
+
+    Route::get('/dcss_training', [App\Http\Controllers\ECS\DCSSTrainingController::class, 'index'])->name('ecs.dcss_training.index');
+    Route::get('/dcss_training/create', [App\Http\Controllers\ECS\DCSSTrainingController::class, 'create'])->name('ecs.dcss_training.create');
+    Route::get('/dcss_training/report', [App\Http\Controllers\ECS\DCSSTrainingController::class, 'report'])->name('ecs.dcss_training.report');
+    Route::get('/dcss_training/{case_id}', [App\Http\Controllers\ECS\DCSSTrainingController::class, 'show'])->name('ecs.dcss_training.show');
+    Route::get('/dcss_training/{case_id}/edit', [App\Http\Controllers\ECS\DCSSTrainingController::class, 'edit'])->name('ecs.dcss_training.edit');
+    Route::get('/dcss_training/{case_id}/edit_icp', [App\Http\Controllers\ECS\DCSSTrainingController::class, 'edit_icp'])->name('ecs.dcss_training.edit_icp');
 });
