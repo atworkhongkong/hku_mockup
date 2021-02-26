@@ -1,155 +1,132 @@
 <div class="form-container">
     <form>
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <label for="input-son" class="form-label">兒子數目</label>
-                <input type="text" class="form-control" id="input-son">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>CDAD</span>
             </div>
-            <div class="col-md-6 mb-3">
-                <label for="input-daughter" class="form-label">女兒數目</label>
-                <input type="text" class="form-control" id="input-daughter">
-            </div>
-        </div>
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="input-mark1" class="form-label">副題總分/＃適用項目 一</label>
+                        <input type="text" class="form-control" id="input-mark1">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="input-mark2" class="form-label">副題總分/＃適用項目 二</label>
+                        <input type="text" class="form-control" id="input-mark2">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="input-mark3" class="form-label">副題總分/＃適用項目 三</label>
+                        <input type="text" class="form-control" id="input-mark3">
+                    </div>
+                </div>
 
-        <div class="row">
-            <div class="col-12">
-                照顧者 （按123排名）
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="input-carer1" class="form-label">配偶</label>
-                <input type="text" class="form-control" id="input-carer1">
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="input-carer2" class="form-label">外傭</label>
-                <input type="text" class="form-control" id="input-carer2">
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="input-carer3" class="form-label">子</label>
-                <input type="text" class="form-control" id="input-carer3">
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="input-carer4" class="form-label">女</label>
-                <input type="text" class="form-control" id="input-carer4">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 mb-3">
-                <label for="input-carer5" class="form-label">媳婦</label>
-                <input type="text" class="form-control" id="input-carer5">
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="input-carer6" class="form-label">女婿</label>
-                <input type="text" class="form-control" id="input-carer6">
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="input-carer7" class="form-label">孫</label>
-                <input type="text" class="form-control" id="input-carer7">
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="input-carer8" class="form-label">其他</label>
-                <input type="text" class="form-control" id="input-carer8">
-            </div>
-        </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="input-mark4" class="form-label">副題百分比 一</label>
+                        <input type="text" class="form-control" id="input-mark4">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="input-mark5" class="form-label">副題百分比 二</label>
+                        <input type="text" class="form-control" id="input-mark5">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="input-mark6" class="form-label">副題百分比 三</label>
+                        <input type="text" class="form-control" id="input-mark6">
+                    </div>
+                </div>
 
-        <table class="table my-4">
-            <thead>
-                <tr>
-                    <th scope="col">照顧者名字</th>
-                    <th scope="col">長者稱呼</th>
-                    <th scope="col">聯絡電話</th>
-                    <th scope="col">關係及照顧性質</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="text" class="form-control"></td>
-                    <td><input type="text" class="form-control"></td>
-                    <td><input type="text" class="form-control"></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" class="form-control"></td>
-                    <td><input type="text" class="form-control"></td>
-                    <td><input type="text" class="form-control"></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-            </tbody>
-        </table>
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="input-mark7" class="form-label">失智功能障礙評估總分/＃適用項目</label>
+                        <input type="text" class="form-control" id="input-mark7">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="input-mark8" class="form-label">失智功能障礙評估百分比</label>
+                        <input type="text" class="form-control" id="input-mark8">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <span>主要照顧者資料</span>
+                <span>MOCA</span>
             </div>
             <div class="p-3">
                 <div class="row">
                     <div class="col-12 mb-3">
-                        <label for="input-carer-live-with" class="form-label">居住情況</label>
-                        <div>
-                            @foreach($carer_live_with as $k => $v)
-                                <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="carer-live-with-{{$k}}">
-                                    <label class="form-check-label" for="carer-live-with-{{$k}}">
-                                        {{$v}}
-                                    </label>
-                                    @if ($k == 1)
-                                        <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:auto;" id="field-carer-live-with-{{$k}}">
-                                    @endif
-                                </div>
-                            @endforeach
-                        </div>
+                        <label for="input-moca1" class="form-label">總分</label>
+                        <input type="text" class="form-control" id="input-moca1">
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-12 mb-3">
-                        <label for="input-carer-marriage-status" class="form-label">婚姻狀況</label>
-                        <div>
-                            @foreach($carer_marriage_status as $k => $v)
-                                <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="carer-marriage-status-{{$k}}">
-                                    <label class="form-check-label" for="carer-marriage-status-{{$k}}">
-                                        {{$v}}
-                                    </label>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 mb-3">
-                        <label for="input-carer-education-level" class="form-label">教育程度</label>
-                        <div>
-                            @foreach($carer_educational_level as $k => $v)
-                                <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="carer-education-level-{{$k}}">
-                                    <label class="form-check-label" for="carer-education-level-{{$k}}">
-                                        {{$v}}
-                                    </label>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 mb-3">
-                        <label for="input-carer-economic-status" class="form-label">經濟狀況</label>
-                        <div>
-                            @foreach($carer_economic_status as $k => $v)
-                                <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="carer-economic-status-{{$k}}">
-                                    <label class="form-check-label" for="carer-economic-status-{{$k}}">
-                                        {{$v}}
-                                    </label>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
+
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>NPI-Q</span>
+            </div>
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="input-npiq1" class="form-label">嚴重程度</label>
+                        <input type="text" class="form-control" id="input-npiq1">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="input-npiq2" class="form-label">困援程度</label>
+                        <input type="text" class="form-control" id="input-npiq2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Occupational Therapy Assessment</span>
+            </div>
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="input-ota1" class="form-label">總分</label>
+                        <input type="text" class="form-control" id="input-ota1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Physiotherapy Assessment</span>
+            </div>
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="input-pa1" class="form-label">總分</label>
+                        <input type="text" class="form-control" id="input-pa1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>ZBI</span>
+            </div>
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="input-zbi1" class="form-label">總分</label>
+                        <input type="text" class="form-control" id="input-zbi1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">

@@ -33,6 +33,9 @@
                     <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-7" role="tab" aria-controls="nav-page-7" aria-selected="false">
                         補充資料
                     </a>
+                    <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-8" role="tab" aria-controls="nav-page-8" aria-selected="false">
+                        評估分數
+                    </a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -56,6 +59,9 @@
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-7">
                     @include('ECS.dcss.additional_info')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
+                    @include('ECS.dcss.mark')
                 </div>
             </div>
         </div>
