@@ -23,6 +23,7 @@
                     <span>找到2筆記錄</span>
                     <div>
                         <a href="/ecs/programme_attendance/2/create" class="btn btn-secondary">新增出席記錄</a>
+                        <a href="/ecs/programme_attendance/2/print_attendance" target="_blank" class="btn btn-secondary">列印出席表</a>
                     </div>
                 </div>
                 <table class="table table-bordered">

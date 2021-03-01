@@ -65,6 +65,10 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="alert alert-primary" role="alert">
+                提示︰有些活動並非立即收取費用，而是容許報名人仕先登記資料作抽籤，登記完結後在某日子進行抽籤，後再作報名及收費。
+            </div>
         </div>
     </div>
 @endsection

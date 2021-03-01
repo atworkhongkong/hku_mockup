@@ -106,28 +106,17 @@
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <span>個人資料</span>
-                            <span>
-                                <input type="text" class="form-control" list="programme-list" placeholder="搜尋會員" style="display:inline-block; width:70%;"/>
-                                <datalist id="programme-list">
-                                      <option value="03EL301002 張三">
-                                      <option value="03ELS301003 陳細妹">
-                                </datalist>
-                                或 <a class="btn btn-primary" href="javascript:void(0);">新增</a>
-                            </span>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">新增報名資料</button>
                         </div>
                         <div class="p-3">
                             <table class="table table-sm">
                                 <thead>
                                 <tr>
                                     <th scope="col">會員編號</th>
-                                    <th scope="col">會員類別</th>
-                                    <th scope="col">姓名</th>
-                                    <th scope="col">身份證號碼</th>
-                                    <th scope="col" style="width:60px;">年齡</th>
-                                    <th scope="col" style="width:60px;">姓別</th>
+                                    <th scope="col" style="width:120px;">姓名</th>
+                                    <th scope="col">聯絡電話</th>
                                     <th scope="col">收費</th>
-                                    <th scope="col" style="width:60px;">折扣</th>
-                                    <th scope="col" style="width:60px;">最終收費</th>
+                                    <th scope="col" style="width:100px;">最終收費</th>
                                     <th scope="col">繳費方式</th>
                                     <th scope="col">&nbsp;</th>
                                 </tr>
@@ -135,29 +124,13 @@
                                 <tbody>
                                     <tr>
                                         <td><input type="text" class="form-control form-control-sm" value="03EL301002"></td>
-                                        <td>
-                                            <select class="custom-select custom-select-sm" aria-label="Default select example">
-                                                <option value="1">長者會員</option>
-                                                <option value="2" SELECTED>長者會員(綜援)</option>
-                                            </select>
-                                        </td>
                                         <td><input type="text" class="form-control form-control-sm" value="張三"></td>
-                                        <td><input type="text" class="form-control form-control-sm" value="Axxxxxx(x)"></td>
-                                        <td><input type="text" class="form-control form-control-sm" value="65"></td>
-                                        <td>
-                                            <select class="custom-select custom-select-sm" aria-label="Default select example">
-                                                <option value="1" SELECTED>男</option>
-                                                <option value="2">女</option>
-                                            </select>
-                                        </td>
+                                        <td><input type="text" class="form-control form-control-sm" value="9521xxxx"></td>
                                         <td>
                                             <select class="custom-select custom-select-sm" aria-label="Default select example">
                                                 <option value="1">$100.0 - 長者會員</option>
                                                 <option value="2" SELECTED>$80.0 - 長者會員(綜援)</option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <input class="form-control form-control-sm" type="text" value="" placeholder="0">
                                         </td>
                                         <td><input type="text" class="form-control form-control-sm" value="80"></td>
                                         <td>
@@ -167,33 +140,24 @@
                                                 <option value="cheque">支票</option>
                                             </select>
                                         </td>
-                                        <td><i class="far fa-trash"></i></td>
+                                        <td>
+                                            <a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModal">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <i class="far fa-trash"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" class="form-control form-control-sm" value="03ELS301003"></td>
-                                        <td>
-                                            <select class="custom-select custom-select-sm" aria-label="Default select example">
-                                                <option value="1" SELECTED>長者會員</option>
-                                                <option value="2">長者會員(綜援)</option>
-                                            </select>
-                                        </td>
                                         <td><input type="text" class="form-control form-control-sm" value="張細妹"></td>
-                                        <td><input type="text" class="form-control form-control-sm" value="Bxxxxxx(x)"></td>
-                                        <td><input type="text" class="form-control form-control-sm" value="61"></td>
-                                        <td>
-                                            <select class="custom-select custom-select-sm" aria-label="Default select example">
-                                                <option value="1">男</option>
-                                                <option value="2" SELECTED>女</option>
-                                            </select>
-                                        </td>
+                                        <td><input type="text" class="form-control form-control-sm" value="6812xxxx"></td>
                                         <td>
                                             <select class="custom-select custom-select-sm" aria-label="Default select example">
                                                 <option value="1" SELECTED>$100.0 - 長者會員</option>
                                                 <option value="2">$80.0 - 長者會員(綜援)</option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <input class="form-control form-control-sm" type="text" value="" placeholder="0">
                                         </td>
                                         <td><input type="text" class="form-control form-control-sm" value="100"></td>
                                         <td>
@@ -203,7 +167,14 @@
                                                 <option value="cheque">支票</option>
                                             </select>
                                         </td>
-                                        <td><i class="far fa-trash"></i></td>
+                                        <td>
+                                            <a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModal">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <i class="far fa-trash"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -226,9 +197,129 @@
                     </div>
 
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">提 交</button>
+                        <div class="alert alert-primary" role="alert">
+                            提示︰按此button後會預覽報名資料，確認後再提交會列印報名收據
+                            (若有10人報名，則會列印10張收據)
+                        </div>
+                        <button type="submit" class="btn btn-primary">預覽及提交</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">報名資料</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="field-member-code" class="col-form-label">會員編號</label>
+                                <input type="text" class="form-control" id="field-member-code">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="field-member-type" class="col-form-label">會員類別</label>
+                                <select class="custom-select custom-select" aria-label="Default select example">
+                                    <option value="1" SELECTED>長者會員</option>
+                                    <option value="2">長者會員(綜援)</option>
+                                    <option value="3">驕陽會員</option>
+                                    <option value="4">護老者</option>
+                                    <option value="5">義工</option>
+                                    <option value="6">非會員</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="field-name" class="col-form-label">姓名</label>
+                                <input type="text" class="form-control" id="field-name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="field-contact-phone" class="col-form-label">聯絡電話</label>
+                                <input type="text" class="form-control" id="field-contact-phone">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="field-dob" class="col-form-label">出生日期</label>
+                                <input type="text" class="form-control" id="field-dob">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="field-gender" class="col-form-label">姓別</label>
+                                <select class="custom-select custom-select" aria-label="Default select example">
+                                    <option value="1" SELECTED>男</option>
+                                    <option value="2">女</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="field-fee" class="col-form-label">收費</label>
+                                <select class="custom-select custom-select" aria-label="Default select example">
+                                    <option value="1" SELECTED>$100.0 - 長者會員</option>
+                                    <option value="2">$80.0 - 長者會員(綜援)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="field-discount" class="col-form-label">折扣</label>
+                                <input type="text" class="form-control" id="field-discount">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="field-coupon" class="col-form-label">優惠劵名稱</label>
+                                <input type="text" class="form-control" id="field-coupon">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="field-coupon-discount" class="col-form-label">優惠劵折扣</label>
+                                <input type="text" class="form-control" id="field-coupon-discount">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="field-final-fee" class="col-form-label">最終收費</label>
+                                <input type="text" class="form-control" id="field-final-fee">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="field-payment-type" class="col-form-label">繳費方式</label>
+                                <select class="custom-select custom-select" aria-label="Default select example">
+                                    <option selected>請選擇付款方式</option>
+                                    <option value="cash" SELECTED>現金</option>
+                                    <option value="cheque">支票</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="field-reference-number" class="col-form-label">支票號碼/其他參考編號</label>
+                                <input type="text" class="form-control" id="field-reference-number">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-primary">新增報名資料</button>
+                </div>
             </div>
         </div>
     </div>

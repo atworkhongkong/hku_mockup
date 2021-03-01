@@ -62,6 +62,7 @@
                                                 <option value=""></option>
                                                 <option>雜菜肉絲炒米</option>
                                                 <option>蕎麥麵</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td>
@@ -69,6 +70,7 @@
                                                 <option value=""></option>
                                                 <option>金針雲耳肉片盅蒸飯</option>
                                                 <option>蛋治、麥皮</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td>
@@ -76,6 +78,7 @@
                                                 <option value=""></option>
                                                 <option>蛋治、麥皮</option>
                                                 <option>金針雲耳肉片盅蒸飯</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td>
@@ -83,6 +86,7 @@
                                                 <option value=""></option>
                                                 <option>時菜水餸湯蕎麥麵</option>
                                                 <option>肉絲炒米</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td>
@@ -90,6 +94,7 @@
                                                 <option value=""></option>
                                                 <option>盅蒸飯</option>
                                                 <option>肉絲炒米</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td>
@@ -97,6 +102,7 @@
                                                 <option value=""></option>
                                                 <option>雜菜</option>
                                                 <option>蛋治、麥皮</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                     </tr>
@@ -107,6 +113,7 @@
                                                 <option value=""></option>
                                                 <option>1. 陳皮薑蔥蒸時鮮</option>
                                                 <option>2. 金銀蛋碎肉扒時蔬</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -114,6 +121,7 @@
                                                 <option value=""></option>
                                                 <option>1. 蒸魚</option>
                                                 <option>2. 菜遠牛肉</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -121,6 +129,7 @@
                                                 <option value=""></option>
                                                 <option>1. 炒菜心</option>
                                                 <option>2. 生炒骨</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -128,6 +137,7 @@
                                                 <option value=""></option>
                                                 <option>1. 生炒骨</option>
                                                 <option>2. 蒸魚</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -135,6 +145,7 @@
                                                 <option value=""></option>
                                                 <option>1. 炒飯</option>
                                                 <option>2. 蒸魚</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -142,6 +153,7 @@
                                                 <option value=""></option>
                                                 <option>1. 蒸時鮮</option>
                                                 <option>2. 扒時蔬</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                     </tr>
@@ -152,6 +164,7 @@
                                                 <option value=""></option>
                                                 <option>1. 節瓜冬菇妏雞絲</option>
                                                 <option>2. 三絲炒瀨粉</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -159,6 +172,7 @@
                                                 <option value=""></option>
                                                 <option>1. 炒鱔片</option>
                                                 <option>2. 炆牛肉</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -166,6 +180,7 @@
                                                 <option value=""></option>
                                                 <option>1. 炆魚腩</option>
                                                 <option>2. 炒勝瓜</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -173,6 +188,7 @@
                                                 <option value=""></option>
                                                 <option>1. 節瓜冬菇</option>
                                                 <option>2. 炒勝瓜</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -180,6 +196,7 @@
                                                 <option value=""></option>
                                                 <option>1. 節瓜冬菇</option>
                                                 <option>2. 炒勝瓜</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                         <td class="text-center">
@@ -187,12 +204,17 @@
                                                 <option value=""></option>
                                                 <option>1. 節瓜冬菇</option>
                                                 <option>2. 炒勝瓜</option>
+                                                <option>執雞餐</option>
                                             </select>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+
+                    <div class="alert alert-primary" role="alert">
+                        提示︰同一人在同一center不能重覆購買同一日飯餐
                     </div>
 
                     <div class="col-12">

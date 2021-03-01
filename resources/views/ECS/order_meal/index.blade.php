@@ -16,8 +16,8 @@
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form-inline" action="/ecs/order_meal" method="GET">
-                    <label class="sr-only" for="field-chi-name" >會員編號</label>
-                    <input type="text" id="field-chi-name" class="form-control mr-2" placeholder="會員姓名" value="王妹"/>
+                    <label class="sr-only" for="field-member-code" >會員編號</label>
+                    <input type="text" id="field-chi-name" class="form-control mr-2" placeholder="會員編號" value="03EL30012"/>
 
                     @if ($member_code)
                         <label class="sr-only" for="field-key-word" >關錄字</label>
@@ -75,13 +75,17 @@
                                     <td>1082</td>
                                     <td>2021-02-08 至 2021-02-13</td>
                                     <td>3</td>
-                                    <td><a href="/ecs/order_meal/1082/edit" class="btn btn-primary">編輯</a></td>
+                                    <td>
+                                        <a href="/ecs/order_meal/1082/edit" class="btn btn-primary">編輯</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>1081</td>
                                     <td>2021-02-08 至 2021-02-13</td>
                                     <td>9</td>
-                                    <td><a href="/ecs/order_meal/1082/edit" class="btn btn-primary">編輯</a></td>
+                                    <td>
+                                        <a href="/ecs/order_meal/1082/edit" class="btn btn-primary">編輯</a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

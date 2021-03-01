@@ -12,13 +12,18 @@ class ProgrammeAttendanceController extends Controller
         return view('ECS.programme_attendance.index');
     }
 
-    public function create($id)
+    public function create($programme_id)
     {
         return view('ECS.programme_attendance.create');
     }
 
-    public function edit($id)
+    public function edit($programme_id)
     {
         return view('ECS.programme_attendance.edit');
+    }
+
+    public function printAttendance($programme_id)
+    {
+        return view('ECS.programme_attendance.print_attendance');
     }
 }

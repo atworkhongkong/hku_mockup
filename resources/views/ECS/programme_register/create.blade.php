@@ -19,21 +19,25 @@
                 </form>
             </div>
 
+            <div class="alert alert-primary" role="alert">
+                提示︰容許會員或非會員報名活動。若登記者為會員，記緊核實會員到期日。
+            </div>
+
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="input-chi-name" class="form-label">中文姓名</label>
-                    <input type="text" class="form-control" id="input-chi-name" value="陳二妹" readonly>
+                    <input type="text" class="form-control" id="input-chi-name" value="陳二妹">
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="input-eng-name" class="form-label">英文姓名</label>
-                    <input type="text" class="form-control" id="input-eng-name" value="Chan Yee Mui" readonly>
+                    <input type="text" class="form-control" id="input-eng-name" value="Chan Yee Mui">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="input-chi-name" class="form-label">姓別</label>
-                    <select class="custom-select" aria-label="Disabled select example" disabled>
+                    <select class="custom-select" aria-label="Disabled select example">
                         <option></option>
                         <option value="1">男</option>
                         <option value="2" SELECTED>女</option>
@@ -41,36 +45,36 @@
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="input-eng-name" class="form-label">出生日期</label>
-                    <input type="text" class="form-control" id="input-eng-name" value="1938-12-08" readonly>
+                    <input type="text" class="form-control" id="input-eng-name" value="1938-12-08">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-12 mb-3">
                     <label for="input-address" class="form-label">地址</label>
-                    <input type="text" class="form-control" id="input-address" value="香港仔中心x座x樓2室" readonly>
+                    <input type="text" class="form-control" id="input-address" value="香港仔中心x座x樓2室">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="input-phone" class="form-label">住宅電話</label>
-                    <input type="text" class="form-control" id="input-phone" value="21122112" readonly>
+                    <input type="text" class="form-control" id="input-phone" value="21122112">
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="input-mobile" class="form-label">手提電話</label>
-                    <input type="text" class="form-control" id="input-mobile" value="98989898" readonly>
+                    <input type="text" class="form-control" id="input-mobile" value="98989898">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="input-member-type" class="form-label">會員類別</label>
-                    <input type="text" class="form-control" id="input-member-type" value="長者會員(綜援)" readonly>
+                    <input type="text" class="form-control" id="input-member-type" value="長者會員(綜援)">
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="input-expiry-date" class="form-label">會員到期日</label>
-                    <input type="text" class="form-control" id="input-expiry-date" value="2013-05-31" readonly>
+                    <input type="text" class="form-control" id="input-expiry-date" value="2013-05-31">
                 </div>
             </div>
 
@@ -146,6 +150,7 @@
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <span>優惠劵</span>
+                            <!--
                             <span>
                                 <input type="text" class="form-control" list="coupon-list" placeholder="搜尋優惠劵" />
                                 <datalist id="coupon-list">
@@ -153,20 +158,21 @@
                                       <option value="NY2022 -$20.0 優惠">
                                 </datalist>
                             </span>
+                            -->
                         </div>
                         <div class="p-3">
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th scope="col">優惠劵代號</th>
+                                    <th scope="col">優惠劵名稱</th>
                                     <th scope="col">折扣</th>
                                     <th scope="col">&nbsp;</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><input class="form-control" type="text" value="NY2021" readonly></td>
-                                        <td><input class="form-control" type="text" value="20" readonly></td>
+                                        <td><input class="form-control" type="text" value="NY2021"></td>
+                                        <td><input class="form-control" type="text" value="20"></td>
                                         <td><i class="far fa-trash"></i></td>
                                     </tr>
                                 </tbody>
@@ -180,15 +186,20 @@
                         </div>
                         <div class="p-3">
                             <div class="row mb-2">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
+                                    <label class="" for="field-reference-number">付款方式</label>
                                     <select class="custom-select" aria-label="Default select example">
                                         <option selected>請選擇付款方式</option>
                                         <option value="cash">現金</option>
                                         <option value="cheque">支票</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6">
-                                    <label class="sr-only" for="field-total-price">金額</label>
+                                <div class="col-md-4">
+                                    <label class="" for="field-reference-number">支票號碼/其他參考編號</label>
+                                    <input type="text" id="field-reference-number" class="form-control mr-2" placeholder="支票編號/其他參考編號" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="" for="field-total-price">應付金額</label>
                                     <input type="text" id="field-total-price" class="form-control mr-2" value="140" readonly />
                                 </div>
                             </div>
@@ -197,7 +208,10 @@
                     </div>
 
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">提 交</button>
+                        <div class="alert alert-primary" role="alert">
+                            提示︰按此button後會預覽報名資料，確認後再提交會列印報名收據
+                        </div>
+                        <button type="submit" class="btn btn-primary">預覽及提交</button>
                     </div>
                 </form>
             </div>

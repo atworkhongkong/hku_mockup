@@ -56,9 +56,10 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_register/cancel', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'cancel'])->name('ecs.programme_register.cancel');
     Route::get('/programme_register/report', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'report'])->name('ecs.programme_register.report');
 
-    Route::get('/programme_attendance/{id}/create', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'create'])->where('id', '[0-9]+')->name('ecs.programme_attendance.create');
+    Route::get('/programme_attendance/{programme_id}/create', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'create'])->where('id', '[0-9]+')->name('ecs.programme_attendance.create');
     Route::get('/programme_attendance/{attendance_id}/edit', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'edit'])->where('attendance_id', '[0-9]+')->name('ecs.programme_attendance.edit');
-    Route::get('/programme_attendance/{id}', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'index'])->where('id', '[0-9]+')->name('ecs.programme_attendance.index');
+    Route::get('/programme_attendance/{programme_id}', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'index'])->where('id', '[0-9]+')->name('ecs.programme_attendance.index');
+    Route::get('/programme_attendance/{programme_id}/print_attendance', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'printAttendance'])->where('id', '[0-9]+')->name('ecs.programme_attendance.print_attendance');
 
     Route::get('/programme_waiting_list/{programme_id}/create', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'create'])->where('programme_id', '[0-9]+')->name('ecs.programme_waiting_list.create');
     Route::get('/programme_waiting_list/{programme_id}/draw', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'draw'])->where('programme_id', '[0-9]+')->name('ecs.programme_waiting_list.draw');

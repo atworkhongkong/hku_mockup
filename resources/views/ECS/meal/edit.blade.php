@@ -13,8 +13,15 @@
             <div class="form-container">
                 <form>
                     <div class="row mb-3">
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-center">中心</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
                         <div class="col-4">
-                            <label for="input-week" class="form-label">週份</label>
                             <input type="week" class="form-control" id="input-week" value="2021-W06"">
                         </div>
                     </div>
@@ -40,85 +47,109 @@
                                         <td><input type="text" class="form-control" value="金針雲耳肉片盅蒸飯"></td>
                                         <td><input type="text" class="form-control" value="蛋治、麥皮"></td>
                                         <td><input type="text" class="form-control" value="時菜水餸湯蕎麥麵"></td>
-                                        <td class="holiday"><input type="text" class="form-control" value=""></td>
-                                        <td class="holiday"><input type="text" class="form-control" value=""></td>
+                                        <td class="holiday"><input type="text" class="form-control" readonly></td>
+                                        <td class="holiday"><input type="text" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">午</th>
                                         <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="陳皮薑蔥蒸時鮮">
-                                            <input type="text" class="form-control d-inline-block mb-5" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="金銀蛋碎肉扒時蔬 (低鹽︰免咸蛋)">
-                                            <input type="text" class="form-control d-inline-block" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
                                         <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            <input type="text" class="form-control d-inline-block" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
                                         <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            <input type="text" class="form-control d-inline-block" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
                                         <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            <input type="text" class="form-control d-inline-block" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
                                         <td class="text-center holiday">
-                                            <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
-                                            <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            <input type="text" class="form-control d-inline-block" placeholder="配">
+                                            <input type="text" class="form-control mb-1" placeholder="1." readonly>
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註" readonly>
+                                            <input type="text" class="form-control mb-1" placeholder="2." readonly>
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註" readonly>
                                         </td>
                                         <td class="text-center holiday">
-                                            <input type="text" class="form-control mb-1" placeholder="1." value="">
-                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
-                                            <input type="text" class="form-control mb-1" placeholder="2." value="">
-                                            <input type="text" class="form-control d-inline-block" placeholder="配">
+                                            <input type="text" class="form-control mb-1" placeholder="1." readonly>
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註" readonly>
+                                            <input type="text" class="form-control mb-1" placeholder="2." readonly>
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註" readonly>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">晚</th>
                                         <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." value="節瓜冬菇妏雞絲 (痛風︰免冬菇)">
-                                            <input type="text" class="form-control d-inline-block mb-5" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註">
                                             <input type="text" class="form-control mb-1" placeholder="2." value="三絲炒瀨粉 (叉燒絲、蛋絲、甘筍/青椒絲)">
-                                            <input type="text" class="form-control d-inline-block" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
                                         <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1.">
-                                            <input type="text" class="form-control d-inline-block mb-5" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註">
                                             <input type="text" class="form-control mb-1" placeholder="2.">
-                                            <input type="text" class="form-control d-inline-block" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
                                         <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1.">
-                                            <input type="text" class="form-control d-inline-block mb-5" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註">
                                             <input type="text" class="form-control mb-1" placeholder="2.">
-                                            <input type="text" class="form-control d-inline-block" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
                                         <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1.">
-                                            <input type="text" class="form-control d-inline-block mb-5" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註">
                                             <input type="text" class="form-control mb-1" placeholder="2.">
-                                            <input type="text" class="form-control d-inline-block" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
                                         <td class="text-center holiday">
-                                            <input type="text" class="form-control mb-1" placeholder="1.">
-                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
-                                            <input type="text" class="form-control mb-1" placeholder="2.">
-                                            <input type="text" class="form-control d-inline-block" placeholder="配">
+                                            <input type="text" class="form-control mb-1" placeholder="1." readonly>
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註" readonly>
+                                            <input type="text" class="form-control mb-1" placeholder="2." readonly>
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註" readonly>
                                         </td>
                                         <td class="text-center holiday">
-                                            <input type="text" class="form-control mb-1" placeholder="1.">
-                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="配">
-                                            <input type="text" class="form-control mb-1" placeholder="2.">
-                                            <input type="text" class="form-control d-inline-block" placeholder="配">
+                                            <input type="text" class="form-control mb-1" placeholder="1." readonly>
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
+                                            <input type="text" class="form-control d-inline-block mb-5" placeholder="備註" readonly>
+                                            <input type="text" class="form-control mb-1" placeholder="2." readonly>
+                                            <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
+                                            <input type="text" class="form-control d-inline-block" placeholder="備註" readonly>
                                         </td>
                                     </tr>
                                 </tbody>

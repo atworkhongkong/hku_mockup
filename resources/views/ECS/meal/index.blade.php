@@ -11,6 +11,13 @@
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form-inline" action="/ecs/programme" method="GET">
+                    <label class="sr-only" for="field-center">中心</label>
+                    <select id="field-center" class="form-control mr-2" name="center">
+                        @foreach($centers as $k => $c)
+                            <option value="{{ $k }}">{{ $c }}</option>
+                        @endforeach
+                    </select>
+
                     <label class="sr-only" for="field-week" >週份</label>
                     <input type="week" id="field-week" class="form-control mr-2" value="2021-W06" />
 
