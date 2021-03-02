@@ -29,4 +29,9 @@ class OrderMealController extends Controller
     {
         return view('ECS.order_meal.report');
     }
+
+    public function export()
+    {
+        return view('ECS.order_meal.export');
+    }
 }

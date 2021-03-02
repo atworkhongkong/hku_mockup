@@ -13,6 +13,14 @@
                 <form class="form" action="/ecs/programme" method="GET">
                     <div class="row mb-2">
                         <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">中心</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
                             <label class="sr-only" for="field-area">搜尋範圍</label>
                             <select id="field-area" class="form-control mr-2" name="team">
                                 <option value="">活動編號</option>
@@ -22,7 +30,7 @@
                                 <option value="">負責職員</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="col-auto">
                             <label class="sr-only" for="field-key-word" >關錄字</label>
                             <input type="text" id="field-name" class="form-control" placeholder="關鍵字" />
                         </div>

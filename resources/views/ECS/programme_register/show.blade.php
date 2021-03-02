@@ -22,19 +22,22 @@
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>活動名額︰20, 有效報名人數︰2, 取消人數︰1</span>
+                        <div>
+                            <a href="javascript:void(0);" class="btn btn-secondary">匯出紀錄</a>
+                        </div>
                     </div>
                     <table class="table table-bordered">
                         <thead>
-                        <tr>
-                            <th scope="col" style="width:15%;">會員編號</th>
-                            <th scope="col">姓名</th>
-                            <th scope="col">手提電話</th>
-                            <th scope="col">報名日期</th>
-                            <th scope="col">狀態</th>
-                            <th scope="col">收據編號</th>
-                            <th scope="col">金額</th>
-                            <th scope="col" style="width:16%;">&nbsp;</th>
-                        </tr>
+                            <tr>
+                                <th scope="col" style="width:15%;">會員編號</th>
+                                <th scope="col">姓名</th>
+                                <th scope="col">手提電話</th>
+                                <th scope="col">報名日期</th>
+                                <th scope="col">狀態</th>
+                                <th scope="col">收據編號</th>
+                                <th scope="col">金額</th>
+                                <th scope="col" style="width:16%;">&nbsp;</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>

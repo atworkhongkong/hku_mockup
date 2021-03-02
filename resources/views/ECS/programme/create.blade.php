@@ -13,6 +13,17 @@
             <div class="form-container">
                 <form>
                     <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-center" class="form-label">中心</label>
+                            <select id="field-center" class="form-control mr-2">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-code" class="form-label">活動編號</label>
                             <input type="text" class="form-control" id="input-code">
@@ -115,10 +126,13 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 mb-3">
+                    <div class="row align-items-end">
+                        <div class="col mb-3">
                             <label for="input-programme-date" class="form-label">活動舉行日期</label>
                             <input type="text" class="form-control" id="input-programme-date">
+                        </div>
+                        <div class="col-auto mb-3 px-0">
+                            <span><i class="far fa-calendar-times" style="font-size:24px;"></i></span>
                         </div>
                     </div>
 

@@ -5,40 +5,34 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page">活動</li>
+                    <li class="breadcrumb-item active">活動報名統計報告</li>
                 </ol>
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form" action="/ecs/programme" method="GET">
+                <form class="form" action="/ecs/volunteer_service/report" method="GET">
                     <div class="row mb-2">
                         <div class="col-auto pr-1">
-                            <label class="sr-only" for="field-area">搜尋範圍</label>
-                            <select id="field-area" class="form-control mr-2" name="team">
-                                <option value="">活動編號</option>
-                                <option value="">中文名稱</option>
-                                <option value="">地點</option>
-                                <option value="">報名名額</option>
-                                <option value="">負責職員</option>
+                            <label class="sr-only" for="field-center">中心</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k }}">{{ $c }}</option>
+                                @endforeach
                             </select>
-                        </div>
-                        <div>
-                            <label class="sr-only" for="field-key-word" >關錄字</label>
-                            <input type="text" id="field-name" class="form-control" placeholder="關鍵字" />
                         </div>
                     </div>
 
                     <div class="row mb-2 g-0">
                         <div class="col-auto">
                             <label class="sr-only" for="field-start-date">開始日期</label>
-                            <input type="date" id="field-start-date" class="form-control" />
+                            <input type="date" id="field-start-date" class="form-control" value="2021-01-01" />
                         </div>
                         <div class="col-auto px-0 pt-2">
                             至
                         </div>
                         <div class="col-auto">
                             <label class="sr-only" for="field-end-date">結束日期</label>
-                            <input type="date" id="field-end-date" class="form-control" />
+                            <input type="date" id="field-end-date" class="form-control" value="2021-01-31" />
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">搜尋</button>
@@ -48,59 +42,45 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到2筆記錄</span>
-                        <div>
-                            <a href="/ecs/programme_register/create" class="btn btn-secondary">單人報名</a>
-                            <a href="/ecs/programme_register/create_multiple" class="btn btn-secondary">多人報名</a>
-                            <a href="/ecs/programme/create" class="btn btn-secondary">新增活動</a>
-                        </div>
+                        <span>找到 {{ count($report) }} 筆記錄</span>
                     </div>
-                    <table class="table table-bordered">
+                    <table class="table table-sm table-bordered">
                         <thead>
-                        <tr>
-                            <th scope="col" style="width:15%;">活動編號</th>
-                            <th scope="col" style="width:15%;">名稱</th>
-                            <th scope="col">名額</th>
-                            <th scope="col">報讀人數</th>
-                            <th scope="col">開始日期</th>
-                            <th scope="col">結束日期</th>
-                            <th scope="col">負責同事</th>
-                            <th scope="col">狀態</th>
-                            <th scope="col">批核狀態</th>
-                            <th scope="col" style="width:15%;">&nbsp;</th>
-                        </tr>
+                            <tr>
+                                <th scope="col">編號</th>
+                                <th scope="col">活動名稱</th>
+                                <th scope="col">日期</th>
+                                <th scope="col">報名人數</th>
+                                <th scope="col">堂數</th>
+                                <th scope="col">總出席次數</th>
+                                <th scope="col">社署指標</th>
+                                <th scope="col">聯絡人</th>
+                                <th scope="col">總收費</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>JM30130</td>
-                            <td>親子天地</td>
-                            <td>20</td>
-                            <td>2</td>
-                            <td>2021-03-01</td>
-                            <td>2021-03-01</td>
-                            <td>同事A</td>
-                            <td>正常</td>
-                            <td>已批核</td>
-                            <td>
-                                <a class="btn btn-primary" href="/ecs/programme/2/edit">編輯</a>
-                                <a class="btn btn-primary" href="/ecs/programme_register/2">更多...</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>JM30129</td>
-                            <td>粵曲欣賞</td>
-                            <td>30</td>
-                            <td>1</td>
-                            <td>2021-03-02</td>
-                            <td>2021-03-02</td>
-                            <td>同事B</td>
-                            <td>暫停</td>
-                            <td>已批核</td>
-                            <td>
-                                <a class="btn btn-primary" href="/ecs/programme/1/edit">編輯</a>
-                                <a class="btn btn-primary" href="/ecs/programme_register/1">更多...</a>
-                            </td>
-                        </tr>
+                            @foreach($report as $v)
+                                <tr>
+                                    <td>{{ $v['code'] }}</td>
+                                    <td>{{ $v['name'] }}</td>
+                                    <td>{{ $v['date'] }}</td>
+                                    <td>{{ $v['register_count'] }}</td>
+                                    <td>{{ $v['lesson_count'] }}</td>
+                                    <td>{{ $v['attendance_count'] }}</td>
+                                    <td>{{ $v['indicator'] }}</td>
+                                    <td>{{ $v['contact_person'] }}</td>
+                                    <td>{{ $v['fee'] }}</td>
+                                </tr>
+                            @endforeach
+                            <tr>
+                                <td class="text-right" colspan="3"></td>
+                                <td>87</td>
+                                <td>9</td>
+                                <td>303</td>
+                                <td></td>
+                                <td></td>
+                                <td>6270</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

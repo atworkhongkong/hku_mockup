@@ -21,7 +21,7 @@
                     </select>
 
                     <label class="sr-only" for="field-key-word" >關錄字</label>
-                    <input type="week" class="form-control mr-2" id="input-week" value="2021-W06"">
+                    <input type="week" class="form-control mr-2" id="input-week" value="2021-W06">
 
                     <button type="submit" class="btn btn-primary">搜尋</button>
                 </form>
@@ -31,6 +31,9 @@
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>找到7筆紀錄</span>
+                        <div>
+                            <a href="/ecs/order_meal/export" class="btn btn-secondary">匯出單日資料</a>
+                        </div>
                     </div>
                     <table class="table table-sm table-striped table-bordered" style="font-size:.9rem;">
                         <thead>

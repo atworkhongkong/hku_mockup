@@ -20,6 +20,17 @@
             </div>
 
             <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="input-center" class="form-label">中心</label>
+                    <select id="field-center" class="form-control mr-2" disabled>
+                        @foreach($centers as $k => $c)
+                            <option value="{{ $k }}">{{ $c }}</option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="input-chi-name" class="form-label">中文名稱</label>
                     <input type="text" class="form-control" id="input-chi-name" value="親子活動" readonly>

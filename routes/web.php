@@ -82,6 +82,7 @@ Route::prefix('ecs')->group(function() {
     Route::get('/order_meal/create', [App\Http\Controllers\ECS\OrderMealController::class, 'create'])->name('ecs.order_meal.create');
     Route::get('/order_meal/{order_id}/edit', [App\Http\Controllers\ECS\OrderMealController::class, 'edit'])->name('ecs.order_meal.edit');
     Route::get('/order_meal/report', [App\Http\Controllers\ECS\OrderMealController::class, 'report'])->name('ecs.order_meal.report');
+    Route::get('/order_meal/export', [App\Http\Controllers\ECS\OrderMealController::class, 'export'])->name('ecs.order_meal.export');
 
     Route::get('/volunteer', [App\Http\Controllers\ECS\VolunteerController::class, 'index'])->name('ecs.volunteer.index');
     Route::get('/volunteer/create', [App\Http\Controllers\ECS\VolunteerController::class, 'create'])->name('ecs.volunteer.create');
