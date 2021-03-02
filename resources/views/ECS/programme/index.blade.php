@@ -91,7 +91,7 @@
                             <td>已批核</td>
                             <td>
                                 <a class="btn btn-primary" href="/ecs/programme/2/edit">編輯</a>
-                                <a class="btn btn-primary" href="/ecs/programme_register/2">更多...</a>
+                                <a class="btn btn-primary" href="/ecs/programme/2/register">更多...</a>
                             </td>
                         </tr>
                         <tr>
@@ -106,7 +106,7 @@
                             <td>已批核</td>
                             <td>
                                 <a class="btn btn-primary" href="/ecs/programme/1/edit">編輯</a>
-                                <a class="btn btn-primary" href="/ecs/programme_register/1">更多...</a>
+                                <a class="btn btn-primary" href="/ecs/programme/1/register">更多...</a>
                             </td>
                         </tr>
                         </tbody>

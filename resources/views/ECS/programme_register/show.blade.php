@@ -5,138 +5,178 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item" aria-current="page"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme/2/edit">JM30130 - 親子天地</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">報名人數</li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">報名</li>
                 </ol>
             </nav>
 
-            <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
-                <a href="/ecs/programme_register/2" class="btn btn-primary">報名人數</a>
-                <a href="/ecs/programme_attendance/2" class="btn btn-outline-primary">出席記錄</a>
-                <a href="/ecs/programme_waiting_list/2" class="btn btn-outline-primary">後補名單</a>
-                <a href="/ecs/programme_tutor_salary/2" class="btn btn-outline-primary">導師費用</a>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="input-chi-name" class="form-label">中文姓名</label>
+                    <input type="text" class="form-control" id="input-chi-name" value="陳二妹">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="input-eng-name" class="form-label">英文姓名</label>
+                    <input type="text" class="form-control" id="input-eng-name" value="Chan Yee Mui">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="input-chi-name" class="form-label">姓別</label>
+                    <select class="custom-select" aria-label="Disabled select example">
+                        <option></option>
+                        <option value="1">男</option>
+                        <option value="2" SELECTED>女</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="input-eng-name" class="form-label">出生日期</label>
+                    <input type="text" class="form-control" id="input-eng-name" value="1938-12-08">
+                </div>
             </div>
 
             <div class="row">
                 <div class="col-12 mb-3">
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>活動名額︰20, 有效報名人數︰2, 取消人數︰1</span>
-                        <div>
-                            <a href="javascript:void(0);" class="btn btn-secondary">匯出紀錄</a>
-                        </div>
-                    </div>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col" style="width:15%;">會員編號</th>
-                                <th scope="col">姓名</th>
-                                <th scope="col">手提電話</th>
-                                <th scope="col">報名日期</th>
-                                <th scope="col">狀態</th>
-                                <th scope="col">收據編號</th>
-                                <th scope="col">金額</th>
-                                <th scope="col" style="width:16%;">&nbsp;</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>03EL300102</td>
-                                <td>陳永仁</td>
-                                <td>98989898</td>
-                                <td>2021-01-05</td>
-                                <td>有效</td>
-                                <td><a href="/ecs/invoice/A0000012" target="_blank">A0000012</a></td>
-                                <td>$100.0</td>
-                                <td>
-                                    <a href="javascript:void(0);" class="btn btn-primary">列印收據</a>
-                                    <a href="javascript:void(0);" class="btn btn-danger" data-toggle="modal" data-target="#cancel-modal">取消</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>03ELS300805</td>
-                                <td>劉健明</td>
-                                <td>96969696</td>
-                                <td>2021-01-04</td>
-                                <td>有效</td>
-                                <td><a href="/ecs/invoice/A0000011" target="_blank">A0000011</a></td>
-                                <td>$80.0</td>
-                                <td>
-                                    <a href="javascript:void(0);" class="btn btn-primary">列印收據</a>
-                                    <a href="javascript:void(0);" class="btn btn-danger" data-toggle="modal" data-target="#cancel-modal">取消</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>03ELS300805</td>
-                                <td>葉問</td>
-                                <td>95959595</td>
-                                <td>2021-01-04</td>
-                                <td>已取消</td>
-                                <td><a href="/ecs/invoice/A0000010" target="_blank">A0000010</a></td>
-                                <td>($100.0)</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td colspan="6" class="text-right">總收入︰</td>
-                                <td>$180.0</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <label for="input-address" class="form-label">地址</label>
+                    <input type="text" class="form-control" id="input-address" value="香港仔中心x座x樓2室">
                 </div>
             </div>
 
-            <!-- modal -->
-            <div class="modal fade" id="cancel-modal" tabindex="-1" role="dialog" aria-labelledby="cancelModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">取消報名</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="input-phone" class="form-label">住宅電話</label>
+                    <input type="text" class="form-control" id="input-phone" value="21122112">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="input-mobile" class="form-label">手提電話</label>
+                    <input type="text" class="form-control" id="input-mobile" value="98989898">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="input-member-type" class="form-label">會員類別</label>
+                    <input type="text" class="form-control" id="input-member-type" value="長者會員(綜援)">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="input-expiry-date" class="form-label">會員到期日</label>
+                    <input type="text" class="form-control" id="input-expiry-date" value="2013-05-31">
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <div class="form-container">
+                <form>
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>活動</span>
                         </div>
-                        <div class="modal-body">
-                            <form target="_blank" action="/ecs/programme_register/cancel" method="GET" id="submit-form">
-                                <input type="hidden" name="code" value="sae235S32vde23">
-                                <div class="form-group">
-                                    <label for="field-member-code" class="col-form-label">會員編號</label>
-                                    <input type="text" class="form-control" id="field-member-code" value="03EL300102" readonly>
-                                </div>
-                                <div class="form-group">
-                                    <label for="field-name" class="col-form-label">會員姓名</label>
-                                    <input type="text" class="form-control" id="field-name" value="陳永仁" readonly>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">取消原因</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="refund-part">退款</label>
-                                        <select class="form-control" id="refund-part">
-                                            <option>全數退款</option>
-                                            <option SELECTED>部份退款</option>
+                        <div class="p-3">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">活動編號</th>
+                                    <th scope="col">名稱</th>
+                                    <th scope="col">收費</th>
+                                    <th scope="col">折扣</th>
+                                    <th scope="col">剩餘名額</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><input type="text" class="form-control" value="JM30130" readonly></td>
+                                    <td><input type="text" class="form-control" value="親子活動" readonly></td>
+                                    <td>
+                                        <select class="custom-select" aria-label="Default select example">
+                                            <option value="1">長者會員 - $100.0</option>
+                                            <option value="2" SELECTED>長者會員(綜援) - $80.0</option>
                                         </select>
-                                    </div>
-                                    <div class="col-md-6 mb-2">
-                                        <label for="refund-day">退款日數</label>
-                                        <input type="text" class="form-control" id="refund-day">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label for="field-confirm" class="col-form-label">輸入03EL300102以確認</label>
-                                        <input type="text" class="form-control" id="field-confirm">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取 消</button>
-                            <button type="button" class="btn btn-primary" onclick="document.getElementById('submit-form').submit();">退 款</button>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text" value="" placeholder="0">
+                                    </td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="form-control" value="JM30129" readonly></td>
+                                    <td><input type="text" class="form-control" value="粵曲欣賞" readonly></td>
+                                    <td>
+                                        <select class="custom-select" aria-label="Default select example">
+                                            <option value="1">長者會員 - $100.0</option>
+                                            <option value="2" SELECTED>長者會員(綜援) - $80.0</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text" value="" placeholder="0">
+                                    </td>
+                                    <td>17</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>優惠劵</span>
+                            <!--
+                            <span>
+                                <input type="text" class="form-control" list="coupon-list" placeholder="搜尋優惠劵" />
+                                <datalist id="coupon-list">
+                                      <option value="NY2020 $20.0 優惠">
+                                      <option value="NY2022 -$20.0 優惠">
+                                </datalist>
+                            </span>
+                            -->
+                        </div>
+                        <div class="p-3">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">優惠劵名稱</th>
+                                    <th scope="col">折扣</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><input class="form-control" type="text" value="NY2021"></td>
+                                    <td><input class="form-control" type="text" value="20"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>付款金額</span>
+                        </div>
+                        <div class="p-3">
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="" for="field-reference-number">付款方式</label>
+                                    <select class="custom-select" aria-label="Default select example">
+                                        <option selected>請選擇付款方式</option>
+                                        <option value="cash">現金</option>
+                                        <option value="cheque">支票</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="" for="field-reference-number">支票號碼/其他參考編號</label>
+                                    <input type="text" id="field-reference-number" class="form-control mr-2" placeholder="支票編號/其他參考編號" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="" for="field-total-price">應付金額</label>
+                                    <input type="text" id="field-total-price" class="form-control mr-2" value="140" readonly />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </form>
             </div>
         </div>
     </div>

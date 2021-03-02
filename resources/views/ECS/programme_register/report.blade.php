@@ -20,6 +20,10 @@
                                 @endforeach
                             </select>
                         </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-indicator">社署指標</label>
+                            <input type="text" id="field-indicator" class="form-control" placeholder="社署指標" />
+                        </div>
                     </div>
 
                     <div class="row mb-2 g-0">

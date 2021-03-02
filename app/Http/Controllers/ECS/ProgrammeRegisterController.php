@@ -89,6 +89,43 @@ class ProgrammeRegisterController extends Controller
         return view('ECS.programme_register.report', compact('report'));
     }
 
+    public function balance()
+    {
+        $balances = [
+            [
+                'register_id' => 10,
+                'time' => '2021-03-01 16:15',
+                'code' => 'J3A18107',
+                'programme_name' => '自強運動02',
+                'member_code' => '03EL300102',
+                'member_name' => '陳永仁',
+                'fee' => 400,
+                'created_by' => '同事A'
+            ],
+            [
+                'register_id' => 9,
+                'time' => '2021-03-01 14:20',
+                'code' => 'J3A18111',
+                'programme_name' => '健腦操02',
+                'member_code' => '03EL300604',
+                'member_name' => '張浩翔',
+                'fee' => 100,
+                'created_by' => '同事B'
+            ],
+            [
+                'register_id' => 8,
+                'time' => '2021-03-01 11:48',
+                'code' => 'J3C18056',
+                'programme_name' => '魔力橋群英會06',
+                'member_code' => '03EL301182',
+                'member_name' => '王琴',
+                'fee' => 80,
+                'created_by' => '同事A'
+            ],
+        ];
+        return view('ECS.programme_register.balance', compact('balances'));
+    }
+
 //    public function edit(Request $request)
 //    {
 //        return view('ECS.programme_register.edit');

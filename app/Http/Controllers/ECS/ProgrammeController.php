@@ -45,4 +45,9 @@ class ProgrammeController extends Controller
         $tutors = self::TUTORS;
         return view('ECS.programme.edit', compact("tutors"));
     }
+
+    public function register($programme_id)
+    {
+        return view('ECS.programme.register');
+    }
 }
