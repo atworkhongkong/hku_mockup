@@ -164,7 +164,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row mb-3">
                         <div class="col-12">
                             <label for="input-account-code" class="form-label">會計編號</label>
                             <input type="text" class="form-control" id="input-account-code">

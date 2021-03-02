@@ -36,8 +36,8 @@
                                         <th scope="col" class="text-center">2月9日 (二)</th>
                                         <th scope="col" class="text-center">2月10日 (三)</th>
                                         <th scope="col" class="text-center">2月11日 (四)</th>
-                                        <th scope="col" class="text-center holiday">2月12日 (五)</th>
-                                        <th scope="col" class="text-center holiday">2月13日 (六)</th>
+                                        <th scope="col" class="text-center">2月12日 (五)</th>
+                                        <th scope="col" class="text-center">2月13日 (六)</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -47,8 +47,8 @@
                                         <td><input type="text" class="form-control" value="金針雲耳肉片盅蒸飯"></td>
                                         <td><input type="text" class="form-control" value="蛋治、麥皮"></td>
                                         <td><input type="text" class="form-control" value="時菜水餸湯蕎麥麵"></td>
-                                        <td class="holiday"><input type="text" class="form-control" readonly></td>
-                                        <td class="holiday"><input type="text" class="form-control" readonly></td>
+                                        <td class=""><input type="text" class="form-control" readonly></td>
+                                        <td class=""><input type="text" class="form-control" readonly></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">午</th>
@@ -84,7 +84,7 @@
                                             <input type="text" class="form-control d-inline-block mb-1" placeholder="配">
                                             <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
-                                        <td class="text-center holiday">
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." readonly>
                                             <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
                                             <input type="text" class="form-control d-inline-block mb-5" placeholder="備註" readonly>
@@ -92,7 +92,7 @@
                                             <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
                                             <input type="text" class="form-control d-inline-block" placeholder="備註" readonly>
                                         </td>
-                                        <td class="text-center holiday">
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." readonly>
                                             <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
                                             <input type="text" class="form-control d-inline-block mb-5" placeholder="備註" readonly>
@@ -135,7 +135,7 @@
                                             <input type="text" class="form-control d-inline-block mb-1" value="時菜" placeholder="配">
                                             <input type="text" class="form-control d-inline-block" placeholder="備註">
                                         </td>
-                                        <td class="text-center holiday">
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." readonly>
                                             <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
                                             <input type="text" class="form-control d-inline-block mb-5" placeholder="備註" readonly>
@@ -143,7 +143,7 @@
                                             <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
                                             <input type="text" class="form-control d-inline-block" placeholder="備註" readonly>
                                         </td>
-                                        <td class="text-center holiday">
+                                        <td class="text-center">
                                             <input type="text" class="form-control mb-1" placeholder="1." readonly>
                                             <input type="text" class="form-control d-inline-block mb-1" placeholder="配" readonly>
                                             <input type="text" class="form-control d-inline-block mb-5" placeholder="備註" readonly>

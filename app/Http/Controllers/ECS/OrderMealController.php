@@ -15,8 +15,9 @@ class OrderMealController extends Controller
 
     public function create(Request $request)
     {
+        $buy_counts = [1,2,3,4,5,6,7,8];
         $member_code = $request->get('member_code') ? $request->get('member_code') : null;
-        return view('ECS.order_meal.create', compact('member_code'));
+        return view('ECS.order_meal.create', compact('buy_counts','member_code'));
     }
 
     public function edit(Request $request, $order_id)
