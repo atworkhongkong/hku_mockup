@@ -72,6 +72,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/invoice/{invoice_id}', [App\Http\Controllers\ECS\InvoiceController::class, 'show'])->name('ecs.invoice.show');
 
     // meal
+    Route::get('/meal_setting', [App\Http\Controllers\ECS\MealSettingController::class, 'index'])->name('ecs.meal_setting.index');
+
     Route::get('/meal', [App\Http\Controllers\ECS\MealController::class, 'index'])->name('ecs.meal.index');
     Route::get('/meal/create', [App\Http\Controllers\ECS\MealController::class, 'create'])->name('ecs.meal.create');
     Route::get('/meal/{id}/edit', [App\Http\Controllers\ECS\MealController::class, 'edit'])->where('id', '[0-9]+')->name('ecs.meal.edit');
