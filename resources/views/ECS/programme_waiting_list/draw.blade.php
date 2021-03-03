@@ -17,7 +17,7 @@
                     <div class="row mb-2">
                         <div class="col-md-12">
                             <label for="input-draw-count" class="form-label">中籤數</label>
-                            <input type="text" class="form-control" id="input-draw-count" value="10">
+                            <input type="text" class="form-control" id="input-draw-count" value="8">
                         </div>
                     </div>
 
@@ -106,7 +106,7 @@
                                 <td>xxxxxxxx</td>
                                 <td>2021-01-05</td>
                             </tr>
-                            <tr>
+                            <tr style="color:#ABABAB;">
                                 <th scope="row">9</th>
                                 <td>03EL3001xx</td>
                                 <td>xxx</td>
@@ -114,8 +114,24 @@
                                 <td>xxxxxxxx</td>
                                 <td>2021-01-05</td>
                             </tr>
-                            <tr>
+                            <tr style="color:#ABABAB;">
                                 <th scope="row">10</th>
+                                <td>03EL3001xx</td>
+                                <td>xxx</td>
+                                <td>女</td>
+                                <td>xxxxxxxx</td>
+                                <td>2021-01-05</td>
+                            </tr>
+                            <tr style="color:#ABABAB;">
+                                <th scope="row">11</th>
+                                <td>03EL3001xx</td>
+                                <td>xxx</td>
+                                <td>男</td>
+                                <td>xxxxxxxx</td>
+                                <td>2021-01-05</td>
+                            </tr>
+                            <tr style="color:#ABABAB;">
+                                <th scope="row">12</th>
                                 <td>03EL3001xx</td>
                                 <td>xxx</td>
                                 <td>女</td>
@@ -127,6 +143,7 @@
                     <div class="row mb-2">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">重新抽籤</button>
+                            <button type="submit" class="btn btn-primary">確認抽籤</button>
                         </div>
                     </div>
 

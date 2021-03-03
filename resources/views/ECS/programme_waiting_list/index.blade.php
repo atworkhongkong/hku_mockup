@@ -34,7 +34,7 @@
                             <th scope="col">姓別</th>
                             <th scope="col">聯絡電話</th>
                             <th scope="col">申請日期</th>
-                            <th scope="col" style="width:5%;">&nbsp;</th>
+                            <th scope="col" style="width:14%;">&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,9 +45,8 @@
                             <td>98989898</td>
                             <td>2021-01-05</td>
                             <td>
-                                <a href="/ecs/programme_waiting_list/20/edit">
-                                    <i class="fas fa-edit"></i>
-                                </a>
+                                <a class="btn btn-primary" href="/ecs/programme_waiting_list/20/edit">編輯</a>
+                                <a class="btn btn-danger">刪除</a>
                             </td>
                         </tr>
                         <tr>
@@ -57,9 +56,8 @@
                             <td>96969696</td>
                             <td>2021-01-04</td>
                             <td>
-                                <a href="/ecs/programme_waiting_list/21/edit">
-                                    <i class="fas fa-edit"></i>
-                                </a>
+                                <a class="btn btn-primary" href="/ecs/programme_waiting_list/21/edit">編輯</a>
+                                <a class="btn btn-danger">刪除</a>
                             </td>
                         </tr>
                     </tbody>

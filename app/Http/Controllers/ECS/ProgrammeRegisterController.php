@@ -23,6 +23,41 @@ class ProgrammeRegisterController extends Controller
         5 => '義工',
         6 => '非會員'
     ];
+    const BALANCES = [
+        [
+            'register_id' => 10,
+            'time' => '2021-03-01 16:15',
+            'code' => 'J3A18107',
+            'programme_name' => '自強運動02',
+            'member_code' => '03EL300102',
+            'member_name' => '陳永仁',
+            'fee' => 400,
+            'receive_method' => '現金',
+            'created_by' => '同事A'
+        ],
+        [
+            'register_id' => 9,
+            'time' => '2021-03-01 14:20',
+            'code' => 'J3A18111',
+            'programme_name' => '健腦操02',
+            'member_code' => '03EL300604',
+            'member_name' => '張浩翔',
+            'fee' => 100,
+            'receive_method' => '現金',
+            'created_by' => '同事B'
+        ],
+        [
+            'register_id' => 8,
+            'time' => '2021-03-01 11:48',
+            'code' => 'J3C18056',
+            'programme_name' => '魔力橋群英會06',
+            'member_code' => '03EL301182',
+            'member_name' => '王琴',
+            'fee' => 80,
+            'receive_method' => '現金',
+            'created_by' => '同事A'
+        ],
+    ];
 
     public function __construct()
     {
@@ -91,42 +126,14 @@ class ProgrammeRegisterController extends Controller
 
     public function balance()
     {
-        $balances = [
-            [
-                'register_id' => 10,
-                'time' => '2021-03-01 16:15',
-                'code' => 'J3A18107',
-                'programme_name' => '自強運動02',
-                'member_code' => '03EL300102',
-                'member_name' => '陳永仁',
-                'fee' => 400,
-                'receive_method' => '現金',
-                'created_by' => '同事A'
-            ],
-            [
-                'register_id' => 9,
-                'time' => '2021-03-01 14:20',
-                'code' => 'J3A18111',
-                'programme_name' => '健腦操02',
-                'member_code' => '03EL300604',
-                'member_name' => '張浩翔',
-                'fee' => 100,
-                'receive_method' => '現金',
-                'created_by' => '同事B'
-            ],
-            [
-                'register_id' => 8,
-                'time' => '2021-03-01 11:48',
-                'code' => 'J3C18056',
-                'programme_name' => '魔力橋群英會06',
-                'member_code' => '03EL301182',
-                'member_name' => '王琴',
-                'fee' => 80,
-                'receive_method' => '現金',
-                'created_by' => '同事A'
-            ],
-        ];
+        $balances = self::BALANCES;
         return view('ECS.programme_register.balance', compact('balances'));
+    }
+
+    public function balanceDone()
+    {
+        $balances = self::BALANCES;
+        return view('ECS.programme_register.balance_done', compact('balances'));
     }
 
 //    public function edit(Request $request)

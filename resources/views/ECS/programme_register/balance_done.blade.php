@@ -33,7 +33,7 @@
             </div>
 
             <div class="alert alert-warning text-center" role="alert">
-                未埋數
+                已埋數
             </div>
 
             <div class="row mb-2">
@@ -79,13 +79,23 @@
                 </div>
             </div>
 
-            <div class="alert alert-primary" role="alert">
-                提示︰<a href="/ecs/programme_register/balance_done">已埋數</a>情形
+            <div class="row mb-2">
+                <div class="col-12">
+                    <label for="upload">上載入數紙</label>
+                    <input type="file" class="form-control-file" id="upload">
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-12">
+                    <label for="input-bank-in" class="form-label">銀行入數</label>
+                    <input type="text" class="form-control" id="input-bank-in" placeholder="請填寫入數日期">
+                </div>
             </div>
 
             <div class="row">
                 <div class="col-12">
-                    <button class="btn btn-primary">埋 數</button>
+                    <button class="btn btn-primary">更新入數日期</button>
                 </div>
             </div>
         </div>

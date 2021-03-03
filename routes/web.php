@@ -57,6 +57,7 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_register/cancel', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'cancel'])->name('ecs.programme_register.cancel');
     Route::get('/programme_register/report', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'report'])->name('ecs.programme_register.report');
     Route::get('/programme_register/balance', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'balance'])->name('ecs.programme_register.balance');
+    Route::get('/programme_register/balance_done', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'balanceDone'])->name('ecs.programme_register.balance_done');
 
     Route::get('/programme_attendance/{programme_id}/create', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'create'])->where('id', '[0-9]+')->name('ecs.programme_attendance.create');
     Route::get('/programme_attendance/{attendance_id}/edit', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'edit'])->where('attendance_id', '[0-9]+')->name('ecs.programme_attendance.edit');
