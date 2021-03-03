@@ -205,6 +205,16 @@
                 </div>
             </div>
 
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <span>Progress & Recording</span>
+                </div>
+                <div class="p-3">
+                    <label for="input-progress-recording" class="sr-only">Progress & Recording</label>
+                    <textarea class="form-control" id="input-progress-recording" rows="3">Remarkable progress</textarea>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">提 交</button>

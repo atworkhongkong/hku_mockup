@@ -16,11 +16,11 @@ class DCSSController extends Controller
         'A' => '跟進中', 'I' => '已完結'
     ];
     const CASES = [
-        1 => ['group' => 'J01', 'case_number' => 'JD2002G', 'name' => '李雅辛', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '黃紫瑩'],
-        2 => ['group' => 'J01', 'case_number' => 'JD2003G', 'name' => '傅勝偉', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '林秀如'],
-        3 => ['group' => 'J01', 'case_number' => 'JD2005P', 'name' => '李孟宸', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '張子輝'],
-        4 => ['group' => 'J02', 'case_number' => 'JD2007G', 'name' => '黃耿亨', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '陳球大'],
-        5 => ['group' => 'J02', 'case_number' => 'JD2010G', 'name' => '何南珠', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '陳子軒'],
+        1 => ['group' => 'J01', 'case_number' => 'JD2002G', 'burden' => 'Lesser', 'name' => '李雅辛', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '黃紫瑩'],
+        2 => ['group' => 'J01', 'case_number' => 'JD2003G', 'burden' => 'Greater', 'name' => '傅勝偉', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '林秀如'],
+        3 => ['group' => 'J01', 'case_number' => 'JD2005P', 'burden' => 'Lesser', 'name' => '李孟宸', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '張子輝'],
+        4 => ['group' => 'J02', 'case_number' => 'JD2007G', 'burden' => 'Greater', 'name' => '黃耿亨', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '陳球大'],
+        5 => ['group' => 'J02', 'case_number' => 'JD2010G', 'burden' => 'Greater', 'name' => '何南珠', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '陳子軒'],
     ];
 
     const LANGUAGES = ['廣東話', '國語', '英語', '其他方言'];

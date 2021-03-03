@@ -10,6 +10,25 @@
                 </ol>
             </nav>
 
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <span>Personal Details</span>
+                </div>
+                <div class="p-3">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div>
+                                識別編號︰{{ $case['case_number'] }}
+                                [<a href="/ecs/dcss/{{ $case['case_id'] }}/edit" target="_blank">詳細資料</a>]
+                            </div>
+                            <div>
+                                中文姓名︰{{ $case['name'] }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-12 mb-3">
                     <label for="input-create-date" class="form-label">Create date</label>

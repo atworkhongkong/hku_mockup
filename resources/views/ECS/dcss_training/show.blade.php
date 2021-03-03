@@ -85,24 +85,74 @@
                                 <th>Centre-based nursing care for associated physical</th>
                             </tr>
                             <tr class="text-center">
-                                <th class="text-danger">5/18</th>
-                                <th class="text-danger">1/2</th>
-                                <th class="text-danger">2/9</th>
-                                <th class="text-danger">0/9</th>
-                                <th class="text-danger">2/5</th>
-                                <th class="text-danger">3/5</th>
-                                <th class="text-danger">1/4</th>
-                                <th>0/0</th>
-                                <th class="text-danger">0/1</th>
-                                <th class="text-danger">0/1</th>
-                                <th>0/0</th>
-                                <th>0/0</th>
-                                <th>0/0</th>
-                                <th class="text-danger">0/1</th>
-                                <th class="text-danger">0/1</th>
+                                <th>18</th>
+                                <th>2</th>
+                                <th>9</th>
+                                <th>9</th>
+                                <th>5</th>
+                                <th>5</th>
+                                <th>4</th>
+                                <th>0</th>
+                                <th>1</th>
+                                <th>1</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>1</th>
+                                <th>1</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <tr class="text-center">
+                                <td>Fulfilled</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>5</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="text-center">
+                                <td>Balance</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>-13</td>
+                                <td>-1</td>
+                                <td>-7</td>
+                                <td>-9</td>
+                                <td>-3</td>
+                                <td>-2</td>
+                                <td>-3</td>
+                                <td>0</td>
+                                <td>-1</td>
+                                <td>-1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>-1</td>
+                                <td>-1</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                             <tr class="text-center">
                                 <td>2021-02-03</td>
                                 <td></td>

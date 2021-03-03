@@ -21,6 +21,18 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-12 mb-3">
+                <label for="input-from" class="form-label">個案來自</label>
+                <select class="form-control" id="input-from">
+                    <option></option>
+                    <option>醫院管理局個案</option>
+                    <option>非醫院管理局個案</option>
+                    <option>轉介個案</option>
+                </select>
+            </div>
+        </div>
+
         @isset($case_id)
             <div class="row">
                 <div class="col-12 mb-3">

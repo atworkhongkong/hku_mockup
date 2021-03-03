@@ -38,9 +38,6 @@
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>找到{{ count($cases) }}筆記錄</span>
-                        <div>
-                            <a href="/ecs/dcss/create" class="btn btn-secondary">新增評估個案</a>
-                        </div>
                     </div>
                     <table class="table table-bordered">
                         <thead>
