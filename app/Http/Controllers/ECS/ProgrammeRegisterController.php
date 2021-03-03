@@ -100,6 +100,7 @@ class ProgrammeRegisterController extends Controller
                 'member_code' => '03EL300102',
                 'member_name' => '陳永仁',
                 'fee' => 400,
+                'receive_method' => '現金',
                 'created_by' => '同事A'
             ],
             [
@@ -110,6 +111,7 @@ class ProgrammeRegisterController extends Controller
                 'member_code' => '03EL300604',
                 'member_name' => '張浩翔',
                 'fee' => 100,
+                'receive_method' => '現金',
                 'created_by' => '同事B'
             ],
             [
@@ -120,6 +122,7 @@ class ProgrammeRegisterController extends Controller
                 'member_code' => '03EL301182',
                 'member_name' => '王琴',
                 'fee' => 80,
+                'receive_method' => '現金',
                 'created_by' => '同事A'
             ],
         ];

@@ -10,7 +10,7 @@
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form" action="/ecs/volunteer_service/report" method="GET">
+                <form class="form" action="/ecs/programme_register/report" method="GET">
                     <div class="row mb-2">
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">中心</label>

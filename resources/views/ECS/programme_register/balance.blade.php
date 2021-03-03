@@ -20,10 +20,6 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="col-auto">
-                            <label class="sr-only" for="field-code">活動編號</label>
-                            <input type="text" id="field-code" class="form-control" placeholder="活動編號" />
-                        </div>
                     </div>
 
                     <div class="row mb-2 g-0">
@@ -40,8 +36,8 @@
                 未埋數
             </div>
 
-            <div class="row">
-                <div class="col-12 mb-3">
+            <div class="row mb-2">
+                <div class="col-12">
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>找到{{ count($balances) }}筆記錄</span>
                     </div>
@@ -55,6 +51,7 @@
                                 <th scope="col">姓名</th>
                                 <th scope="col">收款同事</th>
                                 <th scope="col">費用</th>
+                                <th scope="col">收費方式</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                         </thead>
@@ -67,18 +64,30 @@
                                     <td>{{ $b['member_code'] }}</td>
                                     <td>{{ $b['member_name'] }}</td>
                                     <td>{{ $b['created_by'] }}</td>
+                                    <td>{{ $b['receive_method'] }}</td>
                                     <td>${{ $b['fee'] }}</td>
                                     <td><a href="/ecs/programme_register/{{ $b['register_id'] }}" class="btn btn-primary" target="_blank" >詳情</a></td>
                                 </tr>
                             @endforeach
                             <tr>
-                                <td colspan="6" class="text-right">總數︰</td>
+                                <td colspan="7" class="text-right">總數︰</td>
                                 <td>$580.0</td>
                                 <td></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-md-12">
+                    <label for="input-bank-in" class="form-label">銀行入數</label>
+                    <input type="text" class="form-control" id="input-bank-in" placeholder="請填寫入數日期">
+                </div>
+            </div>
+
+            <div class="alert alert-primary" role="alert">
+                提示︰若已埋數，上方則顯示已埋數，並容許職員填寫銀行入數日期，下方按鍵則由「埋數」變為「更新入數日期」
             </div>
 
             <div class="row">
