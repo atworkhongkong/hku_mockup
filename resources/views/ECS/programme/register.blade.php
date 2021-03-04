@@ -6,16 +6,16 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item" aria-current="page"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme/2/edit">JM30130 - 親子天地</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/{{ $programme_id }}/edit">{{ $programmes[$programme_id]['code'] }} - {{ $programmes[$programme_id]['name'] }}</a></li>
                     <li class="breadcrumb-item active" aria-current="page">報名人數</li>
                 </ol>
             </nav>
 
             <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
-                <a href="/ecs/programme_register/2" class="btn btn-primary">報名人數</a>
-                <a href="/ecs/programme_attendance/2" class="btn btn-outline-primary">出席記錄</a>
-                <a href="/ecs/programme_waiting_list/2" class="btn btn-outline-primary">後補名單</a>
-                <a href="/ecs/programme_tutor_salary/2" class="btn btn-outline-primary">導師費用</a>
+                <a href="/ecs/programme/{{ $programme_id }}/register" class="btn btn-primary">報名人數</a>
+                <a href="/ecs/programme/{{ $programme_id }}/attendance/" class="btn btn-outline-primary">出席記錄</a>
+                <a href="/ecs/programme/{{ $programme_id }}/waiting_list" class="btn btn-outline-primary">後補名單</a>
+                <a href="/ecs/programme/{{ $programme_id }}/tutor_salary" class="btn btn-outline-primary">導師費用</a>
             </div>
 
             <div class="row">
@@ -29,59 +29,67 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
+                                <th scope="col">收據編號</th>
                                 <th scope="col" style="width:15%;">會員編號</th>
                                 <th scope="col">姓名</th>
                                 <th scope="col">手提電話</th>
                                 <th scope="col">報名日期</th>
                                 <th scope="col">狀態</th>
-                                <th scope="col">收據編號</th>
+                                <th scope="col">付款方法</th>
+                                <th scope="col">優惠</th>
                                 <th scope="col">金額</th>
-                                <th scope="col" style="width:22%;">&nbsp;</th>
+                                <th scope="col" style="width:16%;">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <td><a href="/ecs/invoice/A0000012" target="_blank">A0000012</a></td>
                                 <td>03EL300102</td>
                                 <td>陳永仁</td>
                                 <td>98989898</td>
                                 <td>2021-01-05</td>
                                 <td>有效</td>
-                                <td><a href="/ecs/invoice/A0000012" target="_blank">A0000012</a></td>
+                                <td>現金</td>
+                                <td></td>
                                 <td>$100.0</td>
                                 <td>
-                                    <a href="/ecs/programme_register/10" class="btn btn-primary">詳情</a>
-                                    <a href="javascript:void(0);" class="btn btn-primary">列印收據</a>
-                                    <a href="javascript:void(0);" class="btn btn-danger" data-toggle="modal" data-target="#cancel-modal">取消</a>
+                                    <a href="/ecs/programme_register/10" class="btn btn-primary mb-1">詳情</a>
+                                    <a href="javascript:void(0);" class="btn btn-primary mb-1">列印收據</a>
+                                    <a href="javascript:void(0);" class="btn btn-danger mb-1" data-toggle="modal" data-target="#cancel-modal">取消</a>
                                 </td>
                             </tr>
                             <tr>
+                                <td><a href="/ecs/invoice/A0000011" target="_blank">A0000011</a></td>
                                 <td>03ELS300805</td>
                                 <td>劉健明</td>
                                 <td>96969696</td>
                                 <td>2021-01-04</td>
                                 <td>有效</td>
-                                <td><a href="/ecs/invoice/A0000011" target="_blank">A0000011</a></td>
+                                <td>現金</td>
+                                <td>$20<br>(優惠劵)</td>
                                 <td>$80.0</td>
                                 <td>
-                                    <a href="/ecs/programme_register/9" class="btn btn-primary">詳情</a>
-                                    <a href="javascript:void(0);" class="btn btn-primary">列印收據</a>
-                                    <a href="javascript:void(0);" class="btn btn-danger" data-toggle="modal" data-target="#cancel-modal">取消</a>
+                                    <a href="/ecs/programme_register/9" class="btn btn-primary mb-1">詳情</a>
+                                    <a href="javascript:void(0);" class="btn btn-primary mb-1">列印收據</a>
+                                    <a href="javascript:void(0);" class="btn btn-danger mb-1" data-toggle="modal" data-target="#cancel-modal">取消</a>
                                 </td>
                             </tr>
                             <tr>
+                                <td><a href="/ecs/invoice/A0000010" target="_blank">A0000010</a></td>
                                 <td>03ELS300805</td>
                                 <td>葉問</td>
                                 <td>95959595</td>
                                 <td>2021-01-04</td>
                                 <td>已取消</td>
-                                <td><a href="/ecs/invoice/A0000010" target="_blank">A0000010</a></td>
+                                <td>現金</td>
+                                <td></td>
                                 <td>($100.0)</td>
                                 <td>
-                                    <a href="/ecs/programme_register/8" target="_blank" class="btn btn-primary">詳情</a>
+                                    <a href="/ecs/programme_register/8" target="_blank" class="btn btn-primary mb-1">詳情</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="6" class="text-right">總收入︰</td>
+                                <td colspan="8" class="text-right">總收入︰</td>
                                 <td>$180.0</td>
                             </tr>
                         </tbody>

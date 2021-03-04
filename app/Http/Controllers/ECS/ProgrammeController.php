@@ -21,12 +21,29 @@ class ProgrammeController extends Controller
         3 => '6/2021 - 9/2021',
     ];
     const TUTORS = [
-        '黃岱丞', '郭佳其', '陳盈喬', '陳依婷', '張品合', '吳文傑', '林清沛', '楊榮璇', '許若音', '張玉婷'
+        1 => ['tutor_id' => 1, 'code' => 'TR0001', 'name' => '黃岱丞'],
+        2 => ['tutor_id' => 2, 'code' => 'TR0002', 'name' => '郭佳其'],
+        3 => ['tutor_id' => 3, 'code' => 'TR0013', 'name' => '陳盈喬'],
+        4 => ['tutor_id' => 4, 'code' => 'TR0034', 'name' => '陳依婷'],
     ];
+    const PROGRAMMES = [
+        1 => ['code' => 'JM30129', 'name' => '粵曲欣賞'],
+        2 => ['code' => 'JM30130', 'name' => '親子天地'],
+    ];
+
+
 
     public function __construct()
     {
         View::share('centers', self::CENTERS);
+        View::share('programmes', self::PROGRAMMES);
+        View::share('tutors', TutorController::getTutors());
+        View::share('salary_types', ProgrammeTutorSalaryController::getSalaryTypes());
+    }
+
+    public static function getProgrammes(): array
+    {
+        return self::PROGRAMMES;
     }
 
     public function index()
@@ -36,18 +53,37 @@ class ProgrammeController extends Controller
 
     public function create(Request $request)
     {
-        $tutors = self::TUTORS;
-        return view('ECS.programme.create', compact("tutors"));
+        return view('ECS.programme.create');
     }
 
-    public function edit(Request $request)
+    public function edit($programme_id)
     {
-        $tutors = self::TUTORS;
-        return view('ECS.programme.edit', compact("tutors"));
+        return view('ECS.programme.edit', compact('programme_id'));
     }
 
     public function register($programme_id)
     {
-        return view('ECS.programme.register');
+        return view('ECS.programme.register', compact('programme_id'));
+    }
+
+    public function attendance($programme_id)
+    {
+        return view('ECS.programme_attendance.index', compact('programme_id'));
+    }
+
+    public function waitingList($programme_id)
+    {
+        return view('ECS.programme_waiting_list.index', compact('programme_id'));
+    }
+
+    public function tutorSalary($programme_id)
+    {
+        $tutor_salaries = [];
+        foreach(ProgrammeTutorSalaryController::getTutorSalaries() as $v) {
+            if ($v['programme_id'] == $programme_id) {
+                $tutor_salaries[] = $v;
+            }
+        }
+        return view('ECS.programme_tutor_salary.index', compact('programme_id', 'tutor_salaries'));
     }
 }

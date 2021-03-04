@@ -6,16 +6,16 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme/edit/2">JM30130 - 親子天地</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/{{ $programme_id }}/edit">{{ $programmes[$programme_id]['code'] }} - {{ $programmes[$programme_id]['name'] }}</a></li>
                     <li class="breadcrumb-item active">後補名單</li>
                 </ol>
             </nav>
 
             <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
-                <a href="/ecs/programme/2/register" class="btn btn-outline-primary">報名人數</a>
-                <a href="/ecs/programme_attendance/2" class="btn btn-outline-primary">出席記錄</a>
-                <a href="/ecs/programme_waiting_list/2" class="btn btn-primary">後補名單</a>
-                <a href="/ecs/programme_tutor_salary/2" class="btn btn-outline-primary">導師費用</a>
+                <a href="/ecs/programme/{{ $programme_id }}/register" class="btn btn-outline-primary">報名人數</a>
+                <a href="/ecs/programme/{{ $programme_id }}/attendance" class="btn btn-outline-primary">出席記錄</a>
+                <a href="/ecs/programme/{{ $programme_id }}/waiting_list" class="btn btn-primary">後補名單</a>
+                <a href="/ecs/programme/{{ $programme_id }}/tutor_salary" class="btn btn-outline-primary">導師費用</a>
             </div>
 
             <div class="col-12 mb-3">

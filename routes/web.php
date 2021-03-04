@@ -47,6 +47,9 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme/create', [App\Http\Controllers\ECS\ProgrammeController::class, 'create'])->name('ecs.programme.create');
     Route::get('/programme/{id}/edit', [App\Http\Controllers\ECS\ProgrammeController::class, 'edit'])->name('ecs.programme.edit');
     Route::get('/programme/{programme_id}/register', [App\Http\Controllers\ECS\ProgrammeController::class, 'register'])->name('ecs.programme.register');
+    Route::get('/programme/{programme_id}/attendance', [App\Http\Controllers\ECS\ProgrammeController::class, 'attendance'])->name('ecs.programme.attendance');
+    Route::get('/programme/{programme_id}/waiting_list', [App\Http\Controllers\ECS\ProgrammeController::class, 'waitingList'])->name('ecs.programme.waiting_list');
+    Route::get('/programme/{programme_id}/tutor_salary', [App\Http\Controllers\ECS\ProgrammeController::class, 'tutorSalary'])->name('ecs.programme.tutor_salary');
 
     //Route::get('/programme/register', [App\Http\Controllers\ECS\ProgrammeController::class, 'register'])->name('ecs.programme.register');
     //Route::get('/programme/waiting_list', [App\Http\Controllers\ECS\ProgrammeController::class, 'waitingList'])->name('ecs.programme.waiting_list');
@@ -69,7 +72,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_waiting_list/{waiting_id}/edit', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'edit'])->where('waiting_id', '[0-9]+')->name('ecs.programme_waiting_list.edit');
     Route::get('/programme_waiting_list/{id}', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'index'])->where('id', '[0-9]+')->name('ecs.programme_waiting_list.index');
 
-    Route::get('/programme_tutor_salary/{programme_id}', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'edit'])->where('programme_id', '[0-9]+')->name('ecs.programme_tutor_salary.edit');
+    Route::get('/programme_tutor_salary/{programme_id}/create', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'create'])->where('programme_id', '[0-9]+')->name('ecs.programme_tutor_salary.create');
+    Route::get('/programme_tutor_salary/{programme_id}/edit', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'edit'])->where('programme_id', '[0-9]+')->name('ecs.programme_tutor_salary.edit');
 
     Route::post('/invoice', [App\Http\Controllers\ECS\InvoiceController::class, 'search'])->name('ecs.invoice.search');
     Route::get('/invoice/{invoice_id}', [App\Http\Controllers\ECS\InvoiceController::class, 'show'])->name('ecs.invoice.show');

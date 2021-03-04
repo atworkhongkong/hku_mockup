@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">JM30130 - 親子天地</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $programmes[$programme_id]['code'] }} - {{ $programmes[$programme_id]['name'] }}</li>
                 </ol>
             </nav>
 
@@ -145,18 +145,9 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 mb-3">
                             <label for="input-staff" class="form-label">負責同事</label>
                             <input type="text" class="form-control" id="input-staff" value="同事A">
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="input-tutor" class="form-label">負責導師</label>
-                            <select class="custom-select" aria-label="select example">
-                                <option value="" selected></option>
-                                @foreach($tutors as $k => $t)
-                                    <option value="{{ $k + 1 }}" {{ $k == 2 ? "SELECTED" : "" }}>#{{ $k + 1 }} {{ $t }}</option>
-                                @endforeach
-                            </select>
                         </div>
                     </div>
 

@@ -26,7 +26,7 @@
                             <select class="custom-select" aria-label="Default select example">
                                 <option></option>
                                 @foreach($tutors as $k => $v)
-                                    <option value="{{ $v['tutor_id'] }}" {{ $v['tutor_id'] == $tutor_salary['tutor_id'] ? 'SELECTED' : '' }}>{{ $v['name'] }}</option>
+                                    <option value="{{ $v['tutor_id'] }}">{{ $v['name'] }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -41,7 +41,7 @@
                             <label class="" for="field-payment-type">分帳模式</label>
                             <select class="custom-select" aria-label="Default select example">
                                 @foreach($salary_types as $k => $v)
-                                    <option value="" {{ $k == 3 ? 'SELECTED' : '' }}>{{ $v }}</option>
+                                    <option value="">{{ $v }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="col-md-6">
                             <label class="" for="field-hour">時數</label>
-                            <input type="text" id="field-hour" class="form-control" value="20" />
+                            <input type="text" id="field-hour" class="form-control" value="" />
                         </div>
                     </div>
 
@@ -69,7 +69,7 @@
                         </div>
                         <div class="col-md-4">
                             <label class="" for="field-full">全期</label>
-                            <input type="text" id="field-full" class="form-control" value="{{ $tutor_salary['salary'] }}" />
+                            <input type="text" id="field-full" class="form-control" value="" />
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@
                     <div class="row mb-2">
                         <div class="col-md-6">
                             <label class="" for="field-salary">收入</label>
-                            <input type="text" id="field-salary" class="form-control" value="{{ $tutor_salary['salary'] }}" readonly />
+                            <input type="text" id="field-salary" class="form-control" readonly />
                         </div>
                         <div class="col-md-6">
                             <label class="" for="field-done">結算</label>

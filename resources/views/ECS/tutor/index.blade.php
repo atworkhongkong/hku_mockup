@@ -46,10 +46,10 @@
                         <tbody>
                             @foreach($tutors as $k => $t)
                                 <tr>
-                                    <td>{{ $k + 1  }}</td>
-                                    <td>{{ $t }}</td>
+                                    <td>{{ $k  }}</td>
+                                    <td>{{ $t['name'] }}</td>
                                     <td>{{ Arr::random($centers) }}</td>
-                                    <td><a class="btn btn-primary" href="/ecs/tutor/{{ $k + 1 }}/edit">編輯</a></td>
+                                    <td><a class="btn btn-primary" href="/ecs/tutor/{{ $k }}/edit">編輯</a></td>
                                 </tr>
                             @endforeach
                         </tbody>
