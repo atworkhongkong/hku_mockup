@@ -23,6 +23,19 @@ class ProgrammeRegisterController extends Controller
         5 => '義工',
         6 => '非會員'
     ];
+    /*
+    const REGISTERS = [
+        1 => [
+            'programme_id' => 1,
+            'member_code' => '03ELS300805',
+            'member_name' => '葉問',
+            'mobile' => '95959595',
+            'create_date' => '2021-01-04',
+            'status' => 'C',
+            'payment_method' => 'CASH'
+        ]
+    ];
+    */
     const BALANCES = [
         [
             'register_id' => 10,
