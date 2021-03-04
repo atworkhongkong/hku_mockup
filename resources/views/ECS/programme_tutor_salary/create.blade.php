@@ -7,7 +7,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
                     <li class="breadcrumb-item"><a href="/ecs/programme/{{ $programme_id }}/edit">{{ $programmes[$programme_id]['code'] }} - {{ $programmes[$programme_id]['name'] }}</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">導師費用</li>
+                    <li class="breadcrumb-item active" aria-current="page">新增課程導師</li>
                 </ol>
             </nav>
 
@@ -44,6 +44,13 @@
                                     <option value="">{{ $v }}</option>
                                 @endforeach
                             </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-12">
+                            <label class="" for="field-material-fee">材料費</label>
+                            <input type="text" id="field-material-fee" class="form-control" />
                         </div>
                     </div>
 

@@ -13,7 +13,6 @@
                 <form class="form-inline" action="/ecs/tutor" method="GET">
                     <label class="sr-only" for="field-center">搜尋範圍</label>
                     <select id="field-center" class="form-control mr-2" name="center">
-                        <option value=""></option>
                         @foreach($centers as $k => $c)
                             <option value="{{ $k + 1 }}">{{ $c }}</option>
                         @endforeach
@@ -29,7 +28,7 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到10筆記錄</span>
+                        <span>找到{{ count($tutors) }}筆記錄</span>
                         <div>
                             <a href="/ecs/tutor/create" class="btn btn-secondary">新增導師</a>
                         </div>
@@ -39,8 +38,8 @@
                             <tr>
                                 <th scope="col" style="width:8%;">#</th>
                                 <th scope="col">導師姓名</th>
-                                <th scope="col">所屬中心</th>
-                                <th scope="col" style="width:8%;">&nbsp;</th>
+                                <th scope="col">導師類別</th>
+                                <th scope="col" style="width:14%;">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -48,8 +47,11 @@
                                 <tr>
                                     <td>{{ $k  }}</td>
                                     <td>{{ $t['name'] }}</td>
-                                    <td>{{ Arr::random($centers) }}</td>
-                                    <td><a class="btn btn-primary" href="/ecs/tutor/{{ $k }}/edit">編輯</a></td>
+                                    <td>{{ $t['type'] }}</td>
+                                    <td>
+                                        <a class="btn btn-primary" href="/ecs/tutor/{{ $k }}/edit">編輯</a>
+                                        <a class="btn btn-primary" href="/ecs/programme?area=tutor&keyword={{ $t['name'] }}">課程</a>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

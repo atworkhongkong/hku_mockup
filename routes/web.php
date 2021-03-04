@@ -122,7 +122,8 @@ Route::prefix('ecs')->group(function() {
 
     Route::get('/tutor', [App\Http\Controllers\ECS\TutorController::class, 'index'])->name('ecs.tutor.index');
     Route::get('/tutor/create', [App\Http\Controllers\ECS\TutorController::class, 'create'])->name('ecs.tutor.create');
-    Route::get('/tutor/{id}/edit', [App\Http\Controllers\ECS\TutorController::class, 'edit'])->name('ecs.tutor.edit');
+    Route::get('/tutor/{tutor_id}/edit', [App\Http\Controllers\ECS\TutorController::class, 'edit'])->name('ecs.tutor.edit');
+    Route::get('/tutor/{tutor_id}/programme', [App\Http\Controllers\ECS\TutorController::class, 'programme'])->name('ecs.tutor.programme');
 
     Route::get('/report/transaction', [App\Http\Controllers\ECS\ReportController::class, 'transaction'])->name('ecs.report.transaction');
     Route::get('/report/activity_income', [App\Http\Controllers\ECS\ReportController::class, 'activityIncome'])->name('ecs.report.activity_income');

@@ -46,9 +46,11 @@ class ProgrammeController extends Controller
         return self::PROGRAMMES;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        return view('ECS.programme.index');
+        $area = $request->get('area');
+        $keyword = $request->get('keyword');
+        return view('ECS.programme.index', compact('area', 'keyword'));
     }
 
     public function create(Request $request)
@@ -79,11 +81,13 @@ class ProgrammeController extends Controller
     public function tutorSalary($programme_id)
     {
         $tutor_salaries = [];
+        $total = 0;
         foreach(ProgrammeTutorSalaryController::getTutorSalaries() as $v) {
             if ($v['programme_id'] == $programme_id) {
                 $tutor_salaries[] = $v;
+                $total += $v['salary'];
             }
         }
-        return view('ECS.programme_tutor_salary.index', compact('programme_id', 'tutor_salaries'));
+        return view('ECS.programme_tutor_salary.index', compact('programme_id', 'tutor_salaries', 'total'));
     }
 }

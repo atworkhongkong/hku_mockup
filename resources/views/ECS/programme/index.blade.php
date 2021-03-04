@@ -27,12 +27,25 @@
                                 <option value="">中文名稱</option>
                                 <option value="">地點</option>
                                 <option value="">報名名額</option>
-                                <option value="">負責職員</option>
+                                <option value="staff">負責職員</option>
+                                <option value="tutor" {{ $area == 'tutor' ? 'SELECTED' : '' }}>負責導師</option>
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="sr-only" for="field-key-word" >關錄字</label>
-                            <input type="text" id="field-name" class="form-control" placeholder="關鍵字" />
+                            <label class="sr-only" for="field-keyword" >關錄字</label>
+                            <input type="text" id="field-name" class="form-control" placeholder="關鍵字" value="{{ $keyword }}"/>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-done">結算狀態</label>
+                            <select id="field-area" class="form-control">
+                                <option value=""></option>
+                                <option value="">未結算</option>
+                                <option value="">已結算</option>
+                                <option value="">已支付</option>
+                            </select>
                         </div>
                     </div>
 

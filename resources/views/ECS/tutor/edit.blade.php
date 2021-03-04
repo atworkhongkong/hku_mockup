@@ -84,7 +84,6 @@
                         <div class="col-md-6 mb-3">
                             <label for="input-center" class="form-label">所屬中心</label>
                             <select class="custom-select" aria-label="select example">
-                                <option value=""></option>
                                 @foreach($centers as $k => $c)
                                     <option value="{{ $k + 1 }}">{{ $c }}</option>
                                 @endforeach

@@ -84,7 +84,9 @@
                                     <td>{{ $grades[$v['grade']] }}</td>
                                     <td>{{ $v['register_date'] }}</td>
                                     <td>{{ $v['recover_date'] }}</td>
-                                    <td><a class="btn btn-primary" href="/ecs/volunteer/{{ $k }}/edit">編輯</a></td>
+                                    <td>
+                                        <a class="btn btn-primary" href="/ecs/volunteer/{{ $k }}/edit">編輯</a>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

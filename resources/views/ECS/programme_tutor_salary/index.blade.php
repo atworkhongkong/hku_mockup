@@ -27,28 +27,35 @@
                 </div>
                 <table class="table table-bordered">
                     <thead>
-                    <tr>
-                        <th scope="col">導師編號</th>
-                        <th scope="col">導師</th>
-                        <th scope="col">分帳模式</th>
-                        <th scope="col">薪金</th>
-                        <th scope="col">結算</th>
-                        <th scope="col" style="width:8%;">&nbsp;</th>
-                    </tr>
+                        <tr>
+                            <th scope="col">導師編號</th>
+                            <th scope="col">導師</th>
+                            <th scope="col">分帳模式</th>
+                            <th scope="col">薪金</th>
+                            <th scope="col">結算</th>
+                            <th scope="col" style="width:20%;">&nbsp;</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    @foreach($tutor_salaries as $k => $v)
+                        @foreach($tutor_salaries as $k => $v)
+                            <tr>
+                                <td>{{ $tutors[$v['tutor_id']]['code'] }}</td>
+                                <td>{{ $tutors[$v['tutor_id']]['name'] }}</td>
+                                <td>{{ $v['salary_type'] }}</td>
+                                <td>{{ $v['done'] ? '已結算' : '未結算' }}</td>
+                                <td>${{ $v['salary'] }}</td>
+                                <td>
+                                    <a class="btn btn-primary" href="/ecs/programme_tutor_salary/{{ $v['id'] }}/edit">編輯</a>
+                                    <a class="btn btn-primary" href="/ecs/programme_tutor_salary/{{ $v['id'] }}/contrast">合約</a>
+                                    <a class="btn btn-primary disabled" href="javascript:void(0);" style="cursor:default;">糧單</a>
+                                </td>
+                            </tr>
+                        @endforeach
                         <tr>
-                            <td>{{ $tutors[$v['tutor_id']]['code'] }}</td>
-                            <td>{{ $tutors[$v['tutor_id']]['name'] }}</td>
-                            <td>{{ $v['salary_type'] }}</td>
-                            <td>${{ $v['salary'] }}</td>
-                            <td>{{ $v['done'] ? '已結算' : '未結算' }}</td>
-                            <td>
-                                <a class="btn btn-primary" href="/ecs/programme_tutor_salary/{{ $v['id'] }}/edit">編輯</a>
-                            </td>
+                            <td colspan="4" class="text-right">總數︰</td>
+                            <td>${{ $total }}</td>
+                            <td></td>
                         </tr>
-                    @endforeach
                     </tbody>
                 </table>
 

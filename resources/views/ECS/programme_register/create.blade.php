@@ -150,6 +150,7 @@
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <span>優惠劵</span>
+                            <button type="button" class="btn btn-primary">新增優惠劵</button>
                             <!--
                             <span>
                                 <input type="text" class="form-control" list="coupon-list" placeholder="搜尋優惠劵" />
