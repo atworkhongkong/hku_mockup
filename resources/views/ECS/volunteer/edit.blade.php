@@ -144,7 +144,7 @@
                                                     @else
                                                         @if (in_array($kt, $volunteer['team'][$center_id]))
                                                             <div class="form-check form-check-inline">
-                                                                <label class="form-check-label">{{ $t }}</label>
+                                                                <label class="form-check-label">{{ $t }},</label>
                                                             </div>
                                                         @endif
                                                     @endif

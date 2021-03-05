@@ -14,7 +14,8 @@ class VolunteerTeamController extends Controller
     const TEAMS = [
         1 => ['center_id' => 1, 'chi_name' => '耆樂大使', 'eng_name' => 'xxx', 'create_date' => '2020-01-31', 'contact_person' => '同事A', 'status' => 'A'],
         2 => ['center_id' => 1, 'chi_name' => '智友伴',  'eng_name' => 'yyy', 'create_date' => '2020-01-30', 'contact_person' => '同事B', 'status' => 'A'],
-        3 => ['center_id' => 1, 'chi_name' => '老友記小組',  'eng_name' => 'zzz', 'create_date' => '2020-01-25', 'contact_person' => '同事C', 'status' => 'D'],
+        3 => ['center_id' => 1, 'chi_name' => '共享綠田園',  'eng_name' => 'Green Field', 'create_date' => '2020-01-27', 'contact_person' => '同事B', 'status' => 'A'],
+        4 => ['center_id' => 1, 'chi_name' => '老友記小組',  'eng_name' => 'zzz', 'create_date' => '2020-01-25', 'contact_person' => '同事C', 'status' => 'D'],
     ];
     const STATUSES = [
         'A' => '有效', 'I' => '無效', 'D' => '已解散'
@@ -25,6 +26,11 @@ class VolunteerTeamController extends Controller
         View::share('centers', self::CENTERS);
         View::share('teams', self::TEAMS);
         View::share('statuses', self::STATUSES);
+    }
+
+    public static function getTeams(): array
+    {
+        return self::TEAMS;
     }
 
     public function index()

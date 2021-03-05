@@ -79,7 +79,7 @@
                             @foreach($services as $k => $s)
                                 <tr>
                                     <td>{{ $k }}</td>
-                                    <td>{{ $s['volunteer'] }}</td>
+                                    <td><a href="/ecs/volunteer/{{ $s['volunteer_id'] }}/edit" target="_blank">{{ $s['volunteer'] }}</a></td>
                                     <td><a href="/ecs/volunteer_team/{{ $s['team_id'] }}/edit" target="_blank">{{ $teams[$s['team_id']] }}</a></td>
                                     <td>{{ $s['service'] }}</td>
                                     <td>{{ $centers[$s['service_center_id']] }}</td>

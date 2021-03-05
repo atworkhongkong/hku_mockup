@@ -17,7 +17,7 @@ class VolunteerController extends Controller
         5 => '方王煥娣長者鄰舍中心'
     ];
     const TEAMS = [
-        1 => [1 => '耆樂大使', 2 => '智友伴', 3 => '老友記小組'],
+        1 => [1 => '耆樂大使', 2 => '智友伴', 3 => '共享綠田園', 4 => '老友記小組'],
         2 => [1 => '小組ABA', 2 => '小組ABB', 3 => '小組ABC'],
         3 => [1 => '小組BBA', 2 => '小組BBB', 3 => '小組BBC'],
         4 => [1 => '小組CBA', 2 => '小組CBB', 3 => '小組CBC'],
@@ -28,11 +28,12 @@ class VolunteerController extends Controller
             'name' => '黃柏宇',
             'center_id' => 1,
             'activeness' => [1 => 'A', 2 => 'I', 3 => 'I', 4 => 'I', 5 => 'I'],
-            'team' => [1 => [1, 2], 2 => [1], 3 => [], 4 => [3], 5 => []],
+            'team' => [1 => [1, 4], 2 => [1,3], 3 => [], 4 => [3], 5 => []],
             'register_date' => '2000-12-30',
             'recover_date' => '2020-11-25',
             'code' => 'VO100082',
-            'grade' => 1],
+            'grade' => 1,
+            'STE' => 'STE'],
         2 => [
             'name' => '詹晏靖',
             'center_id' => 1,
@@ -41,7 +42,8 @@ class VolunteerController extends Controller
             'register_date' => '2019-12-30',
             'recover_date' => '',
             'code' => 'VO100075',
-            'grade' => 2],
+            'grade' => 2,
+            'STE' => 'STE'],
         3 => [
             'name' => '楊智盈',
             'center_id' => 1,
@@ -50,7 +52,8 @@ class VolunteerController extends Controller
             'register_date' => '2018-08-26',
             'recover_date' => '',
             'code' => 'VO100063',
-            'grade' => 1],
+            'grade' => 1,
+            'STE' => 'STE'],
         4 => [
             'name' => '廖怡秀',
             'center_id' => 1,
@@ -59,7 +62,8 @@ class VolunteerController extends Controller
             'register_date' => '2018-08-01',
             'recover_date' => '',
             'code' => 'VO100050',
-            'grade' => 1],
+            'grade' => 1,
+            'STE' => 'STE'],
         5 => [
             'name' => '王瑜育',
             'center_id' => 1,
@@ -68,7 +72,8 @@ class VolunteerController extends Controller
             'register_date' => '2018-06-18',
             'recover_date' => '',
             'code' => 'VO100048',
-            'grade' => 1
+            'grade' => 1,
+            'STE' => 'STE'
         ],
     ];
     const GRADES = [

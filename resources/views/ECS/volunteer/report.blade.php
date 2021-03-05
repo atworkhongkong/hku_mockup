@@ -22,7 +22,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        @if ($type == 'accumulate')
+                        @if ($type == 'new' || $type == 'accumulate')
                             <div class="col-auto pr-1">
                                 <label class="sr-only" for="field-ste">STE</label>
                                 <select id="field-ste" class="form-control mr-2">
@@ -80,6 +80,7 @@
                             <th scope="col">義工編號</th>
                             <th scope="col">義工姓名</th>
                             <th scope="col">級別</th>
+                            <th scope="col">STE/Non-STE</th>
                             <th scope="col">首次登記日期</th>
                         </tr>
                         </thead>
@@ -89,6 +90,7 @@
                                     <td><a href="/ecs/volunteer/{{ $i }}/edit" target="_blank">{{ $volunteers[$i]['code'] }}</a></td>
                                     <td>{{ $volunteers[$i]['name'] }}</td>
                                     <td>{{ $grades[$volunteers[$i]['grade']] }}</td>
+                                    <td>{{ $volunteers[$i]['STE'] }}</td>
                                     <td>{{ $volunteers[$i]['register_date'] }}</td>
                                 </tr>
                             @endfor
