@@ -4,6 +4,7 @@ namespace App\Http\Controllers\ECS;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class EquipmentRentalController extends Controller
 {
@@ -32,34 +33,33 @@ class EquipmentRentalController extends Controller
         1 => '1個月 - $20', 2 => '3日 - $5'
     ];
 
+    public function __construct()
+    {
+        View::share('centers', self::CENTERS);
+        View::share('equipments', self::EQUIPMENTS);
+    }
+
     public function index()
     {
-        $centers = self::CENTERS;
-        $equipments = self::EQUIPMENTS;
         $rentals = self::RENTALS;
-        return view('ECS.equipment_rental.index', compact('centers', 'equipments', 'rentals'));
+        return view('ECS.equipment_rental.index', compact('rentals'));
     }
 
     public function create()
     {
-        $centers = self::CENTERS;
-        $equipments = self::EQUIPMENTS;
         $rental_time = self::RENTAL_TIME;
-        return view('ECS.equipment_rental.create', compact('centers', 'equipments', 'rental_time'));
+        return view('ECS.equipment_rental.create', compact('rental_time'));
     }
 
     public function edit($rental_id)
     {
-        $centers = self::CENTERS;
-        $equipments = self::EQUIPMENTS;
         $rental = self::RENTALS[$rental_id];
         $rental_time = self::RENTAL_TIME;
-        return view('ECS.equipment_rental.edit', compact('centers', 'equipments', 'rental', 'rental_time'));
+        return view('ECS.equipment_rental.edit', compact('rental', 'rental_time'));
     }
 
     public function report()
     {
-        $equipments = self::EQUIPMENTS;
         /*
         $equipment_rental_counts = [
             1 => 10,
@@ -75,6 +75,6 @@ class EquipmentRentalController extends Controller
             2 => ['identity' => '長者會員', 'code' => '03EL30018', 'name' => '趙霞', 'phone' => '9085xxxx', 'equipment_id' => 1, 'create_date' => '2021-01-21', 'due_date' => '2021-03-21', 'late_day' => 0],
             1 => ['identity' => '護老者', 'code' => 'J0012', 'name' => '黃敏', 'phone' => '6085xxxx', 'equipment_id' => 3, 'create_date' => '2021-01-01', 'due_date' => '2021-02-01', 'late_day' => 15]
         ];
-        return view('ECS.equipment_rental.report', compact('equipments', 'rental_report'));
+        return view('ECS.equipment_rental.report', compact('rental_report'));
     }
 }

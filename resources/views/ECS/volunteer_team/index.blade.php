@@ -13,9 +13,8 @@
                 <form class="form-inline" action="/ecs/volunteer_team" method="GET">
                     <label class="sr-only" for="field-center">搜尋範圍</label>
                     <select id="field-center" class="form-control mr-2" name="center">
-                        <option value=""></option>
                         @foreach($centers as $k => $c)
-                            <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
+                            <option value="{{ $k }}">{{ $c }}</option>
                         @endforeach
                     </select>
 

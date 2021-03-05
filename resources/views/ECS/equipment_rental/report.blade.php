@@ -13,6 +13,25 @@
                 <form class="form" action="/ecs/volunteer_service/report" method="GET">
                     <div class="row mb-2 g-0">
                         <div class="col-auto">
+                            <label class="sr-only" for="field-center">中心</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k + 1 }}" {{ $k  == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-center">儀器</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($equipments as $k => $e)
+                                    <option value="{{ $k }}">{{ $e['name'] }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 g-0">
+                        <div class="col-auto">
                             <label class="sr-only" for="field-start-date">開始日期</label>
                             <input type="date" id="field-start-date" class="form-control" value="2021-01-01" />
                         </div>
@@ -22,17 +41,6 @@
                         <div class="col-auto">
                             <label class="sr-only" for="field-end-date">結束日期</label>
                             <input type="date" id="field-end-date" class="form-control" value="2021-01-31" />
-                        </div>
-                    </div>
-
-                    <div class="row mb-2 g-0">
-                        <div class="col-auto">
-                            <label class="sr-only" for="field-center">儀器</label>
-                            <select id="field-center" class="form-control mr-2" name="center">
-                                @foreach($equipments as $k => $e)
-                                    <option value="{{ $k }}">{{ $e['name'] }}</option>
-                                @endforeach
-                            </select>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">搜尋</button>

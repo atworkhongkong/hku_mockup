@@ -48,9 +48,6 @@
                 <div class="col-12 mb-3">
                     @if ($type == '')
                         <?php $count = 0; ?>
-                            <div class="alert alert-primary" role="alert">
-                                服務數據的資料是從何得知?
-                            </div>
                     @elseif ($type == 'new')
                         <?php $count = 2; ?>
                     @elseif ($type == 'accumulate')

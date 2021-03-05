@@ -44,24 +44,24 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>2021-01-31</td>
+                                <td>2021-01-20</td>
+                                <td>1</td>
                                 <td>2</td>
                                 <td>3</td>
-                                <td>5</td>
                                 <td>職員A</td>
                             </tr>
                             <tr>
-                                <td>2021-01-27</td>
-                                <td>3</td>
+                                <td>2021-01-15</td>
+                                <td>2</td>
                                 <td>(1)</td>
-                                <td>2</td>
+                                <td>1</td>
                                 <td>職員A</td>
                             </tr>
                             <tr>
-                                <td>2021-01-25</td>
+                                <td>2021-01-10</td>
                                 <td>0</td>
-                                <td>3</td>
-                                <td>3</td>
+                                <td>2</td>
+                                <td>2</td>
                                 <td>職員A</td>
                             </tr>
                         </tbody>

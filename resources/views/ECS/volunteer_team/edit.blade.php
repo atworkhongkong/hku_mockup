@@ -51,6 +51,13 @@
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-create_date" class="form-label">建立日期</label>
+                            <input type="text" class="form-control" id="input-create_date" value="{{ $team['create_date'] }}" readonly>
+                        </div>
+                    </div>
+
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">更 新</button>
                     </div>
