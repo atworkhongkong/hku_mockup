@@ -61,6 +61,7 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_register/report', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'report'])->name('ecs.programme_register.report');
     Route::get('/programme_register/balance', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'balance'])->name('ecs.programme_register.balance');
     Route::get('/programme_register/balance_done', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'balanceDone'])->name('ecs.programme_register.balance_done');
+    Route::get('/programme_register/export', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'export'])->name('ecs.programme_register.export');
 
     Route::get('/programme_attendance/{programme_id}/create', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'create'])->where('id', '[0-9]+')->name('ecs.programme_attendance.create');
     Route::get('/programme_attendance/{attendance_id}/edit', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'edit'])->where('attendance_id', '[0-9]+')->name('ecs.programme_attendance.edit');
@@ -73,7 +74,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_waiting_list/{id}', [App\Http\Controllers\ECS\ProgrammeWaitingListController::class, 'index'])->where('id', '[0-9]+')->name('ecs.programme_waiting_list.index');
 
     Route::get('/programme_tutor_salary/{programme_id}/create', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'create'])->where('programme_id', '[0-9]+')->name('ecs.programme_tutor_salary.create');
-    Route::get('/programme_tutor_salary/{programme_id}/edit', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'edit'])->where('programme_id', '[0-9]+')->name('ecs.programme_tutor_salary.edit');
+    Route::get('/programme_tutor_salary/{salary_id}/edit', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'edit'])->where('salary_id', '[0-9]+')->name('ecs.programme_tutor_salary.edit');
+    Route::get('/programme_tutor_salary/{salary_id}/contrast', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'contrast'])->where('salary_id', '[0-9]+')->name('ecs.programme_tutor_salary.contrast');
 
     Route::post('/invoice', [App\Http\Controllers\ECS\InvoiceController::class, 'search'])->name('ecs.invoice.search');
     Route::get('/invoice/{invoice_id}', [App\Http\Controllers\ECS\InvoiceController::class, 'show'])->name('ecs.invoice.show');

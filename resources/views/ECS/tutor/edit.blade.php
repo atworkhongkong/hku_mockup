@@ -82,6 +82,17 @@
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
+                            <label for="input-bank-name" class="form-label">銀行名稱</label>
+                            <input type="text" class="form-control" id="input-bank-name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-bank-account" class="form-label">戶口號碼</label>
+                            <input type="text" class="form-control" id="input-bank-account">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label for="input-center" class="form-label">所屬中心</label>
                             <select class="custom-select" aria-label="select example">
                                 @foreach($centers as $k => $c)

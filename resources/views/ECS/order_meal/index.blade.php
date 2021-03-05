@@ -11,6 +11,13 @@
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form-inline" action="/ecs/order_meal" method="GET">
+                    <label class="sr-only" for="field-center">中心</label>
+                    <select id="field-center" class="form-control mr-2" name="center">
+                        @foreach($centers as $k => $c)
+                            <option value="{{ $k }}">{{ $c }}</option>
+                        @endforeach
+                    </select>
+
                     <label class="sr-only" for="field-member-code" >會員編號</label>
                     <input type="text" id="field-chi-name" class="form-control mr-2" placeholder="會員編號" value="03EL30012"/>
 

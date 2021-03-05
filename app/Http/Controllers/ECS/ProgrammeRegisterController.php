@@ -149,6 +149,12 @@ class ProgrammeRegisterController extends Controller
         return view('ECS.programme_register.balance_done', compact('balances'));
     }
 
+    public function export(Request $request)
+    {
+        $programme_id = $request->get('programme_id');
+        return view('ECS.programme_register.export');
+    }
+
 //    public function edit(Request $request)
 //    {
 //        return view('ECS.programme_register.edit');

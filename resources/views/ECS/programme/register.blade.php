@@ -23,7 +23,7 @@
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>活動名額︰20, 有效報名人數︰2, 取消人數︰1</span>
                         <div>
-                            <a href="javascript:void(0);" class="btn btn-secondary">匯出紀錄</a>
+                            <a href="/ecs/programme_register/export?programme_id={{ $programme_id }}" class="btn btn-secondary" target="_blank">匯出紀錄</a>
                         </div>
                     </div>
                     <table class="table table-bordered">

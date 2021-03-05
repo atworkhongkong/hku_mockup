@@ -55,4 +55,9 @@ class ProgrammeTutorSalaryController extends Controller
         $programme_id = $tutor_salary['programme_id'];
         return view('ECS.programme_tutor_salary.edit', compact('tutor_salary', 'programme_id', 'salary_types'));
     }
+
+    public function contrast($salary_id)
+    {
+        return view('ECS.programme_tutor_salary.contrast');
+    }
 }
