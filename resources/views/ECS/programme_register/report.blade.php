@@ -73,7 +73,7 @@
                                     <td>{{ $v['attendance_count'] }}</td>
                                     <td>{{ $v['indicator'] }}</td>
                                     <td>{{ $v['contact_person'] }}</td>
-                                    <td>{{ $v['fee'] }}</td>
+                                    <td>${{ $v['fee'] }}</td>
                                 </tr>
                             @endforeach
                             <tr>
