@@ -15,11 +15,12 @@ class ProductController extends Controller
     ];
 
     const PRODUCTS = [
-        1 => ['name' => '奶粉 (大)', 'count' => 50, 'price' => 200],
-        2 => ['name' => '奶粉 (細)', 'count' => 80, 'price' => 100],
-        3 => ['name' => '尿片 (大)', 'count' => 120, 'price' => 160],
-        4 => ['name' => '尿片 (中)', 'count' => 100, 'price' => 110],
-        5 => ['name' => '尿片 (細)', 'count' => 100, 'price' => 90],
+        1 => ['name' => '加營素(大)900克', 'count' => 50, 'price' => 175],
+        2 => ['name' => '加營素(大)400克', 'count' => 80, 'price' => 90],
+        3 => ['name' => '怡保康(小)400克', 'count' => 80, 'price' => 100],
+        4 => ['name' => '德寶123紙尿褲(大碼)', 'count' => 120, 'price' => 46],
+        5 => ['name' => '德寶123紙尿褲(中碼)', 'count' => 100, 'price' => 36],
+        6 => ['name' => '康保長方型片心(中碼)', 'count' => 100, 'price' => 30],
     ];
 
     public function index()

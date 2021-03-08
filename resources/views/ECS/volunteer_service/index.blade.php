@@ -32,7 +32,7 @@
                         </div>
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">中心</label>
-                            <input type="text" class="form-control mr-2" id="field-chi-name" value="黃柏宇" placeholder="義工中文姓名">
+                            <input type="text" class="form-control mr-2" id="field-chi-name" placeholder="義工中文姓名">
                         </div>
                     </div>
 

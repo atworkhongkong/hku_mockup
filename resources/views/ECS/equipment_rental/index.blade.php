@@ -29,6 +29,10 @@
                                 @endforeach
                             </select>
                         </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-reference-number">儀器參考編號</label>
+                            <input type="text" class="form-control mr-2" id="field-reference-number" placeholder="儀器參考編號">
+                        </div>
                     </div>
 
                     <div class="row mb-2">
