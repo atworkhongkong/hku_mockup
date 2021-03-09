@@ -14,12 +14,16 @@
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 
+    @yield('top_script')
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+
+    @yield('top_style')
 </head>
 <body>
 <div id="app">
@@ -109,5 +113,7 @@
         @yield('content')
     </main>
 </div>
+
+@yield('bottom_script')
 </body>
 </html>

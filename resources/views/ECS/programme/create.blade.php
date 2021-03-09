@@ -1,5 +1,28 @@
 @extends('layouts.master')
 
+@section('top_script')
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+@endsection
+
+@section('bottom_script')
+    <script>
+        $(function() {
+           $('#input-programme-date').datepicker({
+               uiLibrary: 'bootstrap4',
+               format: 'yyyy-mm-dd',
+               select: function (e, type) {
+                   //return false;
+               }
+           });
+        });
+    </script>
+@endsection
+
+@section('top_style')
+
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+@endsection
+
 @section('content')
     <div class="container">
         <div class="content__wrapper">
@@ -127,12 +150,9 @@
                     </div>
 
                     <div class="row align-items-end">
-                        <div class="col mb-3">
+                        <div class="col-12 mb-3">
                             <label for="input-programme-date" class="form-label">活動舉行日期</label>
                             <input type="text" class="form-control" id="input-programme-date">
-                        </div>
-                        <div class="col-auto mb-3 px-0">
-                            <span><i class="far fa-calendar-times" style="font-size:24px;"></i></span>
                         </div>
                     </div>
 
