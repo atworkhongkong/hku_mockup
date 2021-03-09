@@ -77,9 +77,10 @@ class ProgrammeRegisterController extends Controller
         View::share('centers', self::CENTERS);
     }
 
-    public function show()
+    public function show(Request $request)
     {
-        return view('ECS.programme_register.show');
+        $programme_id = $request->get('programme_id');
+        return view('ECS.programme_register.show', compact('programme_id'));
     }
 
     public function create(Request $request)

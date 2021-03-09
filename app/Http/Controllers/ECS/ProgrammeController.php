@@ -75,7 +75,8 @@ class ProgrammeController extends Controller
 
     public function waitingList($programme_id)
     {
-        return view('ECS.programme_waiting_list.index', compact('programme_id'));
+        $waiting_list = ProgrammeWaitingListController::getWaitingList();
+        return view('ECS.programme_waiting_list.index', compact('programme_id', 'waiting_list'));
     }
 
     public function tutorSalary($programme_id)

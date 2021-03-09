@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">報名</li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/{{ $programme_id }}/register">JM30130 - 親子天地</a></li>
                 </ol>
             </nav>
 

@@ -53,7 +53,7 @@
                                 <td></td>
                                 <td>$100.0</td>
                                 <td>
-                                    <a href="/ecs/programme_register/10" class="btn btn-primary mb-1">詳情</a>
+                                    <a href="/ecs/programme_register/10?programme_id={{ $programme_id }}" class="btn btn-primary mb-1">詳情</a>
                                     <a href="javascript:void(0);" class="btn btn-primary mb-1">列印收據</a>
                                     <a href="javascript:void(0);" class="btn btn-danger mb-1" data-toggle="modal" data-target="#cancel-modal">取消</a>
                                 </td>
@@ -69,7 +69,7 @@
                                 <td>$20<br>(優惠劵)</td>
                                 <td>$80.0</td>
                                 <td>
-                                    <a href="/ecs/programme_register/9" class="btn btn-primary mb-1">詳情</a>
+                                    <a href="/ecs/programme_register/9?programme_id={{ $programme_id }}" class="btn btn-primary mb-1">詳情</a>
                                     <a href="javascript:void(0);" class="btn btn-primary mb-1">列印收據</a>
                                     <a href="javascript:void(0);" class="btn btn-danger mb-1" data-toggle="modal" data-target="#cancel-modal">取消</a>
                                 </td>
@@ -85,7 +85,7 @@
                                 <td></td>
                                 <td>($100.0)</td>
                                 <td>
-                                    <a href="/ecs/programme_register/8" target="_blank" class="btn btn-primary mb-1">詳情</a>
+                                    <a href="/ecs/programme_register/8?programme_id={{ $programme_id }}" target="_blank" class="btn btn-primary mb-1">詳情</a>
                                 </td>
                             </tr>
                             <tr>

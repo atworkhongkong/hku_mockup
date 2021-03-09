@@ -87,7 +87,6 @@
                             <th scope="col">結束日期</th>
                             <th scope="col">負責同事</th>
                             <th scope="col">狀態</th>
-                            <th scope="col">批核狀態</th>
                             <th scope="col" style="width:15%;">&nbsp;</th>
                         </tr>
                         </thead>
@@ -101,7 +100,6 @@
                             <td>2021-03-01</td>
                             <td>同事A</td>
                             <td>正常</td>
-                            <td>已批核</td>
                             <td>
                                 <a class="btn btn-primary" href="/ecs/programme/2/edit">編輯</a>
                                 <a class="btn btn-primary" href="/ecs/programme/2/register">更多...</a>
@@ -116,7 +114,6 @@
                             <td>2021-03-02</td>
                             <td>同事B</td>
                             <td>暫停</td>
-                            <td>已批核</td>
                             <td>
                                 <a class="btn btn-primary" href="/ecs/programme/1/edit">編輯</a>
                                 <a class="btn btn-primary" href="/ecs/programme/1/register">更多...</a>

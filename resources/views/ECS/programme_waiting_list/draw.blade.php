@@ -6,8 +6,8 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme/edit/2">JM30130 - 親子天地</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme_waiting_list/2">後補名單</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/{{ $programme_id }}/edit">JM30130 - 親子天地</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/{{ $programme_id }}/waiting_list">後補名單</a></li>
                     <li class="breadcrumb-item active" aria-current="page">抽籤</li>
                 </ol>
             </nav>
@@ -140,6 +140,11 @@
                             </tr>
                         </tbody>
                     </table>
+
+                    <div class="alert alert-primary" role="alert">
+                        提示︰當確認抽籤後，不會再有抽籤機會，亦要收埋「重新抽籤」按鈕。
+                    </div>
+
                     <div class="row mb-2">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">重新抽籤</button>

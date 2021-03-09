@@ -38,28 +38,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>03EL300102</td>
-                            <td>陳永仁</td>
-                            <td>男</td>
-                            <td>98989898</td>
-                            <td>2021-01-05</td>
-                            <td>
-                                <a class="btn btn-primary" href="/ecs/programme_waiting_list/20/edit">編輯</a>
-                                <a class="btn btn-danger">刪除</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>劉健明</td>
-                            <td>男</td>
-                            <td>96969696</td>
-                            <td>2021-01-04</td>
-                            <td>
-                                <a class="btn btn-primary" href="/ecs/programme_waiting_list/21/edit">編輯</a>
-                                <a class="btn btn-danger">刪除</a>
-                            </td>
-                        </tr>
+                        @foreach($waiting_list as $k => $v)
+                            <tr>
+                                <td>{{ $v['code'] }}</td>
+                                <td>{{ $v['name'] }}</td>
+                                <td>{{ $v['gender'] == 'M' ? '男' : '女' }}</td>
+                                <td>{{ $v['phone']}}</td>
+                                <td>{{ $v['create_date'] }}</td>
+                                <td>
+                                    <a class="btn btn-primary" href="/ecs/programme_waiting_list/{{ $k }}/edit?programme_id={{ $programme_id }}">編輯</a>
+                                    <a class="btn btn-danger">刪除</a>
+                                </td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

@@ -6,8 +6,8 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/programme">活動</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme/edit/2">JM30130 - 親子天地</a></li>
-                    <li class="breadcrumb-item"><a href="/ecs/programme_waiting_list/2">後補名單</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/{{ $programme_id }}/edit">JM30130 - 親子天地</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/programme/{{ $programme_id }}/waiting_list">後補名單</a></li>
                     <li class="breadcrumb-item active" aria-current="page">新增後補名單</li>
                 </ol>
             </nav>

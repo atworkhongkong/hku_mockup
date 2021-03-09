@@ -33,7 +33,7 @@
                             <th scope="col">報名人數</th>
                             <th scope="col">出席人數</th>
                             <th scope="col">缺席人數</th>
-                            <th scope="col" style="width:5%;">&nbsp;</th>
+                            <th scope="col" style="width:8%;">&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -44,7 +44,18 @@
                             <td>2</td>
                             <td>
                                 <a href="/ecs/programme_attendance/12/edit">
-                                    <i class="fas fa-edit"></i>
+                                    <button class="btn btn-primary">編輯</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2021-02-25</td>
+                            <td>18</td>
+                            <td>18</td>
+                            <td>0</td>
+                            <td>
+                                <a href="/ecs/programme_attendance/10/edit">
+                                    <button class="btn btn-primary">編輯</button>
                                 </a>
                             </td>
                         </tr>

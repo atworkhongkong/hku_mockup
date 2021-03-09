@@ -3,11 +3,18 @@
 @section('content')
     <div class="container my-5">
         <div class="content__wrapper">
+            <h5 class="text-center">出席記錄</h5>
             <div class="row my-4">
                 <div class="col-auto">
                     活動名稱
                 </div>
-                <div class="col border-bottom">
+                <div class="col-md-5 border-bottom">
+
+                </div>
+                <div class="col-auto">
+                    活動編號
+                </div>
+                <div class="col-md-5 border-bottom">
 
                 </div>
             </div>
