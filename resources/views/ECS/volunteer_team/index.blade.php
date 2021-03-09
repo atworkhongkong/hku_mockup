@@ -39,7 +39,7 @@
                                 <th scope="col" style="width:8%;">#</th>
                                 <th scope="col">義工小組</th>
                                 <th scope="col">建立日期</th>
-                                <th scope="col">負責人</th>
+                                <th scope="col">聯絡人</th>
                                 <th scope="col">狀態</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>

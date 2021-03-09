@@ -48,7 +48,7 @@
                 @if ($type == 'new')
                     顯示選擇日期內的新增個案
                 @elseif ($type == 'accumulate')
-                    顯示選擇日期內的由day1到選擇日期的累積個案
+                    顯示由day1到選擇日期的累積個案
                 @elseif ($type == 'reactivate')
                     顯示選擇日期內的重啟個案(如有)
                 @elseif ($type == 'close')

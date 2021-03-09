@@ -9,6 +9,13 @@
 
         <div class="row">
             <div class="col-12 mb-3">
+                <label for="input-group" class="form-label">組別</label>
+                <input type="text" class="form-control" id="input-group" @isset($case_id) value="{{ $case['group'] }}" @endisset>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mb-3">
                 <label for="input-assessor" class="form-label">評估員</label>
                 <input type="text" class="form-control" id="input-assessor" @isset($case_id) value="{{ $case['assessor'] }}" @endisset>
             </div>

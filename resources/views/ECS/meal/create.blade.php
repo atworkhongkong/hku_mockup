@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/meal">每週飯餸</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">編輯每週飯餸</li>
+                    <li class="breadcrumb-item active" aria-current="page">新增每週飯餸</li>
                 </ol>
             </nav>
 
