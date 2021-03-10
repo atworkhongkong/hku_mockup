@@ -11,6 +11,17 @@
             </nav>
 
             <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="input-case-number" class="form-label">Case number</label>
+                    <input type="text" class="form-control" id="input-case-number" value="{{ $cases[$id]['case_number'] }}" readonly>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="input-applicant" class="form-label">Applicant</label>
+                    <input type="text" class="form-control" id="input-applicant" value="{{ $cases[$id]['name'] }}" readonly>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-12 mb-3">
                     <label for="input-date" class="form-label">Date</label>
                     <input type="date" class="form-control" id="input-date">

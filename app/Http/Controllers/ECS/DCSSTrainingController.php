@@ -34,9 +34,10 @@ class DCSSTrainingController extends Controller
         return view('ECS.dcss_training.index');
     }
 
-    public function create()
+    public function create(Request $request)
     {
-        return view('ECS.dcss_training.create');
+        $id = $request->get('id');
+        return view('ECS.dcss_training.create', compact('id'));
     }
 
     public function edit($id)

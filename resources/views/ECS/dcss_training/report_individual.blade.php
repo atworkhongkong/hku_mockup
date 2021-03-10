@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-1">
-                    <span>找到{{ count($cases) }}筆記錄</span>
+                    <span>找到3筆記錄</span>
                 </div>
                 <table class="table table-sm table-striped table-bordered" style="font-size:.9rem;">
                     <thead>
@@ -109,7 +109,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td>&#8226;</td>
+                            <td>&#10003;</td>
                             <td></td>
                             <td>1.5</td>
                             <td></td>
@@ -133,7 +133,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td>&#8226;</td>
+                            <td>&#10003;</td>
                             <td></td>
                             <td>1.5</td>
                             <td>1</td>
@@ -157,7 +157,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td>&#8226;</td>
+                            <td>&#10003;</td>
                             <td></td>
                             <td>2</td>
                             <td></td>

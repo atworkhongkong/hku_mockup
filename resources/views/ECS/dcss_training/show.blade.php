@@ -46,9 +46,9 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到4筆紀錄</span>
+                        <span>找到3筆紀錄</span>
                         <div>
-                            <a href="/ecs/dcss_training/create" class="btn btn-secondary">新增訓練紀錄</a>
+                            <a href="/ecs/dcss_training/create?id={{ $id }}" class="btn btn-secondary">新增訓練紀錄</a>
                         </div>
                     </div>
                     <table class="table table-sm table-striped table-bordered" style="font-size:.9rem;">
@@ -158,7 +158,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>&#8226;</td>
+                                <td>&#10003;</td>
                                 <td></td>
                                 <td>1.5</td>
                                 <td></td>
@@ -183,7 +183,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>&#8226;</td>
+                                <td>&#10003;</td>
                                 <td></td>
                                 <td>1.5</td>
                                 <td>1</td>
@@ -208,7 +208,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>&#8226;</td>
+                                <td>&#10003;</td>
                                 <td></td>
                                 <td>2</td>
                                 <td></td>
