@@ -65,12 +65,13 @@
                         <thead>
                             <tr>
                                 <th scope="col" style="width:8%;">#</th>
-                                <th scope="col">貨品</th>
                                 <th scope="col">購買者</th>
-                                <th scope="col">數量</th>
                                 <th scope="col">身份</th>
                                 <th scope="col">識別編號</th>
                                 <th scope="col">購買日期</th>
+                                <th scope="col">貨品</th>
+                                <th scope="col">數量</th>
+                                <th scope="col">價格</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                         </thead>
@@ -78,17 +79,24 @@
                             @foreach($purchases as $k => $p)
                                 <tr>
                                     <td>{{ $k }}</td>
-                                    <td>{{ $products[$p['product_id']]['name'] }}</td>
-                                    <td>{{ $p['count'] }}</td>
                                     <td>{{ $p['name'] }}</td>
                                     <td>{{ $p['identity'] }}</td>
                                     <td>{{ $p['code'] }}</td>
                                     <td>{{ $p['create_date'] }}</td>
+                                    <td>{{ $products[$p['product_id']]['name'] }}</td>
+                                    <td>{{ $p['count'] }}</td>
+                                    <td>${{ $p['total_price'] }}</td>
                                     <td>
                                         <a class="btn btn-primary" href="/ecs/purchase/{{ $k }}/edit">檢視</a>
                                     </td>
                                 </tr>
                             @endforeach
+                            <tr>
+                                <td colspan="6" class="text-right">總數︰</td>
+                                <td>{{ $grant_count }}</td>
+                                <td>${{ $grant_price }}</td>
+                                <td></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

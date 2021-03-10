@@ -4,6 +4,7 @@ namespace App\Http\Controllers\ECS;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class ProductController extends Controller
 {
@@ -23,29 +24,36 @@ class ProductController extends Controller
         6 => ['name' => '康保長方型片心(中碼)', 'count' => 100, 'price' => 30],
     ];
 
+    public function __construct()
+    {
+        View::share('centers', self::CENTERS);
+        View::share('products', self::PRODUCTS);
+    }
+
     public function index()
     {
-        $centers = self::CENTERS;
-        $products = self::PRODUCTS;
-        return view('ECS.product.index', compact('centers', 'products'));
+        return view('ECS.product.index');
     }
 
     public function create()
     {
-        $centers = self::CENTERS;
-        return view('ECS.product.create', compact('centers'));
+        return view('ECS.product.create');
     }
 
     public function edit($product_id)
     {
-        $centers = self::CENTERS;
         $product = self::PRODUCTS[$product_id];
-        return view('ECS.product.edit', compact('centers', 'product'));
+        return view('ECS.product.edit', compact('product', 'product_id'));
     }
 
     public function log($product_id)
     {
         $product = self::PRODUCTS[$product_id];
         return view('ECS.product.log', compact('product', 'product_id'));
+    }
+
+    public static function getProducts(): array
+    {
+        return self::PRODUCTS;
     }
 }

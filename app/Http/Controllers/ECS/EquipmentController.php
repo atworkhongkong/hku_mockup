@@ -89,4 +89,9 @@ class EquipmentController extends Controller
         $equipment = self::EQUIPMENTS[$equipment_id];
         return view('ECS.equipment.log', compact('equipment', 'equipment_id'));
     }
+
+    public static function getEquipments(): array
+    {
+        return self::EQUIPMENTS;
+    }
 }

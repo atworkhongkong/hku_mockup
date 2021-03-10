@@ -18,7 +18,7 @@
                             <select class="form-control" id="field-room">
                                 <option value=""></option>
                                 @foreach($rooms as $k => $r)
-                                    <option value="{{ $k }}">{{ $r }}</option>
+                                    <option value="{{ $k }}">{{ $r['name'] }}</option>
                                 @endforeach
                             </select>
                         </div>

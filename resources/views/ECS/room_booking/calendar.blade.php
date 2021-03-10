@@ -22,7 +22,7 @@
                             <label class="sr-only" for="field-room">房間</label>
                             <select class="form-control mr-2" id="field-room">
                                 @foreach($rooms as $k => $r)
-                                    <option value="{{ $k }}">{{ $r }}</option>
+                                    <option value="{{ $k }}">{{ $r['name'] }}</option>
                                 @endforeach
                             </select>
                         </div>

@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/purchase">購物</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">購物</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $purchase['name'] }}</li>
                 </ol>
             </nav>
 
@@ -16,7 +16,6 @@
                         <div class="col-12 mb-3">
                             <label for="input-center" class="form-label">中心</label>
                             <select id="input-center" class="form-control mr-2" disabled>
-                                <option value=""></option>
                                 @foreach($centers as $k => $c)
                                     <option value="{{ $k + 1 }}" {{ $k  == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
                                 @endforeach
@@ -51,7 +50,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 mb-3">
                             <label for="input-equipment" class="form-label">貨品</label>
                             <select class="form-control" id="input-equipment" disabled>
                                 <option value=""></option>
@@ -60,9 +59,16 @@
                                 @endforeach
                             </select>
                         </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-count" class="form-label">數量</label>
                             <input type="text" class="form-control" id="input-count" value="{{ $purchase['count'] }}" readonly>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-total-price" class="form-label">價格</label>
+                            <input type="text" class="form-control" id="input-total-price" value="{{ $purchase['total_price'] }}" readonly>
                         </div>
                     </div>
 
@@ -78,8 +84,9 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">提交及列印收據</button>
+                        <div class="col-12 mb-3">
+                            <label for="input-created-by" class="form-label">經手人</label>
+                            <input type="text" class="form-control" id="input-created-by" value="{{ $purchase['created_by'] }}" readonly>
                         </div>
                     </div>
                 </form>

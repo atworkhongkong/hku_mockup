@@ -59,6 +59,8 @@
                                 <th scope="col">租借者</th>
                                 <th scope="col">身份</th>
                                 <th scope="col">識別編號</th>
+                                <th scope="col">租借物品</th>
+                                <th scope="col">物品參考編號</th>
                                 <th scope="col">租借日期</th>
                             </tr>
                         </thead>
@@ -69,6 +71,8 @@
                                     <td>{{ $v['name'] }}</td>
                                     <td>{{ $v['identity'] }}</td>
                                     <td>{{ $v['code'] }}</td>
+                                    <td>{{ $equipments[$v['equipment_id']]['name'] }}</td>
+                                    <td>{{ $v['equipment_reference_number'] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
                                 </tr>
                             @endforeach

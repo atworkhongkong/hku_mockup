@@ -5,16 +5,10 @@ namespace App\Http\Controllers\ECS;
 use App\Http\Controllers\Controller;
 use Acaronlex\LaravelCalendar\Calendar;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class RoomBookingController extends Controller
 {
-    const ROOMS = [
-        1 => 'Room 204',
-        2 => 'Room 205',
-        3 => 'Room 304',
-        4 => 'Room 305',
-    ];
-
     const BOOKINGS = [
             3 => ['room_id' => 1, 'purpose' => 'HKU meeting', 'contact_person' => '同事A', 'start_time' => '2021-02-19 09:00 (五)', 'end_time' => '2021-02-19 17:30  (五)'] ,
             2 => ['room_id' => 1, 'purpose' => 'ECS meeting', 'contact_person' => '同事B', 'start_time' => '2021-02-18 15:00 (四)', 'end_time' => '2021-02-18 17:00 (四)'] ,
@@ -24,20 +18,17 @@ class RoomBookingController extends Controller
     public function __construct()
     {
         date_default_timezone_set('Asia/Hong_Kong');
+        View::share('rooms', RoomController::getRooms());
+        View::share('bookings', self::BOOKINGS);
     }
 
     public function index()
     {
-        $rooms = self::ROOMS;
-        $bookings = self::BOOKINGS;
-        return view('ECS.room_booking.index', compact('rooms', 'bookings'));
+        return view('ECS.room_booking.index');
     }
 
     public function calendar()
     {
-        $rooms = self::ROOMS;
-        $bookings = self::BOOKINGS;
-
         $events = [];
 
         $events[] = \Calendar::event(
@@ -82,21 +73,19 @@ class RoomBookingController extends Controller
             'eventClick' => 'function(event){}'
         ]);
 
-        return view('ECS.room_booking.calendar', compact('rooms', 'bookings', 'calendar'));
+        return view('ECS.room_booking.calendar', compact('calendar'));
     }
 
     public function create()
     {
-        $rooms = self::ROOMS;
-        return view('ECS.room_booking.create', compact('rooms'));
+        return view('ECS.room_booking.create');
     }
 
     public function edit($booking_id)
     {
         $booking = self::BOOKINGS[$booking_id];
-        $rooms = self::ROOMS;
         $booking['start_time'] = date('Y-m-d', strtotime($booking['start_time'])).'T'.date('H:i', strtotime($booking['start_time']));
         $booking['end_time'] = date('Y-m-d', strtotime($booking['end_time'])).'T'.date('H:i', strtotime($booking['end_time']));
-        return view('ECS.room_booking.edit', compact('booking', 'booking_id', 'rooms'));
+        return view('ECS.room_booking.edit', compact('booking', 'booking_id'));
     }
 }

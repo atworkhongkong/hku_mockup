@@ -16,7 +16,7 @@
                             <label class="sr-only" for="field-room">房間</label>
                             <select class="form-control mr-2" id="field-room">
                                 @foreach($rooms as $k => $r)
-                                    <option value="{{ $k }}">{{ $r }}</option>
+                                    <option value="{{ $k }}">{{ $r['name'] }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -58,28 +58,28 @@
                     </div>
                     <table class="table table-bordered">
                         <thead>
-                            <tr>
-                                <th scope="col" style="width:8%;">#</th>
-                                <th scope="col">房間</th>
-                                <th scope="col">會議內容</th>
-                                <th scope="col">聯絡人</th>
-                                <th scope="col">開始時間</th>
-                                <th scope="col">結束時間</th>
-                                <th scope="col" style="width:8%;">&nbsp;</th>
-                            </tr>
+                        <tr>
+                            <th scope="col" style="width:8%;">#</th>
+                            <th scope="col">房間</th>
+                            <th scope="col">會議內容</th>
+                            <th scope="col">聯絡人</th>
+                            <th scope="col">開始時間</th>
+                            <th scope="col">結束時間</th>
+                            <th scope="col" style="width:8%;">&nbsp;</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            @foreach($bookings as $k => $b)
-                                <tr>
-                                    <td>{{ $k }}</td>
-                                    <td>{{ $rooms[$b['room_id']] }}</td>
-                                    <td>{{ $b['purpose'] }}</td>
-                                    <td>{{ $b['contact_person'] }}</td>
-                                    <td>{{ $b['start_time'] }}</td>
-                                    <td>{{ $b['end_time'] }}</td>
-                                    <td><a class="btn btn-primary" href="/ecs/room_booking/{{ $k }}/edit">編輯</a></td>
-                                </tr>
-                            @endforeach
+                        @foreach($bookings as $k => $b)
+                            <tr>
+                                <td>{{ $k }}</td>
+                                <td>{{ $rooms[$b['room_id']]['name'] }}</td>
+                                <td>{{ $b['purpose'] }}</td>
+                                <td>{{ $b['contact_person'] }}</td>
+                                <td>{{ $b['start_time'] }}</td>
+                                <td>{{ $b['end_time'] }}</td>
+                                <td><a class="btn btn-primary" href="/ecs/room_booking/{{ $k }}/edit">編輯</a></td>
+                            </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

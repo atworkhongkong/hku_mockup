@@ -6,6 +6,7 @@
 
 @section('bottom_script')
     <script>
+        /*
         $(function() {
            $('#input-programme-date').datepicker({
                uiLibrary: 'bootstrap4',
@@ -15,11 +16,11 @@
                }
            });
         });
+        */
     </script>
 @endsection
 
 @section('top_style')
-
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 @endsection
 
@@ -152,7 +153,7 @@
                     <div class="row align-items-end">
                         <div class="col-12 mb-3">
                             <label for="input-programme-date" class="form-label">活動舉行日期</label>
-                            <input type="text" class="form-control" id="input-programme-date">
+                            <input type="text" class="form-control" id="input-programme-date" placeholder="2021-03-02,2021-03-15">
                         </div>
                     </div>
 

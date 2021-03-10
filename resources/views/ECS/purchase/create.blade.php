@@ -51,18 +51,14 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="input-equipment" class="form-label">儀器</label>
-                            <select class="form-control" id="input-equipment">
+                        <div class="col-12 mb-3">
+                            <label for="input-product" class="form-label">貨品</label>
+                            <select class="form-control" id="input-product">
                                 <option value=""></option>
                                 @foreach($products as $k => $e)
                                     <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $e['name'] }}</option>
                                 @endforeach
                             </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="input-count" class="form-label">數量</label>
-                            <input type="text" class="form-control" id="input-count" value="">
                         </div>
                     </div>
 
@@ -70,6 +66,17 @@
                         <div class="col-12 mb-3">
                             <label for="input-available" class="form-label">現存件數</label>
                             <input type="text" class="form-control" id="input-available" value="5" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-count" class="form-label">數量</label>
+                            <input type="text" class="form-control" id="input-count" value="">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-total-price" class="form-label">價格</label>
+                            <input type="text" class="form-control" id="input-total-price" readonly>
                         </div>
                     </div>
 

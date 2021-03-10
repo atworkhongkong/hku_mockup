@@ -30,4 +30,9 @@ class RoomController extends Controller
         $room = self::ROOMS[$room_id];
         return view('ECS.room.edit', compact('room'));
     }
+
+    public static function getRooms(): array
+    {
+        return self::ROOMS;
+    }
 }
