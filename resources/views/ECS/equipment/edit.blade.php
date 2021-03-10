@@ -57,7 +57,7 @@
                                     @foreach($equipment['items'] as $i)
                                         <tr>
                                             <td><input class="form-control" type="text" value="{{ $i['label'] }}"></td>
-                                            <td><input class="form-control" type="text" value="{{ $i['create_date'] }}"></td>
+                                            <td><input class="form-control" type="text" value="{{ $i['create_date'] }}" readonly></td>
                                             <td>
                                                 <label class="sr-only" for="field-status">狀況</label>
                                                 <select class="form-control" id="field-status">

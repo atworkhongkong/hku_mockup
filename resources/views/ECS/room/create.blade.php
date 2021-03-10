@@ -14,6 +14,18 @@
                 <form>
                     <div class="row">
                         <div class="col-12 mb-3">
+                            <label for="input-center" class="form-label">所屬中心</label>
+                            <select class="custom-select" aria-label="select example">
+                                <option value=""></option>
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k + 1 }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
                             <label for="input-name" class="form-label">房間</label>
                             <input type="text" class="form-control" id="input-name" name="name">
                         </div>
@@ -30,6 +42,13 @@
                         <div class="col-12 mb-3">
                             <label for="input-capacity" class="form-label">容納人數</label>
                             <input type="text" class="form-control" id="input-capacity" name="capacity">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-equipment" class="form-label">提供設備</label>
+                            <input type="text" class="form-control" id="input-equipment">
                         </div>
                     </div>
 

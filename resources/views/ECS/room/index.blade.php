@@ -10,10 +10,20 @@
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form-inline" action="/ecs/invoice" method="GET">
+                <form class="form-inline" action="/ecs/invoice" method="GET" onsubmit="return false;">
                     @csrf
+                    <label class="sr-only" for="field-center">中心</label>
+                    <select id="field-center" class="form-control mr-2" name="center">
+                        @foreach($centers as $k => $c)
+                            <option value="{{ $k }}">{{ $c }}</option>
+                        @endforeach
+                    </select>
+
                     <label class="sr-only" for="field-name">房間</label>
                     <input type="text" id="field-name" class="form-control mr-2" name="invoice_id" placeholder="房間" />
+
+                    <label class="sr-only" for="field-equipment" >設備</label>
+                    <input type="text" class="form-control mr-2" id="field-equipment" placeholder="提供設備">
 
                     <button type="submit" class="btn btn-primary">搜尋</button>
                 </form>

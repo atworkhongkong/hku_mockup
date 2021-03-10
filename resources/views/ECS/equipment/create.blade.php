@@ -49,7 +49,7 @@
                                 <tbody>
                                     <tr>
                                         <td><input class="form-control" type="text" value=""></td>
-                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control" type="text" value="{{ date("Y-m-d") }}" readonly></td>
                                         <td>
                                             <label class="sr-only" for="field-status">狀況</label>
                                             <select class="form-control" id="field-status">
