@@ -31,7 +31,7 @@
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form-inline" action="/ecs/order_meal" method="GET">
+                <form class="form-inline" action="/ecs/dcss_training/{{ $id }}" method="GET">
                     <label class="sr-only" for="field-case-number">個案編號</label>
                     <input type="text" class="form-control mr-2" id="field-case-number" value="{{ $case['case_number'] }}">
 

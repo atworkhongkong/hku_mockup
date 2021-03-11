@@ -40,6 +40,13 @@
             </div>
 
             <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="input-update-date" class="form-label">Update date</label>
+                    <input type="text" class="form-control" id="input-update-date" value="2021-03-05" readonly>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="input-start-date" class="form-label">Target start date</label>
                     <input type="date" class="form-control" id="input-start-date" value="">

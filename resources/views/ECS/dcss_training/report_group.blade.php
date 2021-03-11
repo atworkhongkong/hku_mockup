@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-1">
-                    <span>找到{{ count($cases) }}筆記錄</span>
+                    <span>找到2筆記錄</span>
                 </div>
                 <table class="table table-sm table-striped table-bordered" style="font-size:.9rem;">
                     <thead>
