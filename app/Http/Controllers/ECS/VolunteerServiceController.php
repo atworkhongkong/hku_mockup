@@ -58,10 +58,10 @@ class VolunteerServiceController extends Controller
     public function report()
     {
         $services = [
-            1 => ['volunteer_id' => 1, 'volunteer' => '黃柏宇', 'activeness' => 'A', 'hour' => 54],
-            2 => ['volunteer_id' => 2, 'volunteer' => '詹晏靖', 'activeness' => 'A', 'hour' => 68],
-            3 => ['volunteer_id' => 3, 'volunteer' => '楊智盈', 'activeness' => 'A', 'hour' => 47],
-            4 => ['volunteer_id' => 4, 'volunteer' => '廖怡秀', 'activeness' => 'A', 'hour' => 75]
+            1 => ['volunteer_id' => 1, 'code' => 'VO100082', 'volunteer' => '黃柏宇', 'activeness' => 'A', 'hour' => 54, 'grade' => '基本', 'ste' => 'STE'],
+            2 => ['volunteer_id' => 2, 'code' => 'VO100075', 'volunteer' => '詹晏靖', 'activeness' => 'A', 'hour' => 68, 'grade' => '進階', 'ste' => 'STE'],
+            3 => ['volunteer_id' => 3, 'code' => 'VO100063', 'volunteer' => '楊智盈', 'activeness' => 'A', 'hour' => 47, 'grade' => '基本', 'ste' => 'STE'],
+            4 => ['volunteer_id' => 4, 'code' => 'VO100050', 'volunteer' => '廖怡秀', 'activeness' => 'A', 'hour' => 75, 'grade' => '基本', 'ste' => 'STE']
         ];
         $full_url = URL::full();
         return view('ECS.volunteer_service.report', compact('services', 'full_url'));

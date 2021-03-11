@@ -13,6 +13,7 @@
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form" action="/ecs/volunteer/report" method="GET">
+                    <input type="hidden" name="type" value="{{ $type }}">
                     <div class="row mb-2">
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">中心</label>

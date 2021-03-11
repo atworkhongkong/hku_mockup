@@ -61,21 +61,27 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
+                                <th scope="col">義工編號</th>
                                 <th scope="col">義工姓名</th>
                                 <th scope="col">活躍程度</th>
+                                <th scope="col">級別</th>
+                                <th scope="col">STE/Non-STE</th>
                                 <th scope="col">時數</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($services as $s)
                                 <tr>
-                                    <td><a href="/ecs/volunteer/{{ $s['volunteer_id'] }}/edit" target="_blank">{{ $s['volunteer'] }}</a></td>
+                                    <td><a href="/ecs/volunteer/{{ $s['volunteer_id'] }}/edit" target="_blank">{{ $s['code'] }}</a></td>
+                                    <td>{{ $s['volunteer'] }}</td>
                                     <td>{{ $activeness[$s['activeness']] }}</td>
+                                    <td>{{ $s['grade'] }}</td>
+                                    <td>{{ $s['ste'] }}</td>
                                     <td>{{ $s['hour'] }}</td>
                                 </tr>
                             @endforeach
                             <tr>
-                                <td class="text-right" colspan="2">總時數︰</td>
+                                <td class="text-right" colspan="5">總時數︰</td>
                                 <td>37</td>
                             </tr>
                         </tbody>
