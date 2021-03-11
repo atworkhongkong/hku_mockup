@@ -19,10 +19,13 @@
                         <div class="col-12 mb-3">
                             <div>
                                 識別編號︰{{ $case['case_number'] }}
-                                [<a href="/ecs/dcss/{{ $case['case_id'] }}/edit" target="_blank">詳細資料</a>]
+                                [<a href="/ecs/dcss/{{ $id }}/edit" target="_blank">詳細資料</a>]
                             </div>
                             <div>
                                 中文姓名︰{{ $case['name'] }}
+                            </div>
+                            <div>
+                                Burden: {{ $case['burden'] }}
                             </div>
                         </div>
                     </div>
@@ -33,17 +36,6 @@
                 <div class="col-12 mb-3">
                     <label for="input-create-date" class="form-label">Create date</label>
                     <input type="text" class="form-control" id="input-create-date" value="2021-03-01" readonly>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <label for="input-burden" class="form-label">Burden</label>
-                    <select class="custom-select" aria-label="Disabled select example">
-                        <option></option>
-                        <option value="1">Greater Burden</option>
-                        <option value="2">Lesser Burden</option>
-                    </select>
                 </div>
             </div>
 
@@ -75,7 +67,7 @@
                         <tbody>
                             <tr>
                                 <td>Multi-modal cognitive stimulation activities (including exercise-based therapy)</td>
-                                <td>18-20</td>
+                                <td>{{ $suggest_hours['cognitive'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -101,19 +93,19 @@
                         <tbody>
                             <tr>
                                 <td>Home safety and prevention of domestic hazard programme (a minimum of 2 home visits (pre- and post-intervention) should be provided)</td>
-                                <td>16-20</td>
+                                <td>{{ $suggest_hours['functioning'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Independent community living skills training programme</td>
-                                <td>16-20</td>
+                                <td>{{ $suggest_hours['functioning'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Balance and ambulatory function training</td>
-                                <td>18-20</td>
+                                <td>{{ $suggest_hours['functioning'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -139,25 +131,25 @@
                         <tbody>
                             <tr>
                                 <td>Illness management programme</td>
-                                <td>12-16</td>
+                                <td>{{ $suggest_hours['psychosocial'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Healthy lifestyle enhancement programme</td>
-                                <td>12-16</td>
+                                <td>{{ $suggest_hours['psychosocial'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Patient support group</td>
-                                <td>12-16</td>
+                                <td>{{ $suggest_hours['psychosocial'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Patient counselling service</td>
-                                <td>12-16</td>
+                                <td>{{ $suggest_hours['psychosocial'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -183,31 +175,31 @@
                         <tbody>
                             <tr>
                                 <td>Modular-based carer training programme</td>
-                                <td>10-18</td>
+                                <td>{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Carer stress management course</td>
-                                <td>10-18</td>
+                                <td>{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Carer support group</td>
-                                <td>10-18</td>
+                                <td>{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Carer counselling service</td>
-                                <td>10-18</td>
+                                <td>{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Dementia specific respite service</td>
-                                <td>10-18</td>
+                                <td>{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>

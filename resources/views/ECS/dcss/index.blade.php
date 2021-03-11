@@ -97,6 +97,7 @@
                                 <th scope="col">姓別</th>
                                 <th scope="col">出生日期</th>
                                 <th scope="col">評估員</th>
+                                <th scope="col">Burden</th>
                                 <th scope="col">狀態</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
@@ -110,6 +111,7 @@
                                     <td>{{ $v['gender'] }}</td>
                                     <td>{{ $v['dob'] }}</td>
                                     <td>{{ $v['assessor'] }}</td>
+                                    <td>{{ $v['burden'] }}</td>
                                     <td>{{ $statuses[$v['status']] }}</td>
                                     <td><a class="btn btn-primary" href="/ecs/dcss/{{ $k }}/edit">編輯</a></td>
                                 </tr>

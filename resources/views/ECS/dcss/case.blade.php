@@ -40,6 +40,17 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-12 mb-3">
+                <label for="input-burden" class="form-label">Burden</label>
+                <select class="custom-select" aria-label="Disabled select example">
+                    <option></option>
+                    <option value="Greater" {{ isset($case) && $case['burden'] == 'Greater' ? 'SELECTED' : '' }}>Greater Burden</option>
+                    <option value="Lesser" {{ isset($case) && $case['burden'] == 'Lesser' ? 'SELECTED' : '' }}>Lesser Burden</option>
+                </select>
+            </div>
+        </div>
+
         @isset($case_id)
             <div class="row">
                 <div class="col-12 mb-3">

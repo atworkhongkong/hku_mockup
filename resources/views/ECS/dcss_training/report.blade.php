@@ -36,14 +36,14 @@
                         <input type="text" class="form-control mr-2" id="field-group" placeholder="組別" value="J03">
                     @elseif ($type == 'case_count' || $type == 'training_count')
                         <label class="sr-only" for="field-year">年份</label>
-                        <select class="form-control" id="field-year">
+                        <select class="form-control mr-2" id="field-year">
                             @for($i = date('Y') ; $i >= 2010 ; $i--)
                                 <option value="{{ $i }}">{{ $i }}</option>
                             @endfor
                         </select>
 
                         <label class="sr-only" for="field-month">月份</label>
-                        <select class="form-control" id="field-month">
+                        <select class="form-control mr-2" id="field-month">
                             @for($i = 1 ; $i <= 12 ; $i++)
                                 <option value="{{ $i }}">{{ $i }}</option>
                             @endfor

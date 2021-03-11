@@ -57,7 +57,7 @@
                                     <td>{{ $v['group'] }}</td>
                                     <td>{{ $v['name'] }}</td>
                                     <td>{{ $v['burden'] }}</td>
-                                    <td>{{ $v['hour'] }} / {{ $v['default_hour'] }}</td>
+                                    <td>{{ $trainings[$k]['hour'] }} / {{ $trainings[$k]['default_hour'] }}</td>
                                     <td>
                                         <a class="btn btn-primary" href="/ecs/dcss_training/{{ $k }}">訓練紀錄</a>
                                         <a class="btn btn-primary" href="/ecs/dcss_training/{{ $k }}/edit_icp">ICP</a>

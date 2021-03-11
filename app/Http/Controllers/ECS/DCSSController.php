@@ -162,4 +162,9 @@ class DCSSController extends Controller
     {
         return view('ECS.dcss.report');
     }
+
+    public static function getCases(): array
+    {
+        return self::CASES;
+    }
 }
