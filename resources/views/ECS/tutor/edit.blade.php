@@ -13,6 +13,17 @@
             <div class="form-container">
                 <form>
                     <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-center" class="form-label">所屬中心</label>
+                            <select class="custom-select" aria-label="select example">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k + 1 }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-tutor-code" class="form-label">導師編號</label>
                             <input type="text" class="form-control" id="input-tutor-code">
@@ -92,15 +103,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="input-center" class="form-label">所屬中心</label>
-                            <select class="custom-select" aria-label="select example">
-                                @foreach($centers as $k => $c)
-                                    <option value="{{ $k + 1 }}">{{ $c }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 mb-3">
                             <label for="input-center" class="form-label">狀態</label>
                             <select class="custom-select" aria-label="select example">
                                 <option value="A">有效</option>
