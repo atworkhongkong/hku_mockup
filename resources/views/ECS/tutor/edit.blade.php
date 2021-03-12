@@ -107,7 +107,7 @@
                             <label for="input-center" class="form-label">狀態</label>
                             <select class="custom-select" aria-label="select example">
                                 <option value="A">有效</option>
-                                <option value="A">無效</option>
+                                <option value="I">無效</option>
                             </select>
                         </div>
                     </div>
