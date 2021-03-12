@@ -104,7 +104,7 @@
 
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <label for="input-center" class="form-label">狀態</label>
+                            <label for="input-status" class="form-label">狀態</label>
                             <select class="custom-select" aria-label="select example">
                                 <option value="A">有效</option>
                                 <option value="I">無效</option>
