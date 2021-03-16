@@ -78,11 +78,11 @@
                     <span>Cognitive</span>
                 </div>
                 <div class="p-3">
+                    <p class="text-center">Suggested range of duration (hrs): {{ $suggest_hours['cognitive'] }}</p>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col" style="width:40%;">Training modules</th>
-                                <th scope="col">Suggested range of duration (hrs)</th>
                                 <th scope="col">Minimum hours to be provided for each module</th>
                                 <th scope="col">Flexible training hours assigned to specific module</th>
                             </tr>
@@ -90,7 +90,6 @@
                         <tbody>
                             <tr>
                                 <td>Multi-modal cognitive stimulation activities (including exercise-based therapy)</td>
-                                <td>{{ $suggest_hours['cognitive'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -110,11 +109,11 @@
                     <span>Functioning</span>
                 </div>
                 <div class="p-3">
+                    <p class="text-center">Suggested range of duration (hrs): {{ $suggest_hours['functioning'] }}</p>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col" style="width:40%;">Training modules</th>
-                                <th scope="col">Suggested range of duration (hrs)</th>
                                 <th scope="col">Minimum hours to be provided for each module</th>
                                 <th scope="col">Flexible training hours assigned to specific module</th>
                             </tr>
@@ -122,7 +121,6 @@
                         <tbody>
                             <tr>
                                 <td>Home safety and prevention of domestic hazard programme (a minimum of 2 home visits (pre- and post-intervention) should be provided)</td>
-                                <td rowspan="3" style="vertical-align:middle; text-align:center;">{{ $suggest_hours['functioning'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -146,6 +144,7 @@
                     <span>Psychosocial</span>
                 </div>
                 <div class="p-3">
+                    <p class="text-center">Suggested range of duration (hrs): {{ $suggest_hours['psychosocial'] }}</p>
                     <table class="table">
                         <thead>
                             <tr>
@@ -158,7 +157,6 @@
                         <tbody>
                             <tr>
                                 <td>Illness management programme</td>
-                                <td rowspan="4" style="vertical-align:middle; text-align:center;">{{ $suggest_hours['psychosocial'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -187,11 +185,11 @@
                     <span>Carer burden</span>
                 </div>
                 <div class="p-3">
+                    <p class="text-center">Suggested range of duration (hrs): {{ $suggest_hours['carer_burden'] }}</p>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col" style="width:40%;">Training modules</th>
-                                <th scope="col">Suggested range of duration (hrs)</th>
                                 <th scope="col">Minimum hours to be provided for each module</th>
                                 <th scope="col">Flexible training hours assigned to specific module</th>
                             </tr>
@@ -199,7 +197,6 @@
                         <tbody>
                             <tr>
                                 <td>Modular-based carer training programme</td>
-                                <td rowspan="5" style="vertical-align:middle; text-align:center;">{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -237,7 +234,6 @@
                         <thead>
                             <tr>
                                 <th scope="col" style="width:40%;">Training modules</th>
-                                <th scope="col">Suggested range of duration (hrs)</th>
                                 <th scope="col">Minimum hours to be provided for each module</th>
                                 <th scope="col">Flexible training hours assigned to specific module</th>
                             </tr>
@@ -245,7 +241,6 @@
                         <tbody>
                             <tr>
                                 <td>Structured activity programme</td>
-                                <td></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -263,7 +258,6 @@
                         <thead>
                             <tr>
                                 <th scope="col" style="width:40%;">Training modules</th>
-                                <th scope="col">Suggested range of duration (hrs)</th>
                                 <th scope="col">Minimum hours to be provided for each module</th>
                                 <th scope="col">Flexible training hours assigned to specific module</th>
                             </tr>
@@ -271,13 +265,11 @@
                         <tbody>
                             <tr>
                                 <td>Drug compliance monitoring & enhancement programme</td>
-                                <td></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Centre-based nursing care for associated physical conditions</td>
-                                <td></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
