@@ -101,7 +101,7 @@
                 <input type="text" class="form-control" id="input-drop-location">
             </div>
         </div>
-
+        <!--
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="input-mfac" class="form-label">MFAC</label>
@@ -112,7 +112,7 @@
                 <input type="text" class="form-control" id="input-ems" value=" /20">
             </div>
         </div>
-
+        -->
         <div class="row">
             <div class="col-12 mb-3">
                 <label for="input-face" class="form-label">四肢</label>
@@ -131,7 +131,7 @@
                 </div>
             </div>
         </div>
-
+        <!--
         <div class="row">
             <div class="col-12 mb-3">
                 <label for="input-face" class="form-label">認知障礙症</label>
@@ -150,7 +150,7 @@
                 </div>
             </div>
         </div>
-
+        -->
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="input-dementia-condition" class="form-label">認知障礙情況 HK-MoCA</label>
@@ -215,7 +215,7 @@
                 </div>
             </div>
         </div>
-
+        <!--
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <span>CDAD 分數</span>
@@ -262,7 +262,7 @@
                 </div>
             </div>
         </div>
-
+        -->
         <div class="row">
             <div class="col-12 mb-3">
                 <label for="input-face" class="form-label">家居環境狀況</label>

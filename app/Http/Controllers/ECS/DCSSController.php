@@ -36,7 +36,7 @@ class DCSSController extends Controller
 
     const DISEASE = [
         '高/低血壓', '氣管病', '心臟病', '關節炎', '糖尿病', '痛風', '腎病', '柏金遜症', '中風',
-        '癌症', '視障（白內障 / 青光眼 / 視網膜病變 / 近視 /遠視 /老花）', '精神病', '其他補充資料'
+        '癌症', '白內障', '青光眼', '視網膜病變', '近視', '遠視', '老花', '精神病', '其他補充資料'
     ];
     const DOCTOR_SPECIALIST = ['內科', '老人科', '老人精神科(醫院)', '老人精神科(診所)'];
     const PHYSIQUE = ['正常', '瘦弱', '肥胖', '過度肥胖'];
@@ -54,7 +54,7 @@ class DCSSController extends Controller
     const DEFECATION = ['正常', '便秘', '痔瘡', '間歇失禁', '經常失禁'];
     const DRUG_ALLERGY = ['沒有', '有'];
 
-    const MOBILITY = ['活動自如（外出/家中）', '輕扶家俱助行', '拐杖', '三腳叉', '四腳叉', '雨傘', '助行架', '四腳有轆架', '輪椅', '在旁輔助'];
+    const MOBILITY = ['活動自如（外出）', '活動自如（家中）', '輕扶家俱助行', '拐杖', '三腳叉', '四腳叉', '雨傘', '助行架', '四腳有轆架', '輪椅', '在旁輔助'];
     const TRANSFER = ['不需輔助', '需輔助'];
     const PAIN_LEVEL = ['沒有', '輕度', '中度', '嚴重'];
     const PAIN_FREQUENCY = ['很少', '間中', '經常', '特定時間', '其他'];
@@ -75,7 +75,7 @@ class DCSSController extends Controller
     const CARE_LENGTH = ['間中', '少於半天', '半天', '整天', '其他'];
     const SLEEP_ENOUGH = ['足夠', '不足但尚可', '嚴重不足', '失眠'];
     const NEED_CARER = ['否', '是'];
-    const ASK_WHO = ['家人/ 親屬', '社工/ 非牟利機構', '朋友', '鄰居', '宗教團體'];
+    const ASK_WHO = ['家人', '親屬', '社工/ 非牟利機構', '朋友', '鄰居', '宗教團體'];
     const DIFFICULTY = ['沒有困難', '照顧技巧及知識不足', '時間不敷應用', '沒有時間休息', '就照顧事情與家人意見不合', '與病患長者溝通困難、意見不合', '經濟困難', '不能兼顧其他事務', '自己身體轉差', '其他'];
     const NEED_ESCORT = ['不需要', '需要'];
 

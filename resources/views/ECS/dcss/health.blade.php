@@ -11,7 +11,7 @@
                                 {{$v}}
                             </label>
                             @if ($k == 12)
-                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:40%;" id="field-disease-other">
+                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:60%;" id="field-disease-other">
                             @endif
                         </div>
                     @endforeach
@@ -31,6 +31,11 @@
                             </label>
                         </div>
                     @endforeach
+                        <div class="form-check form-check-inline mb-2">
+                            <input class="form-check-input" type="checkbox" value="">
+                        </div>
+                    <input type="text" class="form-control form-control-sm d-inline-block" style="width:100px;"> 醫院 /
+                    <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:100px;"> 診所
                 </div>
             </div>
         </div>
@@ -230,7 +235,7 @@
             <div class="col-12 mb-3">
                 <label for="input-urination" class="form-label">排尿</label>
                 <div>
-                    @foreach($beer as $k => $v)
+                    @foreach($urination as $k => $v)
                         <div class="form-check form-check-inline mb-2">
                             <input class="form-check-input" type="checkbox" value="" id="urination-{{$k}}">
                             <label class="form-check-label" for="urination-{{$k}}">
@@ -246,7 +251,7 @@
             <div class="col-12 mb-3">
                 <label for="input-defecation" class="form-label">排便</label>
                 <div>
-                    @foreach($beer as $k => $v)
+                    @foreach($defecation as $k => $v)
                         <div class="form-check form-check-inline mb-2">
                             <input class="form-check-input" type="checkbox" value="" id="defecation-{{$k}}">
                             <label class="form-check-label" for="defecation-{{$k}}">
@@ -274,20 +279,6 @@
                         </div>
                     @endforeach
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 mb-3">
-                <label for="input-drug" class="form-label">服用藥物</label>
-                <textarea class="form-control" id="input-drug" rows="3"></textarea>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 mb-3">
-                <label for="input-psych-drug" class="form-label">服用精神科藥物</label>
-                <textarea class="form-control" id="input-psych" rows="3"></textarea>
             </div>
         </div>
 

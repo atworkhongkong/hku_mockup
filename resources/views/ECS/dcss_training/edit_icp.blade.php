@@ -48,15 +48,31 @@
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label for="input-start-date" class="form-label">Target start date</label>
-                    <input type="date" class="form-control" id="input-start-date" value="">
+                    <label for="input-icp-start-date" class="form-label">ICP start date</label>
+                    <input type="date" class="form-control" id="input-icp-start-date" value="">
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="input-end-date" class="form-label">Target end date</label>
-                    <input type="date" class="form-control" id="input-end-date" value="">
+                    <label for="input-itp-start-date" class="form-label">ITP start date</label>
+                    <input type="date" class="form-control" id="input-itp-start-date" value="">
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="input-target-end-date" class="form-label">Target end date</label>
+                    <input type="date" class="form-control" id="input-target-end-date" value="">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="input-revised-target-end-date" class="form-label">Revised target end date</label>
+                    <input type="date" class="form-control" id="input-revised-target-end-date" value="">
+                </div>
+            </div>
+
+            <div class="alert alert-primary" role="alert">
+                提示︰<br>
+                當minimum hour input value < 18，須要出alert提示輸入少過minimum value，但仍可比user輸入<br>
+                當minimum hours + flexible training hours > 20，須要出alert提示輸入少過minimum value，但仍可比user輸入
+            </div>
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <span>Cognitive</span>
@@ -83,6 +99,12 @@
                 </div>
             </div>
 
+            <div class="alert alert-primary" role="alert">
+                提示︰<br>
+                當所有minimum hour input value < 16，須要出alert提示輸入少過minimum value，但仍可比user輸入<br>
+                當所有minimum hours + flexible training hours > 20，須要出alert提示輸入少過minimum value，但仍可比user輸入<br>
+                下方psychosocial和carer burden做法一樣
+            </div>
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <span>Functioning</span>
@@ -100,19 +122,17 @@
                         <tbody>
                             <tr>
                                 <td>Home safety and prevention of domestic hazard programme (a minimum of 2 home visits (pre- and post-intervention) should be provided)</td>
-                                <td>{{ $suggest_hours['functioning'] }}</td>
+                                <td rowspan="3" style="vertical-align:middle; text-align:center;">{{ $suggest_hours['functioning'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Independent community living skills training programme</td>
-                                <td>{{ $suggest_hours['functioning'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Balance and ambulatory function training</td>
-                                <td>{{ $suggest_hours['functioning'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -138,25 +158,22 @@
                         <tbody>
                             <tr>
                                 <td>Illness management programme</td>
-                                <td>{{ $suggest_hours['psychosocial'] }}</td>
+                                <td rowspan="4" style="vertical-align:middle; text-align:center;">{{ $suggest_hours['psychosocial'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Healthy lifestyle enhancement programme</td>
-                                <td>{{ $suggest_hours['psychosocial'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Patient support group</td>
-                                <td>{{ $suggest_hours['psychosocial'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Patient counselling service</td>
-                                <td>{{ $suggest_hours['psychosocial'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
@@ -182,31 +199,27 @@
                         <tbody>
                             <tr>
                                 <td>Modular-based carer training programme</td>
-                                <td>{{ $suggest_hours['carer_burden'] }}</td>
+                                <td rowspan="5" style="vertical-align:middle; text-align:center;">{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Carer stress management course</td>
-                                <td>{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Carer support group</td>
-                                <td>{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Carer counselling service</td>
-                                <td>{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>
                             <tr>
                                 <td>Dementia specific respite service</td>
-                                <td>{{ $suggest_hours['carer_burden'] }}</td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="text" value="" placeholder="0"></td>
                             </tr>

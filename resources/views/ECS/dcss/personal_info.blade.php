@@ -147,7 +147,7 @@
             <div class="col-12 mb-3">
                 <label for="input-religions" class="form-label">宗教信仰</label>
                 <div>
-                    @foreach($marriage_statuses as $k => $v)
+                    @foreach($religions as $k => $v)
                         <div class="form-check form-check-inline mb-2">
                             <input class="form-check-input" type="checkbox" value="" id="religions-{{$k}}">
                             <label class="form-check-label" for="religions-{{$k}}">

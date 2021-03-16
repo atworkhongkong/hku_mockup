@@ -45,8 +45,9 @@
                 <label for="input-burden" class="form-label">Burden</label>
                 <select class="custom-select" aria-label="Disabled select example">
                     <option></option>
-                    <option value="Greater" {{ isset($case) && $case['burden'] == 'Greater' ? 'SELECTED' : '' }}>Greater Burden</option>
-                    <option value="Lesser" {{ isset($case) && $case['burden'] == 'Lesser' ? 'SELECTED' : '' }}>Lesser Burden</option>
+                    <option value="Greater" {{ isset($case) && $case['burden'] == 'Greater' ? 'SELECTED' : '' }}>Greater Carer Burden</option>
+                    <option value="Lesser" {{ isset($case) && $case['burden'] == 'Lesser' ? 'SELECTED' : '' }}>Lesser Carer Burden</option>
+                    <option value="No_carer" {{ isset($case) && $case['burden'] == 'No_carer' ? 'SELECTED' : '' }}>No Carer Burden</option>
                 </select>
             </div>
         </div>
