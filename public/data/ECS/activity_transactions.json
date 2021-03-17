@@ -1,0 +1,317 @@
+{
+    "year": 2020,
+    "month": 10,
+    "data": [
+        {
+            "category": "活動費收入",
+            "activty_code": "J13A20006",
+            "activity_name": "結伴常歡笑護老者減壓支援小組",
+            "income": "140.0",
+            "deduce": "-20.0"
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": "J3A20125",
+            "activity_name": "驕陽學苑~U3A中國書畫班一班02",
+            "income": "75.0",
+            "deduce": null
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": "J3A20137",
+            "activity_name": "驕陽學苑~普通話班01(B班)",
+            "income": "80.0",
+            "deduce": null
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": "J3A20138",
+            "activity_name": "驕陽學苑~普通話班02(A班)",
+            "income": "270.0",
+            "deduce": null
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": "J3A20140",
+            "activity_name": "驕陽學苑~趣味中文班01",
+            "income": "100.0",
+            "deduce": null
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": "J3A20144",
+            "activity_name": "驕陽學苑~吟詩唱歌學英文01",
+            "income": "75.0",
+            "deduce": null
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": "J3A20158",
+            "activity_name": "驕陽學苑~U3A絲網花班03",
+            "income": "720.0",
+            "deduce": null
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": null,
+            "activity_name": "驕陽學苑~U3A絲網花班03(綜援)",
+            "income": "64.0",
+            "deduce": null
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": "J3A20161",
+            "activity_name": "驕陽學苑~U3A中文初階識字班01(B班)",
+            "income": "16.0",
+            "deduce": null
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": "J3A20162",
+            "activity_name": "驕陽學苑~U3A中文初階識字班01(A班)",
+            "income": "96.0",
+            "deduce": null
+        },
+        {
+            "category": "驕陽學苑",
+            "activty_code": "J3A20163",
+            "activity_name": "驕陽學苑~U3A中文初階識字班02(B班)",
+            "income": "104.0",
+            "deduce": "-8.0"
+        },
+        {
+            "category": "活動費收入",
+            "activty_code": "J3B20003-10",
+            "activity_name": "愛心剪髮服務(10月)",
+            "income": "80.0",
+            "deduce": 0
+        },
+        {
+            "category": "奶粉收入",
+            "activty_code": "J4B002",
+            "activity_name": "加營素(大)",
+            "income": "6,980.0",
+            "deduce": "-175.0"
+        },
+        {
+            "category": "奶粉收入",
+            "activty_code": "J4B003",
+            "activity_name": "加營素(小)",
+            "income": "180.0",
+            "deduce": null
+        },
+        {
+            "category": "奶粉收入",
+            "activty_code": "J4B005",
+            "activity_name": "怡保康(小)",
+            "income": "1,960.0",
+            "deduce": "-200.0"
+        },
+        {
+            "category": "奶粉收入",
+            "activty_code": "J4B012",
+            "activity_name": "低糖加營素(大)",
+            "income": "4,470.0",
+            "deduce": "-350.0"
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B031",
+            "activity_name": "德寶123紙尿褲(大碼)",
+            "income": "322.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B032",
+            "activity_name": "德寶123紙尿褲(中碼)",
+            "income": "576.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B033",
+            "activity_name": "康保長方形片心(中碼)",
+            "income": "450.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B036",
+            "activity_name": "添寧護妳墊(量多型)",
+            "income": "512.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B037",
+            "activity_name": "添寧尿褲輕巧型(大)",
+            "income": "138.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B038",
+            "activity_name": "添寧護妳墊(一般流量型)",
+            "income": "216.0",
+            "deduce": "-27.0"
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B039",
+            "activity_name": "添寧護妳墊(加強型)",
+            "income": "22.0",
+            "deduce": "-22.0"
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B040",
+            "activity_name": "添寧尿褲輕巧型(中)",
+            "income": "272.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B057",
+            "activity_name": "拐杖",
+            "income": "75.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B068",
+            "activity_name": "橡筋帶",
+            "income": "60.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B077",
+            "activity_name": "膠腳套",
+            "income": "60.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B094",
+            "activity_name": "輪椅借用",
+            "income": "150.0",
+            "deduce": "-25.0"
+        },
+        {
+            "category": "活動費收入-長者優惠購物服務",
+            "activty_code": "J4B095",
+            "activity_name": "復康器材借用(助行架/四腳叉/拐杖)",
+            "income": "20.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入",
+            "activty_code": "J4B20005",
+            "activity_name": "護士與我01",
+            "income": "80.0",
+            "deduce": null
+        },
+        {
+            "category": "活動費收入",
+            "activty_code": "J5C20002",
+            "activity_name": "「我哋有故講」小組",
+            "income": "180.0",
+            "deduce": "-20.0"
+        },
+        {
+            "category": "影印收入",
+            "activty_code": "JC",
+            "activity_name": "影印",
+            "income": "5.0",
+            "deduce": null
+        },
+        {
+            "category": "膳食收入",
+            "activty_code": "JM12010",
+            "activity_name": "膳食(會員)",
+            "income": "17,378.0",
+            "deduce": "-1,289.0"
+        },
+        {
+            "category": "膳食收入",
+            "activty_code": "JM12011",
+            "activity_name": "膳食(會員)",
+            "income": "5,496.0",
+            "deduce": "-504.0"
+        },
+        {
+            "category": "膳食收入",
+            "activty_code": "JM32010",
+            "activity_name": "膳食(職員)",
+            "income": "1,326.0",
+            "deduce": "-208.0"
+        },
+        {
+            "category": "膳食收入",
+            "activty_code": "JM32011",
+            "activity_name": "膳食(職員)",
+            "income": "286.0",
+            "deduce": null
+        },
+        {
+            "category": "補証收入",
+            "activty_code": "JR",
+            "activity_name": "補証服務",
+            "income": "5.0",
+            "deduce": null
+        },
+        {
+            "category": "會員費",
+            "activty_code": "登記新會員",
+            "activity_name": "會員費",
+            "income": "208.0",
+            "deduce": null
+        },
+        {
+            "category": "會員費",
+            "activty_code": "登記新會員",
+            "activity_name": "會員費(綜援)",
+            "income": 0,
+            "deduce": 0
+        },
+        {
+            "category": "會員費",
+            "activty_code": "會員續會",
+            "activity_name": "會員費",
+            "income": "394.0",
+            "deduce": "-21.0"
+        },
+        {
+            "category": "會員費",
+            "activty_code": "登記新會員",
+            "activity_name": "會員費(綜援)",
+            "income": 0,
+            "deduce": null
+        },
+        {
+            "category": "會員費",
+            "activty_code": "登記新會員",
+            "activity_name": "會員費(FWWT)",
+            "income": 0,
+            "deduce": null
+        },
+        {
+            "category": "會員費",
+            "activty_code": "登記新會員",
+            "activity_name": "會員費(SDE)",
+            "income": "11.0",
+            "deduce": null
+        },
+        {
+            "category": "會員費",
+            "activty_code": "登記新會員",
+            "activity_name": "會員費(驕陽)",
+            "income": "20.0",
+            "deduce": null
+        }
+    ],
+    "total_income": "43,672.0",
+    "total_deduce": "-2,869.0",
+    "net_income": "40,803.0"
+}

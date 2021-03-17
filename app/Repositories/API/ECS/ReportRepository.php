@@ -10,7 +10,8 @@ class ReportRepository
 
     public function __construct()
     {
-        $this->json_path = storage_path('app/data/ECS');
+        //$this->json_path = storage_path('app/data/ECS');
+        $this->json_path = 'data/ECS';
     }
 
     public function getTransactionData($q)
