@@ -19,6 +19,9 @@
         table td {
             font-size: 10px;
         }
+        tr.default-hour {
+            color: blue;
+        }
     </style>
 
     <div class="container">
@@ -65,6 +68,8 @@
                                 <th scope="col" class="rotate" colspan="4">Psychosocial</th>
                                 <th scope="col" class="rotate" colspan="5">Carer Burden</th>
                                 <th scope="col" class="rotate" colspan="2">Physical co-morbidities</th>
+                                <th scope="col" class="rotate" colspan="4">Escort service</th>
+                                <th scope="col" class="rotate" colspan="2">Fee</th>
                                 <th scope="col" rowspan="3">Created by</th>
                                 <th scope="col" rowspan="3"></th>
                             </tr>
@@ -83,8 +88,14 @@
                                 <th>Dementia respite service</th>
                                 <th>Drug compliance monitoring & enhancement</th>
                                 <th>Centre-based nursing care for associated physical</th>
+                                <th>Transport subsidy (Come)</th>
+                                <th>Transport subsidy (Go)</th>
+                                <th>No. of Escort</th>
+                                <th>Expense from escort service</th>
+                                <th>Cash</th>
+                                <th>HCV</th>
                             </tr>
-                            <tr class="text-center">
+                            <tr class="text-center default-hour">
                                 <th>18</th>
                                 <th>2</th>
                                 <th>9</th>
@@ -100,6 +111,12 @@
                                 <th>0</th>
                                 <th>1</th>
                                 <th>1</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -127,6 +144,12 @@
                                 <td>0</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr class="text-center">
                                 <td>Balance</td>
@@ -152,6 +175,12 @@
                                 <td>-1</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr class="text-center">
                                 <td>2021-02-03</td>
@@ -167,6 +196,12 @@
                                 <td>1</td>
                                 <td>2</td>
                                 <td>0.5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -200,6 +235,12 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td>周浩文</td>
                                 <td><a href="/ecs/dcss_training/2/edit"><i class="fas fa-edit"></i></a></td>
                             </tr>
@@ -216,6 +257,12 @@
                                 <td></td>
                                 <td></td>
                                 <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>

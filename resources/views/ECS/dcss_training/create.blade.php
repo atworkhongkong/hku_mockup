@@ -218,6 +218,54 @@
 
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
+                    <span>Escort Service</span>
+                </div>
+                <div class="p-3">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td style="width:40%;">Transport subsidy (Come)</td>
+                                <td><input class="form-control" type="text" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Transport subsidy (Go)</td>
+                                <td><input class="form-control" type="text" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Number of Escort</td>
+                                <td><input class="form-control" type="text" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Expense from escort service</td>
+                                <td><input class="form-control" type="text" value=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <span>Fee</span>
+                </div>
+                <div class="p-3">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td style="width:40%;">Cash</td>
+                                <td><input class="form-control" type="text" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>HCV</td>
+                                <td><input class="form-control" type="text" value=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
                     <span>Progress & Recording</span>
                 </div>
                 <div class="p-3">

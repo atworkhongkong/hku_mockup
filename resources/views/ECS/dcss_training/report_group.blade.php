@@ -14,6 +14,8 @@
                             <th scope="col" class="rotate" colspan="4">Psychosocial</th>
                             <th scope="col" class="rotate" colspan="5">Carer Burden</th>
                             <th scope="col" class="rotate" colspan="2">Physical co-morbidities</th>
+                            <th scope="col" class="rotate" colspan="4">Escort service</th>
+                            <th scope="col" class="rotate" colspan="2">Fee</th>
                             <th scope="col" rowspan="3">Total</th>
                         </tr>
                         <tr class="text-center">
@@ -31,6 +33,12 @@
                             <th>Dementia respite service</th>
                             <th>Drug compliance monitoring & enhancement</th>
                             <th>Centre-based nursing care for associated physical</th>
+                            <th>Transport subsidy (Come)</th>
+                            <th>Transport subsidy (Go)</th>
+                            <th>No. of Escort</th>
+                            <th>Expense from escort service</th>
+                            <th>Cash</th>
+                            <th>HCV</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,6 +59,12 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>56</td>
                         </tr>
                         <tr class="text-center">
@@ -65,6 +79,12 @@
                             <td></td>
                             <td>0.0</td>
                             <td>0.0</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -90,10 +110,16 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
 
                         <tr class="text-center">
-                            @for($i = 1 ; $i <= 17 ; $i++)
+                            @for($i = 1 ; $i <= 23 ; $i++)
                                 <td>&nbsp;</td>
                             @endfor
                         </tr>
@@ -110,6 +136,12 @@
                             <td></td>
                             <td>1</td>
                             <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -134,6 +166,12 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>64.5</td>
                         </tr>
                         <tr class="text-center">
@@ -148,6 +186,12 @@
                             <td></td>
                             <td>-1.0</td>
                             <td>-1.0</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>

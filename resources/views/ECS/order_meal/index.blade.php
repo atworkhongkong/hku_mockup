@@ -10,22 +10,48 @@
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form-inline" action="/ecs/order_meal" method="GET">
-                    <label class="sr-only" for="field-center">中心</label>
-                    <select id="field-center" class="form-control mr-2" name="center">
-                        @foreach($centers as $k => $c)
-                            <option value="{{ $k }}">{{ $c }}</option>
-                        @endforeach
-                    </select>
+                <form class="form" action="/ecs/order_meal" method="GET" onsubmit="return false;">
+                    <div class="row mb-2">
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-center">中心</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-member-code" >會員編號</label>
+                            <input type="text" id="field-chi-name" class="form-control mr-2" placeholder="會員編號" value="03EL30012"/>
+                        </div>
+                        <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-key-word" >關錄字</label>
+                            <input type="week" class="form-control mr-2" id="input-week">
+                        </div>
+                        <div class="col-auto pr-1">
+                            <button type="submit" class="btn btn-primary mr-2">搜尋</button>
+                            <button class="btn btn-primary" data-toggle="collapse" data-target="#more-search" aria-expanded="false" aria-controls="more-search">進階搜尋</button>
+                        </div>
+                    </div>
 
-                    <label class="sr-only" for="field-member-code" >會員編號</label>
-                    <input type="text" id="field-chi-name" class="form-control mr-2" placeholder="會員編號" value="03EL30012"/>
-
-                    <label class="sr-only" for="field-key-word" >關錄字</label>
-                    <input type="week" class="form-control mr-2" id="input-week">
-
-                    <button type="submit" class="btn btn-primary">搜尋</button>
-
+                    <div class="collapse mt-2" id="more-search" style="width:100%;">
+                        <div class="card card-body">
+                            <div class="row mb-2">
+                                <div class="col-auto">
+                                    <label class="" for="field-name">姓名</label>
+                                    <input type="text" id="field-name" class="form-control" />
+                                </div>
+                                <div class="col-auto">
+                                    <label class="" for="field-food-name">膳食名稱</label>
+                                    <input type="text" id="field-food-name" class="form-control" />
+                                </div>
+                                <div class="col-auto">
+                                    <label class="" for="field-order-count">餐數</label>
+                                    <input type="text" id="field-order-count" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
 
@@ -68,6 +94,7 @@
                                     <th scope="col">訂飯編號</th>
                                     <th scope="col">日期</th>
                                     <th scope="col">餐數</th>
+                                    <th scope="col">建立日期</th>
                                     <th scope="col" style="width:8%;">&nbsp;</th>
                                 </tr>
                             </thead>
@@ -77,6 +104,7 @@
                                     <td>1082</td>
                                     <td>2021-02-08 至 2021-02-13</td>
                                     <td>3</td>
+                                    <td>2020-02-02</td>
                                     <td>
                                         <a href="/ecs/order_meal/1082/edit" class="btn btn-primary">編輯</a>
                                     </td>
@@ -86,6 +114,7 @@
                                     <td>1081</td>
                                     <td>2021-02-08 至 2021-02-13</td>
                                     <td>9</td>
+                                    <td>2020-02-01</td>
                                     <td>
                                         <a href="/ecs/order_meal/1082/edit" class="btn btn-primary">編輯</a>
                                     </td>

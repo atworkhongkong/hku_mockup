@@ -174,6 +174,33 @@
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="field-memberships">會員類别</label>
+                            <select class="form-control" id="field-memberships" disabled>
+                                <option>長者會員</option>
+                                <option>長者會員 (綜援)</option>
+                                <option>驕陽會員</option>
+                                <option>中心職員</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="input-member-code" class="form-label">會員編號</label>
+                            <input type="text" class="form-control" id="input-member-code" readonly>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="input-staff-name" class="form-label">職員姓名</label>
+                            <input type="text" class="form-control" id="input-staff-name" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-create-date" class="form-label">建立日期</label>
+                            <input type="text" class="form-control" id="input-create-date" value="2020-02-02" readonly>
+                        </div>
+                    </div>
+
                     <div class="alert alert-primary" role="alert">
                         提示︰編輯飯餐時，若想取消某個飯餐，可在pull down menu選擇empty，再按更新<br>
                         當發現有飯餐取消，須要行refund flow
