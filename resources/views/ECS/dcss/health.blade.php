@@ -31,7 +31,7 @@
                             </label>
                         </div>
                     @endforeach
-                        <div class="form-check form-check-inline mb-2">
+                        <div class="form-check form-check-inline mr-1">
                             <input class="form-check-input" type="checkbox" value="">
                         </div>
                     <input type="text" class="form-control form-control-sm d-inline-block" style="width:100px;"> 醫院 /
