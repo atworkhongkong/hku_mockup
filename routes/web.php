@@ -41,6 +41,10 @@ Route::prefix('hss')->group(function() {
     Route::get('/care_worker/edit/{id}', [App\Http\Controllers\HSS\CareWorkerController::class, 'edit'])->name('hss.care_worker.edit');
 
     Route::get('/duty_roster', [App\Http\Controllers\HSS\DutyRosterController::class, 'index'])->name('hss.duty_roster.index');
+
+    Route::get('/case', [App\Http\Controllers\HSS\CaseController::class, 'index'])->name('ecs.case.index');
+    Route::get('/case/create', [App\Http\Controllers\HSS\CaseController::class, 'create'])->name('ecs.case.create');
+    Route::get('/case/{case_id}/edit', [App\Http\Controllers\HSS\CaseController::class, 'edit'])->name('ecs.case.edit');
 });
 
 Route::prefix('ecs')->group(function() {
