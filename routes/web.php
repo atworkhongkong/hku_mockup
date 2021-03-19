@@ -45,6 +45,10 @@ Route::prefix('hss')->group(function() {
     Route::get('/case', [App\Http\Controllers\HSS\CaseController::class, 'index'])->name('ecs.case.index');
     Route::get('/case/create', [App\Http\Controllers\HSS\CaseController::class, 'create'])->name('ecs.case.create');
     Route::get('/case/{case_id}/edit', [App\Http\Controllers\HSS\CaseController::class, 'edit'])->name('ecs.case.edit');
+    Route::get('/case/{case_id}/assessment', [App\Http\Controllers\HSS\CaseAssessmentController::class, 'index'])->name('ecs.case_assessment.index');
+
+    Route::get('/case_assessment/create', [App\Http\Controllers\HSS\CaseAssessmentController::class, 'create'])->name('ecs.case_assessment.create');
+    Route::get('/case_assessment/{assessment_id}/edit', [App\Http\Controllers\HSS\CaseAssessmentController::class, 'create'])->name('ecs.case_assessment.create');
 });
 
 Route::prefix('ecs')->group(function() {

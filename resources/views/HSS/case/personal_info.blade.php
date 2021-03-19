@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="input-chi-name" class="form-label">中文姓名</label>
-                <input type="text" class="form-control" id="input-chi-name" @isset($case_id) value="{{ $case['name'] }}" @endisset>
+                <input type="text" class="form-control" id="input-chi-name" @isset($case) value="{{ $case['name'] }}" @endisset>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="input-eng-name" class="form-label">英文姓名</label>
@@ -32,7 +32,7 @@
             </div>
             <div class="col-md-6 mb-3">
                 <label for="input-dob" class="form-label">出生日期</label>
-                <input type="text" class="form-control" id="input-dob">
+                <input type="text" class="form-control" id="input-dob" @isset($case) value="{{ $case['dob'] }}" @endisset>
             </div>
         </div>
 

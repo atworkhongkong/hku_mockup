@@ -85,7 +85,8 @@
                                 <th scope="col">出生日期</th>
                                 <th scope="col">申請日期</th>
                                 <th scope="col">狀態</th>
-                                <th scope="col" style="width:8%;">&nbsp;</th>
+                                <th scope="col">跟進社工</th>
+                                <th scope="col" style="width:14%;">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -97,7 +98,11 @@
                                     <td>{{ $v['dob'] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
                                     <td>{{ $statuses[$v['status']] }}</td>
-                                    <td><a class="btn btn-primary" href="/hss/case/{{ $k }}/edit">編輯</a></td>
+                                    <td>{{ $v['sw'] }}</td>
+                                    <td>
+                                        <a class="btn btn-primary" href="/hss/case/{{ $k }}/edit">編輯</a>
+                                        <a class="btn btn-primary" href="/hss/case/{{ $k }}/assessment">重估</a>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
