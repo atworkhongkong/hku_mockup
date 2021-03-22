@@ -29,15 +29,12 @@
                         自我照顧
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-6" data-toggle="tab" href="#nav-page-6" role="tab" aria-controls="nav-page-6" aria-selected="false">
-                        日常活動
-                    </a>
-                    <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-7" role="tab" aria-controls="nav-page-7" aria-selected="false">
                         跟進工作
                     </a>
-                    <a class="nav-item nav-link" id="nav-tab-8" data-toggle="tab" href="#nav-page-8" role="tab" aria-controls="nav-page-8" aria-selected="false">
+                    <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-7" role="tab" aria-controls="nav-page-7" aria-selected="false">
                         結果
                     </a>
-                    <a class="nav-item nav-link" id="nav-tab-9" data-toggle="tab" href="#nav-page-9" role="tab" aria-controls="nav-page-9" aria-selected="false">
+                    <a class="nav-item nav-link" id="nav-tab-8" data-toggle="tab" href="#nav-page-8" role="tab" aria-controls="nav-page-8" aria-selected="false">
                         跟進計劃
                     </a>
                 </div>
@@ -58,16 +55,13 @@
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-5" role="tabpanel" aria-labelledby="nav-tab-5">
                     @include('HSS.case_reassessment.self_care')
                 </div>
-                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-6" role="tabpanel" aria-labelledby="nav-tab-6">
-                    @include('HSS.case_reassessment.daily_activity')
-                </div>
-                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-7">
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-6" role="tabpanel" aria-labelledby="nav-tab-7">
                     @include('HSS.case_reassessment.follow_up')
                 </div>
-                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-8">
                     @include('HSS.case_reassessment.result')
                 </div>
-                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-9" role="tabpanel" aria-labelledby="nav-tab-9">
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-9">
                     @include('HSS.case_reassessment.follow_up_plan')
                 </div>
             </div>

@@ -101,6 +101,7 @@
                                     <td>{{ $v['sw'] }}</td>
                                     <td>
                                         <a class="btn btn-primary btn-sm my-1" href="/hss/case/{{ $k }}/edit">編輯</a>
+                                        <a class="btn btn-primary btn-sm my-1" href="/hss/case_assessment/{{ $k }}/edit">評估</a>
                                         <a class="btn btn-primary btn-sm my-1" href="/hss/case/{{ $k }}/reassessment">重估</a>
                                         <a class="btn btn-primary btn-sm my-1" href="/hss/case/{{ $k }}/recording">紀錄</a>
                                     </td>

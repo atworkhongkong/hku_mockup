@@ -45,8 +45,12 @@ Route::prefix('hss')->group(function() {
     Route::get('/case', [App\Http\Controllers\HSS\CaseController::class, 'index'])->name('ecs.case.index');
     Route::get('/case/create', [App\Http\Controllers\HSS\CaseController::class, 'create'])->name('ecs.case.create');
     Route::get('/case/{case_id}/edit', [App\Http\Controllers\HSS\CaseController::class, 'edit'])->name('ecs.case.edit');
+    Route::get('/case/{case_id}/assessment', [App\Http\Controllers\HSS\CaseAssessmentController::class, 'index'])->name('ecs.case_assessment.index');
     Route::get('/case/{case_id}/reassessment', [App\Http\Controllers\HSS\CaseReassessmentController::class, 'index'])->name('ecs.case_reassessment.index');
     Route::get('/case/{case_id}/recording', [App\Http\Controllers\HSS\CaseRecordingController::class, 'index'])->name('ecs.case_recording.index');
+
+    //Route::get('/case_assessment/create', [App\Http\Controllers\HSS\CaseAssessmentController::class, 'create'])->name('ecs.case_assessment.create');
+    Route::get('/case_assessment/{case_id}/edit', [App\Http\Controllers\HSS\CaseAssessmentController::class, 'edit'])->name('ecs.case_assessment.edit');
 
     Route::get('/case_reassessment/create', [App\Http\Controllers\HSS\CaseReassessmentController::class, 'create'])->name('ecs.case_reassessment.create');
     Route::get('/case_reassessment/{reassessment_id}/edit', [App\Http\Controllers\HSS\CaseReassessmentController::class, 'edit'])->name('ecs.case_reassessment.edit');
