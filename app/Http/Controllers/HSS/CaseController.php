@@ -25,6 +25,10 @@ class CaseController extends Controller
         2 => ['case_number' => '108052', 'name' => '李孟宸', 'gender' => 'M', 'dob' => '1947-05-11', 'create_date' => '2019-10-02', 'status' => 'active', 'sw' => '社工A'],
         1 => ['case_number' => '106058', 'name' => '何南珠', 'gender' => 'F', 'dob' => '1946-10-28', 'create_date' => '2019-08-08', 'status' => 'active', 'sw' => '社工C'],
     ];
+    const CLOSE_REASONS = [
+        '自我照顧能力改善', '非家居照顧服務所能提供', '長期留醫', '已有人照顧', '與服務使用者失去聯絡', '服務使用者遷離服務地區範圍', '入住院舍',
+        '服務使用者辭世', '服務使用者因收費原因自行放棄', '服務不能滿足服務使用者的需要/期望', '服務使用者不喜歡所提供的膳食', '其他'
+    ];
 
     public function __construct()
     {
@@ -33,6 +37,7 @@ class CaseController extends Controller
         View::share('cases', self::CASES);
         View::share('marriage_statuses', self::MARRIAGE_STATUSES);
         View::share('education_levels', self::EDUCATIONAL_LEVELS);
+        View::share('close_reasons', self::CLOSE_REASONS);
     }
 
     public function index()
@@ -51,7 +56,7 @@ class CaseController extends Controller
         return view('HSS.case.edit', compact('case'));
     }
 
-    public static function getCases()
+    public static function getCases(): array
     {
         return self::CASES;
     }

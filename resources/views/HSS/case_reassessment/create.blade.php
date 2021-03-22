@@ -5,7 +5,8 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/hss/case/{{ $case_id }}/assessment">個案重估</a></li>
+                    <li class="breadcrumb-item"><a href="/hss/case">個案</a></li>
+                    <li class="breadcrumb-item"><a href="/hss/case/{{ $case_id }}/reassessment">個案重估 - {{ $case['name'] }}</a></li>
                     <li class="breadcrumb-item active" aria-current="page">新增重估紀錄</li>
                 </ol>
             </nav>
@@ -43,31 +44,31 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active p-3 border border-top-0" id="nav-page-1" role="tabpanel" aria-labelledby="nav-tab-1">
-                    @include('HSS.case_assessment.basic_info')
+                    @include('HSS.case_reassessment.basic_info')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-2" role="tabpanel" aria-labelledby="nav-tab-2">
-                    @include('HSS.case_assessment.personal_info')
+                    @include('HSS.case_reassessment.personal_info')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-3" role="tabpanel" aria-labelledby="nav-tab-3">
-
+                    @include('HSS.case_reassessment.social')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-4" role="tabpanel" aria-labelledby="nav-tab-4">
-
+                    @include('HSS.case_reassessment.psychological')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-5" role="tabpanel" aria-labelledby="nav-tab-5">
-
+                    @include('HSS.case_reassessment.self_care')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-6" role="tabpanel" aria-labelledby="nav-tab-6">
-
+                    @include('HSS.case_reassessment.daily_activity')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-7">
-
+                    @include('HSS.case_reassessment.follow_up')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
-
+                    @include('HSS.case_reassessment.result')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-9" role="tabpanel" aria-labelledby="nav-tab-9">
-
+                    @include('HSS.case_reassessment.follow_up_plan')
                 </div>
             </div>
         </div>
