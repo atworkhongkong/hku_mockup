@@ -53,13 +53,27 @@
 
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <span>MOCA</span>
+                <span>MoCA</span>
             </div>
             <div class="p-3">
                 <div class="row">
                     <div class="col-12 mb-3">
                         <label for="input-moca1" class="form-label">總分</label>
                         <input type="text" class="form-control" id="input-moca1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>GDS</span>
+            </div>
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="input-gds" class="form-label">總分</label>
+                        <input type="text" class="form-control" id="input-gds">
                     </div>
                 </div>
             </div>

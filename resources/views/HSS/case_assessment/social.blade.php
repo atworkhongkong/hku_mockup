@@ -5,7 +5,7 @@
                 <span>社交支援系統</span>
             </div>
             <div class="p-3">
-                <div class="row">
+                    <div class="row">
                     <div class="col-12">
                         <p class="text-right" style="font-size:10px;">剔選「沒有」可得一分，「頗少」可得二分，餘此類推。</p>
                         <table class="table">

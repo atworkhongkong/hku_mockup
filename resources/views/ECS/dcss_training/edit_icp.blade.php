@@ -71,7 +71,7 @@
             <div class="alert alert-primary" role="alert">
                 提示︰<br>
                 當minimum hour input value < 18，須要出提示輸入少過minimum value，但仍可比user輸入<br>
-                當minimum hours + flexible training hours > 20，須要出提示輸入少過minimum value，但仍可比user輸入
+                當minimum hours + flexible training hours > 20，須要出提示輸入大過 maximum value，但仍可比user輸入
             </div>
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
@@ -101,7 +101,7 @@
             <div class="alert alert-primary" role="alert">
                 提示︰<br>
                 當所有minimum hour input value < 16，須要出提示輸入少過minimum value，但仍可比user輸入<br>
-                當所有minimum hours + flexible training hours > 20，須要出提示輸入少過minimum value，但仍可比user輸入<br>
+                當所有minimum hours + flexible training hours > 20，須要出提示輸入大過 maximum value，但仍可比user輸入<br>
                 下方psychosocial和carer burden做法一樣
             </div>
             <div class="card mb-4">
