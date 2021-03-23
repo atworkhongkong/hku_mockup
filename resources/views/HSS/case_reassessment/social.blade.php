@@ -17,7 +17,7 @@
                     <tbody>
                         @for ($question_no = 1 ; $question_no <= 3 ; $question_no++)
                             <tr>
-                                <td style="text-align:left;">{{ $question_no }} {{ $options[2][$question_no] }}</td>
+                                <td style="text-align:left;">{{ $question_no }}. {{ $options[2][$question_no] }}</td>
                                 @for($i = 1 ; $i <= 5 ; $i++)
                                     <td>
                                         <input class="form-check-input" type="radio" name="radio_{{ $question_no }}">
@@ -48,7 +48,7 @@
                     <tbody>
                         @for ($question_no = 4 ; $question_no <= 5 ; $question_no++)
                             <tr>
-                                <td style="text-align:left;">{{ $question_no }} {{ $options[2][$question_no] }}</td>
+                                <td style="text-align:left;">{{ $question_no }}. {{ $options[2][$question_no] }}</td>
                                 @for($i = 1 ; $i <= 5 ; $i++)
                                     <td>
                                         <input class="form-check-input" type="radio" name="radio_{{ $question_no }}">

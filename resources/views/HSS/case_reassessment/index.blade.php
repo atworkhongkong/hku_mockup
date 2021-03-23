@@ -62,7 +62,7 @@
                             <tr>
                                 <th scope="col" style="width:10%;">#</th>
                                 <th scope="col">重估日期</th>
-                                <th scope="col">負責人</th>
+                                <th scope="col">工作員</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                         </thead>

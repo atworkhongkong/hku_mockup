@@ -17,12 +17,13 @@ class CaseAssessmentController extends Controller
     const LIVING_STATUSES = [
         '獨居', '與配偶同住', '與子女同住', '與親戚同住', '與父母同住', '與朋友同住', '與其他人同住'
     ];
-    const HEALTH = [
+    const SECTION5a = [
         '健康良好', '肺病', '中風(左)', '中風(右)', '高血壓', '低血壓', '痛風症', '氣管病', '柏金遜病', '糖尿病',
         '關節炎', '心臟病', '老人癡呆症', '腎病', '眼疾(如白內障)', '皮膚病', '癌症', '失明', '部份失明', '失聰', '部份失聰',
         '肢體傷殘', '精神病', '其他'
     ];
-    const MOBILITY = ['行動自如', '靠助行架', '靠四腳叉', '靠枴杖', '用輪椅', '要人扶行', '行動緩慢', '臥床'];
+    const SECTION5b = ['行動自如', '靠助行架', '靠四腳叉', '靠枴杖', '用輪椅', '要人扶行', '行動緩慢', '臥床', '其他'];
+    const SECTION5c = ['最近有沒有跌倒/滑倒'];
     const SECTION6 = [
         '最近有無經常忘記自己剛剛做完的事情', '最新有無經常忘記親人及熟悉之朋友的名字', '最近有無試過迷路不懂回家'
     ];
@@ -33,7 +34,7 @@ class CaseAssessmentController extends Controller
         '你多唔多與親戚/兒女聯絡?', '你多唔多與朋友/鄰居聯絡?', '你多唔多參與社區活動? (如老人中心/互委會)', '當你需要協助時，親戚/兒女能否提無協助?', '當你需要協助時，朋友/鄰居能否提無協助?'
     ];
     const SECTION9 = [
-        '你覺得自己有沒有記憶問題?', '你多唔多憂慮(如擔心健康、經濟)', '你是否時常感到開心呢?', '你是否覺得自己的境況比其他同年齡的人好?', '你是否覺得自己的心情時常輕鬆?'
+        '你覺得自己有沒有記憶問題?', '你多唔多憂慮(如擔心健康、經濟)', '你是否時常感到開心呢?', '你是否覺得自己的境況比其他同年齡的人好?', '你是否覺得自己的心情時常輕鬆?', '你有幾接受自己的外觀?'
     ];
     const SECTION10a = [
         '體重突然驟降超過五磅', '最新有無食慾下降，食唔到嘢，或體重下降'
@@ -88,13 +89,15 @@ class CaseAssessmentController extends Controller
     public function __construct()
     {
         View::share('living_statuses', self::LIVING_STATUSES);
-        View::share('health', self::HEALTH);
+        View::share('section5a', self::SECTION5a);
+        View::share('section5b', self::SECTION5b);
+        View::share('section5c', self::SECTION5c);
         View::share('section6', self::SECTION6);
         View::share('section7', self::SECTION7);
         View::share('section8', self::SECTION8);
         View::share('section9', self::SECTION9);
         View::share('section10a', self::SECTION10a);
-        View::share('section10a', self::SECTION10b);
+        View::share('section10b', self::SECTION10b);
         View::share('section11', self::SECTION11);
         View::share('section12', self::SECTION12);
         View::share('section13', self::SECTION13);
