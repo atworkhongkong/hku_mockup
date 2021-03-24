@@ -33,6 +33,12 @@
                     <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-7" role="tab" aria-controls="nav-page-7" aria-selected="false">
                         轉介人
                     </a>
+                    <a class="nav-item nav-link" id="nav-tab-8" data-toggle="tab" href="#nav-page-8" role="tab" aria-controls="nav-page-8" aria-selected="false">
+                        狀況
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-9" data-toggle="tab" href="#nav-page-9" role="tab" aria-controls="nav-page-9" aria-selected="false">
+                        服務建議
+                    </a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -56,6 +62,12 @@
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-7">
                     @include('HSS.case.referral')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
+                    @include('HSS.case.condition')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-9" role="tabpanel" aria-labelledby="nav-tab-9">
+                    @include('HSS.case.condition')
                 </div>
             </div>
         </div>

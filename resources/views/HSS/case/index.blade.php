@@ -73,7 +73,7 @@
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>找到{{ count($cases) }}筆記錄</span>
                         <div>
-                            <a href="/hss/case/create" class="btn btn-secondary">個案申請及轉介</a>
+                            <a href="/hss/case/create" class="btn btn-secondary">申請及轉介</a>
                         </div>
                     </div>
                     <table class="table table-bordered">

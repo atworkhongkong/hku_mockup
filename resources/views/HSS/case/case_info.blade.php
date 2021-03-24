@@ -19,6 +19,20 @@
         </div>
 
         <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="input-has-social-assistance">是否領取綜合社會保障援助/長者生活津貼</label>
+                <select class="form-control" id="input-has-social-assistance">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="input-assistance-number">檔案編號</label>
+                <input type="text" class="form-control" id="input-assistance-number" disabled>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-12 mb-3">
                 <label for="input-social-worker">跟進社工</label>
                 <input type="text" class="form-control" id="input-social-worker" value="{{ isset($case) ? $case['sw'] : '' }}">
@@ -74,11 +88,18 @@
 @section('top_script')
     <script>
         $(function() {
-            $('#input-status').change(function() {
+            $("#input-status").change(function() {
                 if ($(this).val() === 'closed') {
                     $('#close-reasons').show();
                 } else {
                     $('#close-reasons').hide();
+                }
+            });
+            $("#input-has-social-assistance").change(function() {
+                if ($(this).val() === '1') {
+                    $('#input-assistance-number').prop('disabled', false);
+                } else {
+                    $('#input-assistance-number').prop('disabled', true);
                 }
             })
         });

@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/hss/case">個案</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">個案申請及轉介</li>
+                    <li class="breadcrumb-item active" aria-current="page">申請及轉介</li>
                 </ol>
             </nav>
 
