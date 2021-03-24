@@ -19,13 +19,13 @@
                         背景資料
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-3" data-toggle="tab" href="#nav-page-3" role="tab" aria-controls="nav-page-3" aria-selected="false">
-                        長者個人特質記錄
+                        個人特質記錄
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-4" data-toggle="tab" href="#nav-page-4" role="tab" aria-controls="nav-page-4" aria-selected="false">
                         健康情況
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-5" data-toggle="tab" href="#nav-page-5" role="tab" aria-controls="nav-page-5" aria-selected="false">
-                        活動及認知情況
+                        活動及認知
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-6" data-toggle="tab" href="#nav-page-6" role="tab" aria-controls="nav-page-6" aria-selected="false">
                         家庭照顧支援網絡
@@ -33,8 +33,11 @@
                     <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-7" role="tab" aria-controls="nav-page-7" aria-selected="false">
                         補充資料
                     </a>
-                    <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-8" role="tab" aria-controls="nav-page-8" aria-selected="false">
-                        評估分數
+                    <a class="nav-item nav-link" id="nav-tab-8" data-toggle="tab" href="#nav-page-8" role="tab" aria-controls="nav-page-8" aria-selected="false">
+                        活動前評估
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-9" data-toggle="tab" href="#nav-page-9" role="tab" aria-controls="nav-page-9" aria-selected="false">
+                        活動後評估
                     </a>
                 </div>
             </nav>
@@ -61,7 +64,10 @@
                     @include('ECS.dcss.additional_info')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
-                    @include('ECS.dcss.mark')
+                    @include('ECS.dcss.pre_mark')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-9" role="tabpanel" aria-labelledby="nav-tab-9">
+                    @include('ECS.dcss.pro_mark')
                 </div>
             </div>
         </div>

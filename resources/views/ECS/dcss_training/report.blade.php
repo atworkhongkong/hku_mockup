@@ -64,5 +64,7 @@
         @include('ECS.dcss_training.report_case_count')
     @elseif ($type == 'training_count')
         @include('ECS.dcss_training.report_training_count')
+    @elseif ($type == 'ZBI')
+        @include('ECS.dcss_training.report_ZBI')
     @endif
 @endsection

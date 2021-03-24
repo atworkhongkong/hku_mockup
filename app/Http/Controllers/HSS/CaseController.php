@@ -10,7 +10,7 @@ class CaseController extends Controller
 {
     const APPLICATION_METHODS = [1 => '熱線申請', 2 => '直接聯絡單位', 3 => '外界團體轉介'];
     const STATUSES = [
-        'active' => '日常個案',
+        'active' => '已開啟個案',
         'nsc' => '不成功個案',
         'not_process' => '申請未處理',
         'processing' => '申請處理中',
