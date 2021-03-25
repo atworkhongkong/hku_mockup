@@ -190,9 +190,9 @@ Route::prefix('ecs')->group(function() {
     Route::get('/dcss/create', [App\Http\Controllers\ECS\DCSSController::class, 'create'])->name('ecs.dcss.create');
     Route::get('/dcss/{case_id}/edit', [App\Http\Controllers\ECS\DCSSController::class, 'edit'])->name('ecs.dcss.edit');
 
-    Route::get('/dcss_staff', [App\Http\Controllers\ECS\DCSSSTaffController::class, 'index'])->name('ecs.dcss_staff.index');
-    Route::get('/dcss_staff/create', [App\Http\Controllers\ECS\DCSSSTaffController::class, 'create'])->name('ecs.dcss_staff.create');
-    Route::get('/dcss_staff/{staff_id}/edit', [App\Http\Controllers\ECS\DCSSSTaffController::class, 'edit'])->name('ecs.dcss_staff.edit');
+    Route::get('/dcss_staff', [App\Http\Controllers\ECS\DCSSStaffController::class, 'index'])->name('ecs.dcss_staff.index');
+    Route::get('/dcss_staff/create', [App\Http\Controllers\ECS\DCSSStaffController::class, 'create'])->name('ecs.dcss_staff.create');
+    Route::get('/dcss_staff/{staff_id}/edit', [App\Http\Controllers\ECS\DCSSStaffController::class, 'edit'])->name('ecs.dcss_staff.edit');
 
     Route::get('/dcss_staff_training', [App\Http\Controllers\ECS\DCSSSTaffTrainingController::class, 'index'])->name('ecs.dcss_staff_training.index');
     Route::get('/dcss_staff_training/create', [App\Http\Controllers\ECS\DCSSSTaffTrainingController::class, 'create'])->name('ecs.dcss_staff_training.create');
