@@ -53,6 +53,17 @@
         </div>
 
         <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="input-update-date">上次更改日期</label>
+                <input type="text" class="form-control" id="input-update-date" value="2021-03-20" readonly>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="input-updated-by">上次更改同事</label>
+                <input type="text" class="form-control" id="input-updated-by" value="同事A" readonly>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-12 mb-3">
                 <label for="input-status">狀態</label>
                 <select id="input-status" class="form-control mr-1" name="center" {{ !isset($case) ? 'DISABLED' : '' }}>

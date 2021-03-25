@@ -76,11 +76,20 @@
         </div>
 
         <div class="row">
-            <div class="col-12 mb-3">
+            <div class="col-md-6 mb-3">
                 <label for="input-education" class="form-label">教育程度</label>
                 <select id="input-education" class="form-control">
                     <option value=""></option>
                     @foreach($education_levels as $k => $v)
+                        <option value="{{ $k }}">{{ $v }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="input-teams" class="form-label">所屬單位</label>
+                <select id="input-teams" class="form-control">
+                    <option value=""></option>
+                    @foreach($teams as $k => $v)
                         <option value="{{ $k }}">{{ $v }}</option>
                     @endforeach
                 </select>

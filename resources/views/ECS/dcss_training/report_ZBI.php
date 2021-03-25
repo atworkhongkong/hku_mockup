@@ -28,7 +28,7 @@
 
         <div class="alert alert-primary" role="alert">
             提示︰<br>
-            第一個column: 智友醫社同行計劃 > 個案編輯 > 活動前評估內，有填寫過ZBI分數的人數<br>
+            第一個column: 智友醫社同行計劃 > 個案編輯 > 活動前 + 活動後評估內，都有填寫過ZBI分數的人數<br>
             Logic:<br>SELECT COUNT(*) FROM assessments WHERE zbi IS NOT NULL AND period = 'before' AND YEAR(create_date) = 2021;<br><br>
             第二個column: 智友醫社同行計劃 > 個案編輯 > 活動後評估內，有填寫過ZBI分數，而分數是少過「活動前評估」的ZBI分數的人數<br>
             Logic:<br>

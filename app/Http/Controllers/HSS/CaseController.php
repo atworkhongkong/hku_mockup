@@ -9,12 +9,12 @@ use Illuminate\Support\Facades\View;
 class CaseController extends Controller
 {
     const APPLICATION_METHODS = [1 => '熱線申請', 2 => '直接聯絡單位', 3 => '外界團體轉介'];
+    const TEAMS = ['IH1+2', 'IH3', 'IH5'];
     const STATUSES = [
         'active' => '已開啟個案',
         'nsc' => '不成功個案',
         'not_process' => '申請未處理',
         'processing' => '申請處理中',
-        'waiting_list' => '服務輪候中',
         'closed' => '結束個案',
     ];
     const MARRIAGE_STATUSES = ['獨身', '已婚', '離婚', '喪偶'];
@@ -116,6 +116,7 @@ class CaseController extends Controller
     public function __construct()
     {
         View::share('application_methods', self::APPLICATION_METHODS);
+        View::share('teams', self::TEAMS);
         View::share('statuses', self::STATUSES);
         View::share('cases', self::CASES);
         View::share('marriage_statuses', self::MARRIAGE_STATUSES);

@@ -13,7 +13,7 @@ class DCSSController extends Controller
         2 => '南區長者地區中心',
     ];
     const STATUSES = [
-        'A' => '跟進中', 'I' => '已完結'
+        'A' => '跟進中', 'I' => '已完成', 'C' => '退出'
     ];
     const CASES = [
         1 => ['group' => 'J01', 'case_number' => 'JD2002G', 'burden' => 'Lesser', 'name' => '李雅辛', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '黃紫瑩'],

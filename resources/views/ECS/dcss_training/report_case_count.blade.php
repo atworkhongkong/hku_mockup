@@ -18,8 +18,8 @@
                             <th>New Non-HA cases</th>
                             <th>Transferred in cases</th>
                             <th>Total</th>
-                            <th>Defaulted cases</th>
-                            <th>Completed Training cases</th>
+                            <th>Defaulted cases<br>(status=已退出)</th>
+                            <th>Completed Training cases<br>(status=已完成)</th>
                             <th>Total</th>
                         </tr>
                     </thead>
