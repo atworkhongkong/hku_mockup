@@ -46,7 +46,14 @@
                     <div class="collapse mt-2" id="more-search" style="width:100%;">
                         <div class="card card-body">
                             <div class="row">
-                                <div class="col-12 mb-3">
+                                <div class="col-auto mb-3">
+                                    <label for="field-need-review">個案檢討</label>
+                                    <select class="form-control" id="field-need-review">
+                                        <option></option>
+                                        <option value="1">到期檢討</option>
+                                    </select>
+                                </div>
+                                <div class="col-auto mb-3">
                                     <label for="input-living-status" class="form-label">個案申請日期</label>
                                     <div class="row mb-2 g-0">
                                         <div class="col-auto">
@@ -82,7 +89,7 @@
                                 <th scope="col" style="width:10%;">個案編號</th>
                                 <th scope="col">申請人姓名</th>
                                 <th scope="col">姓別</th>
-                                <th scope="col">出生日期</th>
+                                <th scope="col">上次檢討日期</th>
                                 <th scope="col">申請日期</th>
                                 <th scope="col">狀態</th>
                                 <th scope="col">跟進社工</th>
@@ -95,7 +102,7 @@
                                     <td>{{ $v['case_number'] }}</td>
                                     <td>{{ $v['name'] }}</td>
                                     <td>{{ $v['gender'] }}</td>
-                                    <td>{{ $v['dob'] }}</td>
+                                    <td>{{ $v['last_review_date'] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
                                     <td>{{ $statuses[$v['status']] }}</td>
                                     <td>{{ $v['sw'] }}</td>
@@ -113,4 +120,16 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section("bottom_script")
+    <script>
+        $(function() {
+            $("#field-need-review").change(function() {
+                if ($(this).val() === "1") {
+                    alert("To HKU提示︰個案須每半年檢討一次，當選擇了到期檢討，則須顯示已到期需要檢討的個案。");
+                }
+            })
+        })
+    </script>
 @endsection

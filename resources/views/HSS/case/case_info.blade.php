@@ -1,7 +1,16 @@
 <div class="form-container">
     <form>
+        @isset($case)
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="input-case-number">個案編號</label>
+                    <input type="text" class="form-control" id="input-case-number" value="{{ $case['case_number'] }}">
+                </div>
+            </div>
+        @endisset
+
         <div class="row">
-            <div class="col-12 mb-3">
+            <div class="col-md-6 mb-3">
                 <label for="input-application-method">個案來自</label>
                 <select id="input-application-method" class="form-control mr-1" name="center">
                     @foreach($application_methods as $k => $v)
@@ -9,10 +18,7 @@
                     @endforeach
                 </select>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 mb-3">
+            <div class="col-md-6 mb-3">
                 <label for="input-referral-number">轉介機構檔案編號</label>
                 <input type="text" class="form-control" id="input-referral-number">
             </div>

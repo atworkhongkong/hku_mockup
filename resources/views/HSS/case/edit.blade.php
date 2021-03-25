@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/hss/case">個案</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ isset($case) ? $case['name'] : '' }}</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ isset($case) ? $case['name'].' - '.$case['case_number'] : '' }}</li>
                 </ol>
             </nav>
 
