@@ -89,8 +89,8 @@
                                 <th scope="col" style="width:10%;">個案編號</th>
                                 <th scope="col">申請人姓名</th>
                                 <th scope="col">姓別</th>
-                                <th scope="col">上次檢討日期</th>
                                 <th scope="col">申請日期</th>
+                                <th scope="col">上次檢討日期</th>
                                 <th scope="col">狀態</th>
                                 <th scope="col">跟進社工</th>
                                 <th scope="col" style="width:12%;">&nbsp;</th>
@@ -102,8 +102,8 @@
                                     <td>{{ $v['case_number'] }}</td>
                                     <td>{{ $v['name'] }}</td>
                                     <td>{{ $v['gender'] }}</td>
-                                    <td>{{ $v['last_review_date'] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
+                                    <td>{{ $v['last_review_date'] }}</td>
                                     <td>{{ $statuses[$v['status']] }}</td>
                                     <td>{{ $v['sw'] }}</td>
                                     <td>

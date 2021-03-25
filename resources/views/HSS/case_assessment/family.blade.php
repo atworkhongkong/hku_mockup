@@ -140,114 +140,113 @@
 
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <span>經濟狀況</span>
+                <span>經濟狀況 - 收入</span>
             </div>
             <div class="p-3">
-                <div>
-                    <p>收入</p>
-                    <div class="row mb-2">
-                        <div class="col-12 d-flex align-items-center">
-                            <div>
-                                <input class="" type="checkbox" value="" id="cb1">
-                                <label class="form-check-label" for="cb1">
-                                    綜援
-                                </label>
-                            </div>
-                            <span><input type="text" class="form-control d-inline-block ml-2" placeholder="綜援編號"></span>
+                <div class="row mb-2">
+                    <div class="col-12 d-flex align-items-center">
+                        <div>
+                            <input class="" type="checkbox" value="" id="cb1">
+                            <label class="form-check-label" for="cb1">
+                                綜援
+                            </label>
                         </div>
+                        <span><input type="text" class="form-control d-inline-block ml-2" placeholder="綜援編號"></span>
                     </div>
-                    <div class="row my-3">
-                        <div class="col-12 d-flex align-items-center">
-                            <div>
-                                <input class="" type="checkbox" value="" id="cb2">
-                                <label class="form-check-label" for="cb2">
-                                    傷殘津貼
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-3">
-                        <div class="col-12 d-flex align-items-center">
-                            <div>
-                                <input class="" type="checkbox" value="" id="cb3">
-                                <label class="form-check-label" for="cb3">
-                                    高齡津貼
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-12 d-flex align-items-center">
-                            <div>
-                                <input class="" type="checkbox" value="" id="cb4">
-                                <label class="form-check-label" for="cb4">
-                                    同住家人總入息
-                                </label>
-                            </div>
-                            <span><input type="text" class="form-control d-inline-block ml-2"></span>
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-12 d-flex align-items-center">
-                            <div>
-                                <input class="" type="checkbox" value="" id="cb5">
-                                <label class="form-check-label" for="cb5">
-                                    人供養平均每月
-                                </label>
-                            </div>
-                            <span><input type="text" class="form-control d-inline-block ml-2"></span>
-                        </div>
-                    </div>
-                    <div class="row my-3">
-                        <div class="col-12 d-flex align-items-center">
-                            <div>
-                                <input class="" type="checkbox" value="" id="cb6">
-                                <label class="form-check-label" for="cb6">
-                                    個人積蓄
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-12 d-flex align-items-center">
-                            <div>
-                                <input class="" type="checkbox" value="" id="cb7">
-                                <label class="form-check-label" for="cb7">
-                                    樓宇供款
-                                </label>
-                            </div>
-                            <span><input type="text" class="form-control d-inline-block ml-2"></span>
+                </div>
+                <div class="row my-3">
+                    <div class="col-12 d-flex align-items-center">
+                        <div>
+                            <input class="" type="checkbox" value="" id="cb2">
+                            <label class="form-check-label" for="cb2">
+                                傷殘津貼
+                            </label>
                         </div>
                     </div>
                 </div>
-
-                <div>
-                    <p>支出</p>
-                    <div class="row mb-2">
-                        <div class="col-12 d-flex align-items-center">
-                            <div>
-                                <input class="" type="checkbox" value="" id="cb8">
-                                <label class="form-check-label" for="cb8">
-                                    租金
-                                </label>
-                            </div>
-                            <span><input type="text" class="form-control d-inline-block ml-2"></span>
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-12 d-flex align-items-center">
-                            <div>
-                                <input class="" type="checkbox" value="" id="cb9">
-                                <label class="form-check-label" for="cb9">
-                                    樓宇供款
-                                </label>
-                            </div>
-                            <span><input type="text" class="form-control d-inline-block ml-2"></span>
+                <div class="row my-3">
+                    <div class="col-12 d-flex align-items-center">
+                        <div>
+                            <input class="" type="checkbox" value="" id="cb3">
+                            <label class="form-check-label" for="cb3">
+                                高齡津貼
+                            </label>
                         </div>
                     </div>
                 </div>
+                <div class="row mb-2">
+                    <div class="col-12 d-flex align-items-center">
+                        <div>
+                            <input class="" type="checkbox" value="" id="cb4">
+                            <label class="form-check-label" for="cb4">
+                                同住家人總入息
+                            </label>
+                        </div>
+                        <span><input type="text" class="form-control d-inline-block ml-2"></span>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 d-flex align-items-center">
+                        <div>
+                            <input class="" type="checkbox" value="" id="cb5">
+                            <label class="form-check-label" for="cb5">
+                                人供養平均每月
+                            </label>
+                        </div>
+                        <span><input type="text" class="form-control d-inline-block ml-2"></span>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-12 d-flex align-items-center">
+                        <div>
+                            <input class="" type="checkbox" value="" id="cb6">
+                            <label class="form-check-label" for="cb6">
+                                個人積蓄
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 d-flex align-items-center">
+                        <div>
+                            <input class="" type="checkbox" value="" id="cb7">
+                            <label class="form-check-label" for="cb7">
+                                樓宇供款
+                            </label>
+                        </div>
+                        <span><input type="text" class="form-control d-inline-block ml-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>經濟狀況 - 收入</span>
+            </div>
+            <div class="p-3">
+                <div class="row mb-2">
+                    <div class="col-12 d-flex align-items-center">
+                        <div>
+                            <input class="" type="checkbox" value="" id="cb8">
+                            <label class="form-check-label" for="cb8">
+                                租金
+                            </label>
+                        </div>
+                        <span><input type="text" class="form-control d-inline-block ml-2"></span>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 d-flex align-items-center">
+                        <div>
+                            <input class="" type="checkbox" value="" id="cb9">
+                            <label class="form-check-label" for="cb9">
+                                樓宇供款
+                            </label>
+                        </div>
+                        <span><input type="text" class="form-control d-inline-block ml-2"></span>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -83,7 +83,7 @@
                     <tbody>
                         <tr>
                             <td style="width:40px;">
-                                <input type="checkbox" id="cb-b1">
+                                <input type="checkbox" id="cb-c1">
                             </td>
                             <td style="width:40%;">
                                 <label class="form-check-label" for="cb-c1">
@@ -99,8 +99,8 @@
                                     </label>
                                 </div>
                                 <div class="my-3">
-                                    <input type="checkbox" id="cb-c2">
-                                    <label class="form-check-label ml-3" for="cb-c2">
+                                    <input type="checkbox" id="cb-c3">
+                                    <label class="form-check-label ml-3" for="cb-c3">
                                         <div>已知悉轉介單位已跟進或將會跟進，為申請人進行安老服務統一評估事直</div>
                                     </label>
                                 </div>
