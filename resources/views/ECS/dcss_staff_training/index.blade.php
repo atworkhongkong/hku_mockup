@@ -80,7 +80,7 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="text-right">Total sessions (1 session = 4 hours</td>
+                                <td colspan="2" class="text-right">Total sessions (1 session = 4 hours)</td>
                                 <td>{{ $total_session }}</td>
                                 <td></td>
                             </tr>
