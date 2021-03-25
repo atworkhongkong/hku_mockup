@@ -19,7 +19,7 @@
                         </tr>
                         <tr class="text-center">
                             <td></td>
-                            <td>66.67</td>
+                            <td>66.67%</td>
                         </tr>
                     </tbody>
                 </table>
