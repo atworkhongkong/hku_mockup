@@ -32,7 +32,7 @@
             </div>
             <div class="col-md-6 mb-3">
                 <label for="input-dob" class="form-label">出生日期</label>
-                <input type="text" class="form-control" id="input-dob" @isset($case) value="{{ $case['dob'] }}" @endisset>
+                <input type="date" class="form-control" id="input-dob" @isset($case) value="{{ $case['dob'] }}" @endisset>
             </div>
         </div>
 

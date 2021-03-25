@@ -67,7 +67,7 @@
                     @include('HSS.case.condition')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-9" role="tabpanel" aria-labelledby="nav-tab-9">
-                    @include('HSS.case.condition')
+                    @include('HSS.case.service_suggestion')
                 </div>
             </div>
         </div>
