@@ -211,7 +211,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>陳大文</td>
-                                <td><a href="/ecs/dcss_training/1/edit"><i class="fas fa-edit"></i></a></td>
+                                <td><a href="/ecs/dcss_training/1/edit?case_id={{ $id }}"><i class="fas fa-edit"></i></a></td>
                             </tr>
                             <tr class="text-center">
                                 <td>2021-02-10</td>
@@ -242,7 +242,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>周浩文</td>
-                                <td><a href="/ecs/dcss_training/2/edit"><i class="fas fa-edit"></i></a></td>
+                                <td><a href="/ecs/dcss_training/2/edit?case_id={{ $id }}"><i class="fas fa-edit"></i></a></td>
                             </tr>
                             <tr class="text-center">
                                 <td>2021-02-17</td>
@@ -273,7 +273,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>譚家琪</td>
-                                <td><a href="/ecs/dcss_training/3/edit"><i class="fas fa-edit"></i></a></td>
+                                <td><a href="/ecs/dcss_training/3/edit?case_id={{ $id }}"><i class="fas fa-edit"></i></a></td>
                             </tr>
                         </tbody>
                     </table>

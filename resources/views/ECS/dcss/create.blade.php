@@ -19,7 +19,7 @@
                         背景資料
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-3" data-toggle="tab" href="#nav-page-3" role="tab" aria-controls="nav-page-3" aria-selected="false">
-                        個人特質記錄
+                        個人特質
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-4" data-toggle="tab" href="#nav-page-4" role="tab" aria-controls="nav-page-4" aria-selected="false">
                         健康情況
@@ -38,6 +38,9 @@
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-9" data-toggle="tab" href="#nav-page-9" role="tab" aria-controls="nav-page-9" aria-selected="false">
                         活動後評估
+                    </a>
+                    <a class="nav-item nav-link" id="nav-tab-10" data-toggle="tab" href="#nav-page-10" role="tab" aria-controls="nav-page-10" aria-selected="false">
+                        問卷
                     </a>
                 </div>
             </nav>
@@ -68,6 +71,9 @@
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-9" role="tabpanel" aria-labelledby="nav-tab-9">
                     @include('ECS.dcss.pro_mark')
+                </div>
+                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-10" role="tabpanel" aria-labelledby="nav-tab-10">
+                    @include('ECS.dcss.questionnaire')
                 </div>
             </div>
         </div>

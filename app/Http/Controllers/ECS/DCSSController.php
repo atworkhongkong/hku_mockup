@@ -4,6 +4,7 @@ namespace App\Http\Controllers\ECS;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 
 class DCSSController extends Controller
@@ -158,9 +159,16 @@ class DCSSController extends Controller
         return view('ECS.dcss.edit', compact('case_id', 'case'));
     }
 
-    public function report()
+    public function report(Request $request)
     {
-        return view('ECS.dcss.report');
+        $type = $request->get('type');
+        if ($type) {
+            $full_url = URL::full();
+        } else {
+            $type = 'service_questionnaire';
+            $full_url = URL::full().'/'.$type;
+        }
+        return view('ECS.dcss.report', compact('type', 'full_url'));
     }
 
     public static function getCases(): array

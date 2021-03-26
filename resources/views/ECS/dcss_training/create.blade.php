@@ -6,7 +6,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/dcss_training">智友醫社訓練</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">ICP</li>
+                    <li class="breadcrumb-item active" aria-current="page">新增訓練紀錄</li>
                 </ol>
             </nav>
 
@@ -223,6 +223,7 @@
                 <div class="p-3">
                     <table class="table">
                         <tbody>
+                            <!--
                             <tr>
                                 <td style="width:40%;">Transport subsidy (Come)</td>
                                 <td><input class="form-control" type="text" value=""></td>
@@ -234,6 +235,47 @@
                             <tr>
                                 <td>Number of Escort</td>
                                 <td><input class="form-control" type="text" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Expense from escort service</td>
+                                <td><input class="form-control" type="text" value=""></td>
+                            </tr>
+                            -->
+                            <tr>
+                                <td style="width:40%;">Transport subsidy (Come)</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <select class="form-control" id="come-pull-down">
+                                                <option></option>
+                                                @foreach($transports as $t)
+                                                    <option value="{{ $t }}">{{ $t }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Fee" disabled id="come-price" />
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%;">Transport subsidy (Go)</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <select class="form-control" id="go-pull-down">
+                                                <option></option>
+                                                @foreach($transports as $t)
+                                                    <option>{{ $t }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Fee" disabled id="go-price" />
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Expense from escort service</td>
@@ -252,12 +294,14 @@
                     <table class="table">
                         <tbody>
                             <tr>
-                                <td style="width:40%;">Cash</td>
-                                <td><input class="form-control" type="text" value=""></td>
-                            </tr>
-                            <tr>
-                                <td>HCV</td>
-                                <td><input class="form-control" type="text" value=""></td>
+                                <td style="width:40%;">Cash / HCV</td>
+                                <td>
+                                    <select class="form-control" id="case-hcv">
+                                        <option></option>
+                                        <option>Cash</option>
+                                        <option>HCV</option>
+                                    </select>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -282,4 +326,23 @@
 
         </div>
     </div>
+@endsection
+
+@section("bottom_script")
+    <script>
+        $("#come-pull-down").change(function() {
+            if ($(this).val() === "Taxi" || $(this).val() === "Kwoon Chung") {
+                $("#come-price").prop('disabled', false);
+            } else {
+                $("#come-price").prop('disabled', true);
+            }
+        })
+        $("#go-pull-down").change(function() {
+            if ($(this).val() === "Taxi" || $(this).val() === "Kwoon Chung") {
+                $("#go-price").prop('disabled', false);
+            } else {
+                $("#go-price").prop('disabled', true);
+            }
+        })
+    </script>
 @endsection

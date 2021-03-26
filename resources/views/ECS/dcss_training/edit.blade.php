@@ -11,6 +11,17 @@
             </nav>
 
             <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="input-case-number" class="form-label">Case number</label>
+                    <input type="text" class="form-control" id="input-case-number" value="{{ $cases[$case_id]['case_number'] }}" readonly>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="input-applicant" class="form-label">Applicant</label>
+                    <input type="text" class="form-control" id="input-applicant" value="{{ $cases[$case_id]['name'] }}" readonly>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-12 mb-3">
                     <label for="input-date" class="form-label">Date</label>
                     <input type="text" class="form-control" id="input-date" value="2021-02-03">
@@ -207,6 +218,80 @@
 
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
+                    <span>Escort Service</span>
+                </div>
+                <div class="p-3">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td style="width:40%;">Transport subsidy (Come)</td>
+                            <td>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <select class="form-control" id="come-pull-down">
+                                            <option></option>
+                                            @foreach($transports as $t)
+                                                <option value="{{ $t }}">{{ $t }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Fee" disabled id="come-price" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:40%;">Transport subsidy (Go)</td>
+                            <td>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <select class="form-control" id="go-pull-down">
+                                            <option></option>
+                                            @foreach($transports as $t)
+                                                <option>{{ $t }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Fee" disabled id="go-price" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Expense from escort service</td>
+                            <td><input class="form-control" type="text" value=""></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <span>Fee</span>
+                </div>
+                <div class="p-3">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td style="width:40%;">Cash / HCV</td>
+                                <td>
+                                    <select class="form-control" id="case-hcv">
+                                        <option></option>
+                                        <option>Cash</option>
+                                        <option>HCV</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
                     <span>Progress & Recording</span>
                 </div>
                 <div class="p-3">
@@ -224,4 +309,23 @@
 
         </div>
     </div>
+@endsection
+
+@section("bottom_script")
+    <script>
+        $("#come-pull-down").change(function() {
+            if ($(this).val() === "Taxi" || $(this).val() === "Kwoon Chung") {
+                $("#come-price").prop('disabled', false);
+            } else {
+                $("#come-price").prop('disabled', true);
+            }
+        })
+        $("#go-pull-down").change(function() {
+            if ($(this).val() === "Taxi" || $(this).val() === "Kwoon Chung") {
+                $("#go-price").prop('disabled', false);
+            } else {
+                $("#go-price").prop('disabled', true);
+            }
+        })
+    </script>
 @endsection

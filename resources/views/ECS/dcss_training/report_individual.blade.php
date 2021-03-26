@@ -152,11 +152,11 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td>$30<br>(Taxi)</td>
+                            <td>$32<br>(Taxi)</td>
+                            <td>2</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>1</td>
                             <td></td>
                             <td>陳大文</td>
                         </tr>
@@ -183,10 +183,10 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td>$25<br>(KC)</td>
+                            <td>1</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>1</td>
                             <td></td>
                             <td>周浩文</td>
                         </tr>
@@ -213,11 +213,11 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td>$25<br>(KC)</td>
+                            <td>1</td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>1</td>
                             <td>譚家琪</td>
                         </tr>
                     </tbody>

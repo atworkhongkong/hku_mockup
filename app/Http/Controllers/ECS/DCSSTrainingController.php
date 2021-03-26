@@ -21,6 +21,9 @@ class DCSSTrainingController extends Controller
         5 => ['hour' => 65, 'default_hour' => 74],
     ];
     const BASIC = ['phone contact', 'interview', 'home visit', 'group training', 'others'];
+    const TRANSPORTS = [
+        'PLB', 'Taxi', 'Kwoon Chung', 'Walk', 'Other'
+    ];
 
     public function __construct()
     {
@@ -28,6 +31,7 @@ class DCSSTrainingController extends Controller
         View::share('cases', DCSSController::getCases());
         View::share('trainings', self::TRAININGS);
         View::share('basic', self::BASIC);
+        View::share('transports', self::TRANSPORTS);
     }
 
     public function index()
@@ -41,9 +45,10 @@ class DCSSTrainingController extends Controller
         return view('ECS.dcss_training.create', compact('id'));
     }
 
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        return view('ECS.dcss_training.edit');
+        $case_id = $request->get('case_id');
+        return view('ECS.dcss_training.edit', compact('case_id', 'id'));
     }
 
     public function show($id)

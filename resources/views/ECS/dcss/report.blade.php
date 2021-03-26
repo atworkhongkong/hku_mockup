@@ -35,12 +35,14 @@
                         @endfor
                     </select>
 
-                    <label class="sr-only" for="field-month">月份</label>
-                    <select class="form-control mr-2" id="field-month">
-                        @for($i = 1 ; $i <= 12 ; $i++)
-                            <option value="{{ $i }}" {{ $i == 3 ? 'SELECTED' : '' }}>{{ $i }}</option>
-                        @endfor
-                    </select>
+                    @if ($type === 'default_case')
+                        <label class="sr-only" for="field-month">月份</label>
+                        <select class="form-control mr-2" id="field-month">
+                            @for($i = 1 ; $i <= 12 ; $i++)
+                                <option value="{{ $i }}">{{ $i }}</option>
+                            @endfor
+                        </select>
+                    @endif
 
                     <button type="submit" class="btn btn-primary mx-1">搜尋</button>
                 </form>
@@ -48,7 +50,11 @@
         </div>
     </div>
 
-    @if ($type == 'training_session')
-        @include('ECS.dcss_staff_training.report_training_session')
+    @if ($type == 'service_questionnaire')
+        @include('ECS.dcss.report_service_questionnaire')
+    @elseif ($type == 'escort_questionnaire')
+        @include('ECS.dcss.report_escort_questionnaire')
+    @elseif ($type == 'default_case')
+        @include('ECS.dcss.report_default_case')
     @endif
 @endsection

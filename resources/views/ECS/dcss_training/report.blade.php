@@ -13,7 +13,7 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">智友醫社訓練</li>
+                    <li class="breadcrumb-item active">智友醫社統計</li>
                 </ol>
             </nav>
 
@@ -34,7 +34,7 @@
                     @elseif ($type == 'group')
                         <label class="sr-only" for="field-group">組別</label>
                         <input type="text" class="form-control mr-2" id="field-group" placeholder="組別" value="J03">
-                    @elseif ($type == 'case_count' || $type == 'training_count')
+                    @elseif ($type == 'case_count' || $type == 'training_count' || $type == 'transport_subsidy' || $type == 'fee')
                         <label class="sr-only" for="field-year">年份</label>
                         <select class="form-control mr-2" id="field-year">
                             @for($i = date('Y') ; $i >= 2010 ; $i--)
@@ -64,7 +64,13 @@
         @include('ECS.dcss_training.report_case_count')
     @elseif ($type == 'training_count')
         @include('ECS.dcss_training.report_training_count')
+    @elseif ($type == 'training_count')
+        @include('ECS.dcss_training.report_training_count')
     @elseif ($type == 'ZBI')
         @include('ECS.dcss_training.report_ZBI')
+    @elseif ($type == 'transport_subsidy')
+        @include('ECS.dcss_training.report_transport_subsidy')
+    @elseif ($type == 'fee')
+        @include('ECS.dcss_training.report_fee')
     @endif
 @endsection

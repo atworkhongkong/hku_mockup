@@ -25,13 +25,8 @@
 
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <label for="input-staff-id" class="form-label">同工姓名</label>
-                            <select class="form-control" id="input-staff-id">
-                                <option></option>
-                                @foreach($staff as $k => $s)
-                                    <option {{ $staff_training['staff_id'] == $k ? 'SELECTED' : '' }}>{{ $s['chi_name'] }}</option>
-                                @endforeach
-                            </select>
+                            <label for="input-staff-name" class="form-label">同工姓名</label>
+                            <input type="text" class="form-control" id="input-staff-name" value="{{ $staff_training['staff_name'] }}">
                         </div>
                     </div>
 

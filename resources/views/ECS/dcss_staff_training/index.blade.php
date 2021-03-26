@@ -66,7 +66,7 @@
                         <tbody>
                             @foreach($staff_trainings as $k => $v)
                                 <tr>
-                                    <td>{{ $staff[$v['staff_id']]['chi_name'] }}</td>
+                                    <td>{{ $v['staff_name'] }}</td>
                                     <td>{{ $v['training_date'] }}</td>
                                     <td>{{ $v['training_hour'] }}</td>
                                     <td>

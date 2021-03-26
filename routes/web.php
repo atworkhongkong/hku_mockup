@@ -189,6 +189,7 @@ Route::prefix('ecs')->group(function() {
     Route::get('/dcss', [App\Http\Controllers\ECS\DCSSController::class, 'index'])->name('ecs.dcss.index');
     Route::get('/dcss/create', [App\Http\Controllers\ECS\DCSSController::class, 'create'])->name('ecs.dcss.create');
     Route::get('/dcss/{case_id}/edit', [App\Http\Controllers\ECS\DCSSController::class, 'edit'])->name('ecs.dcss.edit');
+    Route::get('/dcss/report', [App\Http\Controllers\ECS\DCSSController::class, 'report'])->name('ecs.dcss.report');
 
     Route::get('/dcss_staff', [App\Http\Controllers\ECS\DCSSStaffController::class, 'index'])->name('ecs.dcss_staff.index');
     Route::get('/dcss_staff/create', [App\Http\Controllers\ECS\DCSSStaffController::class, 'create'])->name('ecs.dcss_staff.create');

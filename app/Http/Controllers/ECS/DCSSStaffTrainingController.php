@@ -14,10 +14,10 @@ class DCSSStaffTrainingController extends Controller
         2 => '南區長者地區中心',
     ];
     const STAFF_TRAININGS = [
-        1 => ['staff_id' => 1, 'training_date' => '2021-03-24', 'training_hour' => 2, 'start_time' => '10:00', 'end_time' => '12:00', 'organizer' => '香港認知障礙症協會', 'activity_name' => '認知障礙症與認知刺激活動概念與設計'],
-        2 => ['staff_id' => 1, 'training_date' => '2021-03-22', 'training_hour' => 2.5, 'start_time' => '9:00', 'end_time' => '11:30', 'organizer' => '香港認知障礙症協會', 'activity_name' => '認知障礙症與認知刺激活動概念與設計'],
-        3 => ['staff_id' => 1, 'training_date' => '2021-03-18', 'training_hour' => 2, 'start_time' => '10:00', 'end_time' => '12:00', 'organizer' => '香港認知障礙症協會', 'activity_name' => '認知障礙症與認知刺激活動概念與設計'],
-        4 => ['staff_id' => 2, 'training_date' => '2021-03-24', 'training_hour' => 2.5, 'start_time' => '9:00', 'end_time' => '11:30', 'organizer' => '香港認知障礙症協會', 'activity_name' => '認知障礙症與認知刺激活動概念與設計'],
+        1 => ['staff_name' => "張文新", 'training_date' => '2021-03-24', 'training_hour' => 2, 'start_time' => '10:00', 'end_time' => '12:00', 'organizer' => '香港認知障礙症協會', 'activity_name' => '認知障礙症與認知刺激活動概念與設計'],
+        2 => ['staff_name' => "胡劍", 'training_date' => '2021-03-22', 'training_hour' => 2.5, 'start_time' => '9:00', 'end_time' => '11:30', 'organizer' => '香港認知障礙症協會', 'activity_name' => '認知障礙症與認知刺激活動概念與設計'],
+        3 => ['staff_name' => "趙浩文", 'training_date' => '2021-03-18', 'training_hour' => 2, 'start_time' => '10:00', 'end_time' => '12:00', 'organizer' => '香港認知障礙症協會', 'activity_name' => '認知障礙症與認知刺激活動概念與設計'],
+        4 => ['staff_name' => "李佳怡", 'training_date' => '2021-03-24', 'training_hour' => 2.5, 'start_time' => '9:00', 'end_time' => '11:30', 'organizer' => '香港認知障礙症協會', 'activity_name' => '認知障礙症與認知刺激活動概念與設計'],
     ];
 
     public function __construct()
