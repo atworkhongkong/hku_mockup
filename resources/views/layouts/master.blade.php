@@ -106,8 +106,31 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="notification" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fad fa-bell" style="font-size:1.5rem;"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="notification" style="min-width:250px; margin-left:-200px;">
+                            <li style="padding: 5px 10px; font-size:0.9rem; text-align:right;">
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#create-notification">+ 即時傳遞通知</button>
+                            </li>
+                            <li class="notification-item">
+                                <div onclick="location.href='/ecs/dcss_staff_training/1/edit'">
+                                    <div>同事A︰有新的轉介個案</div>
+                                    <p class="text-right" style="font-size:0.8rem;">2021-03-18</p>
+                                </div>
+                            </li>
+                            <li class="notification-item" >
+                                <div onclick="location.href='/ecs/dcss_staff_training/1/edit'">
+                                    <div>同事A︰個案已結束。</div>
+                                    <p class="text-right" style="font-size:0.8rem;">2021-03-16</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
+
+                @include('common.component.create_notification')
             </div>
         </div>
     </nav>
