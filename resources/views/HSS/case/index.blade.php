@@ -70,6 +70,40 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-auto mb-3">
+                                    <label for="input-teams">所屬單位</label>
+                                    <select id="input-teams" class="form-control">
+                                        <option value=""></option>
+                                        @foreach($teams as $k => $v)
+                                            <option value="{{ $k }}">{{ $v }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <label for="input-address">地址</label>
+                                    <input type="text" class="form-control" id="input-address">
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <label for="input-family-count">同住的家人或親戚的數目</label>
+                                    <select id="input-family-count" class="form-control">
+                                        <option></option>
+                                        @foreach(range(0, 20) as $v)
+                                            <option value="{{ $v }}">{{ $v }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <label for="input-charge-level">收費級別</label>
+                                    <select id="input-charge-level" class="form-control">
+                                        <option></option>
+                                        @foreach(range(1, 3) as $v)
+                                            <option value="{{ $v }}">{{ $v }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>

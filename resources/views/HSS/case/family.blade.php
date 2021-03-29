@@ -2,8 +2,13 @@
     <form>
         <div class="row">
             <div class="col-12 mb-3">
-                <label for="input-family-member" class="form-label">與申請人同住的家人或親戚的數目</label>
-                <input type="text" class="form-control" id="input-family-member">
+                <label for="input-family-count" class="form-label">與申請人同住的家人或親戚的數目</label>
+                <select id="input-family-count" class="form-control">
+                    <option></option>
+                    @foreach(range(0, 20) as $v)
+                        <option value="{{ $v }}">{{ $v }}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
 

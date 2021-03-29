@@ -18,6 +18,17 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="input-recording-type" class="form-label">紀錄類型</label>
+                    <select id="input-recording-type" class="form-control mr-2" name="team">
+                        <option value=""></option>
+                        <option value="" {{ $recording['recording_type'] == 'referral' ? 'SELECTED' : '' }}>轉介紀錄</option>
+                        <option value="" {{ $recording['recording_type'] == 'case' ? 'SELECTED' : '' }}>個案紀錄</option>
+                    </select>
+                </div>
+            </div>
+
             @if ($recording)
                 <div class="row">
                     <div class="col-12 mb-3">

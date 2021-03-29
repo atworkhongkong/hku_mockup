@@ -10,39 +10,39 @@
                 </ol>
             </nav>
 
-            <div class="card mb-4">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <span>個案資料</span>
-                </div>
-                <div class="p-3">
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="input-case_number" class="form-label">個案編號</label>
-                            <input type="text" class="form-control" id="input-case_number" value="{{ $case['case_number'] }}" readonly>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="input-create_date" class="form-label">開檔日期</label>
-                            <input type="text" class="form-control" id="input-create_date" value="{{ $case['create_date'] }}" readonly>
+            <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
+                <form class="form" action="/hss/meal" method="GET">
+                    <div class="row mb-2">
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-name" >紀錄</label>
+                            <select id="field-recording-type" class="form-control mr-2" name="team">
+                                <option value=""></option>
+                                <option value="">轉介紀錄</option>
+                                <option value="">個案紀錄</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="input-chi-name" class="form-label">中文姓名</label>
-                            <input type="text" class="form-control" id="input-chi-name" value="{{ $case['name'] }}" readonly>
+                    <div class="row mb-2">
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-start-date">開始日期</label>
+                            <input type="date" id="field-start-date" class="form-control" />
                         </div>
-                        <div class="col-md-6">
-                            <label for="input-eng-name" class="form-label">英文姓名</label>
-                            <input type="text" class="form-control" id="input-eng-name" value="xxx xxx xxx" readonly>
+                        <div class="col-auto px-0 pt-2">
+                            至
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-end-date">結束日期</label>
+                            <input type="date" id="field-end-date" class="form-control" />
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-12">
-                            <a href="/hss/case/{{ $case_id }}/edit" target="_blank">詳細資料</a>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">搜尋</button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
 
             <div class="row">
@@ -50,7 +50,7 @@
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>找到{{ count($recordings) }}筆記錄</span>
                         <div>
-                            <a href="/hss/case_recording/create?case_id={{ $case_id }}" class="btn btn-secondary">新增個案紀錄</a>
+                            <a href="/hss/case_recording/create?case_id={{ $case_id }}" class="btn btn-secondary">新增轉介/個案紀錄</a>
                         </div>
                     </div>
                     <table class="table table-bordered">
@@ -58,6 +58,7 @@
                             <tr>
                                 <th scope="col">日期</th>
                                 <th scope="col">負責人</th>
+                                <th scope="col">紀錄類型</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                         </thead>
@@ -66,6 +67,7 @@
                                 <tr>
                                     <td>{{ $v['create_date'] }}</td>
                                     <td>{{ $v['created_by'] }}</td>
+                                    <td>{{ $recording_types[$v['recording_type']] }}</td>
                                     <td>
                                         <a class="btn btn-primary" href="/hss/case_recording/{{ $k }}/edit?case_id={{ $case_id }}">編輯</a>
                                     </td>

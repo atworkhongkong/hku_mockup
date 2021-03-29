@@ -39,7 +39,16 @@
         </div>
 
         <div class="row">
-            <div class="col-12 mb-3">
+            <div class="col-md-6 mb-3">
+                <label for="input-teams" class="form-label">所屬單位</label>
+                <select id="input-teams" class="form-control">
+                    <option value=""></option>
+                    @foreach($teams as $k => $v)
+                        <option value="{{ $k }}">{{ $v }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <div class="col-md-6 mb-3">
                 <label for="input-social-worker">跟進社工</label>
                 <input type="text" class="form-control" id="input-social-worker" value="{{ isset($case) ? $case['sw'] : '' }}">
             </div>
@@ -63,10 +72,23 @@
             </div>
         </div>
 
+        @isset($case)
+        <div class="row">
+            <div class="col-12 mb-3">
+                <label for="input-waiting-status">服務輪候</label>
+                <select id="input-waiting-status" class="form-control mr-1" >
+                    @foreach($waiting_statuses as $k => $v)
+                        <option value="{{ $k }}">{{ $v }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+        @endisset
+
         <div class="row">
             <div class="col-12 mb-3">
                 <label for="input-status">狀態</label>
-                <select id="input-status" class="form-control mr-1" name="center" {{ !isset($case) ? 'DISABLED' : '' }}>
+                <select id="input-status" class="form-control mr-1" {{ !isset($case) ? 'DISABLED' : '' }}>
                     @foreach($statuses as $k => $v)
                         <option value="{{ $k }}" {{ !isset($case) && $k == 'not_process' ? 'SELECTED' : '' }}>{{ $v }}</option>
                     @endforeach

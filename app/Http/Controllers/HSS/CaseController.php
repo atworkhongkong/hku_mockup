@@ -17,6 +17,9 @@ class CaseController extends Controller
         'processing' => '申請處理中',
         'closed' => '結束個案',
     ];
+    const WAITING_STATUSES = [
+        'T' => '服務輪候中', 'N' => '未有服務輪候'
+    ];
     const MARRIAGE_STATUSES = ['獨身', '已婚', '離婚', '喪偶'];
     const EDUCATIONAL_LEVELS = ['文盲', '略懂字', '小學', '中學', '大專或以上'];
     const CASES = [
@@ -118,6 +121,7 @@ class CaseController extends Controller
         View::share('application_methods', self::APPLICATION_METHODS);
         View::share('teams', self::TEAMS);
         View::share('statuses', self::STATUSES);
+        View::share('waiting_statuses', self::WAITING_STATUSES);
         View::share('cases', self::CASES);
         View::share('marriage_statuses', self::MARRIAGE_STATUSES);
         View::share('education_levels', self::EDUCATIONAL_LEVELS);

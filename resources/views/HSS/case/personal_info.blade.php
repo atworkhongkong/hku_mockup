@@ -85,15 +85,6 @@
                     @endforeach
                 </select>
             </div>
-            <div class="col-md-6 mb-3">
-                <label for="input-teams" class="form-label">所屬單位</label>
-                <select id="input-teams" class="form-control">
-                    <option value=""></option>
-                    @foreach($teams as $k => $v)
-                        <option value="{{ $k }}">{{ $v }}</option>
-                    @endforeach
-                </select>
-            </div>
         </div>
 
         <div class="row">

@@ -13,8 +13,19 @@
 
             <div class="row">
                 <div class="col-12 mb-3">
-                    <label for="input-create_date" class="form-label">日期</label>
-                    <input type="date" class="form-control" id="input-create_date" value="{{ date('Y-m-d') }}" readonly>
+                    <label for="input-create-date" class="form-label">日期</label>
+                    <input type="date" class="form-control" id="input-create-date" value="{{ date('Y-m-d') }}" readonly>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="input-recording-type" class="form-label">紀錄類型</label>
+                    <select id="input-recording-type" class="form-control mr-2" name="team">
+                        <option value=""></option>
+                        <option value="">轉介紀錄</option>
+                        <option value="">個案紀錄</option>
+                    </select>
                 </div>
             </div>
 

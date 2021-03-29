@@ -66,12 +66,21 @@
 
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label for="input-level" class="form-label">收費級別</label>
-                <input type="text" class="form-control" id="input-level">
+                <label for="input-charge-level" class="form-label">收費級別</label>
+                <select id="input-charge-level" class="form-control">
+                    <option></option>
+                    @foreach(range(1, 3) as $v)
+                        <option value="{{ $v }}">{{ $v }}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="input-payment-method" class="form-label">繳費方式</label>
-                <input type="text" class="form-control" id="input-payment-method">
+                <select id="input-charge-level" class="form-control">
+                    <option></option>
+                    <option value="">現金</option>
+                    <option value="">支票</option>
+                </select>
             </div>
         </div>
 
