@@ -308,6 +308,11 @@
                 </div>
             </div>
 
+            <div class="alert alert-primary" role="alert">
+                To Gail:<br>
+                想問下Fee這部份現在是否正確? 定還是須要兩個pull down? 一個係 Come, 一個係 Go
+            </div>
+
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <span>Progress & Recording</span>

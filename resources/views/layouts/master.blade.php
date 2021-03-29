@@ -114,6 +114,7 @@
                             <li style="padding: 5px 10px; font-size:0.9rem; text-align:right;">
                                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#create-notification">+ 即時傳遞通知</button>
                             </li>
+                            <li class="p-2" style="background-color:#E9ECEF; font-size:0.9rem;">全部訊息</li>
                             <li class="notification-item">
                                 <div onclick="location.href='/ecs/dcss_staff_training/1/edit'">
                                     <div>同事A︰有新的轉介個案</div>

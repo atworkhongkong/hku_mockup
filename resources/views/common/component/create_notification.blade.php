@@ -40,12 +40,12 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="message-text" class="col-form-label">訊息:</label>
-                    <textarea class="form-control" id="message-text">有新轉介個案，請留意。</textarea>
+                    <label for="message-text" class="col-form-label">訊息: (50字以下)</label>
+                    <textarea class="form-control" id="message-text"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="message-text" class="col-form-label">訊息:</label>
-                    <input type="text" class="form-control" placeholder="訊息連結至">
+                    <label for="message-text" class="col-form-label">URL:</label>
+                    <input type="text" class="form-control">
                 </div>
             </div>
             <div class="modal-footer">
