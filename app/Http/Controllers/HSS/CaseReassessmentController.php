@@ -15,14 +15,14 @@ class CaseReassessmentController extends Controller
             5 => ['assessment_number' => 1, 'create_date' => '2019-01-04', 'created_by' => '社工A'],
         ],
         3 => [
-            4 => ['assessment_number' => 2, 'create_date' => '2020-01-18', 'created_by' => '社工B'],
-            3 => ['assessment_number' => 1, 'create_date' => '2019-06-02', 'created_by' => '社工B'],
+            4 => ['assessment_number' => 2, 'create_date' => '2019-06-01', 'created_by' => '社工B'],
+            3 => ['assessment_number' => 1, 'create_date' => '2019-01-10', 'created_by' => '社工B'],
         ],
         2 => [
-            2 => ['assessment_number' => 1, 'create_date' => '2020-02-05', 'created_by' => '社工A'],
+            2 => ['assessment_number' => 1, 'create_date' => '2019-04-22', 'created_by' => '社工A'],
         ],
         1 => [
-            1 => ['assessment_number' => 1, 'create_date' => '2020-01-18', 'created_by' => '社工C'],
+            1 => ['assessment_number' => 1, 'create_date' => '2019-02-15', 'created_by' => '社工C'],
         ],
     ];
     const OPTIONS = [

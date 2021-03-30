@@ -13,6 +13,14 @@
                 <form class="form" action="/ecs/dcss" method="GET" onsubmit="return false;">
                     <div class="row mb-2">
                         <div class="col-auto pr-1">
+                            <label class="sr-only" for="input-teams">所屬單位</label>
+                            <select id="input-teams" class="form-control">
+                                @foreach($teams as $k => $v)
+                                    <option value="{{ $k }}">{{ $v }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
                             <label class="sr-only" for="field-type">類別</label>
                             <select id="field-type" class="form-control mr-1" name="center">
                                 <option value=""></option>
@@ -20,6 +28,7 @@
                                 <option value="name">申請人姓名</option>
                                 <option value="hkid">身份證編號</option>
                                 <option value="mobile">電話號碼</option>
+                                <option value="address">地址</option>
                             </select>
                         </div>
 
@@ -30,7 +39,7 @@
 
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-status">狀態</label>
-                            <select id="field-type" class="form-control mr-1" name="center">
+                            <select id="field-type" class="form-control mr-1">
                                 @foreach($statuses as $k => $v)
                                     <option value="{{ $k }}">{{ $v }}</option>
                                 @endforeach
@@ -46,14 +55,14 @@
                     <div class="collapse mt-2" id="more-search" style="width:100%;">
                         <div class="card card-body">
                             <div class="row">
-                                <div class="col-auto mb-3">
+                                <div class="col-auto pr-1">
                                     <label for="field-need-review">個案檢討</label>
                                     <select class="form-control" id="field-need-review">
                                         <option></option>
                                         <option value="1">到期檢討</option>
                                     </select>
                                 </div>
-                                <div class="col-auto mb-3">
+                                <div class="col-auto pr-1">
                                     <label for="input-living-status" class="form-label">個案申請日期</label>
                                     <div class="row mb-2 g-0">
                                         <div class="col-auto">
@@ -72,33 +81,29 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-auto mb-3">
-                                    <label for="input-teams">所屬單位</label>
-                                    <select id="input-teams" class="form-control">
-                                        <option value=""></option>
-                                        @foreach($teams as $k => $v)
-                                            <option value="{{ $k }}">{{ $v }}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                                <div class="col-auto mb-3">
-                                    <label for="input-address">地址</label>
-                                    <input type="text" class="form-control" id="input-address">
-                                </div>
-                                <div class="col-auto mb-3">
-                                    <label for="input-family-count">同住的家人或親戚的數目</label>
-                                    <select id="input-family-count" class="form-control">
+                                <div class="col-auto pr-1">
+                                    <label for="field-waiting">輪候服務</label>
+                                    <select id="field-waiting" class="form-control mr-1">
                                         <option></option>
-                                        @foreach(range(0, 20) as $v)
-                                            <option value="{{ $v }}">{{ $v }}</option>
+                                        @foreach($waiting_statuses as $s)
+                                            <option value="{{ $s }}">{{ $s }}</option>
                                         @endforeach
                                     </select>
                                 </div>
-                                <div class="col-auto mb-3">
+                                <div class="col-auto pr-1">
                                     <label for="input-charge-level">收費級別</label>
                                     <select id="input-charge-level" class="form-control">
                                         <option></option>
                                         @foreach(range(1, 3) as $v)
+                                            <option value="{{ $v }}">{{ $v }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col-auto pr-1">
+                                    <label for="input-family-count">同住的家人或親戚的數目</label>
+                                    <select id="input-family-count" class="form-control">
+                                        <option></option>
+                                        @foreach(range(0, 20) as $v)
                                             <option value="{{ $v }}">{{ $v }}</option>
                                         @endforeach
                                     </select>

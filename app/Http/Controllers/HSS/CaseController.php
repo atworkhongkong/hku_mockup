@@ -23,10 +23,10 @@ class CaseController extends Controller
     const MARRIAGE_STATUSES = ['獨身', '已婚', '離婚', '喪偶'];
     const EDUCATIONAL_LEVELS = ['文盲', '略懂字', '小學', '中學', '大專或以上'];
     const CASES = [
-        4 => ['case_number' => '108259', 'name' => '李雅辛', 'gender' => 'M', 'dob' => '1945-02-08', 'create_date' => '2020-01-10', 'last_review_date' => '', 'status' => 'active', 'sw' => '社工A'],
+        4 => ['case_number' => '108259', 'name' => '李雅辛', 'gender' => 'M', 'dob' => '1945-02-08', 'create_date' => '2019-07-20', 'last_review_date' => '2020-01-01', 'status' => 'active', 'sw' => '社工A'],
         3 => ['case_number' => '108160', 'name' => '傅勝偉', 'gender' => 'M', 'dob' => '1942-12-25', 'create_date' => '2019-01-05', 'last_review_date' => '2019-06-01', 'status' => 'active', 'sw' => '社工B'],
-        2 => ['case_number' => '108052', 'name' => '李孟宸', 'gender' => 'M', 'dob' => '1947-05-11', 'create_date' => '2018-10-02', 'last_review_date' => '2019-09-22', 'status' => 'active', 'sw' => '社工A'],
-        1 => ['case_number' => '106058', 'name' => '何南珠', 'gender' => 'F', 'dob' => '1946-10-28', 'create_date' => '2018-08-08', 'last_review_date' => '2019-07-15', 'status' => 'active', 'sw' => '社工C'],
+        2 => ['case_number' => '108052', 'name' => '李孟宸', 'gender' => 'M', 'dob' => '1947-05-11', 'create_date' => '2018-10-02', 'last_review_date' => '2019-04-22', 'status' => 'active', 'sw' => '社工A'],
+        1 => ['case_number' => '106058', 'name' => '何南珠', 'gender' => 'F', 'dob' => '1946-10-28', 'create_date' => '2018-08-08', 'last_review_date' => '2019-02-15', 'status' => 'active', 'sw' => '社工C'],
     ];
     const CLOSE_REASONS = [
         '自我照顧能力改善', '非家居照顧服務所能提供', '長期留醫', '已有人照顧', '與服務使用者失去聯絡', '服務使用者遷離服務地區範圍', '入住院舍',

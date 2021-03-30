@@ -57,6 +57,6 @@ class CaseRecordingController extends Controller
         $cases = CaseController::getCases();
         $case = $cases[$case_id];
         $recording = self::RECORDINGS[$case_id][$recording_id];
-        return view('HSS.case_recording.edit', compact('case_id', 'recording', 'case'));
+        return view('HSS.case_recording.edit', compact('case_id', 'recording', 'case', 'recording_id'));
     }
 }

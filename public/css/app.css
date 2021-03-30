@@ -9974,6 +9974,10 @@ body {
   font-family: noto sans tc, heiti tc, 微軟正黑體, Microsoft JhengHei, roboto sans, Helvetica, Arial, sans-serif;
 }
 
+.tab-content {
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
 .notification-item {
   padding: 5px 10px;
   font-size: 0.9rem;

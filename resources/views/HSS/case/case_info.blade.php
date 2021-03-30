@@ -57,17 +57,17 @@
         <div class="row">
             <div class="col-12 mb-3">
                 <label for="input-create-date">申請日期</label>
-                <input type="text" class="form-control" id="input-create-date" value="{{ date('Y-m-d') }}" readonly>
+                <input type="text" class="form-control" id="input-create-date" value="2021-03-01 09:27" readonly>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label for="input-update-date">上次更改日期</label>
-                <input type="text" class="form-control" id="input-update-date" value="2021-03-20" readonly>
+                <label for="input-update-date">上次更新日期</label>
+                <input type="text" class="form-control" id="input-update-date" value="2021-03-20 10:25" readonly>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="input-updated-by">上次更改同事</label>
+                <label for="input-updated-by">上次更新同事</label>
                 <input type="text" class="form-control" id="input-updated-by" value="同事A" readonly>
             </div>
         </div>
@@ -75,7 +75,7 @@
         @isset($case)
         <div class="row">
             <div class="col-12 mb-3">
-                <label for="input-waiting-status">服務輪候</label>
+                <label for="input-waiting-status">輪候服務</label>
                 <select id="input-waiting-status" class="form-control mr-1" >
                     @foreach($waiting_statuses as $k => $v)
                         <option value="{{ $k }}">{{ $v }}</option>
@@ -118,6 +118,7 @@
         <div class="row">
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">提 交</button>
+                <button type="submit" class="btn btn-danger">刪 除</button>
             </div>
         </div>
     </form>

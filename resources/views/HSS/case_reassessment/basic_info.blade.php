@@ -55,6 +55,7 @@
         <div class="row">
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">提 交</button>
+                <button type="submit" class="btn btn-danger">刪 除</button>
             </div>
         </div>
     </form>
