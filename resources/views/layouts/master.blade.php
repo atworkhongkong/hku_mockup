@@ -108,7 +108,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="notification" data-toggle="dropdown" aria-expanded="false">
-                            <i class="fad fa-bell" style="font-size:1.5rem;"></i>
+                            <i class="far fa-bell" style="font-size:1.5rem;"></i>
                         </a>
                         <ul class="dropdown-menu pb-0" aria-labelledby="notification" style="min-width:250px; margin-left:-200px; box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);">
                             <li style="padding: 5px 10px; font-size:0.9rem; text-align:right;">
