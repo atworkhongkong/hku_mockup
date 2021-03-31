@@ -110,22 +110,24 @@
                         <a class="nav-link" href="#" id="notification" data-toggle="dropdown" aria-expanded="false">
                             <i class="far fa-bell" style="font-size:1.5rem;"></i>
                         </a>
-                        <ul class="dropdown-menu pb-0" aria-labelledby="notification" style="min-width:250px; margin-left:-200px; box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);">
+                        <ul class="dropdown-menu pb-0" aria-labelledby="notification" style="min-width:280px; margin-left:-250px; box-shadow:3px 3px 7px rgba(0, 0, 0, 0.5);">
                             <li style="padding: 5px 10px; font-size:0.9rem; text-align:right;">
                                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#create-notification">+ 即時傳遞通知</button>
                             </li>
                             <li class="p-2" style="background-color:#E9ECEF; font-size:0.9rem;">全部訊息</li>
-                            <li class="notification-item">
-                                <div onclick="location.href='/ecs/dcss_staff_training/1/edit'">
-                                    <div class="mb-2">同事A︰有新的轉介個案</div>
-                                    <p class="text-right mb-1" style="font-size:0.8rem;">2021-03-18</p>
-                                </div>
-                            </li>
-                            <li class="notification-item" >
-                                <div onclick="location.href='/ecs/dcss_staff_training/1/edit'">
-                                    <div class="mb-2">同事A︰個案已結束。</div>
-                                    <p class="text-right mb-1" style="font-size:0.8rem;"><i class="fas fa-check-circle"></i> 2021-03-16</p>
-                                </div>
+                            <li>
+                                <ul style="max-height:380px; overflow-y:scroll; list-style:none; margin:0; padding:0; background-color:#E9ECEF;">
+                                    @foreach($notifications as $n)
+                                        <li class="notification-item" style="background-color:white; margin:4px; border-radius:5px;">
+                                            <div onclick="location.href='/ecs/dcss_staff_training/1/edit'">
+                                                <div class="mb-2">{{ $n['from'] }}︰{{ $n['message'] }}</div>
+                                                <p class="text-right mb-1" style="font-size:0.8rem;">
+                                                    {!! $n['read'] ? '<i class="fas fa-check-circle"></i>' : '' !!} {{ $n['create_date'] }}
+                                                </p>
+                                            </div>
+                                        </li>
+                                    @endforeach
+                                </ul>
                             </li>
                         </ul>
                     </li>
