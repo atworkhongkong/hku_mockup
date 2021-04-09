@@ -7,3 +7,12 @@
 .notification-item:hover {
     background-color: #F8F8F8;
 }
+.nav-link {
+    position: relative;
+}
+.navbar-badge {
+    font-size: 0.6rem;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}

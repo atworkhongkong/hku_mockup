@@ -96,6 +96,7 @@
                             <li><a class="dropdown-item" href="/ecs/dcss_training/report">智友醫社訓練統計</a></li>
                             <!--<li><a class="dropdown-item" href="/ecs/dcss_staff">智友醫社同工</a></li>-->
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/dcss_staff_training">智友醫社同工訓練</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/ecs/vital_sign">生命表徵</a></li>
                             <li><a class="dropdown-item" href="/ecs/report/activity_income">活動收費總結表</a></li>
                             <li><a class="dropdown-item" href="/ecs/report/daily_income">每日收入</a></li>
                             <li><a class="dropdown-item" href="/ecs/report/invoice">單據</a></li>
@@ -109,6 +110,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="notification" data-toggle="dropdown" aria-expanded="false">
                             <i class="far fa-bell" style="font-size:1.5rem;"></i>
+                            <span class="badge badge-warning navbar-badge">3</span>
                         </a>
                         <ul class="dropdown-menu pb-0" aria-labelledby="notification" style="min-width:280px; margin-left:-250px; box-shadow:3px 3px 7px rgba(0, 0, 0, 0.5);">
                             <li style="padding: 5px 10px; font-size:0.9rem; text-align:right;">

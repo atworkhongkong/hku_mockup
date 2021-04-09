@@ -206,4 +206,8 @@ Route::prefix('ecs')->group(function() {
     Route::get('/dcss_training/{case_id}', [App\Http\Controllers\ECS\DCSSTrainingController::class, 'show'])->name('ecs.dcss_training.show');
     Route::get('/dcss_training/{case_id}/edit', [App\Http\Controllers\ECS\DCSSTrainingController::class, 'edit'])->name('ecs.dcss_training.edit');
     Route::get('/dcss_training/{case_id}/edit_icp', [App\Http\Controllers\ECS\DCSSTrainingController::class, 'edit_icp'])->name('ecs.dcss_training.edit_icp');
+
+    Route::get('vital_sign', [App\Http\Controllers\ECS\VitalSignController::class, 'index'])->name('ecs.vital_sign.index');
+    Route::get('vital_sign/create', [App\Http\Controllers\ECS\VitalSignController::class, 'create'])->name('ecs.vital_sign.create');
+    Route::get('vital_sign/{id}/edit', [App\Http\Controllers\ECS\VitalSignController::class, 'edit'])->name('ecs.vital_sign.edit');
 });
