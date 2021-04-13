@@ -75,7 +75,7 @@
                             <tr>
                                 <th scope="col" style="width:15%;">日期</th>
                                 <th scope="col">血壓(mm Hg)</th>
-                                <th scope="col">心跳</th>
+                                <th scope="col">心跳(bpm)</th>
                                 <th scope="col">身高(cm)</th>
                                 <th scope="col">體重(kg)</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>

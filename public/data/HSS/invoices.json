@@ -1,0 +1,2491 @@
+{
+    "total": 245,
+    "per_page": 50,
+    "current_page": 1,
+    "last_page": 1,
+    "from": 1,
+    "to": 245,
+    "year": 2020,
+    "month": 10,
+    "total_fee": "76,661.5",
+    "non_receive": "513.0",
+    "service": "75,099.5",
+    "car_rental": "1,049.0",
+    "transportation": "0.0",
+    "gross_fee": "76,661.5",
+    "gross_non_receive": "513.0",
+    "gross_service": "75,099.5",
+    "gross_car_rental": "1,049.0",
+    "gross_transportation": "0.0",
+    "data": [
+        {
+            "invoice_number": "88385",
+            "name": "",
+            "fee": "20.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88386",
+            "name": "黃滿林",
+            "fee": "60.2",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88387",
+            "name": "",
+            "fee": "42.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88388",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88389",
+            "name": "鄭帶喜",
+            "fee": "260.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88390",
+            "name": "黃滿林",
+            "fee": "33.3",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88391",
+            "name": "",
+            "fee": "20.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88392",
+            "name": "羅國強",
+            "fee": "65.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88393",
+            "name": "何麗珊",
+            "fee": "65.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88394",
+            "name": "楊翠玉",
+            "fee": "171.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88395",
+            "name": "盧初四",
+            "fee": "65.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88396",
+            "name": "梁永雄",
+            "fee": "19.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88397",
+            "name": "郭耀輝",
+            "fee": "38.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88398",
+            "name": "趙崇輝",
+            "fee": "26.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88399",
+            "name": "朱培基",
+            "fee": "26.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88400",
+            "name": "麥志平",
+            "fee": "66.6",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88401",
+            "name": "梁永雄",
+            "fee": "76.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88402",
+            "name": "郭耀輝",
+            "fee": "190.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88403",
+            "name": "趙崇輝",
+            "fee": "135.5",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88404",
+            "name": "朱培基",
+            "fee": "149.3",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88405",
+            "name": "麥志平",
+            "fee": "95.3",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88406",
+            "name": "",
+            "fee": "45.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88407",
+            "name": "李玉英",
+            "fee": "13.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88408",
+            "name": "",
+            "fee": "42.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88409",
+            "name": "",
+            "fee": "20.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88410",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88411",
+            "name": "何連好",
+            "fee": "38.0",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88412",
+            "name": "林慧容",
+            "fee": "817.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88413",
+            "name": "李并蘭",
+            "fee": "1,491.5",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88414",
+            "name": "何妙娟",
+            "fee": "475.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88415",
+            "name": "簡鳳燕",
+            "fee": "399.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88416",
+            "name": "招惠萍",
+            "fee": "342.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88417",
+            "name": "譚運金",
+            "fee": "285.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88418",
+            "name": "伍永怡",
+            "fee": "741.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88419",
+            "name": "江少玲",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88420",
+            "name": "梁玉卿",
+            "fee": "399.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88421",
+            "name": "何月嫦",
+            "fee": "456.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88422",
+            "name": "梁瑞蘭",
+            "fee": "171.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88423",
+            "name": "黎國威",
+            "fee": "380.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88424",
+            "name": "陳景良",
+            "fee": "741.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88425",
+            "name": "傅景嫻",
+            "fee": "741.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88426",
+            "name": "鄺更有",
+            "fee": "228.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88427",
+            "name": "陳愛蓮",
+            "fee": "228.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88428",
+            "name": "沈舜娥",
+            "fee": "380.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88429",
+            "name": "梁蕙琼",
+            "fee": "608.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88430",
+            "name": "嚴美英",
+            "fee": "494.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88431",
+            "name": "陳玉英",
+            "fee": "893.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88432",
+            "name": "蕭昆明",
+            "fee": "494.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88433",
+            "name": "何錦",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88434",
+            "name": "陳旺娣",
+            "fee": "361.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88435",
+            "name": "陳黎福妹",
+            "fee": "380.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88436",
+            "name": "李佩嬋",
+            "fee": "741.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88437",
+            "name": "鍾美玉",
+            "fee": "779.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88438",
+            "name": "蔡賽琴",
+            "fee": "380.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88439",
+            "name": "徐綺芬",
+            "fee": "475.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88440",
+            "name": "張大妹",
+            "fee": "475.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88441",
+            "name": "陳樹槐",
+            "fee": "266.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88442",
+            "name": "劉炳",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88443",
+            "name": "梁昌榮",
+            "fee": "285.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88444",
+            "name": "秦玉堃",
+            "fee": "912.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88445",
+            "name": "吳有權",
+            "fee": "304.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88446",
+            "name": "秦祖祐",
+            "fee": "665.8",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88447",
+            "name": "李合英",
+            "fee": "304.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88448",
+            "name": "吳東霖",
+            "fee": "637.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88449",
+            "name": "袁炳強",
+            "fee": "816.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88450",
+            "name": "陳婉卿",
+            "fee": "663.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88451",
+            "name": "周瑞庭",
+            "fee": "312.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88452",
+            "name": "于俊蘭",
+            "fee": "494.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88453",
+            "name": "陳桂蓮",
+            "fee": "646.0",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88454",
+            "name": "胡瑞香",
+            "fee": "779.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88455",
+            "name": "陳興華",
+            "fee": "779.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88456",
+            "name": "鄔紹昌",
+            "fee": "950.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88457",
+            "name": "李麗琼",
+            "fee": "507.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88458",
+            "name": "徐高",
+            "fee": "456.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88459",
+            "name": "關歡",
+            "fee": "494.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88460",
+            "name": "葉秀連",
+            "fee": "437.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": null
+        },
+        {
+            "invoice_number": "88461",
+            "name": "卓發",
+            "fee": "361.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88462",
+            "name": "黃達成",
+            "fee": "893.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88463",
+            "name": "劉文",
+            "fee": "456.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88464",
+            "name": "林俊",
+            "fee": "855.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88465",
+            "name": "陳少蘭",
+            "fee": "380.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88466",
+            "name": "樂梅芳",
+            "fee": "380.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88467",
+            "name": "盧慶滿",
+            "fee": "475.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88468",
+            "name": "潘雅君",
+            "fee": "912.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88469",
+            "name": "顏源亮",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88470",
+            "name": "張碧賢",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88471",
+            "name": "張文香",
+            "fee": "320.5",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88472",
+            "name": "李觀蘭",
+            "fee": "5.5",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88473",
+            "name": "鄧耀佳",
+            "fee": "325.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88474",
+            "name": "何綺珊",
+            "fee": "310.6",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88475",
+            "name": "鄺若蓉",
+            "fee": "96.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88476",
+            "name": "歐巧仙",
+            "fee": "663.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88477",
+            "name": "盧容妹",
+            "fee": "285.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88478",
+            "name": "WADHWANI, DOLLY LAL",
+            "fee": "206.7",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88479",
+            "name": "陸思敏",
+            "fee": "855.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88480",
+            "name": "施能雄",
+            "fee": "893.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88481",
+            "name": "羅金福",
+            "fee": "369.6",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88482",
+            "name": "黃錦泉",
+            "fee": "400.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88483",
+            "name": "陳國樑",
+            "fee": "312.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88484",
+            "name": "古樹華",
+            "fee": "533.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88485",
+            "name": "宋麗群",
+            "fee": "532.0",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88486",
+            "name": "李美惠",
+            "fee": "533.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88487",
+            "name": "胡師楫",
+            "fee": "532.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88488",
+            "name": "曹安",
+            "fee": "950.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88489",
+            "name": "張玉卿",
+            "fee": "325.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88490",
+            "name": "羅水妹",
+            "fee": "304.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88491",
+            "name": "黃金福",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88492",
+            "name": "郭妹仔",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88493",
+            "name": "毛粉蘭",
+            "fee": "456.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88494",
+            "name": "吳耀南",
+            "fee": "456.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88495",
+            "name": "布啤妹",
+            "fee": "361.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88496",
+            "name": "陳亞佳",
+            "fee": "494.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88497",
+            "name": "黎子泉",
+            "fee": "624.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88498",
+            "name": "余桂",
+            "fee": "494.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88499",
+            "name": "王烏勉",
+            "fee": "361.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88500",
+            "name": "羅桃嬌",
+            "fee": "779.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88501",
+            "name": "文洪泰",
+            "fee": "273.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88502",
+            "name": "林嘉如",
+            "fee": "950.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88503",
+            "name": "莊綺雯",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88504",
+            "name": "朱達南",
+            "fee": "494.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88505",
+            "name": "白杏梅",
+            "fee": "663.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88506",
+            "name": "郭金喜",
+            "fee": "494.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88507",
+            "name": "黎久妹",
+            "fee": "630.6",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88508",
+            "name": "馮桂貞",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88509",
+            "name": "何超",
+            "fee": "475.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88510",
+            "name": "梁建基",
+            "fee": "874.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88511",
+            "name": "黃錦釗",
+            "fee": "663.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88512",
+            "name": "劉根發",
+            "fee": "475.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88513",
+            "name": "楊雪梅",
+            "fee": "475.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88514",
+            "name": "",
+            "fee": null,
+            "type": [],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": null
+        },
+        {
+            "invoice_number": "88515",
+            "name": "彭和萍",
+            "fee": "247.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88516",
+            "name": "彭玉萍",
+            "fee": "247.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88517",
+            "name": "梁燕芬",
+            "fee": "456.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88518",
+            "name": "關祥",
+            "fee": "325.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88519",
+            "name": "劉瑞全",
+            "fee": "663.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88520",
+            "name": "李健明",
+            "fee": "950.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88521",
+            "name": "何秀珍",
+            "fee": "969.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88522",
+            "name": "梁好",
+            "fee": "475.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88523",
+            "name": "施秀琼",
+            "fee": "593.8",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88524",
+            "name": "黃瑞玲",
+            "fee": "304.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88525",
+            "name": "張煒材",
+            "fee": "572.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88526",
+            "name": "郭亞好",
+            "fee": "323.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88527",
+            "name": "陳冠兆",
+            "fee": "663.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88528",
+            "name": "張瑞福",
+            "fee": "950.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88529",
+            "name": "李瑞芳",
+            "fee": "703.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88530",
+            "name": "王蘇娥",
+            "fee": "779.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88531",
+            "name": "李麗儀",
+            "fee": "722.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88532",
+            "name": "李慕雲",
+            "fee": "380.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88533",
+            "name": "甄玉霞",
+            "fee": "893.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88534",
+            "name": "劉大鈞",
+            "fee": "475.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88535",
+            "name": "梁少英",
+            "fee": "190.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88536",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88537",
+            "name": "",
+            "fee": "42.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88538",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88539",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88540",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88541",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88542",
+            "name": "何麗珊",
+            "fee": "65.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88543",
+            "name": "",
+            "fee": "78.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88544",
+            "name": "楊翠玉",
+            "fee": "152.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88545",
+            "name": "盧初四",
+            "fee": "78.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88546",
+            "name": "黃買仔",
+            "fee": "143.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88547",
+            "name": "梁永雄",
+            "fee": "57.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88548",
+            "name": "郭耀輝",
+            "fee": "228.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88549",
+            "name": "趙崇輝",
+            "fee": "161.5",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88550",
+            "name": "朱培基",
+            "fee": "141.0",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88551",
+            "name": "麥志平",
+            "fee": "102.0",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88552",
+            "name": "賴小蓮",
+            "fee": "8.3",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88553",
+            "name": "",
+            "fee": "20.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88554",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88555",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88556",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88557",
+            "name": "黎潔玲",
+            "fee": "8.3",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88558",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88559",
+            "name": "任少容",
+            "fee": "43.7",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88560",
+            "name": "",
+            "fee": "20.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88561",
+            "name": "黃金長",
+            "fee": "15.1",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88562",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88563",
+            "name": "李麗琼",
+            "fee": "5.5",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88564",
+            "name": "王敏",
+            "fee": "11.0",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88565",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88566",
+            "name": "羅國強",
+            "fee": "78.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88567",
+            "name": "何麗珊",
+            "fee": "78.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88568",
+            "name": "楊翠玉",
+            "fee": "152.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88569",
+            "name": "盧初四",
+            "fee": "78.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88570",
+            "name": "梁永雄",
+            "fee": "57.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88571",
+            "name": "郭耀輝",
+            "fee": "228.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88572",
+            "name": "趙崇輝",
+            "fee": "161.5",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88573",
+            "name": "朱培基",
+            "fee": "171.9",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88574",
+            "name": "麥志平",
+            "fee": "102.0",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88575",
+            "name": "",
+            "fee": "48.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88576",
+            "name": "何兆明",
+            "fee": "24.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88577",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88578",
+            "name": "陳笑容",
+            "fee": "13.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88579",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88580",
+            "name": "洪靜妹",
+            "fee": "8.3",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88581",
+            "name": "楊寶璣",
+            "fee": "28.5",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88582",
+            "name": "",
+            "fee": "20.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88583",
+            "name": "梁結明",
+            "fee": "28.5",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88584",
+            "name": "",
+            "fee": "45.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88585",
+            "name": "容群英",
+            "fee": "13.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88586",
+            "name": "黃素蓮",
+            "fee": "8.3",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88587",
+            "name": "",
+            "fee": "20.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88588",
+            "name": "陳房娣",
+            "fee": "23.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88589",
+            "name": "伍秀媚",
+            "fee": "23.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88590",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88591",
+            "name": "李淑意",
+            "fee": "28.5",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88592",
+            "name": "周曼薇",
+            "fee": "18.0",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88593",
+            "name": "姜九妹",
+            "fee": "42.0",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88594",
+            "name": "郭耀輝",
+            "fee": "23.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88595",
+            "name": "明梅芝",
+            "fee": "47.5",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88596",
+            "name": "王敏",
+            "fee": "30.3",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88597",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88598",
+            "name": "高孔文",
+            "fee": "28.5",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88599",
+            "name": "何麗珊",
+            "fee": "39.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "88600",
+            "name": "羅國強",
+            "fee": "78.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89751",
+            "name": "",
+            "fee": null,
+            "type": [],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": null
+        },
+        {
+            "invoice_number": "89752",
+            "name": "楊翠玉",
+            "fee": "171.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89753",
+            "name": "盧初四",
+            "fee": "78.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89754",
+            "name": "黃買仔",
+            "fee": "156.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89755",
+            "name": "梁永雄",
+            "fee": "57.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89756",
+            "name": "郭耀輝",
+            "fee": "152.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89757",
+            "name": "趙崇輝",
+            "fee": "175.3",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89758",
+            "name": "朱培基",
+            "fee": "172.5",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89759",
+            "name": "麥志平",
+            "fee": "93.8",
+            "type": [
+                "meal",
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89760",
+            "name": "譚歡天",
+            "fee": "23.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89761",
+            "name": "劉子傑",
+            "fee": "8.3",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89762",
+            "name": "梁貴心",
+            "fee": "23.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89763",
+            "name": "張麗明",
+            "fee": "18.0",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89764",
+            "name": "何女",
+            "fee": "23.8",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89765",
+            "name": "黃玉英",
+            "fee": "28.5",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89766",
+            "name": "陳仲平",
+            "fee": "8.3",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89767",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89768",
+            "name": "",
+            "fee": "20.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89769",
+            "name": "",
+            "fee": "35.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89770",
+            "name": "梁玲",
+            "fee": "28.5",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89771",
+            "name": "吳婉鈿",
+            "fee": "8.3",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89772",
+            "name": "羅國強",
+            "fee": "26.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89773",
+            "name": "何麗珊",
+            "fee": "39.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89774",
+            "name": "楊翠玉",
+            "fee": "57.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89775",
+            "name": "盧初四",
+            "fee": "39.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89776",
+            "name": "黃買仔",
+            "fee": "26.0",
+            "type": [
+                "meal"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89777",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89778",
+            "name": "",
+            "fee": "24.0",
+            "type": [
+                "car_rental"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": "2020-10-10 13:00:00"
+        },
+        {
+            "invoice_number": "89779",
+            "name": "郭耀輝",
+            "fee": "76.0",
+            "type": [
+                "service"
+            ],
+            "invoice_create_date": "2020-10-08 12:00:00",
+            "payment_date": null
+        }
+    ]
+}

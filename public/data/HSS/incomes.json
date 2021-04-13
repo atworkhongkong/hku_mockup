@@ -1,0 +1,46 @@
+{
+    "year": "2020",
+    "month": "10",
+    "invoice_numbers": [
+        "88385-88600",
+        "89751-89779"
+    ],
+    "gross_break_down": [
+        {
+            "type": "meal_ingredient_fee",
+            "total": "43054.2"
+        },
+        {
+            "type": "meal_service_fee",
+            "total": "30000.0"
+        },
+        {
+            "type": "laundry_fee",
+            "total": "0.0"
+        },
+        {
+            "type": "laundry_service_fee",
+            "total": "0.0"
+        },
+        {
+            "type": "service_fee",
+            "total": "2558.3"
+        },
+        {
+            "type": "car_rental",
+            "total": "1049.0"
+        },
+        {
+            "type": "transportation",
+            "total": "0.0"
+        },
+        {
+            "type": "activity",
+            "total": "0.0"
+        }
+    ],
+    "gross": "76661.5",
+    "gross_non_receive": "513.0",
+    "gross_late_receive": "1510.7",
+    "balance": "77659.2"
+}

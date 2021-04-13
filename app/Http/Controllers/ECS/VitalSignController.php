@@ -4,6 +4,7 @@ namespace App\Http\Controllers\ECS;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 
 class VitalSignController extends Controller
@@ -28,8 +29,9 @@ class VitalSignController extends Controller
         View::share('vital_signs', self::VITAL_SIGNS);
     }
 
-    public function index()
+    public function index(Request $request)
     {
+        //echo URL::signedRoute('ecs.vital_sign.index', ['user' => 1]);
         return view('ECS.vital_sign.index');
     }
 

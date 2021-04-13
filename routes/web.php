@@ -57,6 +57,12 @@ Route::prefix('hss')->group(function() {
 
     Route::get('/case_recording/create', [App\Http\Controllers\HSS\CaseRecordingController::class, 'create'])->name('ecs.case_recording.create');
     Route::get('/case_recording/{recording_id}/edit', [App\Http\Controllers\HSS\CaseRecordingController::class, 'edit'])->name('ecs.case_recording.edit');
+
+    Route::get('/finance/fee', [App\Http\Controllers\HSS\FinanceController::class, 'fee'])->name('ecs.finance.fee');
+    Route::get('/finance/income', [App\Http\Controllers\HSS\FinanceController::class, 'income'])->name('ecs.finance.income');
+    Route::get('/finance/invoice', [App\Http\Controllers\HSS\FinanceController::class, 'invoice'])->name('ecs.finance.invoice');
+    Route::get('/finance/meal', [App\Http\Controllers\HSS\FinanceController::class, 'meal'])->name('ecs.finance.meal');
+    Route::get('/finance/service', [App\Http\Controllers\HSS\FinanceController::class, 'service'])->name('ecs.finance.service');
 });
 
 Route::prefix('ecs')->group(function() {

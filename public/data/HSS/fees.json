@@ -1,0 +1,51 @@
+{
+    "meal": [
+        {
+            "grade": 1,
+            "ingredient": 10.2,
+            "fee": 2.8
+        },
+        {
+            "grade": 2,
+            "ingredient": 10.2,
+            "fee": 5.8
+        },
+        {
+            "grade": 3,
+            "ingredient": 10.2,
+            "fee": 8.8
+        }
+    ],
+    "laundry": [
+        {
+            "type": "L",
+            "fee": 1.4
+        },
+        {
+            "type": "M",
+            "fee": 0.5
+        },
+        {
+            "type": "S",
+            "fee": 0.3
+        },
+        {
+            "type": "service",
+            "fee": 0.4
+        }
+    ],
+    "service": [
+        {
+            "grade": 1,
+            "fee": 5.5
+        },
+        {
+            "grade": 2,
+            "fee": 12
+        },
+        {
+            "grade": 3,
+            "fee": 19
+        }
+    ]
+}

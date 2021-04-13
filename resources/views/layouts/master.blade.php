@@ -53,7 +53,12 @@
                             <li><a class="dropdown-item" href="/hss/care_worker/create">新增照顧員</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/hss/care_worker/edit/1">編輯照顧員</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/hss/duty_roster">編更</a></li>
-                            <li><a class="dropdown-item" href="/hss/case">個案</a></li>
+                            <li class="border-bottom"><a class="dropdown-item" href="/hss/case">個案</a></li>
+                            <li><a class="dropdown-item" href="/hss/finance/fee">服務費</a></li>
+                            <li><a class="dropdown-item" href="/hss/finance/income">收入記錄</a></li>
+                            <li><a class="dropdown-item" href="/hss/finance/invoice">單據</a></li>
+                            <li><a class="dropdown-item" href="/hss/finance/meal">飯餐</a></li>
+                            <li><a class="dropdown-item" href="/hss/finance/service">收費總結表</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
