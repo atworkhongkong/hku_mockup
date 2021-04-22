@@ -30,13 +30,13 @@
                             <input type="text" class="form-control" id="input-name">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="input-amount" class="form-label">數量</label>
-                            <input type="text" class="form-control" id="input-amount">
+                            <label for="input-code" class="form-label">編號</label>
+                            <input type="text" class="form-control" id="input-code">
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 mb-3">
                             <label for="input-price" class="form-label">價格</label>
                             <input type="text" class="form-control" id="input-price">
                         </div>

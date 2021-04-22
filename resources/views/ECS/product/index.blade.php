@@ -38,6 +38,7 @@
                             <tr>
                                 <th scope="col" style="width:8%;">#</th>
                                 <th scope="col">貨品</th>
+                                <th scope="col">編號</th>
                                 <th scope="col">數量</th>
                                 <th scope="col">價格</th>
                                 <th scope="col" style="width:14%;">&nbsp;</th>
@@ -48,6 +49,7 @@
                                 <tr>
                                     <td>{{ $k }}</td>
                                     <td>{{ $e['name'] }}</td>
+                                    <td>{{ $e['code'] }}</td>
                                     <td>{{ $e['count'] }}</td>
                                     <td>${{ $e['price'] }}</td>
                                     <td>

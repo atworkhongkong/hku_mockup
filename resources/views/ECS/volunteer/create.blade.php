@@ -95,14 +95,22 @@
                     <div class="row">
                         <div class="col-12 mb-3">
                             <label for="input-education" class="form-label">參與義務時間</label>
-                            <div>
+                            <table class="table">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>上午</td>
+                                    <td>下午</td>
+                                    <td>晚上</td>
+                                </tr>
                                 @foreach($times as $k => $t)
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="time-checkbox-{{ $k }}" value="">
-                                        <label class="form-check-label" for="time-checkbox-{{ $k }}">{{ $t }}</label>
-                                    </div>
+                                    <tr>
+                                        <td>{{ $t }}</td>
+                                        <td><input class="form-check-input ml-2" type="checkbox" id="time-checkbox-{{ $k }}-{{ $t }}" value=""></td>
+                                        <td><input class="form-check-input ml-2" type="checkbox" id="time-checkbox-{{ $k }}-{{ $t }}" value=""></td>
+                                        <td><input class="form-check-input ml-2" type="checkbox" id="time-checkbox-{{ $k }}-{{ $t }}" value=""></td>
+                                    </tr>
                                 @endforeach
-                            </div>
+                            </table>
                         </div>
                     </div>
 

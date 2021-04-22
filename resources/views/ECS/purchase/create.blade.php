@@ -28,9 +28,9 @@
                         <div class="col-md-6 mb-3">
                             <label for="input-person" class="form-label">身份</label>
                             <select class="form-control" id="input-person">
-                                <option value="">護老者</option>
-                                <option value="">長者會員</option>
-                                <option value="">職員</option>
+                                @foreach($identities as $k => $t)
+                                    <option value="{{ $k }}">{{ $t }}</option>
+                                @endforeach
                             </select>
                         </div>
                         <div class="col-md-6 mb-3">
@@ -50,33 +50,89 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <label for="input-product" class="form-label">貨品</label>
-                            <select class="form-control" id="input-product">
-                                <option value=""></option>
-                                @foreach($products as $k => $e)
-                                    <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $e['name'] }}</option>
-                                @endforeach
-                            </select>
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>貨品</span>
+                        </div>
+                        <div class="p-3">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">貨品</th>
+                                        <th scope="col">現存件數</th>
+                                        <th scope="col">購買數量</th>
+                                        <th scope="col">價格</th>
+                                        <th scope="col">&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select class="form-control" id="input-product">
+                                                <option value=""></option>
+                                                @foreach($products as $k => $e)
+                                                    <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $e['name'] }}</option>
+                                                @endforeach
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control" value="5" readonly></td>
+                                        <td>
+                                            <input class="form-control" type="text" value="1">
+                                        </td>
+                                        <td><input type="text" class="form-control" value="175" readonly></td>
+                                        <td>
+                                            <i class="far fa-trash"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select class="form-control" id="input-product">
+                                                <option value=""></option>
+                                                @foreach($products as $k => $e)
+                                                    <option value="{{ $k }}">{{ $e['name'] }}</option>
+                                                @endforeach
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control" value="" readonly></td>
+                                        <td>
+                                            <input class="form-control" type="text" value="">
+                                        </td>
+                                        <td><input type="text" class="form-control" value="" readonly></td>
+                                        <td>
+                                            <i class="far fa-trash"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>優惠劵</span>
+                        </div>
+                        <div class="p-3">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">優惠劵名稱</th>
+                                        <th scope="col">折扣</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input class="form-control" type="text" value="NY2021"></td>
+                                        <td><input class="form-control" type="text" value="20"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <label for="input-available" class="form-label">現存件數</label>
-                            <input type="text" class="form-control" id="input-available" value="5" readonly>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="input-count" class="form-label">數量</label>
-                            <input type="text" class="form-control" id="input-count" value="">
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="input-total-price" class="form-label">價格</label>
-                            <input type="text" class="form-control" id="input-total-price" readonly>
+                            <label for="input-total-price" class="form-label">總價格</label>
+                            <input type="text" class="form-control" id="input-total-price" value="155" readonly>
                         </div>
                     </div>
 
@@ -87,6 +143,10 @@
                                 <option>現金</option>
                             </select>
                         </div>
+                    </div>
+
+                    <div class="alert alert-primary" role="alert">
+                        提示︰若填寫完識別編號後，請自動填入姓名及聯絡電話
                     </div>
 
                     <div class="row">

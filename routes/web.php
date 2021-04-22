@@ -164,10 +164,12 @@ Route::prefix('ecs')->group(function() {
     Route::get('/product/create', [App\Http\Controllers\ECS\ProductController::class, 'create'])->name('ecs.product.create');
     Route::get('/product/{product_id}/edit', [App\Http\Controllers\ECS\ProductController::class, 'edit'])->name('ecs.product.edit');
     Route::get('/product/{product_id}/log', [App\Http\Controllers\ECS\ProductController::class, 'log'])->name('ecs.product.log');
+    Route::get('/product/{product_id}/stock_edit', [App\Http\Controllers\ECS\ProductController::class, 'stockEdit'])->name('ecs.product.stock_edit');
 
     Route::get('/purchase', [App\Http\Controllers\ECS\PurchaseController::class, 'index'])->name('ecs.purchase.index');
     Route::get('/purchase/create', [App\Http\Controllers\ECS\PurchaseController::class, 'create'])->name('ecs.purchase.create');
     Route::get('/purchase/{purchase_id}/edit', [App\Http\Controllers\ECS\PurchaseController::class, 'edit'])->name('ecs.purchase.edit');
+    Route::get('/purchase/report', [App\Http\Controllers\ECS\PurchaseController::class, 'report'])->name('ecs.purchase.report');
 
     Route::get('/equipment', [App\Http\Controllers\ECS\EquipmentController::class, 'index'])->name('ecs.equipment.index');
     Route::get('/equipment/create', [App\Http\Controllers\ECS\EquipmentController::class, 'create'])->name('ecs.equipment.create');

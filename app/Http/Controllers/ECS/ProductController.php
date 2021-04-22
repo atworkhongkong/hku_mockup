@@ -16,12 +16,12 @@ class ProductController extends Controller
     ];
 
     const PRODUCTS = [
-        1 => ['name' => '加營素(大)900克', 'count' => 50, 'price' => 175],
-        2 => ['name' => '加營素(大)400克', 'count' => 80, 'price' => 90],
-        3 => ['name' => '怡保康(小)400克', 'count' => 80, 'price' => 100],
-        4 => ['name' => '德寶123紙尿褲(大碼)', 'count' => 120, 'price' => 46],
-        5 => ['name' => '德寶123紙尿褲(中碼)', 'count' => 100, 'price' => 36],
-        6 => ['name' => '康保長方型片心(中碼)', 'count' => 100, 'price' => 30],
+        1 => ['name' => '加營素(大)900克', 'count' => 50, 'price' => 175, 'code' => 'PM001'],
+        2 => ['name' => '加營素(大)400克', 'count' => 80, 'price' => 90, 'code' => 'PM002'],
+        3 => ['name' => '怡保康(小)400克', 'count' => 80, 'price' => 100, 'code' => 'PM003'],
+        4 => ['name' => '德寶123紙尿褲(大碼)', 'count' => 120, 'price' => 46, 'code' => 'PP001'],
+        5 => ['name' => '德寶123紙尿褲(中碼)', 'count' => 100, 'price' => 36, 'code' => 'PP002'],
+        6 => ['name' => '康保長方型片心(中碼)', 'count' => 100, 'price' => 30, 'code' => 'PP003'],
     ];
 
     public function __construct()
@@ -50,6 +50,12 @@ class ProductController extends Controller
     {
         $product = self::PRODUCTS[$product_id];
         return view('ECS.product.log', compact('product', 'product_id'));
+    }
+
+    public function stockEdit($product_id)
+    {
+        $product = self::PRODUCTS[$product_id];
+        return view('ECS.product.stock_edit', compact('product_id', 'product'));
     }
 
     public static function getProducts(): array

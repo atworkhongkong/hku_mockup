@@ -31,14 +31,18 @@
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>找到3筆記錄</span>
+                        <div>
+                            <a href="/ecs/product/{{ $product_id }}/stock_edit" class="btn btn-secondary">修改庫存</a>
+                        </div>
                     </div>
                     <table class="table table-bordered">
                         <thead>
                             <tr>
                                 <th scope="col">日期</th>
                                 <th scope="col">原有數量</th>
-                                <th scope="col">新增/減少</th>
+                                <th scope="col">新增/售賣</th>
                                 <th scope="col">數量</th>
+                                <th scope="col">收據編號</th>
                                 <th scope="col">更新職員</th>
                             </tr>
                         </thead>
@@ -48,6 +52,7 @@
                                 <td>2</td>
                                 <td>3</td>
                                 <td>5</td>
+                                <td></td>
                                 <td>同事B</td>
                             </tr>
                             <tr>
@@ -55,6 +60,7 @@
                                 <td>3</td>
                                 <td>(1)</td>
                                 <td>2</td>
+                                <td>A0000322</td>
                                 <td>同事B</td>
                             </tr>
                             <tr>
@@ -62,6 +68,7 @@
                                 <td>0</td>
                                 <td>3</td>
                                 <td>3</td>
+                                <td></td>
                                 <td>同事B</td>
                             </tr>
                         </tbody>
