@@ -242,6 +242,7 @@
                     <div class="alert alert-primary" role="alert">
                         提示︰<br>
                         同一人在同一center不能重覆購買同一日飯餐<br>
+                        若出現重覆購買，系統須alert重覆購買的日期及時間，方便使用者修改<br>
                         預訂確定後，須要列印收據及飯餐紙
                     </div>
 

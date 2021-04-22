@@ -245,6 +245,10 @@
                         </div>
                     </form>
                 </div>
+                <div class="alert alert-primary" role="alert">
+                    提示︰此頁面會顯示哪一日/哪一餐飯餐在上一頁被取消，若上一頁我們取消了 2021-02-11 的早午晚餐，則會如上所顯示。
+                    當按「退款及列印收據」後，則會進行退款。
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">取 消</button>
                     <button type="button" class="btn btn-primary" onclick="document.getElementById('submit-form').submit();">退款及列印收據</button>

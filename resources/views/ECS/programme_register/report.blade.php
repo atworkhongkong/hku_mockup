@@ -48,18 +48,22 @@
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>找到 {{ count($report) }} 筆記錄</span>
                     </div>
-                    <table class="table table-sm table-bordered">
+                    <table class="table table table-bordered">
                         <thead>
                             <tr>
                                 <th scope="col">編號</th>
                                 <th scope="col">活動名稱</th>
                                 <th scope="col">日期</th>
+                                <th scope="col">會員人數</th>
+                                <th scope="col">綜緩人數</th>
+                                <th scope="col">義工人數</th>
                                 <th scope="col">報名人數</th>
+                                <th scope="col">退款人數</th>
                                 <th scope="col">堂數</th>
                                 <th scope="col">總出席次數</th>
                                 <th scope="col">社署指標</th>
                                 <th scope="col">聯絡人</th>
-                                <th scope="col">總收費</th>
+                                <th scope="col">總收入</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -68,7 +72,11 @@
                                     <td>{{ $v['code'] }}</td>
                                     <td>{{ $v['name'] }}</td>
                                     <td>{{ $v['date'] }}</td>
+                                    <td>{{ $v['count1'] }}</td>
+                                    <td>{{ $v['count2'] }}</td>
+                                    <td>{{ $v['count3'] }}</td>
                                     <td>{{ $v['register_count'] }}</td>
+                                    <td>{{ $v['refund_count'] }}</td>
                                     <td>{{ $v['lesson_count'] }}</td>
                                     <td>{{ $v['attendance_count'] }}</td>
                                     <td>{{ $v['indicator'] }}</td>
@@ -78,15 +86,20 @@
                             @endforeach
                             <tr>
                                 <td class="text-right" colspan="3"></td>
+                                <td>67</td>
+                                <td>16</td>
+                                <td>4</td>
                                 <td>87</td>
+                                <td>1</td>
                                 <td>9</td>
                                 <td>303</td>
                                 <td></td>
                                 <td></td>
-                                <td>6270</td>
+                                <td>$6270</td>
                             </tr>
                         </tbody>
                     </table>
+                    <button class="btn btn-primary">匯出</button>
                 </div>
             </div>
         </div>
