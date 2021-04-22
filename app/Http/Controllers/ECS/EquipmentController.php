@@ -11,7 +11,7 @@ class EquipmentController extends Controller
     const CENTERS = [
         1 => '賽馬會黃志強長者地區中心',
         2 => '南區長者地區中心',
-        3 => '方王煥娣長者鄰舍中心',
+        3 => '方王換娣長者鄰舍中心',
         4 => '林應和長者鄰舍中心',
     ];
 

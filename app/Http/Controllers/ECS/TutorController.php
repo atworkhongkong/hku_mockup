@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class TutorController extends Controller
 {
     const CENTERS = [
-        '賽馬會黃志強長者地區中心', '尚融坊林基業中心', '方王煥娣長者鄰舍中心', '華貴長者日間護理中心' , '南區長者綜合服務處'
+        '賽馬會黃志強長者地區中心', '尚融坊林基業中心', '方王換娣長者鄰舍中心', '華貴長者日間護理中心' , '南區長者綜合服務處'
     ];
     const TUTORS = [
         1 => ['tutor_id' => 1, 'code' => 'TR0001', 'name' => '黃岱丞', 'type' => '個人'],

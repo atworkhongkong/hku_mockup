@@ -13,7 +13,7 @@ class ProgrammeRegisterController extends Controller
         2 => '南區長者地區中心',
         3 => '南區長者綜合服務處',
         4 => '林應和長者鄰舍中心',
-        5 => '方王煥娣長者鄰舍中心'
+        5 => '方王換娣長者鄰舍中心'
     ];
     const MEMBERSHIPS = [
         1 => '長者會員',
