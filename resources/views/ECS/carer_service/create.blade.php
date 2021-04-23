@@ -67,7 +67,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">識別編號</th>
+                                        <th scope="col">護老者編號</th>
                                         <th scope="col">謢老者</th>
                                         <th scope="col">類別</th>
                                         <th scope="col">被護老者</th>

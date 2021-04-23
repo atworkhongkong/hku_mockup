@@ -21,9 +21,10 @@
                     <label class="sr-only" for="field-type">類別</label>
                     <select id="field-type" class="form-control mr-2" name="center">
                         <option value=""></option>
-                        <option value="code">識別編號</option>
+                        <option value="code">護老者編號</option>
                         <option value="oc">(有需要)護老者姓名</option>
                         <option value="pc">被護老者姓名</option>
+                        <option value="hkid">身份證號碼</option>
                     </select>
 
                     <label class="sr-only" for="field-key-word">關鍵字</label>

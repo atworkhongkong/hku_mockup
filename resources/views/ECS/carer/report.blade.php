@@ -82,7 +82,7 @@
                         <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th scope="col" style="width:10%;">識別編號</th>
+                                <th scope="col" style="width:10%;">護老者編號</th>
                                 <th scope="col">護老者</th>
                                 <th scope="col">類別</th>
                                 <th scope="col">開啟日期</th>

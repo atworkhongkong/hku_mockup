@@ -105,6 +105,12 @@
             </div>
         </div>
 
+        <div class="alert alert-primary" role="alert">
+            提示︰<br>
+            當上方"申請人"行列及"被照顧者"行列中各有最少一個欄打鈎(如下圖)，護老者級別自動轉為「有需要護老者」。<br>
+            如"申請人"行列或"被照顧者"行列其中一個行列沒有任何欄打鈎(如下圖)，護老者級別自動轉為「護老者」。
+        </div>
+
         <div class="row">
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">列 印</button>

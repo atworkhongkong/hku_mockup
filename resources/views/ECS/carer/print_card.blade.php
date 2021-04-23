@@ -18,4 +18,10 @@
             </ol>
         </div>
     </div>
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <button class="btn btn-primary">列印</button>
+        </div>
+    </div>
 </div>

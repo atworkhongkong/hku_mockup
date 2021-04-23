@@ -2,7 +2,7 @@
     <form>
         <div class="row">
             <div class="col-12 mb-3">
-                <label for="input-code" class="form-label">識別編號</label>
+                <label for="input-code" class="form-label">護老者編號</label>
                 <input type="text" class="form-control" id="input-code" @isset($carer_id) value="{{ $carer['code'] }}" @endisset>
             </div>
         </div>
@@ -200,6 +200,13 @@
                         </div>
                     @endforeach
                 </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mb-3">
+                <label for="remark" class="col-form-label">備註:</label>
+                <textarea class="form-control" id="remark" rows="3"></textarea>
             </div>
         </div>
 
