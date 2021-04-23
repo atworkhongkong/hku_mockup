@@ -34,19 +34,57 @@
 
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label for="input-dob-year" class="form-label">出生年份</label>
-                <input type="text" class="form-control" id="input-dob-year">
+                <label for="input-dob" class="form-label">出生日期</label>
+                <input type="date" class="form-control" id="input-dob">
             </div>
             <div class="col-md-6 mb-3">
+                <label for="input-age" class="form-label">年齡</label>
+                <input type="text" class="form-control" id="input-age">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mb-3">
                 <label for="input-mother-language" class="form-label">所操方言</label>
                 <input type="text" class="form-control" id="input-mother-language">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 mb-3">
-                <label for="input-address" class="form-label">住址</label>
-                <input type="text" class="form-control" id="input-address">
+            <div class="col-md-3 mb-3">
+                <label for="input-address-1" class="form-label">單位</label>
+                <input type="text" class="form-control" id="input-address-1">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="input-address-2" class="form-label">樓層</label>
+                <input type="text" class="form-control" id="input-address-2">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="input-address-3" class="form-label">大廈</label>
+                <input type="text" class="form-control" id="input-address-3">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="input-address-4" class="form-label">屋邨</label>
+                <input type="text" class="form-control" id="input-address-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <label for="input-address-5" class="form-label">街道</label>
+                <input type="text" class="form-control" id="input-address-5">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="input-address-6" class="form-label">地區</label>
+                <input type="text" class="form-control" id="input-address-6">
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="input-address-7" class="form-label">區域</label>
+                <select id="input-address-7" class="custom-select">
+                    <option>香港</option>
+                    <option>九龍</option>
+                    <option>新界</option>
+                </select>
             </div>
         </div>
 
@@ -72,13 +110,13 @@
                     <option value="">媳/婿</option>
                     <option value="">兄弟姊妹</option>
                     <option value="">義工/鄰居/朋友</option>
-                    <option value="">俌人</option>
-                    <option value="">其他</option>
+                    <option value="">傭人</option>
+                    <option value="other">其他</option>
                 </select>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="input-other" class="form-label">關係 - 其他</label>
-                <input type="text" class="form-control" id="input-other" readonly>
+                <label for="input-relationship-other" class="form-label">關係 - 其他</label>
+                <input type="text" class="form-control" id="input-relationship-other" disabled placeholder="請填寫">
             </div>
         </div>
 
@@ -113,12 +151,12 @@
                     <option value="">兼職</option>
                     <option value="">退休</option>
                     <option value="">家庭照顧者</option>
-                    <option value="">其他</option>
+                    <option value="other">其他</option>
                 </select>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="input-career-other" class="form-label">職業 - 其他</label>
-                <input type="text" class="form-control" id="input-career-other" readonly>
+                <input type="text" class="form-control" id="input-career-other" disabled placeholder="請填寫">
             </div>
         </div>
 
@@ -135,12 +173,12 @@
                     <option value="">傷殘/高額傷殘津貼</option>
                     <option value="">子女/親屬供養</option>
                     <option value="">綜援</option>
-                    <option value="">其他</option>
+                    <option value="other">其他</option>
                 </select>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="input-financial-other" class="form-label">經濟 - 其他</label>
-                <input type="text" class="form-control" id="input-financial-other" readonly>
+                <input type="text" class="form-control" id="input-financial-other" disabled placeholder="請填寫">
             </div>
         </div>
 
@@ -155,9 +193,9 @@
                                 {{$f}}
                             </label>
                             @if ($k == 11)
-                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:70%;" id="field-other" placeholder="年份">
+                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:70%;" id="field-other" placeholder="請填寫">
                             @elseif ($k == count($form5_cb_4) - 1)
-                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:70%;" id="field-other" placeholder="其他">
+                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:70%;" id="field-other" placeholder="請填寫">
                             @endif
                         </div>
                     @endforeach
@@ -168,10 +206,15 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="input-create-date" class="form-label">登記日期</label>
-                <input type="text" class="form-control" id="input-create=date" @isset($carer_id) value="{{ $carer['create_date'] }}" @endisset>
+                <input type="date" class="form-control" id="input-create-date" @isset($carer_id) value="{{ $carer['create_date'] }}" @else value="{{ date("Y-m-d") }}" @endisset>
             </div>
         </div>
 
+        <div class="alert alert-primary" role="alert">
+            提示︰<br>
+            (1) 姓名、身份證、電話必填<br>
+            (2) 輪入出生日期後，自動計算年齡<br>
+        </div>
 
         <div class="row">
             <div class="col-12">
@@ -180,3 +223,28 @@
         </div>
     </form>
 </div>
+
+<script>
+    $("#input-relationship").change(function() {
+        if ($(this).val() === "other") {
+            $("#input-relationship-other").prop('disabled', false);
+        } else {
+            $("#input-relationship-other").prop('disabled', true);
+        }
+    })
+    $("#input-career").change(function() {
+        if ($(this).val() === "other") {
+            $("#input-career-other").prop('disabled', false);
+        } else {
+            $("#input-career-other").prop('disabled', true);
+        }
+    })
+    $("#input-financial-status").change(function() {
+        if ($(this).val() === "other") {
+            $("#input-financial-other").prop('disabled', false);
+        } else {
+            $("#input-financial-other").prop('disabled', true);
+        }
+    })
+</script>
+

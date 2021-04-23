@@ -36,15 +36,10 @@
                                 {{$f}}
                             </label>
                             @if ($k == 6)
-                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="其他">
+                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="請填寫">
                             @endif
                         </div>
                     @endforeach
-
-                    <div class="form-group">
-                        <label for="formGroupExampleInput"></label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="其他">
-                    </div>
                 </div>
             </div>
         </div>

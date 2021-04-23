@@ -11,7 +11,7 @@
                                 {{$f}}
                             </label>
                             @if ($k == count($form4_cb) - 1)
-                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="其他">
+                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="請填寫">
                             @endif
                         </div>
                     @endforeach

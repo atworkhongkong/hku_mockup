@@ -13,7 +13,7 @@
                             @if ($k == 11)
                                 <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-remark" placeholder="備註">
                             @elseif ($k == 12)
-                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="其他">
+                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="請填寫">
                             @endif
                         </div>
                     @endforeach

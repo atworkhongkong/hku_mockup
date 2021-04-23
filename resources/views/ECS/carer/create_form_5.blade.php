@@ -59,7 +59,7 @@
                                         {{$f}}
                                     </label>
                                     @if ($k == count($form5_cb_1) - 1)
-                                        <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="其他">
+                                        <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="請填寫">
                                     @endif
                                 </div>
                             @endforeach
@@ -78,7 +78,7 @@
                                         {{$f}}
                                     </label>
                                     @if ($k == count($form5_cb_2) - 1)
-                                        <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="其他">
+                                        <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="請填寫">
                                     @endif
                                 </div>
                             @endforeach
@@ -88,10 +88,10 @@
 
                 <div class="row">
                     <div class="col-auto mb-3">
-                        <label for="input-gender" class="form-label">長者長期服務</label>
-                        <select class="form-control" id="input-gender">
+                        <label for="input-long-service" class="form-label">長者長期服務</label>
+                        <select class="form-control" id="input-long-service">
                             <option value="">沒有</option>
-                            <option value="">有</option>
+                            <option value="y">有</option>
                         </select>
                     </div>
                     <div class="col mb-3">
@@ -99,12 +99,12 @@
                         <div>
                             @foreach($form5_cb_3 as $k => $f)
                                 <div class="form-check d-inline-block">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2_{{$k}}">
-                                    <label class="form-check-label" for="defaultCheck2_{{$k}}">
+                                    <input class="form-check-input" type="checkbox" value="" id="long_service_{{$k}}" @if($k == 1)style="margin-top:8px;"@endif disabled>
+                                    <label class="form-check-label" for="long_service_{{$k}}">
                                         {{$f}}
                                     </label>
                                     @if ($k == count($form5_cb_3) - 1)
-                                        <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="其他" readonly>
+                                        <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="long_service_1_other" disabled placeholder="請填寫">
                                     @endif
                                 </div>
                             @endforeach
@@ -123,7 +123,7 @@
                                         {{$f}}
                                     </label>
                                     @if ($k == count($form5_cb_4) - 1)
-                                        <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="其他">
+                                        <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="請填寫">
                                     @endif
                                 </div>
                             @endforeach
@@ -164,3 +164,23 @@
 
     </form>
 </div>
+
+
+<script>
+    $("#input-long-service").change(function() {
+        if ($(this).val() === "y") {
+            $("#long_service_0").prop('disabled', false);
+            $("#long_service_1").prop('disabled', false);
+        } else {
+            $("#long_service_0").prop('disabled', true);
+            $("#long_service_1").prop('disabled', true);
+        }
+    })
+    $("#long_service_1").on('click', function() {
+        if ($(this).is(':checked')) {
+            $("#long_service_1_other").prop("disabled", false);
+        } else {
+            $("#long_service_1_other").prop("disabled", true);
+        }
+    })
+</script>

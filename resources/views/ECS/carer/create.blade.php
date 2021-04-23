@@ -28,12 +28,9 @@
                         被照顧者資料
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-6" data-toggle="tab" href="#nav-page-6" role="tab" aria-controls="nav-page-6" aria-selected="false">
-                        接收短訊
-                    </a>
-                    <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-7" role="tab" aria-controls="nav-page-7" aria-selected="false">
                         同意書
                     </a>
-                    <a class="nav-item nav-link" id="nav-tab-8" data-toggle="tab" href="#nav-page-8" role="tab" aria-controls="nav-page-8" aria-selected="false">
+                    <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-7" role="tab" aria-controls="nav-page-7" aria-selected="false">
                         職員填寫
                     </a>
                 </div>
@@ -60,13 +57,7 @@
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-7">
                     @include('ECS.carer.create_form_7')
                 </div>
-                <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
-                    @include('ECS.carer.create_form_8')
-                </div>
             </div>
-
-
-
 
         </div>
     </div>

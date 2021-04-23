@@ -22,6 +22,16 @@
                                 @endforeach
                             </select>
                         </div>
+                        @if ($type !== '')
+                            <div class="col-auto pr-1">
+                                <label class="sr-only" for="field-carer-type">顧老者類別</label>
+                                <select id="field-carer-type" class="form-control mr-2">
+                                    <option></option>
+                                    <option value="">護老者</option>
+                                    <option value="">有需要護老者</option>
+                                </select>
+                            </div>
+                        @endif
                     </div>
 
                     <div class="row mb-2 g-0">
@@ -63,7 +73,11 @@
                     @endif
 
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <span>找到 {{ $count }}筆記錄</span>
+                            @if ($type == 'close')
+                                <span>找到 1 筆記錄</span>
+                            @else
+                                <span>找到 {{ $count }} 筆記錄</span>
+                            @endif
                         </div>
                         <table class="table table-bordered">
                             <thead>

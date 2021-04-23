@@ -1,72 +1,107 @@
 <div class="form-container">
     <form>
-        <div class="row">
-            <div class="col-12 mb-3">
-                <p>本人(申請人)明白及同意/不同意(刪去不適用者) 貴會於以下 1-3 項之情況使用和轉移本人個人資料︰</p>
-                <ol>
-                    <li>貴會使用本人個人資料作分析、學術研究、申請計劃資助、發展/配對及推介服務等用途。</li>
-                    <li>因應服務申請，貴會向政府部門/有關機構或人士等，核對和收集本人存於該處之個人資料。另為協助申請/提供相關服務及或於合理情況下，傳閱/轉移本人個人資料予 貴會職員、義工及其他有關團體(*註)</li>
-                    <li>提供本人數據予 貴會合作之學術研究機構作學術研究之用，相關研究將於文獻發青及政策倡議等用途。</li>
-                </ol>
-                <p>註︰i) 上述第2項不適用於法庭頒令、公眾責任及執法人員等要求下而需要作出之個人資料轉移。ii) 本人明白可隨時要求刪除本人存於 貴會之個人資料</p>
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>申請人</span>
+            </div>
+            <div class="p-3">
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck">
-                    <label class="form-check-label" for="defaultCheck">本人不同意接收 貴會安老服務部發放之護老者服務電子短訊</label>
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        身體缺損
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                        照顧壓力大
+                    </label>
+                    <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-other" placeholder="其他: 如壓力測試結果">
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3">
+                        高齡 (60歲或以上)
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                    <label class="form-check-label" for="defaultCheck4">
+                        需要社交及情緒支援
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>被照顧者</span>
+            </div>
+            <div class="p-3">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                    <label class="form-check-label" for="defaultCheck5">
+                        行動不便
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                    <label class="form-check-label" for="defaultCheck6">
+                        患有長期疾病
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                    <label class="form-check-label" for="defaultCheck7">
+                        患有認知障礙症
+                    </label>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 mb-3 text-right">
-                申請人簽署
+            <div class="col-md-6 mb-3">
+                <label for="input-center" class="form-label">所屬中心</label>
+                <select class="custom-select" aria-label="select example">
+                    <option value=""></option>
+                    @foreach($centers as $k => $c)
+                        <option value="{{ $k + 1 }}">{{ $c }}</option>
+                    @endforeach
+                </select>
             </div>
-            <div class="col-md-4 mb-3 border-bottom">
-                &nbsp;
-            </div>
-            <div class="col-md-2 mb-3 text-right">
-                負責職員簽署
-            </div>
-            <div class="col-md-4 mb-3 border-bottom">
-                &nbsp;
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-2 mb-3 text-right">
-                申請人姓名
-            </div>
-            <div class="col-md-4 mb-3 border-bottom">
-                &nbsp;
-            </div>
-            <div class="col-md-2 mb-3 text-right">
-                姓名及職位
-            </div>
-            <div class="col-md-4 mb-3 border-bottom">
-                &nbsp;
+            <div class="col-md-6 mb-3">
+                <label for="input-type" class="form-label">護老者級別</label>
+                <select class="form-control" id="input-type">
+                    <option></option>
+                    <option value="oc">護老者</option>
+                    <option value="nc">有需要護老者</option>
+                </select>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-auto mb-3 text-center">
-                申請人香港身份證號碼(首4個字)
+            <div class="col-md-6 mb-3">
+                <label for="input-long-care" class="form-label">長期照顧</label>
+                <select class="custom-select" aria-label="select example">
+                    <option value=""></option>
+                    <option value="">需長期照顧</option>
+                    <option value="">不需長期照顧</option>
+                </select>
             </div>
-            <div class="col-md-4 mb-3 border-bottom">
-                &nbsp;
+            <div class="col-md-6 mb-3">
+                <label for="input-center" class="form-label">狀態</label>
+                <select class="custom-select" aria-label="select example">
+                    @foreach($statuses as $s)
+                        <option value="">{{ $s }}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 mb-3 text-right">
-                日期
-            </div>
-            <div class="col-md-4 mb-3 border-bottom">
-                &nbsp;
-            </div>
-            <div class="col-md-2 mb-3 text-right">
-                日期
-            </div>
-            <div class="col-md-4 mb-3 border-bottom">
-                &nbsp;
+            <div class="col-12 mb-3">
+                <label for="input-remark" class="form-label">個案檢討</label>
+                <textarea class="form-control" id="input-remark" rows="3"></textarea>
             </div>
         </div>
 
@@ -75,5 +110,6 @@
                 <button type="submit" class="btn btn-primary">列 印</button>
             </div>
         </div>
+
     </form>
 </div>

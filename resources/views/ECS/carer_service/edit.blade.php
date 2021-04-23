@@ -27,13 +27,6 @@
 
             <div class="row">
                 <div class="col-12 mb-3">
-                    <label for="input-desc" class="form-label">目的</label>
-                    <input type="text" class="form-control" id="input-desc" value="{{ $service['desc'] }}">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 mb-3">
                     <label for="input-remark" class="form-label">備註</label>
                     <textarea class="form-control" id="input-remark" rows="3"></textarea>
                 </div>
