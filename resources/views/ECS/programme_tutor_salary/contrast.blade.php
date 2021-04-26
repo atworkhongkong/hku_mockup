@@ -80,6 +80,15 @@
                 </div>
             </div>
 
+            <div class="row my-4">
+                <div class="col-auto">
+                    支付酬金方法︰
+                </div>
+                <div class="col border-bottom">
+                    xxxxx
+                </div>
+            </div>
+
             <hr class="my-5">
 
             <p class="border p-3">

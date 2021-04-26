@@ -31,6 +31,7 @@
                         <span>找到{{ count($tutors) }}筆記錄</span>
                         <div>
                             <a href="/ecs/tutor/create" class="btn btn-secondary">新增導師</a>
+                            <a href="javascript:void(0);" class="btn btn-secondary">匯出導師資料</a>
                         </div>
                     </div>
                     <table class="table table-bordered">
@@ -57,6 +58,10 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+
+            <div class="alert alert-primary" role="alert">
+                提示︰點擊「匯出導師資料」後，可以export excel file，有齋 filter 後的導師個人資料
             </div>
         </div>
     </div>

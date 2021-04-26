@@ -91,7 +91,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-end-date" class="form-label">歸還日期</label>
-                            <input type="text" class="form-control" id="input-end-date" value="2021-03-01" readonly>
+                            <input type="text" class="form-control" id="input-end-date" value="2021-03-01">
                         </div>
                     </div>
 

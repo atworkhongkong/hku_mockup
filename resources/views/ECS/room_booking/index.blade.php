@@ -11,8 +11,17 @@
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form" action="/ecs/room_booking" method="GET">
+                    @csrf
                     <div class="row mb-2">
-                        <div class="col-md-2">
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-center">中心</label>
+                            <select id="field-center" class="form-control mr-2" name="center">
+                                @foreach($centers as $k => $c)
+                                    <option value="{{ $k }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto">
                             <label class="sr-only" for="field-room">房間</label>
                             <select class="form-control mr-2" id="field-room">
                                 @foreach($rooms as $k => $r)

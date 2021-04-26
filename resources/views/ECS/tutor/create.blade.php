@@ -104,7 +104,15 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 mb-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-pay-salary-method" class="form-label">出糧方式</label>
+                            <select class="custom-select" aria-label="select example" id="input-pay-salary-method">
+                                <option></option>
+                                <option>支票</option>
+                                <option>銀行轉賬</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
                             <label for="input-center" class="form-label">狀態</label>
                             <select class="custom-select" aria-label="select example">
                                 <option value="A">有效</option>

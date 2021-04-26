@@ -84,7 +84,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-end-date" class="form-label">歸還日期</label>
-                            <input type="text" class="form-control" id="input-end-date" value="{{ $rental['due_date'] }}" readonly>
+                            <input type="text" class="form-control" id="input-end-date" value="{{ $rental['due_date'] }}">
                         </div>
                     </div>
 
@@ -150,6 +150,7 @@
 
                     <div class="row">
                         <div class="col-12">
+                            <button type="submit" class="btn btn-primary">更新</button>
                             <button type="submit" class="btn btn-primary">交還</button>
                             <button type="submit" class="btn btn-primary">續借及列印收據</button>
                         </div>
