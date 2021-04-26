@@ -147,6 +147,9 @@
                         </div>
                     </div>
 
+                    <div class="alert alert-primary" role="alert">
+                        提示︰Click「新增優惠劵」後，會新增一行。
+                    </div>
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <span>優惠劵</span>
@@ -165,6 +168,7 @@
                             <table class="table">
                                 <thead>
                                 <tr>
+                                    <th scope="col">優惠劵編號</th>
                                     <th scope="col">優惠劵名稱</th>
                                     <th scope="col">折扣</th>
                                     <th scope="col">&nbsp;</th>
@@ -173,6 +177,7 @@
                                 <tbody>
                                     <tr>
                                         <td><input class="form-control" type="text" value="NY2021"></td>
+                                        <td><input class="form-control" type="text" value="20元優惠劵"></td>
                                         <td><input class="form-control" type="text" value="20"></td>
                                         <td><i class="far fa-trash"></i></td>
                                     </tr>

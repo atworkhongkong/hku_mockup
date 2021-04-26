@@ -131,11 +131,11 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-start-date" class="form-label">開始日期</label>
-                            <input type="text" class="form-control" id="input-start-date">
+                            <input type="date" class="form-control" id="input-start-date">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-end-date" class="form-label">結束日期</label>
-                            <input type="text" class="form-control" id="input-end-date">
+                            <input type="date" class="form-control" id="input-end-date">
                         </div>
                     </div>
 

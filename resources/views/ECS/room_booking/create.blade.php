@@ -25,6 +25,19 @@
                     </div>
 
                     <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-room" class="form-label">房間</label>
+                            <select class="form-control" id="input-room">
+                                <option value=""></option>
+                                @foreach($rooms as $k => $r)
+                                    <option value="{{ $k }}">{{ $r['name'] }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-start-time" class="form-label">開始時間</label>
                             <input type="datetime-local" class="form-control" id="input-start-time">
@@ -34,16 +47,37 @@
                             <input type="datetime-local" class="form-control" id="input-end-time">
                         </div>
                     </div>
+                    -->
 
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <label for="input-room" class="form-label">房間</label>
-                            <select class="form-control" id="input-room">
-                                <option value=""></option>
-                                @foreach($rooms as $k => $r)
-                                    <option value="{{ $k }}">{{ $r['name'] }}</option>
-                                @endforeach
-                            </select>
+                    <div class="alert alert-primary" role="alert">
+                        提示︰Click「新增時段」後，會新增一行。
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>預約時段</span>
+                            <button type="button" class="btn btn-primary">新增時段</button>
+                        </div>
+                        <div class="p-3">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">開始時間</th>
+                                        <th scope="col">結束時間</th>
+                                        <th scope="col">&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="datetime-local" class="form-control" id="input-start-time">
+                                        </td>
+                                        <td>
+                                            <input type="datetime-local" class="form-control" id="input-end-time">
+                                        </td>
+                                        <td><i class="far fa-trash"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 

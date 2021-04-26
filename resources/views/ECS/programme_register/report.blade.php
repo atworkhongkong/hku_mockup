@@ -71,7 +71,7 @@
                                 <tr>
                                     <td>{{ $v['code'] }}</td>
                                     <td>{{ $v['name'] }}</td>
-                                    <td>{{ $v['date'] }}</td>
+                                    <td style="width:120px;">{!! implode('<br>', $v['date']) !!}</td>
                                     <td>{{ $v['count1'] }}</td>
                                     <td>{{ $v['count2'] }}</td>
                                     <td>{{ $v['count3'] }}</td>

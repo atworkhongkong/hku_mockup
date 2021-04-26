@@ -104,7 +104,7 @@ class ProgrammeRegisterController extends Controller
             [
                 'code' => 'J3C18032',
                 'name' => '中秋月餅慶團圓',
-                'date' => '14',
+                'date' => ['2021-03-14'],
                 'count1' => 10,
                 'count2' => 5,
                 'count3' => 3,
@@ -119,7 +119,7 @@ class ProgrammeRegisterController extends Controller
             [
                 'code' => 'J3A18111',
                 'name' => '健腦操02',
-                'date' => '12,19,26',
+                'date' => ['2021-03-12','2021-03-19','2021-03-26'],
                 'count1' => 24,
                 'count2' => 5,
                 'count3' => 0,
@@ -134,7 +134,7 @@ class ProgrammeRegisterController extends Controller
             [
                 'code' => 'J3A18107',
                 'name' => '自強運動02',
-                'date' => '11,13,18,20,27',
+                'date' => ['2021-03-11','2021-03-13','2021-03-18','2021-03-20','2021-03-27'],
                 'count1' => 33,
                 'count2' => 6,
                 'count3' => 1,
