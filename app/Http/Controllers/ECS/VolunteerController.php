@@ -133,10 +133,16 @@ class VolunteerController extends Controller
         $type = $request->get('type');
         $full_url = URL::full();
 
+        $report = [];
         if ($type == 'new') {
             $count = 2;
         } else {
             $count = 4;
+            $report = [
+                1 => ['month' => '01/2021', 'ste_below' => 6, 'ste_above' => 9, 'non_ste_below' => 0, 'non_ste_above' => 0, 'total' => 15,],
+                2 => ['month' => '02/2021', 'ste_below' => 5, 'ste_above' => 0, 'non_ste_below' => 0, 'non_ste_above' => 0, 'total' => 5,],
+                3 => ['month' => '03/2021', 'ste_below' => 2, 'ste_above' => 1, 'non_ste_below' => 0, 'non_ste_above' => 0, 'total' => 3,]
+            ];
         }
 
         /*
@@ -149,6 +155,6 @@ class VolunteerController extends Controller
         }
         */
         $volunteers = self::VOLUNTEERS;
-        return view('ECS.volunteer.report', compact( 'type', 'full_url', 'count', 'volunteers'));
+        return view('ECS.volunteer.report', compact( 'type', 'full_url', 'count', 'volunteers', 'report'));
     }
 }

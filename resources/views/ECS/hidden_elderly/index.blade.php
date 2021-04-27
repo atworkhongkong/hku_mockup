@@ -84,6 +84,7 @@
                                 <th scope="col">出生年份</th>
                                 <th scope="col">性別</th>
                                 <th scope="col">個案開啟日期</th>
+                                <th scope="col">結束日期</th>
                                 <th scope="col">狀態</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
@@ -97,6 +98,7 @@
                                     <td>{{ $v['dob_year'] }}</td>
                                     <td>{{ $v['gender'] }}</td>
                                     <td>{{ $v['create_date'] }}</td>
+                                    <td></td>
                                     <td>{{ $statuses[$v['status']] }}</td>
                                     <td><a class="btn btn-primary" href="/ecs/hidden_elderly/{{ $k }}/edit">編輯</a></td>
                                 </tr>

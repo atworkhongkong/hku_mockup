@@ -23,7 +23,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        @if ($type == 'new' || $type == 'accumulate')
+                        @if ($type == 'new')
                             <div class="col-auto pr-1">
                                 <label class="sr-only" for="field-ste">STE</label>
                                 <select id="field-ste" class="form-control mr-2">
@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="row mb-2 g-0">
-                        @if ($type != 'accumulate')
+                        @if ($type == 'new')
                             <div class="col-auto">
                                 <label class="sr-only" for="field-start-date">開始日期</label>
                                 <input type="date" id="field-start-date" class="form-control" value="2021-01-01" />
@@ -52,11 +52,21 @@
                             <div class="col-auto px-0 pt-2">
                                 至
                             </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="field-end-date">結束日期</label>
+                                <input type="date" id="field-end-date" class="form-control" value="2021-01-31" />
+                            </div>
+                        @elseif ($type == 'accumulate')
+                            <div class="col-auto">
+                                <label class="sr-only" for="field-year">年份</label>
+                                <select class="form-control" id="field-year">
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    <option>2019</option>
+                                    <option>2018</option>
+                                </select>
+                            </div>
                         @endif
-                        <div class="col-auto">
-                            <label class="sr-only" for="field-end-date">結束日期</label>
-                            <input type="date" id="field-end-date" class="form-control" value="2021-01-31" />
-                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary">搜尋</button>
                 </form>
@@ -70,38 +80,13 @@
                 @endif
             </div>
 
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到{{ $count }}筆記錄</span>
-                    </div>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">義工編號</th>
-                                <th scope="col">義工姓名</th>
-                                <th scope="col">活躍程度</th>
-                                <th scope="col">級別</th>
-                                <th scope="col">STE/Non-STE</th>
-                                <th scope="col">首次登記日期</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @for($i = 1 ; $i <= $count ; $i++)
-                                <tr>
-                                    <td><a href="/ecs/volunteer/{{ $i }}/edit" target="_blank">{{ $volunteers[$i]['code'] }}</a></td>
-                                    <td>{{ $volunteers[$i]['name'] }}</td>
-                                    <td>活躍義工</td>
-                                    <td>{{ $grades[$volunteers[$i]['grade']] }}</td>
-                                    <td>{{ $volunteers[$i]['STE'] }}</td>
-                                    <td>{{ $volunteers[$i]['register_date'] }}</td>
-                                </tr>
-                            @endfor
-                        </tbody>
-                    </table>
-                    <button class="btn btn-primary">匯出</button>
-                </div>
-            </div>
+            @if ($type == 'new')
+                @include('ecs.volunteer.report_new')
+            @elseif ($type == 'accumulate')
+                @include('ecs.volunteer.report_accumulate')
+            @endif
+
+
         </div>
     </div>
 @endsection

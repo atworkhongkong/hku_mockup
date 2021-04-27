@@ -11,6 +11,28 @@
                 </select>
             </div>
             <div class="col-md-6 mb-3">
+                <label for="input-source" class="form-label">轉介來源</label>
+                <input type="text" class="form-control" id="input-source">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="input-case-number" class="form-label">個案編號</label>
+                <input type="text" class="form-control" id="input-case-number">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="input-case-type" class="form-label">個案類別</label>
+                <select class="custom-select" aria-label="select example" id="input-case-type">
+                    <option></option>
+                    <option value="">Potential Case</option>
+                    <option value="">Networked Case</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mb-3">
                 <label for="input-name" class="form-label">姓名/稱呼</label>
                 <input type="text" class="form-control" id="input-name" value="{{ $hidden_elderly['name'] }}">
             </div>
@@ -69,7 +91,7 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="input-create-date">個案開啟日期</label>
-                <input type="text" class="form-control" id="input-create-date" value="{{ $hidden_elderly['create_date'] }}">
+                <input type="text" class="form-control" id="input-create-date" value="{{ $hidden_elderly['create_date'] }}" disabled>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="input-age" class="form-label">個案重啟日期</label>
@@ -78,9 +100,16 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6 mb-3">
+            <div class="col-12 mb-3">
                 <label for="input-create-date">個案結束日期</label>
                 <input type="text" class="form-control" id="input-create-date" value="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mb-3">
+                <label for="input-close-reason">結束原因</label>
+                <textarea class="form-control" id="input-close-reason" rows="3"></textarea>
             </div>
         </div>
 
