@@ -12,7 +12,7 @@
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form" action="/ecs/programme_register/report" method="GET">
                     <div class="row mb-2">
-                        <div class="col-auto pr-1">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-center">中心</label>
                             <select id="field-center" class="form-control mr-2" name="center">
                                 @foreach($centers as $k => $c)
@@ -20,9 +20,13 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-indicator">社署指標</label>
                             <input type="text" id="field-indicator" class="form-control" placeholder="社署指標" />
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-invoice-number">收據編號</label>
+                            <input type="text" id="field-invoice-number" class="form-control" placeholder="收據編號" />
                         </div>
                     </div>
 

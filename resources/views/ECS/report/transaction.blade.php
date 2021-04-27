@@ -44,7 +44,7 @@
                         <th scope="col">會員編號</th>
                         <th scope="col">中文姓名</th>
                         <th scope="col">英文姓名</th>
-                        <th scope="col">收入或支出</th>
+                        <th scope="col">收入或收費</th>
                         <th scope="col">收費</th>
                         <th scope="col">經手人</th>
                         <th scope="col">日期</th>
@@ -62,7 +62,7 @@
                         <td>{{ $r['member_id'] }}</td>
                         <td>{{ $r['member_chi_name'] }}</td>
                         <td>{{ $r['member_eng_name'] }}</td>
-                        <td>{{ $r['income_refund'] == 'income' ? '收入' : '支出' }}</td>
+                        <td>{{ $r['income_refund'] == 'income' ? '收入' : '作癈' }}</td>
                         <td>{{ $r['fee'] }}</td>
                         <td>{{ $r['created_by'] }}</td>
                         <td>{{ $r['create_date'] }}</td>

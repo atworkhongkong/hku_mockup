@@ -36,6 +36,31 @@ class ProgrammeRegisterController extends Controller
         ]
     ];
     */
+    const REGISTERS = [
+        10 => [
+            'register_id' => 10, 'invoice' => 'A0000012', 'member_code' => '03EL300102', 'member_name' => '陳永仁',
+            'member_eng_name' => 'Chan Wing Yan', 'gender' => 'M',
+            'mobile' => '98989898', 'create_date' => '2021-01-05', 'status' => 'A', 'payment_method' => '現金',
+            'coupon' => '', 'fee' => '100.0'
+        ],
+        9 => [
+            'register_id' => 9, 'invoice' => 'A0000011', 'member_code' => '03ELS300805', 'member_name' => '劉健明',
+            'member_eng_name' => 'Lau Kin Ming', 'gender' => 'MM',
+            'mobile' => '96969696', 'create_date' => '2021-01-04', 'status' => 'A', 'payment_method' => '現金',
+            'coupon' => '20', 'fee' => '80.0'
+        ],
+        8 => [
+            'register_id' => 8, 'invoice' => 'A0000010', 'member_code' => '03ELS300260', 'member_name' => '葉問',
+            'member_eng_name' => 'Yip Man', 'gender' => 'M',
+            'mobile' => '95959595', 'create_date' => '2021-01-04', 'status' => 'C', 'payment_method' => '現金',
+            'coupon' => '', 'fee' => '100.0'
+        ]
+    ];
+
+    const REGISTER_STATUSES = [
+        'A' => '有效', 'C' => '已取消'
+    ];
+
     const BALANCES = [
         [
             'register_id' => 10,
@@ -46,7 +71,8 @@ class ProgrammeRegisterController extends Controller
             'member_name' => '陳永仁',
             'fee' => 400,
             'receive_method' => '現金',
-            'created_by' => '同事A'
+            'created_by' => '同事A',
+            'invoice' => 'A0000012'
         ],
         [
             'register_id' => 9,
@@ -57,7 +83,8 @@ class ProgrammeRegisterController extends Controller
             'member_name' => '張浩翔',
             'fee' => 100,
             'receive_method' => '現金',
-            'created_by' => '同事B'
+            'created_by' => '同事B',
+            'invoice' => 'A0000023'
         ],
         [
             'register_id' => 8,
@@ -68,19 +95,23 @@ class ProgrammeRegisterController extends Controller
             'member_name' => '王琴',
             'fee' => 80,
             'receive_method' => '現金',
-            'created_by' => '同事A'
+            'created_by' => '同事A',
+            'invoice' => 'A0000182'
         ],
     ];
 
     public function __construct()
     {
         View::share('centers', self::CENTERS);
+        View::share('registers', self::REGISTERS);
+        View::share('register_statuses', self::REGISTER_STATUSES);
     }
 
-    public function show(Request $request)
+    public function show(Request $request, $register_id)
     {
         $programme_id = $request->get('programme_id');
-        return view('ECS.programme_register.show', compact('programme_id'));
+        $register = self::REGISTERS[$register_id];
+        return view('ECS.programme_register.show', compact('programme_id', 'register'));
     }
 
     public function create(Request $request)
@@ -166,6 +197,16 @@ class ProgrammeRegisterController extends Controller
     {
         $programme_id = $request->get('programme_id');
         return view('ECS.programme_register.export');
+    }
+
+    public static function getRegisters(): array
+    {
+        return self::REGISTERS;
+    }
+
+    public static function getRegisterStatuses(): array
+    {
+        return self::REGISTER_STATUSES;
     }
 
 //    public function edit(Request $request)

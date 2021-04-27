@@ -13,11 +13,11 @@
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="input-chi-name" class="form-label">中文姓名</label>
-                    <input type="text" class="form-control" id="input-chi-name" value="陳二妹">
+                    <input type="text" class="form-control" id="input-chi-name" value="{{ $register['member_name'] }}">
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="input-eng-name" class="form-label">英文姓名</label>
-                    <input type="text" class="form-control" id="input-eng-name" value="Chan Yee Mui">
+                    <input type="text" class="form-control" id="input-eng-name" value="{{ $register['member_eng_name'] }}">
                 </div>
             </div>
 
@@ -26,13 +26,13 @@
                     <label for="input-chi-name" class="form-label">姓別</label>
                     <select class="custom-select" aria-label="Disabled select example">
                         <option></option>
-                        <option value="1">男</option>
-                        <option value="2" SELECTED>女</option>
+                        <option value="M" {{ $register['gender'] == 'M' ? 'SELECTED' : '' }}>男</option>
+                        <option value="F" {{ $register['gender'] == 'F' ? 'SELECTED' : '' }}>女</option>
                     </select>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="input-eng-name" class="form-label">出生日期</label>
-                    <input type="text" class="form-control" id="input-eng-name" value="1938-12-08">
+                    <input type="text" class="form-control" id="input-eng-name" value="19xx-xx-xx">
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="input-mobile" class="form-label">手提電話</label>
-                    <input type="text" class="form-control" id="input-mobile" value="98989898">
+                    <input type="text" class="form-control" id="input-mobile" value="{{ $register['mobile'] }}">
                 </div>
             </div>
 
@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="input-expiry-date" class="form-label">會員到期日</label>
-                    <input type="text" class="form-control" id="input-expiry-date" value="2013-05-31">
+                    <input type="text" class="form-control" id="input-expiry-date" value="2023-05-31">
                 </div>
             </div>
 
@@ -172,7 +172,13 @@
                                     <input type="text" id="field-total-price" class="form-control mr-2" value="140" readonly />
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-invoice-number" class="form-label">收據編號</label>
+                            <input type="text" class="form-control" id="input-invoice-number" value="{{ $register['invoice'] }}">
                         </div>
                     </div>
 

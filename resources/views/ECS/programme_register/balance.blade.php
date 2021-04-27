@@ -12,7 +12,7 @@
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form" action="/ecs/programme_register/balance" method="GET">
                     <div class="row mb-2">
-                        <div class="col-auto pr-1">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-center">中心</label>
                             <select id="field-center" class="form-control mr-2" name="center">
                                 @foreach($centers as $k => $c)
@@ -20,12 +20,16 @@
                                 @endforeach
                             </select>
                         </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="field-start-date">開始日期</label>
+                            <input type="date" id="field-start-date" class="form-control" value="2021-03-01" />
+                        </div>
                     </div>
 
                     <div class="row mb-2 g-0">
                         <div class="col-auto">
-                            <label class="sr-only" for="field-start-date">開始日期</label>
-                            <input type="date" id="field-start-date" class="form-control" value="2021-03-01" />
+                            <label class="sr-only" for="field-programme-code">活動編號</label>
+                            <input type="text" id="field-programme-code" class="form-control" placeholder="活動編號" />
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">搜尋</button>
@@ -52,6 +56,7 @@
                                 <th scope="col">收款同事</th>
                                 <th scope="col">費用</th>
                                 <th scope="col">收費方式</th>
+                                <th scope="col">收據編號</th>
                                 <th scope="col" style="width:8%;">&nbsp;</th>
                             </tr>
                         </thead>
@@ -66,6 +71,7 @@
                                     <td>{{ $b['created_by'] }}</td>
                                     <td>{{ $b['receive_method'] }}</td>
                                     <td>${{ $b['fee'] }}</td>
+                                    <td>{{ $b['invoice'] }}</td>
                                     <td><a href="/ecs/programme_register/{{ $b['register_id'] }}" class="btn btn-primary" target="_blank" >詳情</a></td>
                                 </tr>
                             @endforeach

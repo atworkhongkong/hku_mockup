@@ -42,52 +42,24 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><a href="/ecs/invoice/A0000012" target="_blank">A0000012</a></td>
-                                <td>03EL300102</td>
-                                <td>陳永仁</td>
-                                <td>98989898</td>
-                                <td>2021-01-05</td>
-                                <td>有效</td>
-                                <td>現金</td>
-                                <td></td>
-                                <td>$100.0</td>
-                                <td>
-                                    <a href="/ecs/programme_register/10?programme_id={{ $programme_id }}" class="btn btn-primary mb-1">詳情</a>
-                                    <a href="javascript:void(0);" class="btn btn-primary mb-1">列印收據</a>
-                                    <a href="javascript:void(0);" class="btn btn-danger mb-1" data-toggle="modal" data-target="#cancel-modal">取消</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="/ecs/invoice/A0000011" target="_blank">A0000011</a></td>
-                                <td>03ELS300805</td>
-                                <td>劉健明</td>
-                                <td>96969696</td>
-                                <td>2021-01-04</td>
-                                <td>有效</td>
-                                <td>現金</td>
-                                <td>$20<br>(優惠劵)</td>
-                                <td>$80.0</td>
-                                <td>
-                                    <a href="/ecs/programme_register/9?programme_id={{ $programme_id }}" class="btn btn-primary mb-1">詳情</a>
-                                    <a href="javascript:void(0);" class="btn btn-primary mb-1">列印收據</a>
-                                    <a href="javascript:void(0);" class="btn btn-danger mb-1" data-toggle="modal" data-target="#cancel-modal">取消</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="/ecs/invoice/A0000010" target="_blank">A0000010</a></td>
-                                <td>03ELS300805</td>
-                                <td>葉問</td>
-                                <td>95959595</td>
-                                <td>2021-01-04</td>
-                                <td>已取消</td>
-                                <td>現金</td>
-                                <td></td>
-                                <td>($100.0)</td>
-                                <td>
-                                    <a href="/ecs/programme_register/8?programme_id={{ $programme_id }}" target="_blank" class="btn btn-primary mb-1">詳情</a>
-                                </td>
-                            </tr>
+                            @foreach($registers as $r)
+                                <tr>
+                                    <td><a href="/ecs/invoice/{{ $r['invoice'] }}" target="_blank">{{ $r['invoice'] }}</a></td>
+                                    <td>{{ $r['member_code'] }}</td>
+                                    <td>{{ $r['member_name'] }}</td>
+                                    <td>{{ $r['mobile'] }}</td>
+                                    <td>{{ $r['create_date'] }}</td>
+                                    <td>{{ $register_statuses[$r['status']] }}</td>
+                                    <td>{{ $r['payment_method'] }}</td>
+                                    <td>{{ $r['coupon'] ? '$'.$r['coupon'] : '' }}</td>
+                                    <td>${{ $r['fee'] }}</td>
+                                    <td>
+                                        <a href="/ecs/programme_register/{{ $r['register_id'] }}?programme_id={{ $programme_id }}" class="btn btn-primary mb-1">詳情</a>
+                                        <a href="javascript:void(0);" class="btn btn-primary mb-1">列印收據</a>
+                                        <a href="javascript:void(0);" class="btn btn-danger mb-1" data-toggle="modal" data-target="#cancel-modal">取消</a>
+                                    </td>
+                                </tr>
+                            @endforeach
                             <tr>
                                 <td colspan="8" class="text-right">總收入︰</td>
                                 <td>$180.0</td>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\ECS;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
+use App\Http\Controllers\ECS\ProgrammeRegisterController;
 
 class ProgrammeController extends Controller
 {
@@ -65,7 +66,9 @@ class ProgrammeController extends Controller
 
     public function register($programme_id)
     {
-        return view('ECS.programme.register', compact('programme_id'));
+        $registers = ProgrammeRegisterController::getRegisters();
+        $register_statuses = ProgrammeRegisterController::getRegisterStatuses();
+        return view('ECS.programme.register', compact('programme_id', 'registers', 'register_statuses'));
     }
 
     public function attendance($programme_id)
