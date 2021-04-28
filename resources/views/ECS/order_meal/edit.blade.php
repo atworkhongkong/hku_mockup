@@ -12,16 +12,6 @@
             </nav>
 
             <div class="form-container">
-                <div class="row">
-                    <div class="col-12 mb-3">
-                        @if ($order_id == 1081)
-                            收據編號︰<a href="/ecs/invoice/A0000025">A0000025</a>
-                        @elseif ($order_id == 1082)
-                            收據編號︰<a href="/ecs/invoice/A0000038">A0000038</a>
-                        @endif
-                    </div>
-                </div>
-
                 <form>
                     <div class="row">
                         <div class="col-12 mb-3">
@@ -191,6 +181,13 @@
                         <div class="col-md-4 mb-3">
                             <label for="input-staff-name" class="form-label">職員姓名</label>
                             <input type="text" class="form-control" id="input-staff-name" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-invoice" class="form-label">收據編號</label>
+                            <input type="text" class="form-control" id="input-invoice" value="99802" readonly>
                         </div>
                     </div>
 

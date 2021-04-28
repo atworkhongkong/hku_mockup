@@ -12,7 +12,7 @@
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form" action="/ecs/order_meal" method="GET" onsubmit="return false;">
                     <div class="row mb-2">
-                        <div class="col-auto pr-1">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-center">中心</label>
                             <select id="field-center" class="form-control mr-2" name="center">
                                 @foreach($centers as $k => $c)
@@ -20,15 +20,19 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="col-auto pr-1">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-member-code" >會員編號</label>
-                            <input type="text" id="field-chi-name" class="form-control mr-2" placeholder="會員編號" value="03EL30012"/>
+                            <input type="text" id="field-member-code" class="form-control mr-2" placeholder="會員編號" value="03EL30012" style="width:140px;"/>
                         </div>
-                        <div class="col-auto pr-1">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-key-word" >關錄字</label>
-                            <input type="week" class="form-control mr-2" id="input-week">
+                            <input type="week" class="form-control mr-2" id="field-key-word">
                         </div>
-                        <div class="col-auto pr-1">
+                        <div class="col-auto pr-0">
+                            <label class="sr-only" for="field-invoice" >收據編號</label>
+                            <input type="text" class="form-control mr-2" id="field-invoice" placeholder="收據編號">
+                        </div>
+                        <div class="col-auto pr-0">
                             <button type="submit" class="btn btn-primary mr-2">搜尋</button>
                             <button class="btn btn-primary" data-toggle="collapse" data-target="#more-search" aria-expanded="false" aria-controls="more-search">進階搜尋</button>
                         </div>

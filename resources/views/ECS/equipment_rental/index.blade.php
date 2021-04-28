@@ -12,7 +12,7 @@
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
                 <form class="form" action="/ecs/volunteer" method="GET">
                     <div class="row mb-2">
-                        <div class="col-auto pr-1">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-center">中心</label>
                             <select id="field-center" class="form-control mr-2" name="center">
                                 @foreach($centers as $k => $c)
@@ -20,7 +20,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="col-auto pr-1">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-center">儀器</label>
                             <select id="field-center" class="form-control mr-2" name="center">
                                 <option value=""></option>
@@ -29,9 +29,13 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="col-auto pr-1">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-reference-number">儀器參考編號</label>
                             <input type="text" class="form-control mr-2" id="field-reference-number" placeholder="儀器參考編號">
+                        </div>
+                        <div class="col-auto pr-0">
+                            <label class="sr-only" for="field-invoice">收據編號</label>
+                            <input type="text" id="field-invoice" class="form-control" placeholder="收據編號" />
                         </div>
                     </div>
 
