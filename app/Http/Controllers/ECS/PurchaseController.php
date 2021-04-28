@@ -24,10 +24,10 @@ class PurchaseController extends Controller
     ];
 
     const PURCHASES = [
-        4 => ['identity' => '長者會員', 'code' => '03EL30012', 'name' => '陳明康', 'phone' => '9898xxxx', 'product_id' => 1, 'count' => 1, 'create_date' => '2021-02-26 13:05', 'created_by' => '同事A', 'invoice' => '80182'],
-        3 => ['identity' => '長者會員', 'code' => '03EL30005', 'name' => '張大妹', 'phone' => '9132xxxx', 'product_id' => 2, 'count' => 2, 'create_date' => '2021-02-25 10:05', 'created_by' => '同事B', 'invoice' => '80172'],
-        2 => ['identity' => '長者會員', 'code' => '03EL30018', 'name' => '趙霞', 'phone' => '9085xxxx', 'product_id' => 1, 'count' => 1, 'create_date' => '2021-02-21 17:16', 'created_by' => '同事A', 'invoice' => '80008'],
-        1 => ['identity' => '護老者', 'code' => 'J0012', 'name' => '黃敏', 'phone' => '6085xxxx', 'product_id' => 3, 'count' => 1, 'create_date' => '2021-01-01 12:35', 'created_by' => '同事B', 'invoice' => '79982']
+        4 => ['identity' => '長者會員', 'code' => '03EL30012', 'name' => '陳明康', 'phone' => '9898xxxx', 'product_id' => 1, 'count' => 1, 'create_date' => '2021-02-26 13:05', 'created_by' => '同事A', 'invoice' => 'A0000010'],
+        3 => ['identity' => '長者會員', 'code' => '03EL30005', 'name' => '張大妹', 'phone' => '9132xxxx', 'product_id' => 2, 'count' => 2, 'create_date' => '2021-02-25 10:05', 'created_by' => '同事B', 'invoice' => 'A0000009'],
+        2 => ['identity' => '長者會員', 'code' => '03EL30018', 'name' => '趙霞', 'phone' => '9085xxxx', 'product_id' => 1, 'count' => 1, 'create_date' => '2021-02-21 17:16', 'created_by' => '同事A', 'invoice' => 'A0000008'],
+        1 => ['identity' => '護老者', 'code' => 'J0012', 'name' => '黃敏', 'phone' => '6085xxxx', 'product_id' => 3, 'count' => 1, 'create_date' => '2021-01-01 12:35', 'created_by' => '同事B', 'invoice' => 'A0000007']
     ];
 
     const STOCK_REPORTS = [

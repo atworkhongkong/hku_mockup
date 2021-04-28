@@ -5,12 +5,12 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page">活動埋數</li>
+                    <li class="breadcrumb-item active" aria-current="page">埋數</li>
                 </ol>
             </nav>
 
             <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form" action="/ecs/programme_register/balance" method="GET">
+                <form class="form" action="/ecs/income/balance" method="GET">
                     <div class="row mb-2">
                         <div class="col-auto pr-0">
                             <label class="sr-only" for="field-center">中心</label>
@@ -20,24 +20,18 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto pr-0">
                             <label class="sr-only" for="field-start-date">開始日期</label>
                             <input type="date" id="field-start-date" class="form-control" value="2021-03-01" />
                         </div>
-                    </div>
-
-                    <div class="row mb-2 g-0">
                         <div class="col-auto">
-                            <label class="sr-only" for="field-programme-code">活動編號</label>
-                            <input type="text" id="field-programme-code" class="form-control" placeholder="活動編號" />
+                            <label class="sr-only" for="field-handled-by">負責同事</label>
+                            <input type="text" id="field-handled-by" class="form-control" value="同事A" placeholder="負責同事" />
                         </div>
                     </div>
+
                     <button type="submit" class="btn btn-primary">搜尋</button>
                 </form>
-            </div>
-
-            <div class="alert alert-warning text-center" role="alert">
-                未埋數
             </div>
 
             <div class="row mb-2">
@@ -49,36 +43,35 @@
                         <thead>
                             <tr>
                                 <th scope="col" style="width:15%;">時間</th>
-                                <th scope="col" style="width:15%;">活動編號</th>
-                                <th scope="col">活動名稱</th>
+                                <th scope="col" style="width:12%;">收據編號</th>
+                                <th scope="col">收費類別</th>
+                                <th scope="col">活動編號</th>
                                 <th scope="col">會員編號</th>
                                 <th scope="col">姓名</th>
-                                <th scope="col">收款同事</th>
-                                <th scope="col">費用</th>
+                                <th scope="col">經手人</th>
                                 <th scope="col">收費方式</th>
-                                <th scope="col">收據編號</th>
-                                <th scope="col" style="width:8%;">&nbsp;</th>
+                                <th scope="col">費用</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($balances as $b)
                                 <tr>
                                     <td>{{ $b['time'] }}</td>
-                                    <td>{{ $b['code'] }}</td>
-                                    <td>{{ $b['programme_name'] }}</td>
+                                    <td>{{ $b['invoice'] }}</td>
+                                    <td>{{ $b['income_type'] }}</td>
+                                    <td>{{ $b['programme_code'] }}</td>
                                     <td>{{ $b['member_code'] }}</td>
                                     <td>{{ $b['member_name'] }}</td>
                                     <td>{{ $b['created_by'] }}</td>
                                     <td>{{ $b['receive_method'] }}</td>
                                     <td>${{ $b['fee'] }}</td>
-                                    <td>{{ $b['invoice'] }}</td>
-                                    <td><a href="/ecs/programme_register/{{ $b['register_id'] }}" class="btn btn-primary" target="_blank" >詳情</a></td>
+                                    <td><a class="btn btn-primary" href="{{ $b['url'] }}" target="_blank">檢視</a></td>
                                 </tr>
                             @endforeach
                             <tr>
-                                <td colspan="7" class="text-right">總數︰</td>
-                                <td>$580.0</td>
-                                <td></td>
+                                <td colspan="8" class="text-right">總數︰</td>
+                                <td>$435.0</td>
                             </tr>
                         </tbody>
                     </table>
@@ -86,7 +79,7 @@
             </div>
 
             <div class="alert alert-primary" role="alert">
-                提示︰<a href="/ecs/programme_register/balance_done">已埋數</a>情形
+                提示︰<a href="/ecs/income/balance_done">已埋數</a>情形
             </div>
 
             <div class="row">

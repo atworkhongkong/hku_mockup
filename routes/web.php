@@ -82,8 +82,6 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_register/create_multiple', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'createMultiple'])->name('ecs.programme_register.create_multiple');
     Route::get('/programme_register/cancel', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'cancel'])->name('ecs.programme_register.cancel');
     Route::get('/programme_register/report', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'report'])->name('ecs.programme_register.report');
-    Route::get('/programme_register/balance', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'balance'])->name('ecs.programme_register.balance');
-    Route::get('/programme_register/balance_done', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'balanceDone'])->name('ecs.programme_register.balance_done');
     Route::get('/programme_register/export', [App\Http\Controllers\ECS\ProgrammeRegisterController::class, 'export'])->name('ecs.programme_register.export');
 
     Route::get('/programme_attendance/{programme_id}/create', [App\Http\Controllers\ECS\ProgrammeAttendanceController::class, 'create'])->where('id', '[0-9]+')->name('ecs.programme_attendance.create');
@@ -102,6 +100,9 @@ Route::prefix('ecs')->group(function() {
 
     Route::post('/invoice', [App\Http\Controllers\ECS\InvoiceController::class, 'search'])->name('ecs.invoice.search');
     Route::get('/invoice/{invoice_id}', [App\Http\Controllers\ECS\InvoiceController::class, 'show'])->name('ecs.invoice.show');
+
+    Route::get('/income/balance', [App\Http\Controllers\ECS\IncomeController::class, 'balance'])->name('ecs.income.balance');
+    Route::get('/income/balance_done', [App\Http\Controllers\ECS\IncomeController::class, 'balanceDone'])->name('ecs.income.balance_done');
 
     // meal
     Route::get('/meal_setting', [App\Http\Controllers\ECS\MealSettingController::class, 'index'])->name('ecs.meal_setting.index');

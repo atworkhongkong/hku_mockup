@@ -54,6 +54,17 @@
                     </div>
 
                     <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="input-dob" class="form-label">出生日期</label>
+                            <input type="date" class="form-control" id="input-dob">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-age" class="form-label">年齡</label>
+                            <input type="text" class="form-control" id="input-age" disabled>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-12 mb-3">
                             <label for="input-address" class="form-label">住址</label>
                             <input type="text" class="form-control" id="input-address">
