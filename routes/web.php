@@ -98,7 +98,7 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_tutor_salary/{salary_id}/edit', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'edit'])->where('salary_id', '[0-9]+')->name('ecs.programme_tutor_salary.edit');
     Route::get('/programme_tutor_salary/{salary_id}/contrast', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'contrast'])->where('salary_id', '[0-9]+')->name('ecs.programme_tutor_salary.contrast');
 
-    Route::post('/invoice', [App\Http\Controllers\ECS\InvoiceController::class, 'search'])->name('ecs.invoice.search');
+    Route::get('/invoice', [App\Http\Controllers\ECS\InvoiceController::class, 'index'])->name('ecs.invoice.index');
     Route::get('/invoice/{invoice_id}', [App\Http\Controllers\ECS\InvoiceController::class, 'show'])->name('ecs.invoice.show');
 
     Route::get('/income/balance', [App\Http\Controllers\ECS\IncomeController::class, 'balance'])->name('ecs.income.balance');

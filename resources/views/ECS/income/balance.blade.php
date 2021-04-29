@@ -25,8 +25,8 @@
                             <input type="date" id="field-start-date" class="form-control" value="2021-03-01" />
                         </div>
                         <div class="col-auto">
-                            <label class="sr-only" for="field-handled-by">負責同事</label>
-                            <input type="text" id="field-handled-by" class="form-control" value="同事A" placeholder="負責同事" />
+                            <label class="sr-only" for="field-handled-by">經手人</label>
+                            <input type="text" id="field-handled-by" class="form-control" value="同事A" placeholder="經手人" />
                         </div>
                     </div>
 
@@ -42,7 +42,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th scope="col" style="width:15%;">時間</th>
+                                <th scope="col" style="width:15%;">繳費日期</th>
                                 <th scope="col" style="width:12%;">收據編號</th>
                                 <th scope="col">收費類別</th>
                                 <th scope="col">活動編號</th>

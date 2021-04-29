@@ -66,7 +66,7 @@
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
                             <li><a class="dropdown-item" href="/ecs/programme">活動</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/programme_register/report">活動報名統計報告</a></li>
-                            <li><a class="dropdown-item" href="/ecs/invoice/A0000012">收據</a></li>
+                            <li><a class="dropdown-item" href="/ecs/invoice">收據</a></li>
                             <li class="border-bottom"><a class="dropdown-item" href="/ecs/income/balance">埋數</a></li>
                             <li><a class="dropdown-item" href="/ecs/meal_setting">膳食設定</a></li>
                             <li><a class="dropdown-item" href="/ecs/meal">每週飯餸</a></li>

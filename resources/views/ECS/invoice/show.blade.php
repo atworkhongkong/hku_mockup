@@ -6,19 +6,9 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/ecs/invoice/">收據</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ $invoice_id }}</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $invoice['invoice'] }}</li>
                 </ol>
             </nav>
-
-            <div class="form-container pb-4 mb-4 border-bottom border-muted rounded">
-                <form class="form-inline" action="/ecs/invoice" method="POST">
-                    @csrf
-                    <label class="sr-only" for="field-member-code">收據編號</label>
-                    <input type="text" id="field-member-code" class="form-control mr-2" name="invoice_id" value="{{ $invoice_id }}"/>
-
-                    <button type="submit" class="btn btn-primary">搜尋收據</button>
-                </form>
-            </div>
 
             <div>
                 <form>
@@ -26,7 +16,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-member-code" class="form-label">會員編號</label>
-                            <input type="text" class="form-control" id="input-member-code" value="03EL300102" readonly>
+                            <input type="text" class="form-control" id="input-member-code" value="{{ $invoice['member_code'] }}" readonly>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-membership" class="form-label">會員類別</label>
@@ -37,11 +27,11 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-chi-name" class="form-label">中文姓名</label>
-                            <input type="text" class="form-control" id="input-chi-name" value="陳永仁" readonly>
+                            <input type="text" class="form-control" id="input-chi-name" value="{{ $invoice['member_name'] }}" readonly>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-eng-name" class="form-label">英文姓名</label>
-                            <input type="text" class="form-control" id="input-eng-name" value="Chan Wing Yan" readonly>
+                            <input type="text" class="form-control" id="input-eng-name" value="XXXX XXX XXX" readonly>
                         </div>
                     </div>
 
@@ -85,29 +75,15 @@
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="input-bank-in-status" class="form-label">入數狀態</label>
-                            <select class="custom-select" id="input-bank-in-status" disabled>
-                                <option value="T">已銀行入數</option>
-                                <option value="F">未入數</option>
-                            </select>
+                            <label for="input-fee" class="form-label">收費金額</label>
+                            <input type="text" class="form-control" id="input-fee" value="{{ $invoice['fee'] }}" readonly>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="input-staff" class="form-label">職員</label>
-                            <input type="text" class="form-control" id="input-staff" value="職員A" readonly>
-                        </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-payment-type" class="form-label">繳費方式</label>
                             <select class="custom-select" id="input-payment-type" disabled>
                                 <option value="cash">現金</option>
                                 <option value="cheque">支票</option>
                             </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="input-fee" class="form-label">收費金額</label>
-                            <input type="text" class="form-control" id="input-fee" value="100" readonly>
                         </div>
                     </div>
 
@@ -116,40 +92,89 @@
                             <label for="input-invoice-status" class="form-label">收據狀態</label>
                             <select class="custom-select" id="input-invoice-status" disabled>
                                 <option value="A">有效</option>
-                                <option value="I">無效</option>
+                                <option value="I">作癈</option>
                             </select>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="input-create-date" class="form-label">發出日期</label>
-                            <input type="text" class="form-control" id="input-create-date" value="2021-01-05" readonly>
+                            <label for="input-create-date" class="form-label">繳費日期</label>
+                            <input type="text" class="form-control" id="input-create-date" value="{{ $invoice['time'] }}" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-staff" class="form-label">經手人</label>
+                            <input type="text" class="form-control" id="input-staff" value="職員A" readonly>
                         </div>
                     </div>
 
 
 
-                    <p class="border-bottom h5 pb-2 my-4">報名資料</p>
+                    <p class="border-bottom h5 pb-2 my-4">收費類別</p>
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="input-code" class="form-label">活動編號</label>
-                            <input type="text" class="form-control" id="input-code" value="JM30130" readonly>
+                        <div class="col-12 mb-3">
+                            <label for="input-income-type" class="form-label">收費類別</label>
+                            <select id="input-income-type" class="custom-select" disabled>
+                                @foreach($income_types as $it)
+                                    <option {{ $it == $invoice['income_type'] ? 'SELECTED' : '' }}>{{ $it }}</option>
+                                @endforeach
+                            </select>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="input-chi-name" class="form-label">中文名稱</label>
-                            <input type="text" class="form-control" id="input-chi-name" value="親子天地" readonly>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <a href="{{ $invoice['url'] }}" target="_blank">詳細內容</a>
                         </div>
                     </div>
 
+                    <p class="border-bottom h5 pb-2 my-4">退款</p>
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="input-programme-detail" class="form-label">活動詳情</label>
-                            <div>
-                                <a href="/ecs/programme/edit/2" target="_blank">活動詳細內容</a>
+                        <div class="col-12 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="input-confirm-refund">
+                                <label class="form-check-label" for="input-confirm-refund">
+                                    處理退款
+                                </label>
                             </div>
                         </div>
                     </div>
-
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-refund-reason">退款原因</label>
+                            <textarea class="form-control" id="input-refund-reason" rows="3" disabled></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-refund-date">退款日期</label>
+                            <input type="text" class="form-control" id="input-refund-date" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn btn-primary">提交</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+@endsection
+
+@section('bottom_script')
+    <script>
+        $(function() {
+            $("#input-confirm-refund").on('click', function() {
+                if ($(this).is(":checked")) {
+                    $("#input-refund-reason").attr('disabled', false);
+                    let date = new Date().toISOString().split('T')[0];
+                    let time = new Date().toLocaleTimeString('en-GB', { hour: "numeric", minute: "numeric"});
+                    $("#input-refund-date").attr('disabled', false).val(date + ' ' + time);
+                } else {
+                    $("#input-refund-reason").attr('disabled', true);
+                    $("#input-refund-date").attr('disabled', true).val('');
+                }
+            })
+        })
+    </script>
 @endsection
