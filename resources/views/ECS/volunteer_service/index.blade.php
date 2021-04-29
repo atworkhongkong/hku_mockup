@@ -31,6 +31,15 @@
                             </select>
                         </div>
                         <div class="col-auto pr-1">
+                            <label class="sr-only" for="field-support-service">支援服務</label>
+                            <select id="field-support-service" class="form-control mr-2">
+                                <option value=""></option>
+                                @foreach($support_services as $k => $c)
+                                    <option value="{{ $k }}">{{ $c }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">中心</label>
                             <input type="text" class="form-control mr-2" id="field-chi-name" placeholder="義工中文姓名">
                         </div>

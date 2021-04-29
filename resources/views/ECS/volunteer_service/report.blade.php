@@ -22,14 +22,16 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="col-auto pr-1">
-                            <label class="sr-only" for="field-center">義工小組</label>
-                            <select id="field-center" class="form-control mr-2" name="center">
-                                @foreach($teams as $k => $t)
-                                    <option value="{{ $k }}" {{ $k == 1 ? "SELECTED" : "" }}>{{ $t }}</option>
-                                @endforeach
-                            </select>
-                        </div>
+                        @if ($type == 'service_hour')
+                            <div class="col-auto pr-1">
+                                <label class="sr-only" for="field-team">義工小組</label>
+                                <select id="field-team" class="form-control mr-2" name="center">
+                                    @foreach($teams as $k => $t)
+                                        <option value="{{ $k }}" {{ $k == 1 ? "SELECTED" : "" }}>{{ $t }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        @endif
                     </div>
 
                     <div class="row mb-2 g-0">
@@ -49,46 +51,11 @@
                 </form>
             </div>
 
-            <div class="alert alert-primary" role="alert">
-                某個中心義工小組的時數總結
-            </div>
-
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到{{ count($services) }}筆記錄</span>
-                    </div>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">義工編號</th>
-                                <th scope="col">義工姓名</th>
-                                <th scope="col">活躍程度</th>
-                                <th scope="col">級別</th>
-                                <th scope="col">STE/Non-STE</th>
-                                <th scope="col">時數</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($services as $s)
-                                <tr>
-                                    <td><a href="/ecs/volunteer/{{ $s['volunteer_id'] }}/edit" target="_blank">{{ $s['code'] }}</a></td>
-                                    <td>{{ $s['volunteer'] }}</td>
-                                    <td>{{ $activeness[$s['activeness']] }}</td>
-                                    <td>{{ $s['grade'] }}</td>
-                                    <td>{{ $s['ste'] }}</td>
-                                    <td>{{ $s['hour'] }}</td>
-                                </tr>
-                            @endforeach
-                            <tr>
-                                <td class="text-right" colspan="5">總時數︰</td>
-                                <td>37</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="btn btn-primary">匯出</button>
-                </div>
-            </div>
+            @if ($type == 'service_hour')
+                @include('ecs.volunteer_service.report_service_hour')
+            @elseif ($type == 'support_services')
+                @include('ecs.volunteer_service.report_support_services')
+            @endif
         </div>
     </div>
 @endsection

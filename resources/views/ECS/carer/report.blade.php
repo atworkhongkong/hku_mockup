@@ -22,7 +22,16 @@
                                 @endforeach
                             </select>
                         </div>
-                        @if ($type !== '')
+                        @if ($type == 'transfer')
+                            <div class="col-auto pr-1">
+                                <label class="sr-only" for="field-carer-type">顧老者類別轉換</label>
+                                <select id="field-carer-type" class="form-control mr-2">
+                                    <option></option>
+                                    <option value="">護老者轉至有需要護老者</option>
+                                    <option value="">有需要護老者轉至護老者</option>
+                                </select>
+                            </div>
+                        @elseif ($type !== '')
                             <div class="col-auto pr-1">
                                 <label class="sr-only" for="field-carer-type">顧老者類別</label>
                                 <select id="field-carer-type" class="form-control mr-2">

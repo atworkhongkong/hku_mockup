@@ -74,18 +74,48 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="input-team" class="form-label">義工小組</label>
-                            <select class="custom-select" aria-label="select example">
-                                <option value=""></option>
-                                @foreach($teams as $k => $c)
-                                    <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
-                                @endforeach
+                        <div class="col-12 mb-3">
+                            <label for="service-type" class="form-label">服務類別</label>
+                            <select id="service-type" class="custom-select">
+                                <option value="team">義工小組</option>
+                                <option value="support">支援服務</option>
                             </select>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="input-activity-name" class="form-label">活動名稱</label>
-                            <input type="text" class="form-control" id="input-activity-name" value="老人外展">
+                    </div>
+
+                    <div id="service-type-team">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="input-team" class="form-label">義工小組</label>
+                                <select class="custom-select" aria-label="select example">
+                                    <option value=""></option>
+                                    @foreach($teams as $k => $c)
+                                        <option value="{{ $k }}" {{ $k == 1 ? 'SELECTED' : '' }}>{{ $c }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="input-activity-name" class="form-label">活動名稱</label>
+                                <input type="text" class="form-control" id="input-activity-name" value="老人外展">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="service-type-support" style="display:none;">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="service-type" class="form-label">服務性質</label>
+                                <select id="service-type" class="custom-select">
+                                    <option></option>
+                                    @foreach($support_services as $k => $c)
+                                        <option value="{{ $k }}">{{ $c }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="support-target-name" class="form-label">受助人姓名</label>
+                                <input type="text" class="form-control" id="support-target-name">
+                            </div>
                         </div>
                     </div>
 
@@ -116,4 +146,20 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('bottom_script')
+    <script>
+        $(function() {
+            $("#service-type").change(function() {
+                if ($(this).val() === 'support') {
+                    $('#service-type-support').show();
+                    $('#service-type-team').hide();
+                } else {
+                    $('#service-type-support').hide();
+                    $('#service-type-team').show();
+                }
+            });
+        })
+    </script>
 @endsection

@@ -23,7 +23,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        @if ($type == 'new')
+                        @if (false && $type == 'new')
                             <div class="col-auto pr-1">
                                 <label class="sr-only" for="field-ste">STE</label>
                                 <select id="field-ste" class="form-control mr-2">
@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="row mb-2 g-0">
-                        @if ($type == 'new')
+                        @if (false)
                             <div class="col-auto">
                                 <label class="sr-only" for="field-start-date">開始日期</label>
                                 <input type="date" id="field-start-date" class="form-control" value="2021-01-01" />
@@ -56,7 +56,7 @@
                                 <label class="sr-only" for="field-end-date">結束日期</label>
                                 <input type="date" id="field-end-date" class="form-control" value="2021-01-31" />
                             </div>
-                        @elseif ($type == 'accumulate')
+                        @elseif ($type == 'new' || $type == 'accumulate')
                             <div class="col-auto">
                                 <label class="sr-only" for="field-year">年份</label>
                                 <select class="form-control" id="field-year">

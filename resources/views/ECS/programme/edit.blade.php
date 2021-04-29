@@ -152,7 +152,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 mb-3">
                             <label for="input-register-type" class="form-label">報名形式</label>
                             <select class="custom-select" aria-label="select example">
                                 <option value=""></option>
@@ -160,9 +160,21 @@
                                 <option value="draw">抽籤</option>
                             </select>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="input-identifier-code" class="form-label">社署指標編號</label>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="input-identifier-code" class="form-label">社署指標編號 (最多四個)</label>
                             <input type="text" class="form-control" id="input-identifier-code">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <input type="text" class="form-control" style="margin-top:32px;">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <input type="text" class="form-control" style="margin-top:32px;">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <input type="text" class="form-control" style="margin-top:32px;">
                         </div>
                     </div>
 

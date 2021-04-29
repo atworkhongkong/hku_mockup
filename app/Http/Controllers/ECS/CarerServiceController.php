@@ -56,6 +56,10 @@ class CarerServiceController extends Controller
     public function report(Request $request)
     {
         $type = $request->get('type');
-        return view('ECS.carer_service.report', compact('type'));
+        $services = [
+            '04/2021' => ['purchase' => 3, 'rental' => 5, 'programme' => 8, 'phone' => 10],
+            '05/2021' => ['purchase' => 2, 'rental' => 4, 'programme' => 3, 'phone' => 5],
+        ];
+        return view('ECS.carer_service.report', compact('type', 'services'));
     }
 }

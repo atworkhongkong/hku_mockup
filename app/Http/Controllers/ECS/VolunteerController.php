@@ -135,7 +135,12 @@ class VolunteerController extends Controller
 
         $report = [];
         if ($type == 'new') {
-            $count = 2;
+            $count = 4;
+            $report = [
+                1 => ['month' => '01/2021', 'ste_below' => 6, 'ste_above' => 9, 'non_ste_below' => 0, 'non_ste_above' => 0, 'total' => 15,],
+                2 => ['month' => '02/2021', 'ste_below' => 5, 'ste_above' => 0, 'non_ste_below' => 0, 'non_ste_above' => 0, 'total' => 5,],
+                3 => ['month' => '03/2021', 'ste_below' => 2, 'ste_above' => 1, 'non_ste_below' => 0, 'non_ste_above' => 0, 'total' => 3,]
+            ];
         } else {
             $count = 4;
             $report = [

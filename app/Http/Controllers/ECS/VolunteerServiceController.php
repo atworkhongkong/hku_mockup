@@ -19,6 +19,11 @@ class VolunteerServiceController extends Controller
     const TEAMS = [
         1 => '耆樂大使', 2 => '智友伴', 3 => '老友記小組'
     ];
+    const SUPPORT_SERVICES = [
+        1 => '電話聯絡',
+        2 => '探訪',
+        3 => '簡單個人援助'
+    ];
     const SERVICES = [
         5 => ['volunteer' => '黃柏宇', 'volunteer_id' => 1, 'team_id' => 1, 'service_center_id' => 1, 'service' => '老人外展', 'hour' => 4, 'date' => '2021-01-31'],
         4 => ['volunteer' => '詹晏靖', 'volunteer_id' => 2, 'team_id' => 1, 'service_center_id' => 1, 'service' => '親子美味任務', 'hour' => 3, 'date' => '2021-01-31'],
@@ -36,6 +41,7 @@ class VolunteerServiceController extends Controller
         View::share('centers', self::CENTERS);
         View::share('teams', self::TEAMS);
         View::share('activeness', self::ACTIVENESS);
+        View::share('support_services', self::SUPPORT_SERVICES);
     }
 
     public function index()
@@ -55,15 +61,22 @@ class VolunteerServiceController extends Controller
         return view('ECS.volunteer_service.edit', compact('id', 'service'));
     }
 
-    public function report()
+    public function report(Request $request)
     {
+        //$type = isset($request->get('type')) ? $type : '';
+        if ($request->get('type')) {
+            $type = $request->get('type');
+            $full_url = URL::full();
+        } else {
+            $type = 'service_hour';
+            $full_url = URL::full() . '?type=service_hour';
+        }
         $services = [
             1 => ['volunteer_id' => 1, 'code' => 'VO100082', 'volunteer' => '黃柏宇', 'activeness' => 'A', 'hour' => 54, 'grade' => '基本', 'ste' => 'STE'],
             2 => ['volunteer_id' => 2, 'code' => 'VO100075', 'volunteer' => '詹晏靖', 'activeness' => 'A', 'hour' => 68, 'grade' => '進階', 'ste' => 'STE'],
             3 => ['volunteer_id' => 3, 'code' => 'VO100063', 'volunteer' => '楊智盈', 'activeness' => 'A', 'hour' => 47, 'grade' => '基本', 'ste' => 'STE'],
             4 => ['volunteer_id' => 4, 'code' => 'VO100050', 'volunteer' => '廖怡秀', 'activeness' => 'A', 'hour' => 75, 'grade' => '基本', 'ste' => 'STE']
         ];
-        $full_url = URL::full();
-        return view('ECS.volunteer_service.report', compact('services', 'full_url'));
+        return view('ECS.volunteer_service.report', compact('services', 'full_url', 'type'));
     }
 }
