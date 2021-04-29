@@ -152,7 +152,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button class="btn btn-primary">提交</button>
+                            <button class="btn btn-primary" id="btn-refund" disabled>退款及列印</button>
                         </div>
                     </div>
                 </form>
@@ -170,9 +170,11 @@
                     let date = new Date().toISOString().split('T')[0];
                     let time = new Date().toLocaleTimeString('en-GB', { hour: "numeric", minute: "numeric"});
                     $("#input-refund-date").attr('disabled', false).val(date + ' ' + time);
+                    $("#btn-refund").attr('disabled', false);
                 } else {
                     $("#input-refund-reason").attr('disabled', true);
                     $("#input-refund-date").attr('disabled', true).val('');
+                    $("#btn-refund").attr('disabled', true);
                 }
             })
         })
