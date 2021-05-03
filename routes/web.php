@@ -15,15 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     //return view('welcome');
-    return redirect('/ecs/programme');
+    //return redirect('/ecs/programme');
+    return view('welcome');
 });
 
 // Added by Roland for adding Fortify auth
 // Uncomment 'verified' middleware and Features::emailVerification() in config/Fortify.php if we want to enable email verification checking
 // https://dev.to/jasminetracey/laravel-8-with-bootstrap-livewire-and-fortify-5d33
-Route::middleware(['auth', /* 'verified' */ ])->group(function () {
+/*
+Route::middleware(['auth'])->group(function () {
     Route::view('home', 'home')->name('home');
 });
+*/
 // end setting basic auth
 
 Route::prefix('hss')->group(function() {
