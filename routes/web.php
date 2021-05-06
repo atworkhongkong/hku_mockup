@@ -101,6 +101,10 @@ Route::prefix('ecs')->group(function() {
     Route::get('/programme_tutor_salary/{salary_id}/edit', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'edit'])->where('salary_id', '[0-9]+')->name('ecs.programme_tutor_salary.edit');
     Route::get('/programme_tutor_salary/{salary_id}/contrast', [App\Http\Controllers\ECS\ProgrammeTutorSalaryController::class, 'contrast'])->where('salary_id', '[0-9]+')->name('ecs.programme_tutor_salary.contrast');
 
+    Route::get('/coupon', [App\Http\Controllers\ECS\CouponController::class, 'index'])->name('ecs.coupon.index');
+    Route::get('/coupon/create', [App\Http\Controllers\ECS\CouponController::class, 'create'])->name('ecs.coupon.create');
+    Route::get('/coupon/{coupon_id}/edit', [App\Http\Controllers\ECS\CouponController::class, 'edit'])->name('ecs.coupon.edit');
+
     Route::get('/invoice', [App\Http\Controllers\ECS\InvoiceController::class, 'index'])->name('ecs.invoice.index');
     Route::get('/invoice/{invoice_id}', [App\Http\Controllers\ECS\InvoiceController::class, 'show'])->name('ecs.invoice.show');
 

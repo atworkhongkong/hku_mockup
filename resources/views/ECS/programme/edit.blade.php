@@ -224,8 +224,8 @@
                         <div class="col-12 mb-3">
                             <label for="input-remark" class="form-label">狀態</label>
                             <select class="custom-select" aria-label="select example">
-                                <option></option>
-                                <option value="1" SELECTED>正常</option>
+                                <option value="0" SELECTED>未開始</option>
+                                <option value="1">正常</option>
                                 <option value="2">暫停</option>
                                 <option value="3">取消</option>
                             </select>

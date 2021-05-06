@@ -248,8 +248,8 @@
                         <div class="col-12 mb-3">
                             <label for="input-remark" class="form-label">狀態</label>
                             <select class="custom-select" aria-label="select example">
-                                <option></option>
-                                <option value="1" SELECTED>正常</option>
+                                <option value="0" SELECTED>未開始</option>
+                                <option value="1">正常</option>
                                 <option value="2">暫停</option>
                                 <option value="3">取消</option>
                             </select>
@@ -263,6 +263,13 @@
                     </div>
 
                 </form>
+            </div>
+
+            <div class="alert alert-primary mt-3" role="alert">
+                提示︰<br>
+                理論上新增活動有二種方法，第一種方法為直接在ECS系統新增活動，另一種方法為同事在另一系統輸入e-proposal後，已批核的record能直接射到ECS系統<br>
+                新增活動時default status為未開始，直至活動轉為正常時才開始接受報名<br>
+                活動編號的產生容後覆
             </div>
         </div>
     </div>
