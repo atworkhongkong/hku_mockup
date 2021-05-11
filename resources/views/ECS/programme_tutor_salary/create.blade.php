@@ -82,8 +82,8 @@
 
                     <div class="row mb-2">
                         <div class="col-12">
-                            <label class="" for="field-ratio">分帳比例</label>
-                            <input type="text" id="field-ratio" class="form-control" placeholder="0.0" />
+                            <label class="" for="field-ratio">分賬比例</label>
+                            <input type="text" id="field-ratio" class="form-control" placeholder="%" />
                         </div>
                     </div>
 
@@ -107,6 +107,10 @@
                         </div>
                     </div>
                 </form>
+            </div>
+
+            <div class="alert alert-primary" role="alert">
+                導師收入會按課程收入，扣減行政費後，再按每人/每堂/全期/分賬比例而計算出。
             </div>
         </div>
     </div>

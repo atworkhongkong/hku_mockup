@@ -83,8 +83,8 @@
 
                     <div class="row mb-2">
                         <div class="col-12">
-                            <label class="" for="field-ratio">分帳比例</label>
-                            <input type="text" id="field-ratio" class="form-control" placeholder="0.0" />
+                            <label class="" for="field-ratio">分賬比例</label>
+                            <input type="text" id="field-ratio" class="form-control" placeholder="%" />
                         </div>
                     </div>
 

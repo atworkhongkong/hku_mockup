@@ -1,6 +1,11 @@
 @extends('layouts.master')
 
 @section('content')
+    <style>
+        .dim {
+            color: #BCBCBC;
+        }
+    </style>
     <div class="container">
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
@@ -17,16 +22,46 @@
                     <div class="row mb-2">
                         <div class="col-md-12">
                             <label for="input-draw-count" class="form-label">中籤數</label>
-                            <input type="text" class="form-control" id="input-draw-count" value="8">
+                            <input type="text" class="form-control" id="input-draw-count" value="7">
                         </div>
                     </div>
 
                     <div class="row mb-2">
                         <div class="col-md-12">
-                            <label for="input-draw-date" class="form-label">上次抽籤日期</label>
-                            <input type="text" class="form-control" id="input-draw-date" value="2020-01-08" readonly>
+                            <button type="submit" class="btn btn-primary">抽籤</button>
                         </div>
                     </div>
+
+                    <div class="alert alert-primary" role="alert">
+                        提示︰<br>
+                        按「抽籤」後，會從未中籤的申請者當中進行抽籤。<br>
+                        抽中後，中籤者的狀態會成為待確認。<br>
+                        申請人確認報名，同事會把狀態轉為「已確認」<br>
+                        若申請人放棄，同事會把狀態改為「取消」，輸入新的中籤數後再進行從未中籤者中進行另一次抽籤。
+                    </div>
+
+                    <hr class="my-4">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td>申請人數</td>
+                                <td>未中籤人數</td>
+                                <td>已確認人數</td>
+                                <td>待確認人數</td>
+                                <td>取消人數</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <hr class="my-4">
 
@@ -39,116 +74,40 @@
                                 <th scope="col">姓別</th>
                                 <th scope="col">聯絡電話</th>
                                 <th scope="col">申請日期</th>
+                                <th scope="col">中籤日期</th>
+                                <th scope="col">狀況</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>03EL300102</td>
-                                <td>陳永仁</td>
-                                <td>男</td>
-                                <td>98989898</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>男</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>女</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>女</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>女</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>男</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>男</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>女</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr style="color:#ABABAB;">
-                                <th scope="row">9</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>男</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr style="color:#ABABAB;">
-                                <th scope="row">10</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>女</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr style="color:#ABABAB;">
-                                <th scope="row">11</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>男</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
-                            <tr style="color:#ABABAB;">
-                                <th scope="row">12</th>
-                                <td>03EL3001xx</td>
-                                <td>xxx</td>
-                                <td>女</td>
-                                <td>xxxxxxxx</td>
-                                <td>2021-01-05</td>
-                            </tr>
+                            @foreach($draw as $k => $v)
+                                <tr class="{{ $v['status'] == 'cancel' ? 'dim' : ''}}">
+                                    <th>{{ $k }}</th>
+                                    <td>{{ $v['member_code'] }}</td>
+                                    <td>{{ $v['name'] }}</td>
+                                    <td>{{ $v['gender'] }}</td>
+                                    <td>{{ $v['phone'] }}</td>
+                                    <td>{{ $v['apply_date'] }}</td>
+                                    <td>{{ $v['lucky_date'] }}</td>
+                                    <td>
+                                        @if ($v['status'] != 'waiting')
+                                            <select class="form-control">
+                                                <option {{ $v['status'] == 'not_confirm' ? 'SELECTED' : '' }}>待確認</option>
+                                                <option {{ $v['status'] == 'confirmed' ? 'SELECTED' : '' }}>已確認</option>
+                                                <option {{ $v['status'] == 'cancel' ? 'SELECTED' : '' }}>取消</option>
+                                            </select>
+                                        @else
+                                            未中籤
+                                        @endif
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
 
-                    <div class="alert alert-primary" role="alert">
-                        提示︰當確認抽籤後，不會再有抽籤機會，亦要收埋「重新抽籤」按鈕。
-                    </div>
-
                     <div class="row mb-2">
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">重新抽籤</button>
-                            <button type="submit" class="btn btn-primary">確認抽籤</button>
+
+                            <button type="submit" class="btn btn-primary">提交</button>
                         </div>
                     </div>
 

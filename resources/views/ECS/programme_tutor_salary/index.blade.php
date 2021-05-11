@@ -74,7 +74,7 @@
                 <div class="row mb-2">
                     <div class="col-12">
                         <label class="" for="field-admin-fee">行政費</label>
-                        <input type="text" id="field-admin-fee" class="form-control" />
+                        <input type="text" id="field-admin-fee" class="form-control" value="1000" />
                     </div>
                 </div>
 

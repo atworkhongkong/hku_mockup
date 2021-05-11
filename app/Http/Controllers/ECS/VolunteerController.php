@@ -118,7 +118,8 @@ class VolunteerController extends Controller
 
     public function create()
     {
-        return view('ECS.volunteer.create');
+        $edit_center_id = 1;
+        return view('ECS.volunteer.create', compact('edit_center_id'));
     }
 
     public function edit($id)

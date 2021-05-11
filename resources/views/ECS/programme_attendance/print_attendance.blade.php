@@ -55,14 +55,22 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">姓名</th>
+                                <th scope="col">性別</th>
+                                <th scope="col">年齡</th>
                                 <th scope="col">出席/缺席</th>
                             </tr>
                         </thead>
                         <tbody>
                             @for($i = 1 ; $i <= 12 ; $i++)
+                                <?php
+                                    $gender = Arr::random(['M', 'F']);
+                                    $age = rand(60,80);
+                                ?>
                                 <tr>
                                     <td>{{ $i }}</td>
                                     <td>xxx</td>
+                                    <td>{{ $gender }}</td>
+                                    <td>{{ $age }}</td>
                                     <td>&nbsp;</td>
                                 </tr>
                             @endfor

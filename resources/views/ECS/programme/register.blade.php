@@ -91,6 +91,24 @@
                                     <input type="text" class="form-control" id="field-name" value="陳永仁" readonly>
                                 </div>
                                 <div class="form-group">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">優惠劵編號</th>
+                                                <th scope="col">優惠劵名稱</th>
+                                                <th scope="col">折扣</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control" type="text" value="NY2021" readonly></td>
+                                                <td><input class="form-control" type="text" value="20元優惠劵" readonly></td>
+                                                <td><input class="form-control" type="text" value="20" readonly></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="form-group">
                                     <label for="exampleFormControlTextarea1">取消原因</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
@@ -104,8 +122,14 @@
                                         </select>
                                     </div>
                                     <div class="col-md-6 mb-2">
-                                        <label for="refund-day">退款日數</label>
-                                        <input type="text" class="form-control" id="refund-day">
+                                        <label for="refund-lesson">退款堂數</label>
+                                        <input type="text" class="form-control" id="refund-lesson">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="field-refund-amount" class="col-form-label">退款金額</label>
+                                        <input type="text" class="form-control" id="field-refund-amount">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -119,6 +143,10 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">取 消</button>
                             <button type="button" class="btn btn-primary" onclick="document.getElementById('submit-form').submit();">退 款</button>
+                        </div>
+
+                        <div class="alert alert-primary" role="alert">
+                            提示︰退款金額會按退款堂數自動計算，亦容許隨時更改。
                         </div>
                     </div>
                 </div>

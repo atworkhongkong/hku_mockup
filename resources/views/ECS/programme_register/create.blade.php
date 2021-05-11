@@ -170,12 +170,12 @@
                         <div class="p-3">
                             <table class="table">
                                 <thead>
-                                <tr>
-                                    <th scope="col">優惠劵編號</th>
-                                    <th scope="col">優惠劵名稱</th>
-                                    <th scope="col">折扣</th>
-                                    <th scope="col">&nbsp;</th>
-                                </tr>
+                                    <tr>
+                                        <th scope="col">優惠劵編號</th>
+                                        <th scope="col">優惠劵名稱</th>
+                                        <th scope="col">折扣</th>
+                                        <th scope="col">&nbsp;</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>

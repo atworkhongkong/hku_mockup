@@ -110,19 +110,24 @@
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <span>優惠劵</span>
+                            <button type="button" class="btn btn-primary">新增優惠劵</button>
                         </div>
                         <div class="p-3">
                             <table class="table">
                                 <thead>
                                     <tr>
+                                        <th scope="col">優惠劵編號</th>
                                         <th scope="col">優惠劵名稱</th>
                                         <th scope="col">折扣</th>
+                                        <th scope="col">&nbsp;</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td><input class="form-control" type="text" value="NY2021"></td>
+                                        <td><input class="form-control" type="text" value="20元優惠劵"></td>
                                         <td><input class="form-control" type="text" value="20"></td>
+                                        <td><i class="far fa-trash"></i></td>
                                     </tr>
                                 </tbody>
                             </table>
