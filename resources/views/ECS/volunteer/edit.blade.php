@@ -184,6 +184,11 @@
                         </div>
                     </div>
 
+                    <div class="alert alert-primary" role="alert">
+                        提示︰<br>
+                        若義工小組數量太多，上面table可只顯示所選擇之中心豁下的義工小組，並不須要顯示所有中心的義工小組
+                    </div>
+
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="input-register-date" class="form-label">首次登記日期</label>

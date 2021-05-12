@@ -22,7 +22,7 @@
                     <div class="row mb-2">
                         <div class="col-md-12">
                             <label for="input-draw-count" class="form-label">中籤數</label>
-                            <input type="text" class="form-control" id="input-draw-count" value="7">
+                            <input type="text" class="form-control" id="input-draw-count" value="">
                         </div>
                     </div>
 
@@ -35,8 +35,8 @@
                     <div class="alert alert-primary" role="alert">
                         提示︰<br>
                         按「抽籤」後，會從未中籤的申請者當中進行抽籤。<br>
-                        抽中後，中籤者的狀態會成為待確認。<br>
-                        申請人確認報名，同事會把狀態轉為「已確認」<br>
+                        抽中後，中籤者的狀態會成為未報名。<br>
+                        申請人確認報名，同事會把狀態轉為「已報名」<br>
                         若申請人放棄，同事會把狀態改為「取消」，輸入新的中籤數後再進行從未中籤者中進行另一次抽籤。
                     </div>
 
@@ -45,7 +45,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <td>申請人數</td>
+                                <td>後補人數</td>
                                 <td>未中籤人數</td>
                                 <td>已確認人數</td>
                                 <td>待確認人數</td>
@@ -91,8 +91,8 @@
                                     <td>
                                         @if ($v['status'] != 'waiting')
                                             <select class="form-control">
-                                                <option {{ $v['status'] == 'not_confirm' ? 'SELECTED' : '' }}>待確認</option>
-                                                <option {{ $v['status'] == 'confirmed' ? 'SELECTED' : '' }}>已確認</option>
+                                                <option {{ $v['status'] == 'not_confirm' ? 'SELECTED' : '' }}>已報名</option>
+                                                <option {{ $v['status'] == 'confirmed' ? 'SELECTED' : '' }}>未報名</option>
                                                 <option {{ $v['status'] == 'cancel' ? 'SELECTED' : '' }}>取消</option>
                                             </select>
                                         @else

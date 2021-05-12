@@ -56,51 +56,29 @@
                         <div class="p-3">
                             <table class="table">
                                 <thead>
-                                <tr>
-                                    <th scope="col">貨品</th>
-                                    <th scope="col">現存件數</th>
-                                    <th scope="col">購買數量</th>
-                                    <th scope="col">價格</th>
-                                    <th scope="col">&nbsp;</th>
-                                </tr>
+                                    <tr>
+                                        <th scope="col">貨品</th>
+                                        <th scope="col">現存件數</th>
+                                        <th scope="col">購買數量</th>
+                                        <th scope="col">價格</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>
-                                        <select class="form-control" id="input-product">
-                                            <option value=""></option>
-                                            @foreach($products as $k => $e)
-                                                <option value="{{ $k }}" {{ $k == $purchase['product_id'] ? 'SELECTED' : '' }}>{{ $e['name'] }}</option>
-                                            @endforeach
-                                        </select>
-                                    </td>
-                                    <td><input type="text" class="form-control" value="5" readonly></td>
-                                    <td>
-                                        <input class="form-control" type="text" value="{{ $purchase['count'] }}">
-                                    </td>
-                                    <td><input type="text" class="form-control" value="{{ $products[$purchase['product_id']]['price'] * $purchase['count'] }}" readonly></td>
-                                    <td>
-                                        <i class="far fa-trash"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <select class="form-control" id="input-product">
-                                            <option value=""></option>
-                                            @foreach($products as $k => $e)
-                                                <option value="{{ $k }}">{{ $e['name'] }}</option>
-                                            @endforeach
-                                        </select>
-                                    </td>
-                                    <td><input type="text" class="form-control" value="" readonly></td>
-                                    <td>
-                                        <input class="form-control" type="text" value="">
-                                    </td>
-                                    <td><input type="text" class="form-control" value="" readonly></td>
-                                    <td>
-                                        <i class="far fa-trash"></i>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td>
+                                            <select class="form-control" id="input-product" disabled>
+                                                <option value=""></option>
+                                                @foreach($products as $k => $e)
+                                                    <option value="{{ $k }}" {{ $k == $purchase['product_id'] ? 'SELECTED' : '' }}>{{ $e['name'] }}</option>
+                                                @endforeach
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control" value="5" disabled></td>
+                                        <td>
+                                            <input class="form-control" type="text" value="{{ $purchase['count'] }}" disabled>
+                                        </td>
+                                        <td><input type="text" class="form-control" value="{{ $products[$purchase['product_id']]['price'] * $purchase['count'] }}" disabled></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -114,14 +92,16 @@
                             <table class="table">
                                 <thead>
                                     <tr>
+                                        <th scope="col">優惠劵編號</th>
                                         <th scope="col">優惠劵名稱</th>
                                         <th scope="col">折扣</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><input class="form-control" type="text" value="NY2021"></td>
-                                        <td><input class="form-control" type="text" value="20"></td>
+                                        <td><input class="form-control" type="text" value="NY2021" disabled></td>
+                                        <td><input class="form-control" type="text" value="20元優惠劵" disabled></td>
+                                        <td><input class="form-control" type="text" value="20" disabled></td>
                                     </tr>
                                 </tbody>
                             </table>

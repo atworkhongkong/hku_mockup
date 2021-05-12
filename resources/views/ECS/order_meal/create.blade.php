@@ -79,7 +79,7 @@
                                                 <option>蕎麥麵</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" value="痛風不宜" readonly />
+                                            <div class="text-center text-danger my-2">痛風不宜</div>
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td>
@@ -89,7 +89,6 @@
                                                 <option>蛋治、麥皮</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買，驕陽滿額)</small></div>
                                         </td>
                                         <td>
@@ -99,7 +98,6 @@
                                                 <option>金針雲耳肉片盅蒸飯</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td>
@@ -109,7 +107,6 @@
                                                 <option>肉絲炒米</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td>
@@ -119,7 +116,6 @@
                                                 <option>肉絲炒米</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td>
@@ -129,7 +125,6 @@
                                                 <option>蛋治、麥皮</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                     </tr>
@@ -142,7 +137,6 @@
                                                 <option>2. 金銀蛋碎肉扒時蔬</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -152,7 +146,6 @@
                                                 <option>2. 菜遠牛肉</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -162,7 +155,6 @@
                                                 <option>2. 生炒骨</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -172,7 +164,6 @@
                                                 <option>2. 蒸魚</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買，驕陽滿額)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -182,7 +173,6 @@
                                                 <option>2. 蒸魚</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -192,7 +182,6 @@
                                                 <option>2. 扒時蔬</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                     </tr>
@@ -205,7 +194,6 @@
                                                 <option>2. 三絲炒瀨粉</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -215,7 +203,6 @@
                                                 <option>2. 炆牛肉</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -225,7 +212,6 @@
                                                 <option>2. 炒勝瓜</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -235,7 +221,6 @@
                                                 <option>2. 炒勝瓜</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -245,7 +230,6 @@
                                                 <option>2. 炒勝瓜</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                         <td class="text-center">
@@ -255,7 +239,6 @@
                                                 <option>2. 炒勝瓜</option>
                                                 <option>執雞餐</option>
                                             </select>
-                                            <input type="text" class="form-control mt-1" placeholder="備註" readonly />
                                             <div class="text-center"><small>(已有{{ Arr::random($buy_counts) }}人購買)</small></div>
                                         </td>
                                     </tr>
@@ -266,10 +249,11 @@
 
                     <div class="alert alert-primary" role="alert">
                         提示︰<br>
+                        除了會員外，職員亦可購買飯餐，若有職員購買飯餐，請輸入職員名稱<br>
                         同一人在同一center不能重覆購買同一日飯餐<br>
                         若出現重覆購買，系統須alert重覆購買的日期及時間，方便使用者修改<br>
                         預訂確定後，須要列印收據及飯餐紙<br>
-                        當轉換飯餐時，備註需展示選擇了的飯餐的備註，方便看得到所選擇的飯餐是否適合購買的老人家
+                        當轉換飯餐時，如飯餐有填寫了備註，須以紅字展示選擇了的飯餐的備註(如痛風不宜)，方便看得到所選擇的飯餐是否適合購買的老人家
                     </div>
 
                     <div class="col-12">

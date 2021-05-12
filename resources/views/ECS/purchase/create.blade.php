@@ -53,6 +53,7 @@
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <span>貨品</span>
+                            <button type="button" class="btn btn-primary">新增貨品</button>
                         </div>
                         <div class="p-3">
                             <table class="table">

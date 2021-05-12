@@ -143,44 +143,49 @@
                         <div class="col-12">
                             <table class="table table-bordered">
                                 <thead>
-                                <tr>
-                                    <th scope="col">中心</th>
-                                    <th scope="col">義工小組</th>
-                                    <th scope="col">活躍程度</th>
-                                </tr>
+                                    <tr>
+                                        <th scope="col">中心</th>
+                                        <th scope="col">義工小組</th>
+                                        <th scope="col">活躍程度</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($centers as $center_id => $c)
-                                    <tr>
-                                        <td>{{ $c }}</td>
-                                        <td>
-                                            @foreach($teams[$center_id] as $kt => $t)
-                                                @if ($center_id == $edit_center_id)
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="team-check-box-{{ $kt }}" value="">
-                                                        <label class="form-check-label" for="team-check-box-{{ $kt }}">{{ $t }}</label>
-                                                    </div>
-                                                @else
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="team-check-box-{{ $kt }}" value="" disabled>
-                                                        <label class="form-check-label" for="team-check-box-{{ $kt }}">{{ $t }}</label>
-                                                    </div>
-                                                @endif
+                                    @foreach($centers as $center_id => $c)
+                                        <tr>
+                                            <td>{{ $c }}</td>
+                                            <td>
+                                                @foreach($teams[$center_id] as $kt => $t)
+                                                    @if ($center_id == $edit_center_id)
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="team-check-box-{{ $kt }}" value="">
+                                                            <label class="form-check-label" for="team-check-box-{{ $kt }}">{{ $t }}</label>
+                                                        </div>
+                                                    @else
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="team-check-box-{{ $kt }}" value="" disabled>
+                                                            <label class="form-check-label" for="team-check-box-{{ $kt }}">{{ $t }}</label>
+                                                        </div>
+                                                    @endif
 
-                                            @endforeach
-                                        </td>
-                                        <td>
-                                            <select class="custom-select" aria-label="select example" {{ $center_id == $edit_center_id ? '' : 'DISABLED' }}>
-                                                @foreach($activeness as $ka => $a)
-                                                    <option value="{{ $ka }}">{{ $a }}</option>
                                                 @endforeach
-                                            </select>
-                                        </td>
-                                    </tr>
-                                @endforeach
+                                            </td>
+                                            <td>
+                                                <select class="custom-select" aria-label="select example" {{ $center_id == $edit_center_id ? '' : 'DISABLED' }}>
+                                                    @foreach($activeness as $ka => $a)
+                                                        <option value="{{ $ka }}">{{ $a }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+
+                    <div class="alert alert-primary" role="alert">
+                        提示︰<br>
+                        若義工小組數量太多，上面table可只顯示所選擇之中心豁下的義工小組，並不須要顯示所有中心的義工小組
                     </div>
 
                     <div class="row">
