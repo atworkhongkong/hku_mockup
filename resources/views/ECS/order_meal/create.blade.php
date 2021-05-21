@@ -13,7 +13,7 @@
             <div class="form-container">
                 <form>
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 mb-3">
                             <label class="form-label" for="field-center">中心</label>
                             <select id="field-center" class="form-control mr-2" name="center">
                                 @foreach($centers as $k => $c)
@@ -21,9 +21,16 @@
                                 @endforeach
                             </select>
                         </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="input-week" class="form-label">週份</label>
+                            <label for="input-week" class="form-label">第一週</label>
                             <input type="week" class="form-control" id="input-week" value="2021-W08"">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="input-week-2" class="form-label">第二週</label>
+                            <input type="week" class="form-control" id="input-week-2" value="">
                         </div>
                     </div>
 
