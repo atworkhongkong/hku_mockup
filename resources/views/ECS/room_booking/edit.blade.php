@@ -80,7 +80,7 @@
 
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <label for="input-educational-levels" class="form-label">教育程度</label>
+                            <label for="input-educational-levels" class="form-label">設備</label>
                             <div>
                                 @foreach($equipments as $k => $v)
                                     <div class="form-check form-check-inline mb-2">
@@ -108,6 +108,7 @@
                     <div class="row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">更 新</button>
+                            <button type="submit" class="btn btn-secondary">取消預約</button>
                         </div>
                     </div>
                 </form>

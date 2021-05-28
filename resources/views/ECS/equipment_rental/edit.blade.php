@@ -106,6 +106,11 @@
                         </div>
                     </div>
 
+                    <div class="alert alert-primary" role="alert">
+                        提示︰<br>
+                        當逾期退還時，按「交還」時，記緊要處理逾期罰款流程。
+                    </div>
+
                     <hr>
 
                     <div class="row">

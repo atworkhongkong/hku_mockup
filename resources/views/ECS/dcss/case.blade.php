@@ -2,6 +2,17 @@
     <form>
         <div class="row">
             <div class="col-12 mb-3">
+                <label for="input-center" class="form-label">中心</label>
+                <select id="input-center" class="form-control mr-2">
+                    <option value=""></option>
+                    @foreach($centers as $k => $c)
+                        <option value="{{ $k + 1 }}">{{ $c }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mb-3">
                 <label for="input-case-number" class="form-label">識別編號</label>
                 <input type="text" class="form-control" id="input-case-number" @isset($case_id) value="{{ $case['case_number'] }}" @endisset>
             </div>

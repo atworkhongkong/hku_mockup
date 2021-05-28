@@ -15,8 +15,7 @@
                     <div class="row">
                         <div class="col-12 mb-3">
                             <label for="input-center" class="form-label">所屬中心</label>
-                            <select class="custom-select" aria-label="select example">
-                                <option value=""></option>
+                            <select class="custom-select" aria-label="select example" disabled>
                                 @foreach($centers as $k => $c)
                                     <option value="{{ $k + 1 }}">{{ $c }}</option>
                                 @endforeach
@@ -50,7 +49,9 @@
                     -->
 
                     <div class="alert alert-primary" role="alert">
-                        提示︰Click「新增時段」後，會新增一行。
+                        提示︰<br>
+                        不允許跨中心預約，若login同事是黃志強長者地區中心，「所屬中心」default會是同一中心<br>
+                        Click「新增時段」後，會新增一行。
                     </div>
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
@@ -97,7 +98,7 @@
 
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <label for="input-educational-levels" class="form-label">教育程度</label>
+                            <label for="input-educational-levels" class="form-label">設備</label>
                             <div>
                                 @foreach($equipments as $k => $v)
                                     <div class="form-check form-check-inline mb-2">
