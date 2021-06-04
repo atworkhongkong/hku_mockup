@@ -47,6 +47,7 @@
                         <div class="col-auto pr-1">
                             <label class="sr-only" for="field-center">狀態</label>
                             <select id="field-center" class="form-control mr-2" name="center">
+                                <option value=""></option>
                                 <option value="">未歸還</option>
                                 <option value="">已歸還</option>
                                 <option value="">應還未還</option>

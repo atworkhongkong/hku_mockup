@@ -17,6 +17,24 @@
            });
         });
         */
+
+        $(function() {
+            $("#coordinate-1").attr('disabled', true);
+            $("#input-center").on('change', function() {
+                let count = $("input[name='coordinate[]']").length;
+                let selected_value = $(this).val();
+                $("input[name='coordinate[]']").each(function( index ) {
+                    if (index + 1 == parseInt(selected_value)) {
+                        $("#coordinate-" + (index + 1)).prop("checked", false);
+                        $("#coordinate-" + (index + 1)).attr('disabled', true);
+                    } else {
+                        console.log("enabled - " + selected_value);
+                        $("#coordinate-" + (index + 1)).attr('disabled', false);
+                    }
+                })
+
+            })
+        })
     </script>
 @endsection
 
@@ -39,11 +57,27 @@
                     <div class="row">
                         <div class="col-12 mb-3">
                             <label for="input-center" class="form-label">中心</label>
-                            <select id="field-center" class="form-control mr-2">
+                            <select id="input-center" class="form-control mr-2">
                                 @foreach($centers as $k => $c)
                                     <option value="{{ $k }}">{{ $c }}</option>
                                 @endforeach
                             </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="input-coordinate" class="form-label">協辦中心</label>
+                            <div>
+                                @foreach($centers as $k => $v)
+                                    <div class="form-check form-check-inline mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" name="coordinate[]" id="coordinate-{{$k}}">
+                                        <label class="form-check-label" for="coordinate-{{$k}}">
+                                            {{$v}}
+                                        </label>
+                                    </div>
+                                @endforeach
+                            </div>
                         </div>
                     </div>
 

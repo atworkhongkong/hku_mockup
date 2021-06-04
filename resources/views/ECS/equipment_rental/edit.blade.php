@@ -156,7 +156,7 @@
                     <div class="row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">更新</button>
-                            <button type="submit" class="btn btn-primary">交還</button>
+                            <button type="submit" class="btn btn-primary">交還及列印收條</button>
                             <button type="submit" class="btn btn-primary">續借及列印收據</button>
                         </div>
                     </div>

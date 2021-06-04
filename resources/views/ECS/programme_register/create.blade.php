@@ -195,9 +195,15 @@
                         </div>
                         <div class="p-3">
                             <div class="row mb-2">
+                                <div class="col-auto ml-4">
+                                    <input type="checkbox" class="form-check-input" id="field-no-fee">
+                                    <label class="" for="field-no-fee">免收費</label>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
                                 <div class="col-md-4">
                                     <label class="" for="field-reference-number">付款方式</label>
-                                    <select class="custom-select" aria-label="Default select example">
+                                    <select class="custom-select" aria-label="Default select example" id="field-payment-method">
                                         <option selected>請選擇付款方式</option>
                                         <option value="cash">現金</option>
                                         <option value="cheque">支票</option>
@@ -226,4 +232,20 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('bottom_script')
+    <script>
+        $(function() {
+            $("#field-no-fee").on('click', function() {
+                $("#field-payment-method").attr('disabled', $(this).is(':checked'));
+                $("#field-reference-number").attr('disabled', $(this).is(':checked'));
+                if ($(this).is(':checked')) {
+                    $("#field-total-price").val(0);
+                } else {
+                    $("#field-total-price").val(140);
+                }
+            })
+        })
+    </script>
 @endsection

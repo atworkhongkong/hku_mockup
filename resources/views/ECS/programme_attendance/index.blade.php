@@ -18,49 +18,70 @@
                 <a href="/ecs/programme/{{ $programme_id }}/tutor_salary" class="btn btn-outline-primary">導師費用</a>
             </div>
 
-            <div class="col-12 mb-3">
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <span>找到2筆記錄</span>
-                    <div>
-                        <a href="/ecs/programme_attendance/2/create" class="btn btn-secondary">新增出席記錄</a>
-                        <a href="/ecs/programme_attendance/2/print_attendance" target="_blank" class="btn btn-secondary">列印出席表</a>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <span></span>
+                        <div>
+                            <a href="/ecs/programme_attendance/2/print_attendance" target="_blank" class="btn btn-secondary">列印出席表</a>
+                        </div>
                     </div>
                 </div>
-                <table class="table table-bordered">
-                    <thead>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">姓名</th>
+                        <th scope="col" rowspan="2">姓名</th>
+                        <th scope="col" rowspan="2">年齡</th>
+                        <th scope="col" colspan="7" class="text-center">日期</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">4/6</th>
+                        <th scope="col">9/6</th>
+                        <th scope="col">11/6</th>
+                        <th scope="col">16/6</th>
+                        <th scope="col">18/6</th>
+                        <th scope="col">23/6</th>
+                        <th scope="col">25/6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach([1,2,3,4,5,6,7,8,9,10,11,12] as $num)
+                        <?php
+                            $gender = Arr::random(['M', 'F']);
+                            $age = rand(60,80);
+                        ?>
                         <tr>
-                            <th scope="col">日期</th>
-                            <th scope="col">報名人數</th>
-                            <th scope="col">出席人數</th>
-                            <th scope="col">缺席人數</th>
-                            <th scope="col" style="width:8%;">&nbsp;</th>
+                            <td>同學{{ $num }}</td>
+                            <td>{{ $gender }}</td>
+                            <td>{{ $age }}</td>
+                            <td><input class="" type="checkbox" value=""></td>
+                            <td><input class="" type="checkbox" value=""></td>
+                            <td><input class="" type="checkbox" value=""></td>
+                            <td><input class="" type="checkbox" value=""></td>
+                            <td><input class="" type="checkbox" value=""></td>
+                            <td><input class="" type="checkbox" value=""></td>
+                            <td><input class="" type="checkbox" value=""></td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2021-03-01</td>
-                            <td>18</td>
-                            <td>16</td>
-                            <td>2</td>
-                            <td>
-                                <a href="/ecs/programme_attendance/12/edit">
-                                    <button class="btn btn-primary">編輯</button>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021-02-25</td>
-                            <td>18</td>
-                            <td>18</td>
-                            <td>0</td>
-                            <td>
-                                <a href="/ecs/programme_attendance/10/edit">
-                                    <button class="btn btn-primary">編輯</button>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                    @endforeach
+                    <tr>
+                        <td colspan="3" class="text-right">總數</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row mb-2">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">更 新</button>
+                </div>
             </div>
         </div>
     </div>
