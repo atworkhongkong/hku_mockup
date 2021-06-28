@@ -94,15 +94,15 @@
                 <input type="text" class="form-control" id="input-create-date" value="{{ $hidden_elderly['create_date'] }}" disabled>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="input-age" class="form-label">個案重啟日期</label>
-                <input type="text" class="form-control" id="input-age" value="">
+                <label for="input-reopen-date" class="form-label">個案重啟日期</label>
+                <input type="text" class="form-control" id="input-reopen-date" value="">
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 mb-3">
-                <label for="input-create-date">個案結束日期</label>
-                <input type="text" class="form-control" id="input-create-date" value="">
+                <label for="input-close-date">個案結束日期</label>
+                <input type="text" class="form-control" id="input-close-date" value="">
             </div>
         </div>
 
