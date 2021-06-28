@@ -23,7 +23,7 @@
 
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active p-3 border border-top-0" id="nav-page-1" role="tabpanel" aria-labelledby="nav-tab-1">
-                    @include('ecs.hidden_elderly.info')
+                    @include('ecs.hidden_elderly.information')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-2" role="tabpanel" aria-labelledby="nav-tab-2">
                     @include('ecs.hidden_elderly.recording')
