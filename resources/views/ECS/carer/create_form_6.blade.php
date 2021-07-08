@@ -1,5 +1,25 @@
 <div class="form-container">
-    <form>
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="alert alert-primary" role="alert">
+                提示︰此頁顯示上載了之同意書
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <input type="file" id="myFile" name="filename">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">上 載</button>
+        </div>
+    </div>
+
+    <form class="d-none">
         <div class="row">
             <div class="col-12 mb-3">
                 <p>本人(申請人)明白及同意/不同意(刪去不適用者) 貴會於以下 1-3 項之情況使用和轉移本人個人資料︰</p>

@@ -10,6 +10,10 @@
                 </ol>
             </nav>
 
+            <div class="alert alert-primary" role="alert">
+                提示︰Default顯示本週
+            </div>
+
             <div class="form-container">
                 <form>
                     <div class="row mb-3">

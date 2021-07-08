@@ -139,8 +139,9 @@
                                         <td><input type="text" class="form-control form-control-sm" value="9521xxxx"></td>
                                         <td>
                                             <select class="custom-select custom-select-sm" aria-label="Default select example">
-                                                <option value="1">$100.0 - 長者會員</option>
-                                                <option value="2" SELECTED>$80.0 - 長者會員(綜援)</option>
+                                                <option value="1">長者會員 - $100.0</option>
+                                                <option value="2" SELECTED>長者會員(綜援) - $80.0</option>
+                                                <option value="0">免收費 - $0.0</option>
                                             </select>
                                         </td>
                                         <td><input type="text" class="form-control form-control-sm" value="80"></td>
@@ -166,8 +167,9 @@
                                         <td><input type="text" class="form-control form-control-sm" value="6812xxxx"></td>
                                         <td>
                                             <select class="custom-select custom-select-sm" aria-label="Default select example">
-                                                <option value="1" SELECTED>$100.0 - 長者會員</option>
-                                                <option value="2">$80.0 - 長者會員(綜援)</option>
+                                                <option value="1" SELECTED>長者會員 - $100.0</option>
+                                                <option value="2">長者會員(綜援) - $80.0</option>
+                                                <option value="0">免收費 - $0.0</option>
                                             </select>
                                         </td>
                                         <td><input type="text" class="form-control form-control-sm" value="100"></td>

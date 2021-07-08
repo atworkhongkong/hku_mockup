@@ -116,6 +116,7 @@
                                         <select class="custom-select" aria-label="Default select example">
                                             <option value="1">長者會員 - $100.0</option>
                                             <option value="2" SELECTED>長者會員(綜援) - $80.0</option>
+                                            <option value="0">免收費 - $0.0</option>
                                         </select>
                                     </td>
                                     <td>
@@ -134,6 +135,7 @@
                                         <select class="custom-select" aria-label="Default select example">
                                             <option value="1">長者會員 - $100.0</option>
                                             <option value="2" SELECTED>長者會員(綜援) - $80.0</option>
+                                            <option value="0">免收費 - $0.0</option>
                                         </select>
                                     </td>
                                     <td>
@@ -194,12 +196,6 @@
                             <span>付款金額</span>
                         </div>
                         <div class="p-3">
-                            <div class="row mb-2">
-                                <div class="col-auto ml-4">
-                                    <input type="checkbox" class="form-check-input" id="field-no-fee">
-                                    <label class="" for="field-no-fee">免收費</label>
-                                </div>
-                            </div>
                             <div class="row mb-2">
                                 <div class="col-md-4">
                                     <label class="" for="field-reference-number">付款方式</label>

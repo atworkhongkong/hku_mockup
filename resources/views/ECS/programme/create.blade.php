@@ -67,7 +67,7 @@
 
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <label for="input-coordinate" class="form-label">協辦中心</label>
+                            <label for="input-coordinate" class="form-label">合辦中心</label>
                             <div>
                                 @foreach($centers as $k => $v)
                                     <div class="form-check form-check-inline mb-2">
