@@ -57,8 +57,13 @@ class DCSSTrainingController extends Controller
         return view('ECS.dcss_training.show', compact('id', 'case'));
     }
 
-    public function edit_icp($id)
+    public function icp($id)
     {
+        $case = DCSSController::getCases()[$id];
+
+        return view('ECS.dcss_training.icp', compact('id', 'case'));
+
+        /*
         $case = DCSSController::getCases()[$id];
         $all_suggest_hours = [
             'greater' => [
@@ -76,6 +81,7 @@ class DCSSTrainingController extends Controller
         ];
         $suggest_hours = $all_suggest_hours[strtolower($case['burden'])];
         return view('ECS.dcss_training.edit_icp', compact('id', 'case', 'suggest_hours'));
+        */
     }
 
     public function report(Request $request)

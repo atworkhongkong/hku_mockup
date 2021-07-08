@@ -80,6 +80,12 @@
                     </select>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="input-close-reason" class="form-label">退出原因</label>
+                    <textarea class="form-control" id="input-close-reason" rows="3" disabled></textarea>
+                </div>
+            </div>
         @endisset
 
         <div class="row">

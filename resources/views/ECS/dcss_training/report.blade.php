@@ -34,7 +34,8 @@
                     @elseif ($type == 'group')
                         <label class="sr-only" for="field-group">組別</label>
                         <input type="text" class="form-control mr-2" id="field-group" placeholder="組別" value="J03">
-                    @elseif ($type == 'case_count' || $type == 'training_count' || $type == 'transport_subsidy' || $type == 'fee')
+                    @endif
+                    @if (in_array($type, ['individual', 'group', 'case_count', 'training_count', 'transport_subsidy', 'fee']))
                         <label class="sr-only" for="field-year">年份</label>
                         <select class="form-control mr-2" id="field-year">
                             @for($i = date('Y') ; $i >= 2010 ; $i--)

@@ -32,17 +32,14 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <label for="input-create-date" class="form-label">Create date</label>
-                    <input type="text" class="form-control" id="input-create-date" value="2021-03-01" readonly>
-                </div>
+            <div class="alert alert-primary" role="alert">
+                提示︰只要更新過任何一個field，都須要create一個新的record
             </div>
 
             <div class="row">
                 <div class="col-12 mb-3">
-                    <label for="input-update-date" class="form-label">Update date</label>
-                    <input type="text" class="form-control" id="input-update-date" value="2021-03-05" readonly>
+                    <label for="input-create-date" class="form-label">Create date</label>
+                    <input type="text" class="form-control" id="input-create-date" value="2021-03-01" readonly>
                 </div>
             </div>
 
