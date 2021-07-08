@@ -33,7 +33,7 @@
             </div>
 
             <div class="alert alert-primary" role="alert">
-                提示︰只要更新過任何一個field，都須要create一個新的record
+                提示︰只要更新過任何一個field，都須要create一個新的ICP record
             </div>
 
             <div class="row">
