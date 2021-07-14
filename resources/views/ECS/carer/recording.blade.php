@@ -13,13 +13,13 @@
         <tbody>
             <tr>
                 <td>2021-01-31</td>
-                <td>身體康復良好，與家人關係...</td>
+                <td>身體康復良好，與家人關係亦見改善</td>
                 <td>社工A</td>
                 <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#recording-modal">編輯</button></td>
             </tr>
             <tr>
                 <td>2021-01-01</td>
-                <td>沒有受傷或輕微受傷，無須接受治療；受傷部位...</td>
+                <td>沒有受傷或輕微受傷，無須接受治療；受傷部位</td>
                 <td>社工A</td>
                 <td><a class="btn btn-primary" data-toggle="modal" data-target="#recording-modal" href="javascript:void(0);">編輯</a></td>
             </tr>

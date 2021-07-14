@@ -103,6 +103,7 @@
                         <thead>
                             <tr>
                                 <th scope="col" style="width:8%;">#</th>
+                                <th scope="col">護老者編號</th>
                                 <th scope="col">護老者</th>
                                 <th scope="col">類別</th>
                                 <th scope="col">被護老者</th>
@@ -115,6 +116,7 @@
                             @foreach($carers as $k => $v)
                                 <tr>
                                     <td>{{ $k }}</td>
+                                    <td>{{ $v['code'] }}</td>
                                     <td>{{ $v['name'] }}</td>
                                     <td>{{ $v['type'] }}</td>
                                     <td>{{ $v['target'] }}</td>

@@ -17,7 +17,7 @@ class CarerServiceController extends Controller
 
     const SERVICE_TYPES = [
         1 => '探訪',
-        2 => '護送',
+        2 => '護送/陪診',
         3 => '短暫中心/到戶看顧',
         4 => '電話慰問',
         5 => '其他服務'
