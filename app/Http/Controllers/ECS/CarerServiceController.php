@@ -56,10 +56,45 @@ class CarerServiceController extends Controller
     public function report(Request $request)
     {
         $type = $request->get('type');
-        $services = [
-            '04/2021' => ['purchase' => 3, 'rental' => 5, 'programme' => 8, 'phone' => 10],
-            '05/2021' => ['purchase' => 2, 'rental' => 4, 'programme' => 3, 'phone' => 5],
-        ];
-        return view('ECS.carer_service.report', compact('type', 'services'));
+        $type = empty($type) ? "nc_report" : $type;
+        if ($type == "nc_report") {
+            /*
+            $services = [
+                '04/2021' => ['purchase' => 3, 'rental' => 5, 'programme' => 8, 'phone' => 10],
+                '05/2021' => ['purchase' => 2, 'rental' => 4, 'programme' => 3, 'phone' => 5],
+            ];
+            */
+            $services1 = [
+                1 => ['text' => '1) No. of support services in this month', 'data' => [29,23,3,'','','','','','','','','']],
+                2 => ['text' => '2) Total No. of support services in this year', 'data' => [29,25,55,'','','','','','','','','']],
+            ];
+
+            $services2 = [
+                1 => ['text' => '(i) No. of active needy carers b/f from (vii) last month', 'data' => [80,81,82,'','','','','','','','','']],
+                2 => ['text' => '(ii) No. of new needy carer served in this month', 'data' => [3,1,1,'','','','','','','','','']],
+                3 => ['text' => '(iii) No. of needy carer reactivated', 'data' => [0,0,0,'','','','','','','','','']],
+                4 => ['text' => '(iv) No. of needy carers transfer in from carers', 'data' => [0,0,0,'','','','','','','','','']],
+                5 => ['text' => '(v) No. of needy carers transfer out to carers', 'data' => [0,0,0,'','','','','','','','','']],
+                6 => ['text' => '(vi) No. of needy carer no longer in need of support in this month', 'data' => [2,0,1,'','','','','','','','','']],
+                7 => ['text' => '(vii) No. of active needy carers as at the end of this month', 'data' => [81,82,82,'','','','','','','','','']],
+            ];
+
+            $services3 = [
+                1 => ['text' => '(a) Volunteer visits', 'data' => [27,0,0,'','','','','','','','','']],
+                2 => ['text' => '(b) Escort service', 'data' => [0,0,0,'','','','','','','','','']],
+                2 => ['text' => '(c) Occasional elder sitting services', 'data' => [0,0,0,'','','','','','','','','']],
+            ];
+
+            return view('ECS.carer_service.nc_report', compact('type', 'services1', 'services2', 'services3'));
+        } else if ($type == "oc_report") {
+            $services = [
+                1 => ['text' => '(i) No. of carers newly served (i)', 'data' => [14,43,12,'','','','','','','','','']],
+                2 => ['text' => '(ii) No. of carers transfer in from needy carers', 'data' => [0,0,0,'','','','','','','','','']],
+                3 => ['text' => '(iii) No. of carers transfer out to needy carers', 'data' => [0,0,0,'','','','','','','','','']],
+                4 => ['text' => '(iv) No. of carers served for the month (i) + (ii) + (iii)', 'data' => [14,43,12,'','','','','','','','','']],
+                5 => ['text' => '(v) Accumlated No. of carers served / Year-end total', 'data' => [14,57,69,'','','','','','','','','']],
+            ];
+            return view('ECS.carer_service.oc_report', compact('type', 'services'));
+        }
     }
 }

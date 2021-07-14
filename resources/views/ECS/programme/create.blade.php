@@ -91,6 +91,7 @@
                             <select class="custom-select" aria-label="select example">
                                 <option selected></option>
                                 <option value="活動">活動</option>
+                                <option value="護老者活動"></option>
                                 <option value="小組">小組</option>
                                 <option value="課程">課程</option>
                                 <option value="購物">購物</option>

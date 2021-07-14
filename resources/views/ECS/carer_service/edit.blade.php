@@ -5,10 +5,21 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/ecs/carer_service">護老者服務</a></li>
+                    <li class="breadcrumb-item"><a href="/ecs/carer_service">有需要護老者服務</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{ $service['desc'] }}</li>
                 </ol>
             </nav>
+
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="input-center" class="form-label">所屬中心</label>
+                    <select class="custom-select" aria-label="select example">
+                        @foreach($centers as $k => $c)
+                            <option value="{{ $k + 1 }}">{{ $c }}</option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">

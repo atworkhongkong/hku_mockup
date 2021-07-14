@@ -5,7 +5,7 @@
         <div class="content__wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">護老者</li>
+                    <li class="breadcrumb-item active">有需要護老者服務</li>
                 </ol>
             </nav>
 
@@ -57,7 +57,7 @@
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <span>找到{{ count($services) }}筆記錄</span>
                         <div>
-                            <a href="/ecs/carer_service/create" class="btn btn-secondary">新增護老者服務</a>
+                            <a href="/ecs/carer_service/create" class="btn btn-secondary">新增服務</a>
                         </div>
                     </div>
                     <table class="table table-bordered">

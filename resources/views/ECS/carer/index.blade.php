@@ -18,6 +18,13 @@
                         @endforeach
                     </select>
 
+                    <label class="sr-only" for="field-type">護老者類別</label>
+                    <select id="field-type" class="form-control mr-2" name="center">
+                        <option value=""></option>
+                        <option value="oc">護老者</option>
+                        <option value="nc">有需要護老者</option>
+                    </select>
+
                     <label class="sr-only" for="field-type">類別</label>
                     <select id="field-type" class="form-control mr-2" name="center">
                         <option value=""></option>

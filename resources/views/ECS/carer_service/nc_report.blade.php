@@ -40,47 +40,60 @@
 
             <div class="row">
                 <div class="col-12 mb-3">
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                        <span>找到 {{ count($services) }}筆記錄</span>
-                    </div>
-                    <table class="table table-bordered">
+                    <table class="table table-bordered table-sm">
                         <thead>
                             <tr>
                                 <th scope="col"></th>
-                                <th scope="col">購物</th>
-                                <th scope="col">租借</th>
-                                <th scope="col">護老者活動</th>
-                                <th scope="col">電話慰問</th>
-                                <th scope="col">總次數</th>
+                                <th scope="col">2021-04</th>
+                                <th scope="col">2021-05</th>
+                                <th scope="col">2021-06</th>
+                                <th scope="col">2021-07</th>
+                                <th scope="col">2021-08</th>
+                                <th scope="col">2021-09</th>
+                                <th scope="col">2021-10</th>
+                                <th scope="col">2021-11</th>
+                                <th scope="col">2021-12</th>
+                                <th scope="col">2022-01</th>
+                                <th scope="col">2022-02</th>
+                                <th scope="col">2022-03</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php $row_total = ['purchase' => 0, 'rental' => 0, 'programme' => 0, 'phone' => 0]; ?>
-                            @foreach($services as $k => $v)
-                                <?php
-                                    $col_total = $v['purchase'] + $v['rental'] + $v['programme'] + $v['phone'];
-                                    $row_total['purchase'] += $v['purchase'];
-                                    $row_total['rental'] += $v['rental'];
-                                    $row_total['programme'] += $v['programme'];
-                                    $row_total['phone'] += $v['phone'];
-                                ?>
+                            <tr>
+                                <td colspan="13">OS13c</td>
+                            </tr>
+                            @foreach($services1 as $row => $service)
                                 <tr>
-                                    <td>{{ $k }}</td>
-                                    <td>{{ $v['purchase'] }}</td>
-                                    <td>{{ $v['rental'] }}</td>
-                                    <td>{{ $v['programme'] }}</td>
-                                    <td>{{ $v['phone'] }}</td>
-                                    <td>{{ $col_total }}</td>
+                                    <td>{{ $service['text']}}
+                                    @foreach($service['data'] as $d)
+                                        <td>{{ $d }}</td>
+                                    @endforeach
                                 </tr>
                             @endforeach
+
                             <tr>
-                                <td></td>
-                                <td>{{ $row_total['purchase'] }}</td>
-                                <td>{{ $row_total['rental'] }}</td>
-                                <td>{{ $row_total['programme'] }}</td>
-                                <td>{{ $row_total['phone'] }}</td>
-                                <td>{{ array_sum($row_total) }}</td>
+                                <td colspan="13">OS13d</td>
                             </tr>
+                            @foreach($services2 as $row => $service)
+                                <tr>
+                                    <td>{{ $service['text']}}
+                                    @foreach($service['data'] as $d)
+                                        <td>{{ $d }}</td>
+                                    @endforeach
+                                </tr>
+                            @endforeach
+
+                            <tr>
+                                <td colspan="13">OS13c</td>
+                            </tr>
+                            @foreach($services3 as $row => $service)
+                                <tr>
+                                    <td>{{ $service['text']}}
+                                    @foreach($service['data'] as $d)
+                                        <td>{{ $d }}</td>
+                                    @endforeach
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                     <div class="alert alert-primary" role="alert">
@@ -88,7 +101,7 @@
                         <ul>
                             <li>購物: 護老者在該查詢的月份內，曾經購物的人數。</li>
                             <li>租借: 護老者在該查詢的月份內，有使過租借物的人數。</li>
-                            <li>護老者活動: 護老者在該查詢的月份內，有參加過機構活動的人數。</li>
+                            <li>護老者活動: 護老者在該查詢的月份內，有參加過機構舉辦的「護老者活動」的人數。</li>
                             <li>電話慰問: 護老者在該查詢的月份內，曾參與電話慰問的人數。</li>
                         </ul>
                         注意事項︰
