@@ -30,7 +30,7 @@
 
                     <div class="row mb-2">
                         <div class="col-md-12">
-                            <label for="input-register-type" class="form-label">姓別</label>
+                            <label for="input-register-type" class="form-label">性別</label>
                             <select class="custom-select" aria-label="select example">
                                 <option value="first-in" selected>男</option>
                                 <option value="draw">女</option>

@@ -270,7 +270,7 @@
                                 <input type="text" class="form-control" id="field-dob">
                             </div>
                             <div class="col-md-6">
-                                <label for="field-gender" class="col-form-label">姓別</label>
+                                <label for="field-gender" class="col-form-label">性別</label>
                                 <select class="custom-select custom-select" aria-label="Default select example">
                                     <option value="1" SELECTED>男</option>
                                     <option value="2">女</option>

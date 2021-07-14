@@ -71,7 +71,7 @@
                                 <th scope="col">#</th>
                                 <th scope="col">會員編號</th>
                                 <th scope="col">姓名</th>
-                                <th scope="col">姓別</th>
+                                <th scope="col">性別</th>
                                 <th scope="col">聯絡電話</th>
                                 <th scope="col">申請日期</th>
                                 <th scope="col">中籤日期</th>

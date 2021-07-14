@@ -167,7 +167,7 @@
                     <option></option>
                     <option value="">工作收入</option>
                     <option value="">高齡津貼</option>
-                    <option value="">長者生活津貼/高額長者生活油貼</option>
+                    <option value="">長者生活津貼/高額長者生活津貼</option>
                     <option value="">退休金/長俸</option>
                     <option value="">儲蓄</option>
                     <option value="">傷殘/高額傷殘津貼</option>

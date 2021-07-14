@@ -94,7 +94,7 @@
                                 <th scope="col" style="width:8%;">個案編號</th>
                                 <th scope="col">組別</th>
                                 <th scope="col">申請人姓名</th>
-                                <th scope="col">姓別</th>
+                                <th scope="col">性別</th>
                                 <th scope="col">出生日期</th>
                                 <th scope="col">評估員</th>
                                 <th scope="col">Burden</th>

@@ -39,7 +39,7 @@
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label for="input-chi-name" class="form-label">姓別</label>
+                    <label for="input-chi-name" class="form-label">性別</label>
                     <select class="custom-select" aria-label="Disabled select example">
                         <option></option>
                         <option value="1">男</option>

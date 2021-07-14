@@ -31,7 +31,7 @@
                         <tr>
                             <th scope="col" style="width:15%;">會員編號</th>
                             <th scope="col" style="width:15%;">姓名</th>
-                            <th scope="col">姓別</th>
+                            <th scope="col">性別</th>
                             <th scope="col">聯絡電話</th>
                             <th scope="col">申請日期</th>
                             <th scope="col" style="width:14%;">&nbsp;</th>

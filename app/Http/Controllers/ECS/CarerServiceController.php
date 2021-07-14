@@ -26,7 +26,7 @@ class CarerServiceController extends Controller
     const SERVICES = [
         4 => ['desc' => '探訪黃柏宇', 'service_type_id' => 1, 'service_date' => '2021-02-14', 'contact_person' => '同事A'],
         3 => ['desc' => '探訪詹晏靖', 'service_type_id' => 1, 'service_date' => '2021-02-11', 'contact_person' => '同事A'],
-        2 => ['desc' => '石排灣深訪', 'service_type_id' => 1, 'service_date' => '2021-02-10', 'contact_person' => '同事A'],
+        2 => ['desc' => '石排灣探訪', 'service_type_id' => 1, 'service_date' => '2021-02-10', 'contact_person' => '同事A'],
         1 => ['desc' => '探訪楊智盈', 'service_type_id' => 1, 'service_date' => '2021-02-02', 'contact_person' => '同事A'],
     ];
 

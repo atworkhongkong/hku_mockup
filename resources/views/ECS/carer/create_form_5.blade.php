@@ -18,7 +18,7 @@
                         <input type="text" class="form-control" id="input-eng-name">
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="input-gender" class="form-label">姓別</label>
+                        <label for="input-gender" class="form-label">性別</label>
                         <select class="form-control" id="input-gender">
                             <option value="M">男</option>
                             <option value="F">女</option>

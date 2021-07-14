@@ -37,7 +37,7 @@
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="input-gender" class="form-label">姓別</label>
+                            <label for="input-gender" class="form-label">性別</label>
                             <select class="custom-select" id="input-gender" disabled>
                                 <option value="M">男</option>
                                 <option value="F">女</option>
