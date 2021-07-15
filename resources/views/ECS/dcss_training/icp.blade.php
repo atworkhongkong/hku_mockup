@@ -51,19 +51,19 @@
                                 <td>3</td>
                                 <td>2021-07-06</td>
                                 <td>社工一</td>
-                                <td><a class="btn btn-primary" href="/ecs/dcss_icp/3/edit">編輯</a></td>
+                                <td><a class="btn btn-primary" href="/ecs/dcss_icp/{{ $id }}/edit">編輯</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>2021-07-04</td>
                                 <td>社工一</td>
-                                <td><a class="btn btn-primary" href="/ecs/dcss_icp/2/edit">編輯</a></td>
+                                <td><a class="btn btn-primary" href="/ecs/dcss_icp/{{ $id }}/edit">編輯</a></td>
                             </tr>
                             <tr>
                                 <td>1</td>
                                 <td>2021-06-25</td>
                                 <td>社工一</td>
-                                <td><a class="btn btn-primary" href="/ecs/dcss_icp/1/edit">編輯</a></td>
+                                <td><a class="btn btn-primary" href="/ecs/dcss_icp/{{ $id }}/edit">編輯</a></td>
                             </tr>
                         </tbody>
                     </table>

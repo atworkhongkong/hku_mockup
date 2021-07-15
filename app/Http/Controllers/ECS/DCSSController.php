@@ -14,7 +14,7 @@ class DCSSController extends Controller
         2 => '南區長者地區中心',
     ];
     const STATUSES = [
-        'A' => '跟進中', 'I' => '已完成', 'C' => '退出'
+        'A' => '跟進中', 'I' => '已完成', 'C' => '退出', 'AT' => '不參加'
     ];
     const CASES = [
         1 => ['group' => 'J01', 'case_number' => 'JD2002G', 'burden' => 'Lesser', 'name' => '李雅辛', 'gender' => 'M', 'dob' => '1934-12-15', 'status' => 'A', 'assessor' => '黃紫瑩'],
@@ -36,11 +36,11 @@ class DCSSController extends Controller
     const SERVICE_ACCEPTED = ['沒有', '有'];
 
     const DISEASE = [
-        '高血壓', '低血壓', '氣管病', '心臟病', '關節炎', '糖尿病', '痛風', '腎病', '柏金遜症', '中風',
-        '癌症', '白內障', '青光眼', '視網膜病變', '近視', '遠視', '老花', '精神病', '其他補充資料'
+        '認知障礙', '高血壓', '低血壓', '氣管病', '心臟病', '關節炎', '糖尿病', '高膽固醇', '痛風', '腎病', '柏金遜症', '中風',
+        '癌症', '視障', '精神病', '其他補充資料'
     ];
-    const DOCTOR_SPECIALIST = ['內科', '老人科', '老人精神科(醫院)', '老人精神科(診所)'];
-    const PHYSIQUE = ['正常', '瘦弱', '肥胖', '過度肥胖'];
+    const DOCTOR_SPECIALIST = ['內科', '老人科', '老人精神科'];
+    const PHYSIQUE = ['正常', '瘦弱', '肥胖', '癡肥'];
     const FACE = ['正常', '蒼白', '潮紅', '灰暗'];
     const SKIN = ['正常', '乾燥', '水腫位置', '紅疹位置'];
     const VISION = ['可自理', '配戴眼鏡', '熟悉環境中安全', '弱視（左）', '弱視（右）', '失明（左）', '失明（右）'];
@@ -81,6 +81,25 @@ class DCSSController extends Controller
     const NEED_ESCORT = ['不需要', '需要'];
 
     const ASSESS_METHOD = ['家訪', '中心面見', '其他'];
+
+    const CLOSE_REASONS = [
+        'Low motivation',
+        'Change of physical condition',
+        'Change of residence',
+        'Admitted to DE/DCU/RCS',
+        'Career difficulties',
+        'Transportation difficulties',
+        'Others',
+    ];
+    const ATTRITION_REASONS = [
+        'High Monthly Cost',
+        'Carer not available',
+        'Not interested',
+        'Travel distance',
+        'Escort service not available',
+        'CCS',
+        'Others',
+    ];
 
     public function __construct()
     {
@@ -141,6 +160,9 @@ class DCSSController extends Controller
         View::share('need_escort', self::NEED_ESCORT);
 
         View::share('assess_method', self::ASSESS_METHOD);
+
+        View::share('close_reasons', self::CLOSE_REASONS);
+        View::share('attrition_reasons', self::ATTRITION_REASONS);
     }
 
     public function index()

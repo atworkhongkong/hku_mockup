@@ -176,6 +176,15 @@
                 </div>
             </div>
 
+            <div class="alert alert-primary" role="alert">
+                提示︰<br>
+                如果是no carer, 下方carer burden就唔比user入資料<br>
+                如果係greater carer，minimum不能細過10<br>
+                如果係greater carer，minimum + flexible不能大過18<br>
+                如果係lesser carer，minimum不能細過2<br>
+                如果係lesser carer，minimum + flexible不能大過4
+            </div>
+
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <span>Carer burden</span>

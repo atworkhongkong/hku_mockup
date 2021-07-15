@@ -66,7 +66,7 @@ class CarerServiceController extends Controller
             */
             $services1 = [
                 1 => ['text' => '1) No. of support services in this month', 'data' => [29,23,3,'','','','','','','','','']],
-                2 => ['text' => '2) Total No. of support services in this year', 'data' => [29,25,55,'','','','','','','','','']],
+                2 => ['text' => '2) Total No. of support services in this year', 'data' => [29,52,55,'','','','','','','','','']],
             ];
 
             $services2 = [
@@ -76,7 +76,7 @@ class CarerServiceController extends Controller
                 4 => ['text' => '(iv) No. of needy carers transfer in from carers', 'data' => [0,0,0,'','','','','','','','','']],
                 5 => ['text' => '(v) No. of needy carers transfer out to carers', 'data' => [0,0,0,'','','','','','','','','']],
                 6 => ['text' => '(vi) No. of needy carer no longer in need of support in this month', 'data' => [2,0,1,'','','','','','','','','']],
-                7 => ['text' => '(vii) No. of active needy carers as at the end of this month', 'data' => [81,82,82,'','','','','','','','','']],
+                7 => ['text' => '(vii) No. of active needy carers as at the end of this month (i)+(ii)+(iii)+(iv)-(v)-(vi)', 'data' => [81,82,82,'','','','','','','','','']],
             ];
 
             $services3 = [

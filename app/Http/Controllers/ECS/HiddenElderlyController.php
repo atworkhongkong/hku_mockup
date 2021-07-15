@@ -53,7 +53,17 @@ class HiddenElderlyController extends Controller
         if ($type == '') {
             $type = 'new';
         }
-        $case_counts = ['new' => 3, 'accumulate' => 4, 'reactivate' => 1, 'close' => 2];
-        return view('ECS.hidden_elderly.report', compact('type', 'case_counts'));
+
+        if ($type == 'summary') {
+            $rows = [
+                '4/2021' => [35, 0, 0, 0, 35],
+                '5/2021' => [35, 2, 0, 0, 37],
+                '6/2021' => [37, 0, 0, 0, 37],
+            ];
+            return view('ECS.hidden_elderly.report_summary', compact('type', 'rows'));
+        } else {
+            $case_counts = ['new' => 3, 'reactivate' => 1, 'close' => 2];
+            return view('ECS.hidden_elderly.report', compact('type', 'case_counts'));
+        }
     }
 }

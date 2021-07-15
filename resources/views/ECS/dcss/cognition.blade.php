@@ -150,7 +150,7 @@
                 </div>
             </div>
         </div>
-        -->
+
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="input-dementia-condition" class="form-label">認知障礙情況 HK-MoCA</label>
@@ -161,7 +161,7 @@
                 <input type="text" class="form-control" id="input-test-date">
             </div>
         </div>
-
+-->
         <div class="row">
             <div class="col-12 mb-3">
                 <label for="input-face" class="form-label">睡眠狀況</label>

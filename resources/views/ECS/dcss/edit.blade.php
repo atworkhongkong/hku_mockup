@@ -31,7 +31,7 @@
                         家庭照顧支援網絡
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-7" data-toggle="tab" href="#nav-page-7" role="tab" aria-controls="nav-page-7" aria-selected="false">
-                        補充資料
+                        使用服務
                     </a>
                     <a class="nav-item nav-link" id="nav-tab-8" data-toggle="tab" href="#nav-page-8" role="tab" aria-controls="nav-page-8" aria-selected="false">
                         活動前評估
@@ -64,7 +64,7 @@
                     @include('ECS.dcss.family')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-7">
-                    @include('ECS.dcss.additional_info')
+                    @include('ECS.dcss.client_service')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
                     @include('ECS.dcss.pre_mark')

@@ -10,8 +10,10 @@
                             <label class="form-check-label" for="disease-{{$k}}">
                                 {{$v}}
                             </label>
-                            @if ($k == 12)
-                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:60%;" id="field-disease-other">
+                            @if ($k == 13)
+                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;" id="field-disease-other">
+                            @elseif ($k == 15)
+                                <input type="text" class="form-control form-control-sm d-inline-block ml-2" style="width:50%;">
                             @endif
                         </div>
                     @endforeach

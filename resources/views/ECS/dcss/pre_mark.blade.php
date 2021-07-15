@@ -7,30 +7,30 @@
             <div class="p-3">
                 <div class="row">
                     <div class="col-md-4 mb-3">
-                        <label for="input-mark1" class="form-label">副題總分/＃適用項目 一</label>
+                        <label for="input-mark1" class="form-label">副題總分/起動力</label>
                         <input type="text" class="form-control" id="input-mark1">
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="input-mark2" class="form-label">副題總分/＃適用項目 二</label>
+                        <label for="input-mark2" class="form-label">副題總分/計劃及組織</label>
                         <input type="text" class="form-control" id="input-mark2">
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="input-mark3" class="form-label">副題總分/＃適用項目 三</label>
+                        <label for="input-mark3" class="form-label">副題總分/有效執行力</label>
                         <input type="text" class="form-control" id="input-mark3">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-4 mb-3">
-                        <label for="input-mark4" class="form-label">副題百分比 一</label>
+                        <label for="input-mark4" class="form-label">副題百分比 (起動力)</label>
                         <input type="text" class="form-control" id="input-mark4">
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="input-mark5" class="form-label">副題百分比 二</label>
+                        <label for="input-mark5" class="form-label">副題百分比 (計劃及組織)</label>
                         <input type="text" class="form-control" id="input-mark5">
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="input-mark6" class="form-label">副題百分比 三</label>
+                        <label for="input-mark6" class="form-label">副題百分比 (有效執行力)</label>
                         <input type="text" class="form-control" id="input-mark6">
                     </div>
                 </div>
