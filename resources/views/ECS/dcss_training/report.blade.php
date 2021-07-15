@@ -69,8 +69,10 @@
         @include('ECS.dcss_training.report_training_count')
     @elseif ($type == 'ZBI')
         @include('ECS.dcss_training.report_ZBI')
-    @elseif ($type == 'transport_subsidy')
-        @include('ECS.dcss_training.report_transport_subsidy')
+    @elseif ($type == 'transport')
+        @include('ECS.dcss_training.report_transport')
+    @elseif ($type == 'subsidy')
+        @include('ECS.dcss_training.report_subsidy')
     @elseif ($type == 'fee')
         @include('ECS.dcss_training.report_fee')
     @endif

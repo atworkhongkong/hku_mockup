@@ -3,12 +3,13 @@
         <div class="row">
             <div class="col-12 mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-1">
-                    <span>找到1筆記錄</span>
+                    <span>找到3筆記錄</span>
                 </div>
                 <table class="table table-bordered" style="font-size:.9rem;">
                     <thead>
                         <tr class="text-center">
                             <th scope="col">Reference No.</th>
+                            <th scope="col">Name of client</th>
                             <th scope="col">Number of transport subsidy received</th>
                             <th scope="col">Number of escort service received</th>
                         </tr>
@@ -16,6 +17,7 @@
                     <tbody>
                         <tr class="text-center">
                             <td>JD2002G</td>
+                            <td>xxx</td>
                             <td>2</td>
                             <td>
                                 <div>Total escort: 2</div>
@@ -24,6 +26,7 @@
                         </tr>
                         <tr class="text-center">
                             <td>JD2003G</td>
+                            <td>xxx</td>
                             <td>0</td>
                             <td>
                                 <div>Total escort: 0</div>
@@ -32,6 +35,7 @@
                         </tr>
                         <tr class="text-center">
                             <td>JD2005P</td>
+                            <td>xxx</td>
                             <td>0</td>
                             <td>
                                 <div>Total escort: 0</div>
