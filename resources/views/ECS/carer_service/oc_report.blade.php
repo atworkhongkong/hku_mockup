@@ -40,7 +40,7 @@
 
             <div class="row">
                 <div class="col-12 mb-3">
-                    <table class="table table-bordered table-sm">
+                    <table class="table table-bordered table-sm" style="font-size:.8rem;">
                         <thead>
                             <tr>
                                 <th scope="col"></th>
@@ -70,16 +70,13 @@
                         </tbody>
                     </table>
                     <div class="alert alert-primary" role="alert">
-                        提示︰
-                        <!--
+                        提示︰<br>
+                        (i) No of carers newly served 的數字包含:
                         <ul>
                             <li>購物: 護老者在該查詢的月份內，曾經購物的人數。</li>
                             <li>租借: 護老者在該查詢的月份內，有使過租借物的人數。</li>
                             <li>護老者活動: 護老者在該查詢的月份內，有參加過機構舉辦的「護老者活動」的人數。</li>
-                            <li>電話慰問: 護老者在該查詢的月份內，曾參與電話慰問的人數。</li>
                         </ul>
-                        -->
-                        注意事項︰
                         <div>
                             因這部份我們想知道每個月的「newly served」，所以在計算每個月份的數字時，須要排除過去對上的所有月份(同一財政年度內)重覆的人。<br>
                             例如4/2021，A, B, C 三人曾使用購物，所以數字會是3人<br>

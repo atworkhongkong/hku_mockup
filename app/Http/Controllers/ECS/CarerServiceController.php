@@ -82,7 +82,7 @@ class CarerServiceController extends Controller
             $services3 = [
                 1 => ['text' => '(a) Volunteer visits', 'data' => [27,0,0,'','','','','','','','','']],
                 2 => ['text' => '(b) Escort service', 'data' => [0,0,0,'','','','','','','','','']],
-                2 => ['text' => '(c) Occasional elder sitting services', 'data' => [0,0,0,'','','','','','','','','']],
+                3 => ['text' => '(c) Occasional elder sitting services', 'data' => [0,0,0,'','','','','','','','','']],
             ];
 
             return view('ECS.carer_service.nc_report', compact('type', 'services1', 'services2', 'services3'));

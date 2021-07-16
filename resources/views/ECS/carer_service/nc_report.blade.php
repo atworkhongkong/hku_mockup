@@ -46,7 +46,7 @@
 
             <div class="row">
                 <div class="col-12 mb-3">
-                    <table class="table table-bordered table-sm">
+                    <table class="table table-bordered table-sm" style="font-size:.9rem;">
                         <thead>
                             <tr>
                                 <th scope="col"></th>
@@ -90,7 +90,7 @@
                             @endforeach
 
                             <tr>
-                                <td colspan="13">OS13c</td>
+                                <td colspan="13">Out of OS13c</td>
                             </tr>
                             @foreach($services3 as $row => $service)
                                 <tr>
@@ -102,17 +102,13 @@
                             @endforeach
                         </tbody>
                     </table>
-                    <!--
+
                     <div class="alert alert-primary" role="alert">
-                        提示︰
-                        <ul>
-                            <li>購物: 護老者在該查詢的月份內，曾經購物的人數。</li>
-                            <li>租借: 護老者在該查詢的月份內，有使過租借物的人數。</li>
-                            <li>護老者活動: 護老者在該查詢的月份內，有參加過機構舉辦的「護老者活動」的人數。</li>
-                            <li>電話慰問: 護老者在該查詢的月份內，曾參與電話慰問的人數。</li>
-                        </ul>
+                        提示︰<br>
+                        OS13c 1) 所指的 No. of support services 是這一版內的服務類別 (/ecs/carer_service/create)<br>
+                        OS13d (i) 的數字是由上個月的 (vii) bring forward 到今個月的 (i)
                     </div>
-                    -->
+
                 </div>
             </div>
         </div>
