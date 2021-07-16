@@ -1,4 +1,4 @@
-<div class="container" style="width:90%;">
+<div class="container">
     <div class="contain__wrapper">
         <div class="row">
             <div class="col-12 mb-3">
@@ -11,7 +11,7 @@
                             <th scope="col">Reference No.</th>
                             <th scope="col">Name of client</th>
                             <th scope="col">Transport Subsidy</th>
-                            <th scope="col">Exepnses incurred from Escort Service</th>
+                            <th scope="col">Expenses incurred from Escort Service</th>
                         </tr>
                     </thead>
                     <tbody>

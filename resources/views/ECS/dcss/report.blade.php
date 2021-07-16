@@ -54,6 +54,10 @@
         @include('ECS.dcss.report_service_questionnaire')
     @elseif ($type == 'escort_questionnaire')
         @include('ECS.dcss.report_escort_questionnaire')
+    @elseif ($type == 'close')
+        @include('ECS.dcss.report_close')
+    @elseif ($type == 'attrition')
+        @include('ECS.dcss.report_attrition')
     @elseif ($type == 'default_case')
         @include('ECS.dcss.report_default_case')
     @endif

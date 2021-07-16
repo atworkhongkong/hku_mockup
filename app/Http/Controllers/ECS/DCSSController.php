@@ -190,7 +190,16 @@ class DCSSController extends Controller
             $type = 'service_questionnaire';
             $full_url = URL::full().'/'.$type;
         }
-        return view('ECS.dcss.report', compact('type', 'full_url'));
+        if (in_array($type, ['close', 'attrition'])) {
+            $data = [
+                'Apr' => [1, 0, 0, 0, 0, 0, 0, 1],
+                'May' => [0, 0, 0, 0, 0, 0, 0, 0],
+                'Jun' => [0, 0, 0, 0, 0, 0, 0, 0]
+            ];
+        } else {
+            $data = [];
+        }
+        return view('ECS.dcss.report', compact('type', 'full_url', 'data'));
     }
 
     public static function getCases(): array
