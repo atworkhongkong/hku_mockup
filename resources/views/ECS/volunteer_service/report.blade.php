@@ -52,9 +52,9 @@
             </div>
 
             @if ($type == 'service_hour')
-                @include('ecs.volunteer_service.report_service_hour')
+                @include('ECS.volunteer_service.report_service_hour')
             @elseif ($type == 'support_services')
-                @include('ecs.volunteer_service.report_support_services')
+                @include('ECS.volunteer_service.report_support_services')
             @endif
         </div>
     </div>

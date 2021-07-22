@@ -64,7 +64,7 @@
                     @include('ECS.dcss.family')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-7" role="tabpanel" aria-labelledby="nav-tab-7">
-                    @include('ECS.dcss.additional_info')
+                    @include('ECS.dcss.client_service')
                 </div>
                 <div class="tab-pane fade p-3 border border-top-0" id="nav-page-8" role="tabpanel" aria-labelledby="nav-tab-8">
                     @include('ECS.dcss.pre_mark')
