@@ -81,9 +81,9 @@
             </div>
 
             @if ($type == 'new')
-                @include('ecs.volunteer.report_new')
+                @include('ECS.volunteer.report_new')
             @elseif ($type == 'accumulate')
-                @include('ecs.volunteer.report_accumulate')
+                @include('ECS.volunteer.report_accumulate')
             @endif
 
 
