@@ -55,6 +55,10 @@
                 </form>
             </div>
 
+            <div class="alert alert-primary" role="alert">
+                提示︰整個義工部份，建議參考AKA義工的 CIS 系統作為藍本
+            </div>
+
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
