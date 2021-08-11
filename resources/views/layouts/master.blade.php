@@ -113,7 +113,7 @@
                 </ul>
 
                 <!-- Right Side Of Navbar -->
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" style="display:none;">
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="notification" data-toggle="dropdown" aria-expanded="false">
                             <i class="far fa-bell" style="font-size:1.5rem;"></i>
